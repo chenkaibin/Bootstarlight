@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Bootstrap编码规范</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/github.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/css.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target=".blog-nav">
+
+  <div class="blog-masthead navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-brand active">Bootstrap Ver 3.1.1 编码规范</a>
+      </div>
+      <nav class="blog-nav collapse navbar-collapse bs-navbar-collapse" role="navigation">
+        <ul class="nav navbar-nav">
+          <li>
+            <a class="blog-nav-item" href="#html">HTML</a>
+          </li>
+          <li>
+            <a class="blog-nav-item" href="#css">CSS</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a class="blog-nav-item" href="javascript:" data-toggle="modal" data-target="#myModal">关于</a>
+          </li>
+            <li><a class="blog-nav-item" href="../index.html">返回 Bootstarlight</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="blog-header" id="brand">
+      <h1 class="blog-title">Bootstrap Ver 3.1.1 编码规范</h1>
+      <p class="lead blog-description">编写灵活、稳定、高质量的 HTML 和 CSS 代码</p>
+    </div>
+
+    <div class="row pin">
+      <div class="col-sm-8 blog-main">
+        <div class="heading" id="html-upgrade">
+          <h2>主要更新</h2>
+        </div>
+        <div class="section">
+          <div class="col">
+            <ul>
+              <li>基于Ruby的SASS CSS预处理器引擎。</li>
+              <li>许可协议由Apache 2许可证改为MIT许可证进行分发。</li>
+              <li>代码块中新增&lt; kbd &gt;来表示输入，如 <kbd>Ctrl</kbd>+<kbd>S</kbd> 通常是通过键盘输入。</li>
+              <li>表格中状态class可以为行货单元格设置颜色新增.info来标识一个动作造成信息的改变。</li>
+              <li>新增表单校验状态图标反馈，标签结构进行了修改，新增.has-feedback、.form-control-feedback。</li>
+            </ul>
+            <div class="highlight">
+              <pre><code class="html"><span>&lt;div</span> <span>class=</span><span>"form-group has-success has-feedback"</span><span>&gt;</span>
+  <span>&lt;label</span> <span>class=</span><span>"control-label"</span> <span>for=</span><span>"inputSuccess2"</span><span>&gt;</span>Input with success<span>&lt;/label&gt;</span>
+  <span>&lt;input</span> <span>type=</span><span>"text"</span> <span>class=</span><span>"form-control"</span> <span>id=</span><span>"inputSuccess2"</span><span>&gt;</span>
+  <span>&lt;span</span> <span>class=</span><span>"glyphicon glyphicon-ok form-control-feedback"</span><span>&gt;&lt;/span&gt;</span>
+<span>&lt;/div&gt;</span>
+<span>&lt;div</span> <span>class=</span><span>"form-group has-warning has-feedback"</span><span>&gt;</span>
+  <span>&lt;label</span> <span>class=</span><span>"control-label"</span> <span>for=</span><span>"inputWarning2"</span><span>&gt;</span>Input with warning<span>&lt;/label&gt;</span>
+  <span>&lt;input</span> <span>type=</span><span>"text"</span> <span>class=</span><span>"form-control"</span> <span>id=</span><span>"inputWarning2"</span><span>&gt;</span>
+  <span>&lt;span</span> <span>class=</span><span>"glyphicon glyphicon-warning-sign form-control-feedback"</span><span>&gt;&lt;/span&gt;</span>
+<span>&lt;/div&gt;</span>
+<span>&lt;div</span> <span>class=</span><span>"form-group has-error has-feedback"</span><span>&gt;</span>
+  <span>&lt;label</span> <span>class=</span><span>"control-label"</span> <span>for=</span><span>"inputError2"</span><span>&gt;</span>Input with error<span>&lt;/label&gt;</span>
+  <span>&lt;input</span> <span>type=</span><span>"text"</span> <span>class=</span><span>"form-control"</span> <span>id=</span><span>"inputError2"</span><span>&gt;</span>
+  <span>&lt;span</span> <span>class=</span><span>"glyphicon glyphicon-remove form-control-feedback"</span><span>&gt;&lt;/span&gt;</span>
+<span>&lt;/div&gt;</span>
+</code></pre></div>
+
+            <ul>
+              <li>新增上下文背景.bg-*。</li>
+              <li>新增LESS动态样式语言API。</li>
+              <li>下拉菜单的对齐方式不再使用.pull-right，新增.dropdown-menu-right。</li>
+              <li>修复了分段按钮双重边框叠加等若干问题，详情请访问Github。</li>
+              <li>列表组中新增上下文背景.list-group-item-*。</li>
+              <li>不再支持IE的兼容模式。为了让IE浏览器运行最新的渲染模式，建议将此标签加入到页面中。</li>
+            </ul>
+
+            <div class="highlight">
+              <pre><code class="html"><span>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</span></code></pre>
+            </div>
+      
+            <ul>
+              <li>.badge不再保留状态相关的class（-success、-primary等）。</li>
+              <li>添加了.form-control的文本表单控件默认预设为100%宽度。用col-包裹输入框（input）即可控制其宽度。</li>
+            </ul>
+
+            <div class="highlight"><pre><code class="html"><span>&lt;div</span> <span>class=</span><span>"row"</span><span>&gt;</span>
+  <span>&lt;div</span> <span>class=</span><span>"col-xs-2"</span><span>&gt;</span>
+    <span>&lt;input</span> <span>type=</span><span>"text"</span> <span>class=</span><span>"form-control"</span> <span>placeholder=</span><span>".col-xs-2"</span><span>&gt;</span>
+  <span>&lt;/div&gt;</span>
+  <span>&lt;div</span> <span>class=</span><span>"col-xs-3"</span><span>&gt;</span>
+    <span>&lt;input</span> <span>type=</span><span>"text"</span> <span>class=</span><span>"form-control"</span> <span>placeholder=</span><span>".col-xs-3"</span><span>&gt;</span>
+  <span>&lt;/div&gt;</span>
+  <span>&lt;div</span> <span>class=</span><span>"col-xs-4"</span><span>&gt;</span>
+    <span>&lt;input</span> <span>type=</span><span>"text"</span> <span>class=</span><span>"form-control"</span> <span>placeholder=</span><span>".col-xs-4"</span><span>&gt;</span>
+  <span>&lt;/div&gt;</span>
+<span>&lt;/div&gt;</span>
+</code></pre></div>
+            <ul>
+              <li>
+                移除了预输入组件Typeahead，推荐使用
+                <a href="http://twitter.github.io/typeahead.js/" target="_blank">Twitter Typeahead</a>
+                。
+              </li>
+              <li>
+                从Android4.1及最近发布的新版本开始，浏览网页会打开默认浏览器(相对于Chrome)，但它在对CSS处理上存在很多BUG，因此对于需要兼容安卓的环境时，为了打到最好的效果，需要额外处理&lt;select&gt;元素，并设置浏览器代理防止影响Chrome/Safari/Mozilla和其它浏览器。
+              </li>
+              <li>不再支持IE的兼容模式。为了让IE浏览器运行最新的渲染模式，建议将此 &lt;meta&gt; 标签加入到你的页面中。</li>
+              <li>对JavaScript组件全部应用了命名空间。</li>
+              <li>
+                由于IE10没有将屏幕的宽度和视口（viewport）的宽度区别开，导致Bootstrap中的媒体查询不能很好的发挥作用，因此需要单独引入CSS修复此问题。
+              </li>
+              <li>Safari浏览器所包含的绘制引擎对于处理栅格系统所对应的很长的百分比小数存在BUG，需要将最后一格右对齐。</li>
+              <li>
+                在移动设备中使用模态框时，&lt;body&gt;元素在iOS和Android上对overflow: hidden的支持很有限。在这两种设备上的浏览器中，当滚动屏幕超过模态框的顶部或底部时， &lt;body&gt;中的内容将开始随着滚动。当在模态框中触发输入框时，iOS设备触发虚拟键盘之后不会更新fixed元素的位置。需要将fixed元素转变为position: absolute或启动一个定时器手动修正其位置。
+              </li>
+              <li>
+                默认情况下，文本类型的表单控件只被赋予了最少的样式。将.form-control赋予这些控件可以使其具有高亮（在获得焦点时）和圆角样式。
+              </li>
+              <li>
+                默认情况下，图片不具有由响应式特性，需要使用.img-responsive才能让&lt;img&gt;实现响应式可变大小。
+              </li>
+              <li>
+                图标.glyphicon演变为字体图标。每个图标都需要一个基本class和一个代表特定图标的class（例如 .glyphicon .glyphicon-asterisk、.fa .fa-asterisk）。
+              </li>
+              <li>.btn必须和 .btn-default一起使用才能获得“默认”样式的按钮。</li>
+              <li>
+                通过为表单添加.form-horizontal，并使用Bootstrap预置的栅格class可以将label和控件组水平并排布局。这将改变.form-group的行为，使其表现为栅格系统中的行（row），因此无需再使用.row。
+              </li>
+              <li>控件必须添加类型声明。</li>
+              <li>
+                可作按钮使用的HTML标签中，<b>强烈建议</b>
+                尽可能使用&lt;button&gt;元素以确保跨浏览器的一致性样式。
+                  因为在Firefox下无法为基于&lt;input&gt;标签的按钮设置line-height，这会导致在Firefox上，造成与其它按钮的高度不一致。
+              </li>
+              <li>
+                当为.btn-group中的元素应用工具提示或弹出框时，必须指定container: 'body'选项，这样可以避免在工具提示或弹出框触发时，会让页面元素变宽或失去圆角。
+              </li>
+              <li>输入框组中避免使用 &lt;select&gt; 元素，因为 WebKit 浏览器不能完全支持它的样式。</li>
+              <li>不要直接将.input-group和.form-group混合使用。</li>
+              <li>
+                通过data属性API就能使用所有的Bootstrap插件，无需写一行JavaScript代码。这是Bootstrap中的推荐方式。如果某些情况下可能需要将此功能关闭，只需要解除绑定到文档命名空间上的所有事件data-api，如果是针对某个特定的插件，只需在data-api前面添加那个插件的名称作为命名空间。
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="heading" id="html">
+          <h2>HTML</h2>
+        </div>
+        <div class="section" id="html-syntax">
+          <div class="col">
+            <h3>语法</h3>
+            <ul>
+              <li>用两个空格来代替制表符（tab） -- 这是唯一能保证在所有环境下获得一致展现的方法。</li>
+              <li>嵌套元素应当缩进一次（即两个空格）。</li>
+              <li>对于属性的定义，确保全部使用双引号，绝不要使用单引号。</li>
+              <li>
+                不要在自闭和（self-closing）元素的尾部添加斜线 --
+                <a href="http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag">HTML5 规范</a>
+                中明确说明这是可选的。
+              </li>
+              <li>
+                不要省略可选的结束标签（closing tag）（例如，
+                <code>&lt;/li&gt;</code>
+                或
+                <code>&lt;/body&gt;</code>
+                ）。
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="highlight">
+              <pre><code class="html"><span>&lt;!DOCTYPE html&gt;</span>
+<span>&lt;html&gt;</span>
+  <span>&lt;head&gt;</span>
+    <span>&lt;title&gt;</span>Page title<span>&lt;/title&gt;</span>
+  <span>&lt;/head&gt;</span>
+  <span>&lt;body&gt;</span>
+    <span>&lt;img</span> <span>src=</span><span>"images/company-logo.png"</span> <span>alt=</span><span>"Company"</span><span>&gt;</span>
+    <span>&lt;h1</span> <span>class=</span><span>"hello-world"</span><span>&gt;</span>Hello, world!<span>&lt;/h1&gt;</span>
+  <span>&lt;/body&gt;</span>
+<span>&lt;/html&gt;</span>
+</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" id="html-doctype">
+          <div class="col">
+            <h3>HTML5 Doctype</h3>
+            <p>
+              为每个 HTML 页面的第一行添加标准模（standard mode）式的声明，这样能够确保在每个浏览器中拥有一致的展现。
+            </p>
+          </div>
+          <div class="col">
+            <div class="highlight">
+              <pre><code class="html"><span>&lt;!DOCTYPE html&gt;</span>
+<span>&lt;html&gt;</span>
+  <span>&lt;head&gt;</span>
+  <span>&lt;/head&gt;</span>
+<span>&lt;/html&gt;</span>
+</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" id="html-encoding">
+          <div class="col">
+            <h3>字符编码</h3>
+            <p>通过明确声明字符编码，能够确保浏览器快速并容易的判断页面内容的渲染方式。</p>
+          </div>
+          <div class="col">
+            <div class="highlight">
+              <pre><code class="html"><span>&lt;head&gt;</span>
+  <span>&lt;meta</span> <span>charset=</span><span>"UTF-8"</span><span>&gt;</span>
+<span>&lt;/head&gt;</span>
+</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" id="html-style-script">
+          <div class="col">
+            <h3>引入 CSS 和 JavaScript 文件</h3>
+            <p>
+              根据 HTML5 规范，在引入 CSS 和 JavaScript 文件时一般不需要指定
+              <code>type</code>
+              属性，因为
+              <code>text/css</code>
+              和
+              <code>text/javascript</code>
+              分别是它们的默认值。
+            </p>
+            <h4>HTML5 spec links</h4>
+            <ul>
+              <li>
+                <a href="http://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-link-element">Using link</a>
+              </li>
+              <li>
+                <a href="http://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-style-element">Using style</a>
+              </li>
+              <li>
+                <a href="http://www.w3.org/TR/2011/WD-html5-20110525/scripting-1.html#the-script-element">Using script</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="highlight">
+              <pre><code class="html"><span>&lt;!-- External CSS --&gt;</span>
+<span>&lt;link</span> <span>rel=</span><span>"stylesheet"</span> <span>href=</span><span>"code-guide.css"</span><span>&gt;</span>
+
+<span>&lt;!-- In-document CSS --&gt;</span>
+<span>&lt;style&gt;</span>
+  <span>/* ... */</span>
+<span>&lt;/style&gt;</span>
+
+<span>&lt;!-- JavaScript --&gt;</span>
+<span>&lt;script </span><span>src=</span><span>"code-guide.js"</span><span>&gt;&lt;/script&gt;</span>
+</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" id="html-practicality">
+          <div class="col">
+            <h3>实用性优先</h3>
+            <p>尽量遵循 HTML 标准和语义，但是不要以牺牲实用性为代价。任何时候都要尽量使用最少的标签并保持最小的复杂度。</p>
+          </div>
+        </div>
+
+        <div class="section" id="html-attribute-order">
+          <div class="col">
+            <h3>属性顺序</h3>
+            <p>HTML 属性应当按照以下给出的顺序依次排列，确保代码的易读性。</p>
+            <ul>
+              <li>
+                <code>class</code>
+              </li>
+              <li>
+                <code>id</code>
+                ,
+                <code>name</code>
+              </li>
+              <li>
+                <code>data-*</code>
+              </li>
+              <li>
+                <code>src</code>
+                ,
+                <code>for</code>
+                ,
+                <code>type</code>
+                ,
+                <code>href</code>
+              </li>
+              <li>
+                <code>title</code>
+                ,
+                <code>alt</code>
+              </li>
+              <li>
+                <code>aria-*</code>
+                ,
+                <code>role</code>
+              </li>
+            </ul>
+            <p>
+              class 用于标识高度可复用组件，因此应该排在首位。id 用于标识具体组件，应当谨慎使用（例如，页面内的书签），因此排在第二位。
+            </p>
+          </div>
+          <div class="col">
+            <div class="highlight">
+              <pre><code class="html"><span>&lt;a</span> <span>class=</span><span>"..."</span> <span>id=</span><span>"..."</span> <span>data-modal=</span><span>"toggle"</span> <span>href=</span><span>"#"</span><span>&gt;</span>
+  Example link
+<span>&lt;/a&gt;</span>
+
+<span>&lt;input</span> <span>class=</span><span>"form-control"</span> <span>type=</span><span>"text"</span><span>&gt;</span>
+
+<span>&lt;img</span> <span>src=</span><span>"..."</span> <span>alt=</span><span>"..."</span><span>&gt;</span>
+</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" id="html-boolean-attributes">
+          <div class="col">
+            <h3>布尔（boolean）型属性</h3>
+            <p>布尔型属性可以在声明时不赋值。XHTML 规范要求为其赋值，但是 HTML5 规范不需要。</p>
+            <p>
+              更多信息请参考
+              <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html#boolean-attributes">WhatWG section on boolean attributes</a>
+              ：
+            </p>
+            <blockquote>
+              <p>元素的布尔型属性如果有值，就是 true，如果没有值，就是 false。</p>
+            </blockquote>
+            <p>
+              如果 <em>一定</em>
+              要为其赋值的话，请参考 WhatWG 规范：
+            </p>
+            <blockquote>
+              <p>如果属性存在，其值必须是空字符串或 [...] 属性的规范名称，并且不要再收尾添加空白符。</p>
+            </blockquote>
+            <p> <strong>简单来说，就是不用赋值。</strong>
+            </p>
+          </div>
+          <div class="col">
+            <div class="highlight">
+              <pre><code class="html"><span>&lt;input</span> <span>type=</span><span>"text"</span> <span>disabled</span><span>&gt;</span>
+
+<span>&lt;input</span> <span>type=</span><span>"checkbox"</span> <span>value=</span><span>"1"</span> <span>checked</span><span>&gt;</span>
+
+<span>&lt;select&gt;</span>
+  <span>&lt;option</span> <span>value=</span><span>"1"</span> <span>selected</span><span>&gt;</span>1<span>&lt;/option&gt;</span>
+<span>&lt;/select&gt;</span>
+</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" id="html-reducing-markup">
+          <div class="col">
+            <h3>减少标签的数量</h3>
+            <p>编写 HTML 代码时，尽量避免多余的父元素。很多时候，这需要迭代和重构来实现。请看下面的案例：</p>
+          </div>
+          <div class="col">
+            <div class="highlight">
+              <pre><code class="html"><span>&lt;!-- Not so great --&gt;</span>
+<span>&lt;span</span> <span>class=</span><span>"avatar"</span><span>&gt;</span>
+  <span>&lt;img</span> <span>src=</span><span>"..."</span><span>&gt;</span>
+<span>&lt;/span&gt;</span>
+
+<span>&lt;!-- Better --&gt;</span>
+<span>&lt;img</span> <span>class=</span><span>"avatar"</span> <span>src=</span><span>"..."</span><span>&gt;</span>
+</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" id="html-javascript">
+          <div class="col">
+            <h3>JavaScript 生成的标签</h3>
+            <p>通过 JavaScript 生成的标签让内容变得不易查找、编辑，并且降低性能。能避免时尽量避免。</p>
+          </div>
+        </div>
+
+        <div class="heading" id="css">
+          <h2>CSS</h2>
+        </div>
+
+        <div class="section" id="css-syntax">
+          <div class="col">
+            <h3>语法</h3>
+            <ul>
+              <li>用两个空格来代替制表符（tab） -- 这是唯一能保证在所有环境下获得一致展现的方法。</li>
+              <li>为选择器分组时，将单独的选择器单独放在一行。</li>
+              <li>为了代码的易读性，在每个声明块的左花括号前添加一个空格。</li>
+              <li>声明块的右花括号应当单独成行。</li>
+              <li>
+                每条声明语句的
+                <code>:</code>
+                后应该插入一个空格。
+              </li>
+              <li>为了获得更准确的错误报告，每条声明都应该独占一行。</li>
+              <li>所有声明语句都应当以分号结尾。最后一条声明语句后面的分号是可选的，但是，如果省略这个分号，你的代码可能更易出错。</li>
+              <li>
+                对于以逗号分隔的属性值，每个逗号后面都应该插入一个空格（例如，
+                <code>box-shadow</code>
+                ）。
+              </li>
+              <li>
+                不要在
+                <code>rgb()</code>
+                、
+                <code>rgba()</code>
+                、
+                <code>hsl()</code>
+                、
+                <code>hsla()</code>
+                或
+                <code>rect()</code>
+                值的 <em>内部</em>
+                的逗号后面插入空格。这样利于从多个属性值（既加逗号也加空格）中区分多个颜色值（只加逗号，不加空格）。另外，省略小于 1 的小数前面的 0 （例如，
+                <code>.5</code>
+                代替
+                <code>0.5</code>
+                ）。
+              </li>
+              <li>
+                十六进制值应该全部小写，例如，
+                <code>#fff</code>
+                。在扫描文档时，小写字符易于分辨，因为他们的形式更易于区分。
+              </li>
+              <li>
+                尽量使用简写形式的十六进制值，例如，用
+                <code>#fff</code>
+                代替
+                <code>#ffffff</code>
+                。
+              </li>
+              <li>
+                为选择器中的属性添加双引号，例如，
+                <code>input[type="text"]</code>
+                。
+                <a href="http://mathiasbynens.be/notes/unquoted-attribute-values#css">只有在某些情况下是可选的</a>
+                ，但是，为了代码的一致性，建议都加上双引号。
+              </li>
+              <li>
+                避免为 0 值指定单位，例如，用
+                <code>margin: 0;</code>
+                代替
+                <code>margin: 0px;</code>
+                。
+              </li>
+            </ul>
+            <p>
+              对于这里用到的术语有疑问吗？请参考 Wikipedia 上的
+              <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Syntax">syntax section of the Cascading Style Sheets article</a>
+              。
+            </p>
+          </div>
+          <div class="col">
+            <div class="highlight">
+              <pre><code class="css"><span>/* Bad CSS */</span>
+<span class="nc">.selector</span><span class="o">,</span> <span class="nc">.selector-secondary</span><span class="o">,</span> <span class="nc">.selector</span><span class="o">[</span><span>type</span><span class="o">=</span><span>text</span><span class="o">]</span> <span class="p">{</span>
+  <span class="k">padding</span><span class="o">:</span><span class="m">15px</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span><span class="m">0px</span> <span class="m">0px</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="o">:</span><span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
+  <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span><span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="m">#CCC</span><span class="o">,</span><span class="k">inset</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">0</span> <span class="m">#FFFFFF</span>
+<span class="p">}</span>
+
+<span>/* Good CSS */</span>
+<span class="nc">.selector</span><span class="o">,</span>
+<span class="nc">.selector-secondary</span><span class="o">,</span>
+<span class="nc">.selector</span><span class="o">[</span><span>type</span><span class="o">=</span><span class="s2">"text"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="o">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,.</span><span class="m">5</span><span class="p">);</span>
+  <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="m">#ccc</span><span class="o">,</span> <span class="k">inset</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">0</span> <span class="m">#fff</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" id="css-declaration-order">
+          <div class="col">
+            <h3>声明顺序</h3>
+            <p>相关的属性声明应当归为一组，并按照下面的顺序排列：</p>
+            <ol>
+              <li>Positioning</li>
+              <li>Box model</li>
+              <li>Typographic</li>
+              <li>Visual</li>
+            </ol>
+            <p>
+              由于定位（positioning）可以从正常的文档流中移除元素，并且还能覆盖盒模型（box model）相关的样式，因此排在首位。盒模型排在第二位，因为它决定了组件的尺寸和位置。
+            </p>
+            <p>
+              其他属性只是影响组件的
+              <em>内部（inside）</em>
+              或者是不影响前两组属性，因此排在后面。
+            </p>
+            <p>
+              完整的属性列表及其排列顺序请参考
+              <a href="http://twitter.github.com/recess">Recess</a>
+              。
+            </p>
+          </div>
+          <div class="col">
+            <div class="highlight">
+              <pre><code class="css"><span class="nc">.declaration-order</span> <span class="p">{</span>
+  <span>/* Positioning */</span>
+  <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+  <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">right</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">bottom</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">z-index</span><span class="o">:</span> <span class="m">100</span><span class="p">;</span>
+
+  <span>/* Box-model */</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+  <span class="k">float</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+  <span class="k">height</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+
+  <span>/* Typography */</span>
+  <span class="k">font</span><span class="o">:</span> <span class="k">normal</span> <span class="m">13px</span> <span class="s2">"Helvetica Neue"</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+  <span class="k">line-height</span><span class="o">:</span> <span class="m">1</span><span class="o">.</span><span class="m">5</span><span class="p">;</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#333</span><span class="p">;</span>
+  <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+
+  <span>/* Visual */</span>
+  <span class="k">background-color</span><span class="o">:</span> <span class="m">#f5f5f5</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#e5e5e5</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span>
+
+  <span>/* Misc */</span>
+  <span class="k">opacity</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" id="css-media-queries">
+          <div class="col">
+            <h3>媒体查询（Media Query）的位置</h3>
+            <p>
+              将媒体查询放在尽可能相关规则的附近。不要将他们打包放在一个单一样式文件中或者放在文档底部。如果你把他们分开了，将来只会被大家遗忘。下面给出一个典型的实例。
+            </p>
+          </div>
+          <div class="col">
+            <div class="highlight">
+              <pre><code class="css"><span class="nc">.element</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.element-avatar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.element-selected</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+
+<span class="k">@media</span> <span class="o">(</span><span>min-width</span><span class="o">:</span> <span>480px</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nc">.element</span> <span class="p">{</span> <span class="o">...</span><span class="p">}</span>
+  <span class="nc">.element-avatar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+  <span class="nc">.element-selected</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" id="css-prefixed-properties">
+          <div class="col">
+            <h3>带前缀的属性</h3>
+            <p>当使用特定厂商的带有前缀的属性时，通过缩进的方式，让每个属性的值在垂直方向对其，这样便于多行编辑。</p>
+            <p>
+              在 Textmate 中，使用 <strong>Text → Edit Each Line in Selection</strong>
+              (⌃⌘A)。在 Sublime Text 2 中，使用
+              <strong>Selection → Add Previous Line</strong>
+              (⌃⇧↑) 和
+              <strong>Selection →  Add Next Line</strong>
+              (⌃⇧↓)。
+            </p>
+          </div>
+          <div class="col">
+            <div class="highlight">
+              <pre><code class="css"><span>/* Prefixed properties */</span>
+<span class="nc">.selector</span> <span class="p">{</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,.</span><span class="m">15</span><span class="p">);</span>
+          <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,.</span><span class="m">15</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" id="css-single-declarations">
+          <div class="col">
+            <h3>单行规则声明</h3>
+            <p>
+              对于
+              <strong>只包含一条声明</strong>
+              的样式，为了易读性和便于快速编辑，建议将语句放在同一行。对于带有多条声明的样式，还是应当将声明分为多行。
+            </p>
+            <p>
+              这样做的关键因素是为了错误检测 -- 例如，CSS 校验器指出在 183 行有语法错误。如果是单行声明，你就不会忽略这个错误；如果是多行声明的话，你就要仔细分析了。
+            </p>
+          </div>
+          <div class="col">
+            <div class="highlight">
+              <pre><code class="css"><span>/* Single declarations on one line */</span>
+<span class="nc">.span1</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">60px</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.span2</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">140px</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.span3</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">220px</span><span class="p">;</span> <span class="p">}</span>
+
+<span>/* Multiple declarations, one per line */</span>
+<span class="nc">.sprite</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">16px</span><span class="p">;</span>
+  <span class="k">height</span><span class="o">:</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="k">background-image</span><span class="o">:</span> <span class="sx">url(../img/sprite.png)</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.icon</span>           <span class="p">{</span> <span class="k">background-position</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.icon-home</span>      <span class="p">{</span> <span class="k">background-position</span><span class="o">:</span> <span class="m">0</span> <span class="m">-20px</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.icon-account</span>   <span class="p">{</span> <span class="k">background-position</span><span class="o">:</span> <span class="m">0</span> <span class="m">-40px</span><span class="p">;</span> <span class="p">}</span>
+</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" id="css-shorthand">
+          <div class="col">
+            <h3>简写形式的属性声明</h3>
+            <p>在需要显示地设置所有值的情况下，应当尽量限制使用简写形式的属性声明。常见的滥用简写属性声明的情况如下：</p>
+            <ul>
+              <li>
+                <code>padding</code>
+              </li>
+              <li>
+                <code>margin</code>
+              </li>
+              <li>
+                <code>font</code>
+              </li>
+              <li>
+                <code>background</code>
+              </li>
+              <li>
+                <code>border</code>
+              </li>
+              <li>
+                <code>border-radius</code>
+              </li>
+            </ul>
+            <p>
+              大部分情况下，我们不需要为简写形式的属性声明指定所有值。例如，HTML 的 heading 元素只需要设置上、下边距（margin）的值，因此，在必要的时候，只需覆盖这两个值就可以。过度使用简写形式的属性声明会导致代码混乱，并且会对属性值带来不必要的覆盖从而引起意外的副作用。
+            </p>
+            <p>
+              MDN（Mozilla Developer Network）上一片非常好的关于
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties">shorthand properties</a>
+              的文章，对于不太熟悉简写属性声明及其行为的用户很有用。
+            </p>
+          </div>
+          <div class="col">
+            <div class="highlight">
+              <pre><code class="css"><span>/* Bad example */</span>
+<span class="nc">.element</span> <span class="p">{</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="k">background</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+  <span class="k">background</span><span class="o">:</span> <span class="sx">url("image.jpg")</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">3px</span> <span class="m">3px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span>/* Good example */</span>
+<span class="nc">.element</span> <span class="p">{</span>
+  <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+  <span class="k">background-image</span><span class="o">:</span> <span class="sx">url("image.jpg")</span><span class="p">;</span>
+  <span class="k">border-top</span><span class="o">-</span><span class="k">left</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span>
+  <span class="k">border-top</span><span class="o">-</span><span class="k">right</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" id="css-nesting">
+          <div class="col">
+            <h3>Less 和 Sass 中的嵌套</h3>
+            <p>
+              避免非必要的嵌套。这是因为虽然你可以使用嵌套，但是并不意味着应该使用嵌套。只有在必须将样式限制在父元素内（也就是后代选择器），并且存在多个需要嵌套的元素时才使用嵌套。
+            </p>
+          </div>
+          <div class="col">
+            <div class="highlight">
+              <pre><code class="scss"><span class="c1">// Without nesting</span>
+<span class="nc">.table</span> <span class="o">&gt;</span> <span>thead</span> <span class="o">&gt;</span> <span>tr</span> <span class="o">&gt;</span> <span>th</span> <span class="p">{</span> <span class="err">…</span> <span class="p">}</span>
+<span class="nc">.table</span> <span class="o">&gt;</span> <span>thead</span> <span class="o">&gt;</span> <span>tr</span> <span class="o">&gt;</span> <span>td</span> <span class="p">{</span> <span class="err">…</span> <span class="p">}</span>
+
+<span class="c1">// With nesting</span>
+<span class="nc">.table</span> <span class="o">&gt;</span> <span>thead</span> <span class="o">&gt;</span> <span>tr</span> <span class="p">{</span>
+  <span class="o">&gt;</span> <span>th</span> <span class="p">{</span> <span class="err">…</span> <span class="p">}</span>
+  <span class="o">&gt;</span> <span>td</span> <span class="p">{</span> <span class="err">…</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" id="css-comments">
+          <div class="col">
+            <h3>注释</h3>
+            <p>
+              代码是由人编写并维护的。请确保你的代码能够自描述、注释良好并且易于他人理解。好的代码注释能够传达上下文关系和代码目的。不要简单地重申组件或 class 名称。
+            </p>
+            <p>对于较长的注释，务必书写完整的句子；对于一般性注解，可以书写简洁的短语。</p>
+          </div>
+          <div class="col">
+            <div class="highlight">
+              <pre><code class="css"><span>/* Bad example */</span>
+<span>/* Modal header */</span>
+<span class="nc">.modal-header</span> <span class="p">{</span>
+  <span class="o">...</span>
+<span class="p">}</span>
+
+<span>/* Good example */</span>
+<span>/* Wrapping element for .modal-title and .modal-close */</span>
+<span class="nc">.modal-header</span> <span class="p">{</span>
+  <span class="o">...</span>
+<span class="p">}</span>
+</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" id="css-classes">
+          <div class="col">
+            <h3>class 命名</h3>
+            <ul>
+              <li>
+                class 名称中只能出现小写字符和破折号（dashe）（不是下划线，也不是驼峰命名法）。破折号应当用于相关 class 的命名（类似于命名空间）（例如，
+                <code>.btn</code>
+                和
+                <code>.btn-danger</code>
+                ）。
+              </li>
+              <li>
+                避免过度任意的简写。
+                <code>.btn</code>
+                代表
+                <em>button</em>
+                ，但是
+                <code>.s</code>
+                不能表达任何意思。
+              </li>
+              <li>class 名称应当尽可能短，并且意义明确。</li>
+              <li>使用有意义的名称。使用有组织的或目的明确的名称，不要使用表现形式（presentational）的名称。</li>
+              <li>基于最近的父 class 或基本（base） class 作为新 class 的前缀。</li>
+              <li>
+                使用
+                <code>.js-*</code>
+                class 来标识行为（与样式相对），并且不要将这些 class 包含到 CSS 文件中。
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="highlight">
+              <pre><code class="css"><span>/* Bad example */</span>
+<span class="nc">.t</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.red</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.header</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+
+<span>/* Good example */</span>
+<span class="nc">.tweet</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.important</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.tweet-header</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" id="css-selectors">
+          <div class="col">
+            <h3>选择器</h3>
+            <ul>
+              <li>对于通用元素使用 class ，这样利于渲染性能的优化。</li>
+              <li>
+                对于经常出现的组件，避免使用属性选择器（例如，
+                <code>[class^="..."]</code>
+                ）。浏览器的性能会受到这些因素的影响。
+              </li>
+              <li>选择器要尽可能短，并且尽量限制组成选择器的元素个数，建议不要超过 3 。</li>
+              <li>
+                <strong>只有</strong>
+                在必要的时候才将 class 限制在最近的父元素内（也就是后代选择器）（例如，不使用带前缀的 class 时 -- 前缀类似于命名空间）。
+              </li>
+            </ul>
+            <p>扩展阅读：</p>
+            <ul>
+              <li>
+                <a href="http://markdotto.com/2012/02/16/scope-css-classes-with-prefixes/">Scope CSS classes with prefixes</a>
+              </li>
+              <li>
+                <a href="http://markdotto.com/2012/03/02/stop-the-cascade/">Stop the cascade</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="highlight">
+              <pre><code class="css"><span>/* Bad example */</span>
+<span>span</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.page-container</span> <span class="nf">#stream</span> <span class="nc">.stream-item</span> <span class="nc">.tweet</span> <span class="nc">.tweet-header</span> <span class="nc">.username</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.avatar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+
+<span>/* Good example */</span>
+<span class="nc">.avatar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.tweet-header</span> <span class="nc">.username</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.tweet</span> <span class="nc">.avatar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" id="css-organization">
+          <div class="col">
+            <h3>代码组织</h3>
+            <ul>
+              <li>以组件为单位组织代码段。</li>
+              <li>制定一致的注释规范。</li>
+              <li>使用一致的空白符将代码分隔成块，这样利于扫描较大的文档。</li>
+              <li>如果使用了多个 CSS 文件，将其按照组件而非页面的形式分拆，因为页面会被重组，而组件只会被移动。</li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="highlight">
+              <pre><code class="css"><span>/*</span>
+<span>* Component section heading</span>
+<span>*/</span>
+
+<span class="nc">.element</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+
+
+<span>/*</span>
+<span>* Component section heading</span>
+<span>*</span>
+<span> * Sometimes you need to include optional context for the entire component. Do that up here if it's important enough.</span>
+<span>*/</span>
+
+<span class="nc">.element</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+
+<span>/* Contextual sub-component or modifer */</span>
+<span class="nc">.element-heading</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" id="css-editor-prefs">
+          <div class="col">
+            <h3>编辑器配置</h3>
+            <p>将你的编辑器按照下面的配置进行设置，以避免常见的代码不一致和差异：</p>
+            <ul>
+              <li>用两个空格代替制表符（soft-tab 即用空格代表 tab 符）。</li>
+              <li>保存文件时，删除尾部的空白符。</li>
+              <li>设置文件编码为 UTF-8。</li>
+              <li>在文件结尾添加一个空白行。</li>
+            </ul>
+            <p>
+              参照文档并将这些配置信息添加到项目的
+              <code>.editorconfig</code>
+              文件中。例如：
+              <a href="https://github.com/twbs/bootstrap/blob/master/.editorconfig">Bootstrap 中的 .editorconfig 实例</a>
+              。更多信息请参考
+              <a href="http://editorconfig.org/">about EditorConfig</a>
+              。
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <!-- /.blog-main -->
+
+      <div class="col-sm-3 col-sm-offset-1">
+        <div class="blog-sidebar col-xs-12">
+          <div class="sidebar-module">
+            <h4>Bootstrap Ver 3.1.1</h4>
+            <div class="sidebar">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#html-upgrade">主要更新</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="sidebar-module">
+            <h4>HTML</h4>
+            <div class="sidebar">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#html-syntax">语法</a>
+                </li>
+                <li>
+                  <a href="#html-doctype">HTML5 Doctype</a>
+                </li>
+                <li>
+                  <a href="#html-encoding">字符编码</a>
+                </li>
+                <li>
+                  <a href="#html-style-script">引入 CSS 和 JavaScript 文件</a>
+                </li>
+                <li>
+                  <a href="#html-practicality">实用性优先</a>
+                </li>
+                <li>
+                  <a href="#html-attribute-order">属性顺序</a>
+                </li>
+                <li>
+                  <a href="#html-boolean-attributes">布尔（boolean）型属性</a>
+                </li>
+                <li>
+                  <a href="#html-reducing-markup">减少标签的数量</a>
+                </li>
+                <li>
+                  <a href="#html-javascript">JavaScript 生成的标签</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="sidebar-module">
+            <h4>CSS</h4>
+            <div class="sidebar">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#css-syntax">语法</a>
+                </li>
+                <li>
+                  <a href="#css-declaration-order">声明顺序</a>
+                </li>
+                <li>
+                  <a href="#css-media-queries">媒体查询（Media Query）的位置</a>
+                </li>
+                <li>
+                  <a href="#css-prefixed-properties">带前缀的属性</a>
+                </li>
+                <li>
+                  <a href="#css-single-declarations">单行规则声明</a>
+                </li>
+                <li>
+                  <a href="#css-shorthand">简写形式的属性声明</a>
+                </li>
+                <li>
+                  <a href="#css-nesting">Less 和 Sass 中的嵌套</a>
+                </li>
+                <li>
+                  <a href="#css-comments">注释</a>
+                </li>
+                <li>
+                  <a href="#css-classes">class 命名</a>
+                </li>
+                <li>
+                  <a href="#css-selectors">选择器</a>
+                </li>
+                <li>
+                  <a href="#css-organization">代码组织</a>
+                </li>
+              </ul>
+            </div>
+            <div class="totop"><a href="javascript:" id="b2t">回到顶部</a></div>
+          </div>
+        </div>
+      </div>
+      <!-- /.blog-sidebar --> </div>
+
+    <!-- /.row --> </div>
+  <!-- /.container -->
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">关于作者</h4>
+      </div>
+      <div class="modal-body">
+        <p>
+        Bootstrap Ver 3.1.1 编码规范由 <a href="http://126.am/franki" target="_blank">Franki Yu</a> 依据 <a href="http://www.w3.org/" target="_blank">W3C标准</a>、<a href="http://mdo.github.io/code-guide/" target="_blank"> Code Guide </a>、<a href="https://github.com/necolas/idiomatic-css" target="_blank">Idiomatic CSS</a> 和 <a href="http://getbootstrap.com" target="_blank">Bootstrap官方文档</a> 整理制作。</p>
+        <p>如果你发现本规范中有任何错误，敬请指正。通过下方的反馈按钮或访问 <a href="https://github.com/mdo/code-guide/issues/new" target="_blank">Open an issue on GitHub</a> 为本规范添加或贡献内容。
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a type="button" class="btn btn-success" href="mailto:Franki.Yu@starlight-sms.com?subject=Bootstrap Ver 3.1.1 编码规范意见反馈">提交反馈</a>
+        <a type="button" class="btn btn-primary" data-dismiss="modal">关闭</a>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jQuery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/highlight.pack.js"></script>
+  <script src="js/jQuery.pin.js"></script>
+  <script src="js/application.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
