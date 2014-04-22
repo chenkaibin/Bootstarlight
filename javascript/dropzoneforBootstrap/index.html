@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Franki - DropzoneUIforBootstrapVer3.1.1</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/font-awesome.min.css" rel="stylesheet" />
+	<link href="css/dropzone.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<form>
+					<header>
+                        <h1>Dropzone UI for Bootstrap Ver 3.1.1 <small>@Franki<a href="../../index.html" class="pull-right"><small>返回Bootstarlight</small></a></small></h1>
+					</header>
+					<span class="label label-primary">默认风格</span>
+
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<div id="dropzone">
+								<form action="http://www.torrentplease.com/dropzone.php" class="dropzone" id="demo-upload">
+									<div class="dz-default dz-message">
+										<span>Drop files here to upload</span>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+	<script type='text/javascript' src="js/jquery-2.1.0.min.js"></script>
+	<script type='text/javascript' src="js/bootstrap.min.js"></script>
+	<script type='text/javascript' src="js/dropzone.min.js"></script>
+	<script>
+    $("#dropzone").dropzone({ url: "http://www.torrentplease.com/dropzone.php" }).addClass('dropzone');
+</script>
+
+</body>
+</html>

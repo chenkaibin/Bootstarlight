@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Bootstarlight</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="assets/css/bootstarlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        body {
+            position: relative;
+            min-height: 100%;
+            min-width: 100%;
+            overflow: hidden;
+            background-color: #0a1855;
+            background-image: -webkit-gradient(linear,left bottom,right top,color-stop(0%,#0a1855),color-stop(100%,#da0024));
+            background-image: -webkit-linear-gradient(45deg,#0a1855 0,#da0024 100%);
+            background-image: -moz-linear-gradient(45deg,#0a1855 0,#da0024 100%);
+            background-image: -ms-linear-gradient(45deg,#0a1855 0,#da0024 100%);
+            background-image: -o-linear-gradient(45deg,#0a1855 0,#da0024 100%);
+            background-image: linear-gradient(45deg,#0a1855 0,#da0024 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a1855', endColorstr='#da0024', GradientType=1);
+        }
+        .navbar-collapse.in{
+            background-color: #0a1855;
+            background-image: -webkit-gradient(linear,left bottom,right top,color-stop(0%,#0a1855),color-stop(100%,#da0024));
+            background-image: -webkit-linear-gradient(45deg,#0a1855 0,#da0024 100%);
+            background-image: -moz-linear-gradient(45deg,#0a1855 0,#da0024 100%);
+            background-image: -ms-linear-gradient(45deg,#0a1855 0,#da0024 100%);
+            background-image: -o-linear-gradient(45deg,#0a1855 0,#da0024 100%);
+            background-image: linear-gradient(45deg,#0a1855 0,#da0024 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a1855', endColorstr='#da0024', GradientType=1);
+        }
+        .navbar {
+            border-bottom: 1px solid rgba(255,255,255,.1);
+        }
+        .navbar-header a, .navbar-nav > li > a {
+            color: #fff;
+        }
+
+        .nav > li > a:hover, .nav > li > a:focus {
+            background: none;
+        }
+
+        .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+            background: none;
+        }
+
+        .banner {
+            position: relative;
+            padding: 10% 10px 600px 10px;
+            text-align: center;
+            top: 30%;
+            max-width: 750px;
+            left: 50%;
+            margin-left: -375px;
+        }
+
+        .intro {
+            color: #fff;
+            font-size: 4em;
+        }
+
+        .banner .btn {
+            display: block;
+            padding: 15px 60px 16px;
+            margin-bottom: 0;
+            font-size: 18px;
+            color: #0a1855;
+            background-color: #fff;
+            border: 0;
+            -webkit-transition: all .2s linear;
+            -moz-transition: all .2s linear;
+            transition: all .2s linear;
+        }
+
+        .btns {
+            position: absolute;
+            text-align: center;
+            width: 300px;
+            left: 50%;
+            margin-left: -150px;
+        }
+
+        .banner .btn:hover {
+            background-color: #fff;
+            -webkit-box-shadow: 0 0 50px rgba(255,255,255,.3);
+            box-shadow: 0 0 50px rgba(255,255,255,.3);
+        }
+
+        .version {
+            margin-top: 75px;
+            color: rgba(255,255,255,.5);
+            text-align: center;
+            font-size: 14px;
+        }
+        .docs-footer{
+            position:fixed;
+            bottom:0;
+            padding: 60px 20px 20px;
+            height:193px;
+            width:100%;
+            text-align:center;
+            color:rgba(255,255,255,.5);
+            border-top: 1px solid rgba(255,255,255,.1);
+        }
+        .docs-footer-links li {
+            display: inline;
+            padding-right: 3px;
+            padding-left: 3px;
+            list-style:none;
+        }
+        .docs-footer-text a,.docs-footer-links li a{
+            color:rgba(255,255,255,.8);
+        }
+        .navbar-toggle .icon-bar{
+            background:#fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand">Bootstarlight</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:" id="themes">生来多彩 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="themes">
+                            <li><a href="default/index.html">默认</a></li>
+                            <li class="divider"></li>
+                            <li><a href="喇嘛红/index.html">喇嘛红</a></li>
+                            <li><a href="海天蓝/index.html">海天蓝</a></li>
+                            <li><a href="Metro风/index.html">Metro风</a></li>
+                            <li><a href="黑色系/index.html">黑色系</a></li>
+                            <li><a href="暗夜蓝/index.html">暗夜蓝</a></li>
+                            <li><a href="Flat UI/index.html">Flat UI</a></li>
+                            <li><a href="时尚粉/index.html">时尚粉</a></li>
+                            <li><a href="光之影/index.html">光之影</a></li>
+                            <li><a href="老年版/index.html">老年版</a></li>
+                            <li><a href="极简红/index.html">极简红</a></li>
+                            <li><a href="质感黑/index.html">质感黑</a></li>
+                            <li><a href="经典银/index.html">经典银</a></li>
+                            <li><a href="西部黄/index.html">西部黄</a></li>
+                            <li><a href="乌邦图/index.html">乌邦图</a></li>
+                            <li><a href="商务蓝/index.html">商务蓝</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="w3c/index.html">编码规范</a>
+                    </li>
+                    <li>
+                        <a href="demo/login.html">新框架</a>
+                    </li>
+                    <li>
+                        <a href="log.html">更新说明</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:" id="js">JavaScript <span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="js">
+                            <li><a href="javascript/ChosenforBootstrapVer3.1.1/index.html">Chosen</a></li>
+                            <li><a href="javascript/DatePicker/index.html">DatePicker</a></li>
+                            <li><a href="javascript/dropzoneforBootstrap/index.html">Dropzone</a></li>
+                            <li><a href="bootstrap-magic/app/index.html">Bootstrap Magic</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="2/default/index.html">Bootstrap2.3.2</a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="javascript:" data-toggle="modal" data-target="#myModal">关于</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="banner">
+            <p class="intro">This is a UI kit for StarLight base on bootstrap.</p>
+            <div class="btns">
+                <a href="changelog/Bootstarlight_Ver2.1.1.zip" class="btn btn-primary">Download Bootstarlight</a>
+            </div>
+            <p class="version">Currently v2.1.1</p>
+        </div>
+    </div>
+    <div class="docs-footer">
+        <p>StarLight UI Team · 诚意出品</p>
+        <p class="docs-footer-text">Code licensed under the <a href="javascript:">MIT License</a> and the new DSS uikit are licensed under <a href="javascript:">CC BY 3.0</a>.</p>
+
+        <ul class="docs-footer-links">
+            <li>Currently v2.1.1</li>
+            <li>·</li>
+            <li><a href="javascript:">Issues</a></li>
+            <li>·</li>
+            <li><a href="log.html">Releases</a></li>
+            <li>·</li>
+            <li><a href="javascript:alert('不好意思，这个版本暂未托管哦！');">Github</a></li>
+        </ul>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">关于作者</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Bootstarlight 新框架是由 <a href="http://126.am/franki" target="_blank">Franki Yu</a> 抽取整合 <a href="http://getbootstrap.com">Bootstrap</a> 常用组件，在此基础上设计了多款样式，收集了目前常用的JavaScript组件并对跟Bootstrap的兼容性做了修改。
+                    </p>
+                    <p>
+                        如果你发现本框架中有任何错误，敬请指正。通过下方的反馈按钮或访问 <a href="javascript:" target="_blank">Open an issue on GitHub</a> 为本框架添加或贡献内容。
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <a type="button" class="btn btn-success" href="mailto:Franki.Yu@starlight-sms.com?subject=Bootstarlight 新框架意见反馈">提交反馈</a>
+                    <a type="button" class="btn btn-primary" data-dismiss="modal">关闭</a>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
