@@ -1,0 +1,560 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Facilities WO List</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="新框架DEMO" />
+    <!-- Main CSS -->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet">
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Content/animate.css" rel="stylesheet" />
+    <link href="../Content/nprogress.css" rel="stylesheet" />
+    <link href="../Content/main.css" rel="stylesheet" />
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../Scripts/html5shiv.js"></script>
+    <script src="../Scripts/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="animated fadeIn">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-header visible-xs-block">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-xs">
+            </a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse" id="topnav">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href='dashboard.html'><i class="fa fa-dashboard"></i>&nbsp;Dashboard</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-circle-o"></i>&nbsp;Exterior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='#'>Landscaping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Stripping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Sweeping</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-dot-circle-o"></i>&nbsp;Interior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='floorcare-list.html'>Floorcare</a>
+                        </li>
+                        <li>
+                            <a href='#'>Windows</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href='#'><i class="fa fa-wrench"></i>&nbsp;Facilities</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='facilities-wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='facilities-wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='facilities-dispatch-list.html'>Dispatch Center</a>
+                        </li>
+                        <li class="active">
+                            <a href='facilities-location-list.html'>Location Management</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                        <li>
+                            <a href='#'>WO Archives</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-headphones"></i>&nbsp;Call Center</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='callcenter-list.html'>All Calls</a>
+                        </li>
+                        <li>
+                            <a href='#'>Incoming Open Call</a>
+                        </li>
+                        <li>
+                            <a href='#'>In Progress</a>
+                        </li>
+                        <li>
+                            <a href='#'>ETA Pending</a>
+                        </li>
+                        <li>
+                            <a href='#'>Completed</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-ticket"></i>&nbsp;Invoice</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='invoice-list.html'>All Batch Invoice</a>
+                        </li>
+                        <li>
+                            <a href='invoice-ap-list.html'>AN AP</a>
+                        </li>
+                        <li>
+                            <a href='invoice-recurring-batch.html'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-users"></i>&nbsp;Affiliate</a>
+                    <ul class="submenu">
+                        <li><a href="affiliate-list.html">Affiliate Management</a></li>
+                        <li><a href="affiliate-contract-list.html">Contract</a></li>
+                        <li><a href="affiliate-contract-request-list.html">Contract Request</a></li>
+                        <li><a href="affiliate-claim-list.html">Claim</a></li>
+                        <li><a href="affiliate-contract-template-list.html">Contract Template</a></li>
+                        <li><a href="affiliate-paperwork-template-list.html">Paperwork Template</a></li>
+                        <li><a href="affiliate-sourcing-list.html">Sourcing</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-bar-chart-o"></i>&nbsp;Report</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-user"></i>&nbsp;Client</a>
+                    <ul class="submenu">
+                        <li><a href="client-location-info.html">Location Info</a></li>
+                        <li><a href="client-client-info.html">Client Info</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-lg">
+                </li>
+            </ul>
+
+        </div>
+        <div class="nav-btn hidden-xs">
+            <form action="javascript:void(0);" method="get">
+                <fieldset>
+                    <ul class="toolbar clearfix">
+                        <li>
+                            <input type="search" id="search" placeholder="What are you looking for?">
+                        </li>
+                        <li>
+                            <button type="submit" id="btn-search"><span class="fa fa-search"></span></button>
+                        </li>
+                        <li><a href="usercontrol-list.html" class="fa fa-gear"></a></li>
+                        <li><a href="#" class="fa fa-lock"></a></li>
+                        <li><a href="#" class="fa fa-heart open-lauch"></a></li>
+                        <li><a href="#" class="fa fa-sign-out"></a></li>
+                    </ul>
+                </fieldset>
+
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Main Container start -->
+    <div class="dashboard-wrapper">
+
+        <div class="container-fluid">
+            <!-- Row start -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="list-content">
+                        <!-- Custom start -->
+                        <div class="row table-tools">
+                            <div class="search-form clearfix">
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control input-sm" placeholder="Location ID">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control input-sm" placeholder="Store #">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control input-sm" placeholder="Address">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <button class="btn btn-info btn-xs transparent-btn search-all" type="button">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-condensed table-hover table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Location #</th>
+                                        <th class="sorting">Address</th>
+                                        <th class="sorting-asc">City</th>
+                                        <th class="sorting-desc">State</th>
+                                        <th class="sorting">District</th>
+                                        <th class="sorting">Region</th>
+                                        <th class="sorting">Phone</th>
+                                        <th class="sorting">Group</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="facilities-location-detail.html">CAH110080-1</a></td>
+                                        <td>3818 Rivers Run Trce NW</td>
+                                        <td>Stone Mountain</td>
+                                        <td>GA</td>
+                                        <td>457</td>
+                                        <td>CAH-ATL (NW)</td>
+                                        <td>7703692348</td>
+                                        <td>50</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="facilities-location-detail.html">CAH112023-1</a></td>
+                                        <td>1615 Heyford Cir NW</td>
+                                        <td>Lawrenceville</td>
+                                        <td>GA</td>
+                                        <td>203</td>
+                                        <td>CAH-ATL (NC)</td>
+                                        <td>4048615276</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="facilities-location-detail.html">CAH112539-1</a></td>
+                                        <td>655 Allens Landing Dr</td>
+                                        <td>Canton</td>
+                                        <td>GA</td>
+                                        <td>13</td>
+                                        <td>CAH-ATL (SW)</td>
+                                        <td>6784571221</td>
+                                        <td>20</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="facilities-location-detail.html">CAH110080-1</a></td>
+                                        <td>3818 Rivers Run Trce NW</td>
+                                        <td>Stone Mountain</td>
+                                        <td>GA</td>
+                                        <td>457</td>
+                                        <td>CAH-ATL (NW)</td>
+                                        <td>7703692348</td>
+                                        <td>50</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="facilities-location-detail.html">CAH112023-1</a></td>
+                                        <td>1615 Heyford Cir NW</td>
+                                        <td>Lawrenceville</td>
+                                        <td>GA</td>
+                                        <td>203</td>
+                                        <td>CAH-ATL (NC)</td>
+                                        <td>4048615276</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="facilities-location-detail.html">CAH112539-1</a></td>
+                                        <td>655 Allens Landing Dr</td>
+                                        <td>Canton</td>
+                                        <td>GA</td>
+                                        <td>13</td>
+                                        <td>CAH-ATL (SW)</td>
+                                        <td>6784571221</td>
+                                        <td>20</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="facilities-location-detail.html">CAH110080-1</a></td>
+                                        <td>3818 Rivers Run Trce NW</td>
+                                        <td>Stone Mountain</td>
+                                        <td>GA</td>
+                                        <td>457</td>
+                                        <td>CAH-ATL (NW)</td>
+                                        <td>7703692348</td>
+                                        <td>50</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="facilities-location-detail.html">CAH112023-1</a></td>
+                                        <td>1615 Heyford Cir NW</td>
+                                        <td>Lawrenceville</td>
+                                        <td>GA</td>
+                                        <td>203</td>
+                                        <td>CAH-ATL (NC)</td>
+                                        <td>4048615276</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="facilities-location-detail.html">CAH112539-1</a></td>
+                                        <td>655 Allens Landing Dr</td>
+                                        <td>Canton</td>
+                                        <td>GA</td>
+                                        <td>13</td>
+                                        <td>CAH-ATL (SW)</td>
+                                        <td>6784571221</td>
+                                        <td>20</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="facilities-location-detail.html">CAH110080-1</a></td>
+                                        <td>3818 Rivers Run Trce NW</td>
+                                        <td>Stone Mountain</td>
+                                        <td>GA</td>
+                                        <td>457</td>
+                                        <td>CAH-ATL (NW)</td>
+                                        <td>7703692348</td>
+                                        <td>50</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="facilities-location-detail.html">CAH110080-1</a></td>
+                                        <td>3818 Rivers Run Trce NW</td>
+                                        <td>Stone Mountain</td>
+                                        <td>GA</td>
+                                        <td>457</td>
+                                        <td>CAH-ATL (NW)</td>
+                                        <td>7703692348</td>
+                                        <td>50</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="facilities-location-detail.html">CAH112023-1</a></td>
+                                        <td>1615 Heyford Cir NW</td>
+                                        <td>Lawrenceville</td>
+                                        <td>GA</td>
+                                        <td>203</td>
+                                        <td>CAH-ATL (NC)</td>
+                                        <td>4048615276</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="facilities-location-detail.html">CAH112539-1</a></td>
+                                        <td>655 Allens Landing Dr</td>
+                                        <td>Canton</td>
+                                        <td>GA</td>
+                                        <td>13</td>
+                                        <td>CAH-ATL (SW)</td>
+                                        <td>6784571221</td>
+                                        <td>20</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="facilities-location-detail.html">CAH110080-1</a></td>
+                                        <td>3818 Rivers Run Trce NW</td>
+                                        <td>Stone Mountain</td>
+                                        <td>GA</td>
+                                        <td>457</td>
+                                        <td>CAH-ATL (NW)</td>
+                                        <td>7703692348</td>
+                                        <td>50</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="facilities-location-detail.html">CAH112023-1</a></td>
+                                        <td>1615 Heyford Cir NW</td>
+                                        <td>Lawrenceville</td>
+                                        <td>GA</td>
+                                        <td>203</td>
+                                        <td>CAH-ATL (NC)</td>
+                                        <td>4048615276</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="facilities-location-detail.html">CAH112539-1</a></td>
+                                        <td>655 Allens Landing Dr</td>
+                                        <td>Canton</td>
+                                        <td>GA</td>
+                                        <td>13</td>
+                                        <td>CAH-ATL (SW)</td>
+                                        <td>6784571221</td>
+                                        <td>20</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="facilities-location-detail.html">CAH110080-1</a></td>
+                                        <td>3818 Rivers Run Trce NW</td>
+                                        <td>Stone Mountain</td>
+                                        <td>GA</td>
+                                        <td>457</td>
+                                        <td>CAH-ATL (NW)</td>
+                                        <td>7703692348</td>
+                                        <td>50</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="facilities-location-detail.html">CAH112023-1</a></td>
+                                        <td>1615 Heyford Cir NW</td>
+                                        <td>Lawrenceville</td>
+                                        <td>GA</td>
+                                        <td>203</td>
+                                        <td>CAH-ATL (NC)</td>
+                                        <td>4048615276</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="facilities-location-detail.html">CAH112539-1</a></td>
+                                        <td>655 Allens Landing Dr</td>
+                                        <td>Canton</td>
+                                        <td>GA</td>
+                                        <td>13</td>
+                                        <td>CAH-ATL (SW)</td>
+                                        <td>6784571221</td>
+                                        <td>20</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="facilities-location-detail.html">CAH110080-1</a></td>
+                                        <td>3818 Rivers Run Trce NW</td>
+                                        <td>Stone Mountain</td>
+                                        <td>GA</td>
+                                        <td>457</td>
+                                        <td>CAH-ATL (NW)</td>
+                                        <td>7703692348</td>
+                                        <td>50</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <p>Showing&nbsp;<strong>1</strong>&nbsp;to&nbsp;<strong>20</strong>&nbsp;of&nbsp;<strong>29</strong>&nbsp;entries</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <ul class="pagination pagination-sm pull-right">
+                                    <li class="disabled"><a href="javascript:"><<</a></li>
+                                    <li class="active"><a href="javascript:">1</a></li>
+                                    <li><a href="javascript:">2</a></li>
+                                    <li><a href="javascript:">3</a></li>
+                                    <li><a href="javascript:">4</a></li>
+                                    <li><a href="javascript:">5</a></li>
+                                    <li><a href="javascript:">>></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Custom end -->
+                    </div>
+                </div>
+            </div>
+            <!-- Row end -->
+        </div>
+    </div>
+    <div id="launchpad" class="hide">
+        <div class="icon">
+            <img src="../Content/img/mac/candy.png" title="Dashboard" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/clock.png" title="safari" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/tactics.png" title="Mail" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/packman.png" title="Appstore" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/map.png" title="Pages" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/open-letter.png" title="Numbers" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/chalkboard.png" title="Keynote" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/car.png" title="Aperture" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/label.png" title="AddressBook" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/drop.png" title="iCalendar" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/store.png" title="FaceTime" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/map2.png" title="iPhoto" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/cloud-down.png" title="iMovie" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/train.png" title="GarageBand" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/umbrella.png" title="Djay" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/rocket.png" title="iTunes" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/bookshelf.png" title="PhotoBooth" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/glasses.png" title="Compartments" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/paper-plane.png" title="Developer" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/backpack-2.png" title="Pixelmator" /><span></span>
+        </div>
+    </div>
+    <!-- Main Container end -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../Scripts/jquery-1.11.0.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../Scripts/bootstrap.min.js"></script>
+
+    <!-- nprogress JS -->
+    <script src="../Scripts/nprogress.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../Scripts/custom.js"></script>
+</body>
+</html>

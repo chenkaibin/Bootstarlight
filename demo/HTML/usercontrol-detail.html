@@ -1,0 +1,671 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>User Control Detail</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="新框架DEMO" />
+    <!-- Main CSS -->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet">
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Content/animate.css" rel="stylesheet" />
+    <link href="../Content/nprogress.css" rel="stylesheet" />
+    <link href="../Content/main.css" rel="stylesheet" />
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../Scripts/html5shiv.js"></script>
+    <script src="../Scripts/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="animated fadeIn">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-header visible-xs-block">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-xs">
+            </a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse" id="topnav">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href='dashboard.html'><i class="fa fa-dashboard"></i>&nbsp;Dashboard</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-circle-o"></i>&nbsp;Exterior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='#'>Landscaping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Stripping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Sweeping</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-dot-circle-o"></i>&nbsp;Interior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='floorcare-list.html'>Floorcare</a>
+                        </li>
+                        <li>
+                            <a href='#'>Windows</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-wrench"></i>&nbsp;Facilities</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='facilities-wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='facilities-wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='facilities-dispatch-list.html'>Dispatch Center</a>
+                        </li>
+                        <li>
+                            <a href='facilities-location-list.html'>Location Management</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                        <li>
+                            <a href='#'>WO Archives</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-headphones"></i>&nbsp;Call Center</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='callcenter-list.html'>All Calls</a>
+                        </li>
+                        <li>
+                            <a href='#'>Incoming Open Call</a>
+                        </li>
+                        <li>
+                            <a href='#'>In Progress</a>
+                        </li>
+                        <li>
+                            <a href='#'>ETA Pending</a>
+                        </li>
+                        <li>
+                            <a href='#'>Completed</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-ticket"></i>&nbsp;Invoice</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='invoice-list.html'>All Batch Invoice</a>
+                        </li>
+                        <li>
+                            <a href='invoice-ap-list.html'>AN AP</a>
+                        </li>
+                        <li>
+                            <a href='invoice-recurring-batch.html'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-users"></i>&nbsp;Affiliate</a>
+                    <ul class="submenu">
+                        <li><a href="affiliate-list.html">Affiliate Management</a></li>
+                        <li><a href="affiliate-contract-list.html">Contract</a></li>
+                        <li><a href="affiliate-contract-request-list.html">Contract Request</a></li>
+                        <li><a href="affiliate-claim-list.html">Claim</a></li>
+                        <li><a href="affiliate-contract-template-list.html">Contract Template</a></li>
+                        <li><a href="affiliate-paperwork-template-list.html">Paperwork Template</a></li>
+                        <li><a href="affiliate-sourcing-list.html">Sourcing</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-bar-chart-o"></i>&nbsp;Report</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-user"></i>&nbsp;Client</a>
+                    <ul class="submenu">
+                        <li><a href="client-location-info.html">Location Info</a></li>
+                        <li><a href="client-client-info.html">Client Info</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-lg">
+                </li>
+            </ul>
+
+        </div>
+        <div class="nav-btn hidden-xs">
+            <form action="javascript:void(0);" method="get">
+                <fieldset>
+                    <ul class="toolbar clearfix">
+                        <li>
+                            <input type="search" id="search" placeholder="What are you looking for?">
+                        </li>
+                        <li>
+                            <button type="submit" id="btn-search"><span class="fa fa-search"></span></button>
+                        </li>
+                        <li><a href="usercontrol-list.html" class="fa fa-gear"></a></li>
+                        <li><a href="#" class="fa fa-lock"></a></li>
+                        <li><a href="#" class="fa fa-heart open-lauch"></a></li>
+                        <li><a href="#" class="fa fa-sign-out"></a></li>
+                    </ul>
+                </fieldset>
+
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Main Container start -->
+    <div class="dashboard-wrapper">
+        <div class="no-submenu"></div>
+        <div class="container-fluid">
+            <!-- Row start -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="details-content">
+                        <div class="alert alert-info">Roles for <strong>hss515@163.com</strong>
+                            <button class="btn btn-danger btn-xs pull-right"><i class="fa fa-exclamation-triangle"></i>&nbsp;DELETE</button>
+                        </div>
+                        <!-- Custom start -->
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                            <div class="panel">
+                                <div class="panel-heading clearfix">
+                                    <h3 class="panel-title">Roles</h3>
+                                    <div class="pull-right">
+                                        <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">Add Roles</button>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-condensed table-hover table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th class="sorting">Name</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Administrator</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Administrator</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Administrator</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Administrator</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Administrator</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Administrator</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Administrator</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Administrator</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Administrator</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Administrator</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <p>Showing&nbsp;<strong>1</strong>&nbsp;to&nbsp;<strong>10</strong>&nbsp;of&nbsp;<strong>29</strong>&nbsp;entries</p>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <ul class="pagination pagination-sm pull-right">
+                                                <li class="disabled"><a href="javascript:"><<</a></li>
+                                                <li class="active"><a href="javascript:">1</a></li>
+                                                <li><a href="javascript:">2</a></li>
+                                                <li><a href="javascript:">3</a></li>
+                                                <li><a href="javascript:">4</a></li>
+                                                <li><a href="javascript:">5</a></li>
+                                                <li><a href="javascript:">>></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Custom end -->
+
+                        <!-- Custom start -->
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                            <div class="panel">
+                                <div class="panel-heading clearfix">
+                                    <h3 class="panel-title">Resources</h3>
+                                    <div class="pull-right">
+                                        <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myRModal">Add Resources</button>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-condensed table-hover table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th class="sorting">Type</th>
+                                                    <th class="sorting">Name</th>
+                                                    <th>Notes</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Dashboard</td>
+                                                    <td>Administrator</td>
+                                                    <td>This is a notes.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Dashboard</td>
+                                                    <td>Administrator</td>
+                                                    <td>This is a notes.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Dashboard</td>
+                                                    <td>Administrator</td>
+                                                    <td>This is a notes.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Dashboard</td>
+                                                    <td>Administrator</td>
+                                                    <td>This is a notes.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Dashboard</td>
+                                                    <td>Administrator</td>
+                                                    <td>This is a notes.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Dashboard</td>
+                                                    <td>Administrator</td>
+                                                    <td>This is a notes.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Dashboard</td>
+                                                    <td>Administrator</td>
+                                                    <td>This is a notes.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Dashboard</td>
+                                                    <td>Administrator</td>
+                                                    <td>This is a notes. This is a notes. This is a notes.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Dashboard</td>
+                                                    <td>Administrator</td>
+                                                    <td>This is a notes.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Dashboard</td>
+                                                    <td>Administrator</td>
+                                                    <td>This is a notes.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <p>Showing&nbsp;<strong>1</strong>&nbsp;to&nbsp;<strong>10</strong>&nbsp;of&nbsp;<strong>29</strong>&nbsp;entries</p>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <ul class="pagination pagination-sm pull-right">
+                                                <li class="disabled"><a href="javascript:"><<</a></li>
+                                                <li class="active"><a href="javascript:">1</a></li>
+                                                <li><a href="javascript:">2</a></li>
+                                                <li><a href="javascript:">3</a></li>
+                                                <li><a href="javascript:">4</a></li>
+                                                <li><a href="javascript:">5</a></li>
+                                                <li><a href="javascript:">>></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Custom end -->
+                    </div>
+                </div>
+
+            </div>
+            <!-- Row end -->
+        </div>
+    </div>
+    <div id="launchpad" class="hide">
+        <div class="icon">
+            <img src="../Content/img/mac/candy.png" title="Dashboard" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/clock.png" title="safari" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/tactics.png" title="Mail" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/packman.png" title="Appstore" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/map.png" title="Pages" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/open-letter.png" title="Numbers" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/chalkboard.png" title="Keynote" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/car.png" title="Aperture" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/label.png" title="AddressBook" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/drop.png" title="iCalendar" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/store.png" title="FaceTime" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/map2.png" title="iPhoto" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/cloud-down.png" title="iMovie" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/train.png" title="GarageBand" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/umbrella.png" title="Djay" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/rocket.png" title="iTunes" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/bookshelf.png" title="PhotoBooth" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/glasses.png" title="Compartments" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/paper-plane.png" title="Developer" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/backpack-2.png" title="Pixelmator" /><span></span>
+        </div>
+    </div>
+    <!-- Main Container end -->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Add Name</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="clearfix">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <select class="form-control input-sm">
+                                <option value="282">5.2 Strip Service - (Floor Care)</option>
+                                <option value="279">Additional Strip - (Floor Care)</option>
+                                <option value="280">Additional Wax - (Floor Care)</option>
+                                <option value="60">Adjustment - (Floor Care)</option>
+                                <option value="38">Alternative Floors - (Floor Care)</option>
+                                <option value="70">BJ's Wholesale Strip and Wax - Night 1 - (Floor Care)</option>
+                                <option value="71">BJ's Wholesale Strip and Wax - Night 2 - (Floor Care)</option>
+                                <option value="73">BJ's Wholesale Time and Material Rate per hr - (Floor Care)</option>
+                                <option value="72">BTC - Trip Charge - (Floor Care)</option>
+                                <option value="108">Buff Complete - (Floor Care)</option>
+                                <option value="2349">Burnish Service - (Floor Care)</option>
+                                <option value="35">Carpet extraction - (Floor Care)</option>
+                                <option value="717">Carpet extraction N - (Floor Care)</option>
+                                <option value="62">Ceiling Tile Service - Night 1 - (Floor Care)</option>
+                                <option value="63">Ceiling Tile Service - Night 2 - (Floor Care)</option>
+                                <option value="74">Chemicals - (Floor Care)</option>
+                                <option value="54">Concrete service for New store billed to Construction - (Floor Care)</option>
+                                <option value="75">Deep Scrub and Recoat - (Floor Care)</option>
+                                <option value="83">Deep Scrub and Recoat (PO) - (Floor Care)</option>
+                                <option value="93">Detail Baseboards Expense Code: 294 - (Floor Care)</option>
+                                <option value="2350">Detail Clean and Disinfect Restroom - (Floor Care)</option>
+                                <option value="2336">Emergency Water Extractions - (Floor Care)</option>
+                                <option value="37">Extra Labor due to poor floor condition - (Floor Care)</option>
+                                <option value="284">Fastbreak Alt Service - (Floor Care)</option>
+                                <option value="55">Fastbreak Service - (Floor Care)</option>
+                                <option value="43">FD Supplied Strip and Wax - (Floor Care)</option>
+                                <option value="718">Floor Care Monthly - (Floor Care)</option>
+                                <option value="76">Front of Store Strip and Wax - (Floor Care)</option>
+                                <option value="84">Front of store Strip and Wax (PO) - (Floor Care)</option>
+                                <option value="64">Front Pressure Washing Service - Night 1 - (Floor Care)</option>
+                                <option value="65">Front Pressure Washing Service - Night 2 - (Floor Care)</option>
+                                <option value="44">Fuel Surcharge - (Floor Care)</option>
+                                <option value="78">Full Strip and Wax - (Floor Care)</option>
+                                <option value="85">Full Strip and Wax (PO) - (Floor Care)</option>
+                                <option value="715">Half Strip and Wax  - (Floor Care)</option>
+                                <option value="82">Half Strip and Wax (PO) - (Floor Care)</option>
+                                <option value="66">High Dusting Service - Night 1 - (Floor Care)</option>
+                                <option value="67">High Dusting Service - Night 2 - (Floor Care)</option>
+                                <option value="2339">Janitorial and Floor Services (Regular) - (Floor Care)</option>
+                                <option value="2340">Janitorial and Floor Services (Regular) - (Floor Care)</option>
+                                <option value="2341">Janitorial and Floor Services (Regular) - (Floor Care)</option>
+                                <option value="2342">Janitorial and Floor Services (Regular) - (Floor Care)</option>
+                                <option value="2343">Janitorial and Floor Services (Winter) - (Floor Care)</option>
+                                <option value="2344">Janitorial and Floor Services (Winter) - (Floor Care)</option>
+                                <option value="2345">Janitorial and Floor Services (Winter) - (Floor Care)</option>
+                                <option value="2346">Janitorial and Floor Services (Winter) - (Floor Care)</option>
+                                <option value="2347">Janitorial and Floor Services (Winter) - (Floor Care)</option>
+                                <option value="58">Janitorial Service - (Floor Care)</option>
+                                <option value="281">Janitorial Service 2X - (Floor Care)</option>
+                                <option value="716">Janitorial Service Monthly - (Floor Care)</option>
+                                <option value="1907">Kitchen - (Floor Care)</option>
+                                <option value="68">Loading Dock Pressure Washing Service - Night 1 - (Floor Care)</option>
+                                <option value="69">Loading Dock Pressure Washing Service - Night 2 - (Floor Care)</option>
+                                <option value="109">New Store - (Floor Care)</option>
+                                <option value="57">New Store Scrub and Recoat - (Floor Care)</option>
+                                <option value="79">No Show - (Floor Care)</option>
+                                <option value="80">No Show Credit - (Floor Care)</option>
+                                <option value="81">NO Show Denied - (Floor Care)</option>
+                                <option value="278">Other - (Floor Care)</option>
+                                <option value="105">Porter Service - (Floor Care)</option>
+                                <option value="88">Power Washing (Floor Care) - (Floor Care)</option>
+                                <option value="87">Pre Scrape - (Floor Care)</option>
+                                <option value="86">Pre Scrape (PO) - (Floor Care)</option>
+                                <option value="2337">Project Daily - (Floor Care)</option>
+                                <option value="719">Refresh Service (Front SR and back SMB) - (Floor Care)</option>
+                                <option value="110">Relocation - (Floor Care)</option>
+                                <option value="2348">Restroom Cleaning (Annual) - (Floor Care)</option>
+                                <option value="89">Restroom fixture installs - (Floor Care)</option>
+                                <option value="50">Scrub and Recoat - (Floor Care)</option>
+                                <option value="34">Scrub And Recoat has exception - (Floor Care)</option>
+                                <option value="114">SCRUB AW - (Floor Care)</option>
+                                <option value="107">Scrub Complete - (Floor Care)</option>
+                                <option value="90">Spot strip (SPOT) - (Floor Care)</option>
+                                <option value="56">Spot Strip (SS) - (Floor Care)</option>
+                                <option value="59">Spray Wax and Buff - (Floor Care)</option>
+                                <option value="46">Store not prepared for service - (Floor Care)</option>
+                                <option value="49">Strip and Wax - (Floor Care)</option>
+                                <option value="61">Strip and Wax bill to Construction  - (Floor Care)</option>
+                                <option value="52">Strip and Wax has exception - (Floor Care)</option>
+                                <option value="39">Strip and Wax OFF Service - (Floor Care)</option>
+                                <option value="45">Strip and Wax RR Service - (Floor Care)</option>
+                                <option value="115">STRIP CL - (Floor Care)</option>
+                                <option value="106" selected="selected">Strip Complete - (Floor Care)</option>
+                                <option value="117">Strip Complete Exec - (Floor Care)</option>
+                                <option value="118">Strip Complete Exec20 - (Floor Care)</option>
+                                <option value="112">STRIP DS - (Floor Care)</option>
+                                <option value="111">STRIP EX - (Floor Care)</option>
+                                <option value="113">STRIP RM - (Floor Care)</option>
+                                <option value="2338">Super Clean - (Floor Care)</option>
+                                <option value="116">Supplies - (Floor Care)</option>
+                                <option value="41">Sweep Mop and Buff - (Floor Care)</option>
+                                <option value="99">Sweep Mop and Buff bill to Construction - (Floor Care)</option>
+                                <option value="32">Sweep Mop and Buff has exception - (Floor Care)</option>
+                                <option value="47">TR - Trip Charge - (Floor Care)</option>
+                                <option value="91">Vent Cleaning by service - (Floor Care)</option>
+                                <option value="92">White Board Cleaning - (Floor Care)</option>
+                                <option value="2351">Window Monthly - (Floor Care)</option>
+                                <option value="94">Wood Cleaning Service - (Floor Care)</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myRModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Add Name</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div id="tree" class="maxh-700">
+                                <ul>
+                                    <li>
+                                        <a href="#">Type1</a>
+                                        <ul>
+                                            <li id="phtml_2">
+                                                <a href="#">type1-1</a>
+                                            </li>
+                                            <li id="phtml_3">
+                                                <a href="#">type1-2</a>
+                                            </li>
+                                            <li id="phtml_4">
+                                                <a href="#">type1-3</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Type2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Type3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Type4</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <strong>Selected Resources</strong>
+                            <p>Type1, Dashboard, Administrator</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../Scripts/jquery-1.11.0.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../Scripts/bootstrap.min.js"></script>
+
+    <!-- nprogress JS -->
+    <script src="../Scripts/nprogress.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../Scripts/custom.js"></script>
+    <script src="../Scripts/jquery.hotkeys.js"></script>
+    <script src="../Scripts/jquery.jstree.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#tree").jstree({
+                // the `plugins` array allows you to configure the active plugins on this instance
+                "plugins": ["themes", "html_data", "ui", "crrm", "hotkeys", "checkbox"],
+                // each plugin you have included can have its own config object
+                "core": {
+                    "animation": 100,
+                    "initially_open": ["phtml_1"]
+                },
+                // set a theme
+                "themes": {
+                    "theme": "proton",
+                    "icons": false
+                },
+            });
+            $("#tree").bind("change_state.jstree", function (e, d) {
+                var tagName = d.args[0].tagName;
+                var refreshing = d.inst.data.core.refreshing;
+                var data = $("#tree").trigger("get_selected");
+                if ((tagName == "A" || tagName == "INS") &&
+                  (refreshing != true && refreshing != "undefined")) {
+                }
+            });
+        });
+    </script>
+</body>
+</html>

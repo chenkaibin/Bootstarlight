@@ -1,0 +1,677 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>New call-center Location</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="新框架DEMO" />
+    <!-- Main CSS -->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet">
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Content/animate.css" rel="stylesheet" />
+    <link href="../Content/nprogress.css" rel="stylesheet" />
+    <link href="../Content/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <link href="../Content/main.css" rel="stylesheet" />
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../Scripts/html5shiv.js"></script>
+    <script src="../Scripts/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="animated fadeIn">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-xs">
+            </a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse" id="topnav">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href='dashboard.html'><i class="fa fa-dashboard"></i>&nbsp;Dashboard</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-circle-o"></i>&nbsp;Exterior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="wo-list.html">WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='#'>Landscaping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Stripping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Sweeping</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-dot-circle-o"></i>&nbsp;Interior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='floorcare-list.html'>Floorcare</a>
+                        </li>
+                        <li>
+                            <a href='#'>Windows</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#' id="index"><i class="fa fa-wrench"></i>&nbsp;Facilities</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='facilities-dispatch-list.html'>Dispatch Center</a>
+                        </li>
+                        <li>
+                            <a href='facilities-location-list.html'>Location Management</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                        <li>
+                            <a href='#'>WO Archives</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href='#'><i class="fa fa-headphones"></i>&nbsp;Call Center</a>
+                    <ul class="submenu">
+                        <li class="active">
+                            <a href='callcenter-list.html'>All Calls</a>
+                        </li>
+                        <li>
+                            <a href='#'>Incoming Open Call</a>
+                        </li>
+                        <li>
+                            <a href='#'>In Progress</a>
+                        </li>
+                        <li>
+                            <a href='#'>ETA Pending</a>
+                        </li>
+                        <li>
+                            <a href='#'>Completed</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-ticket"></i>&nbsp;Invoice</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='invoice-list.html'>All Batch Invoice</a>
+                        </li>
+                        <li>
+                            <a href='invoice-ap-list.html'>AN AP</a>
+                        </li>
+                        <li>
+                            <a href='invoice-recurring-batch.html'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-users"></i>&nbsp;Affiliate</a>
+                    <ul class="submenu">
+                        <li><a href="affiliate-list.html">Affiliate Management</a></li>
+                        <li><a href="affiliate-contract-list.html">Contract</a></li>
+                        <li><a href="affiliate-contract-request-list.html">Contract Request</a></li>
+                        <li><a href="affiliate-claim-list.html">Claim</a></li>
+                        <li><a href="affiliate-contract-template-list.html">Contract Template</a></li>
+                        <li><a href="affiliate-paperwork-template-list.html">Paperwork Template</a></li>
+                        <li><a href="affiliate-sourcing-list.html">Sourcing</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-bar-chart-o"></i>&nbsp;Report</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-user"></i>&nbsp;Client</a>
+                    <ul class="submenu">
+                        <li><a href="client-location-info.html">Location Info</a></li>
+                        <li><a href="client-client-info.html">Client Info</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-lg">
+                </li>
+            </ul>
+
+        </div>
+        <div class="nav-btn hidden-xs">
+            <form action="javascript:void(0);" method="get">
+                <fieldset>
+                    <ul class="toolbar clearfix">
+                        <li>
+                            <input type="search" id="search" placeholder="What are you looking for?">
+                        </li>
+                        <li>
+                            <button type="submit" id="btn-search"><span class="fa fa-search"></span></button>
+                        </li>
+                        <li><a href="usercontrol-list.html" class="fa fa-gear"></a></li>
+                        <li><a href="#" class="fa fa-lock"></a></li>
+                        <li><a href="#" class="fa fa-heart open-lauch"></a></li>
+                        <li><a href="#" class="fa fa-sign-out"></a></li>
+                    </ul>
+                </fieldset>
+
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Main Container start -->
+    <div class="dashboard-wrapper">
+
+        <div class="container-fluid">
+            <!-- Row start -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="details-content">
+                        <!-- Custom start -->
+                            <div class="row table-tools">
+                                <div class="col-xs-12">
+                                    <div class="search-form clearfix">
+                                        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                            <div class="input-group">
+
+                                                <input type="text" class="form-control input-sm" placeholder="Request #">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                            <div class="input-group">
+
+                                                <input type="text" class="form-control input-sm" placeholder="Affiliate Code">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                            <div class="input-group">
+
+                                                <input type="text" class="form-control input-sm" placeholder="Request #">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                            <button class="btn btn-info btn-xs transparent-btn search-all" type="button">Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- Custom end -->
+                        <!-- Custom start -->
+                        <div class="col-xs-12">
+                            <div class="panel">
+                                <div class="panel-heading clearfix">
+                                    <h3 class="panel-title">Customers</h3>
+                                </div>
+                                <div class="alert alert-info hidden" id="haveChoose">Well done! You have chosen the&nbsp;<strong>O'Reilly</strong>.&nbsp;<a href="#" id="reChoose" class="text-danger">Rechoose?</a></div>
+                                <div class="panel-body" id="stepOne">
+                                    <div class="logo-location">
+                                        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                            <div class="logo-location-img">
+                                                <a href="#">
+                                                    <img src="../Content/img/2012121916175382788.jpg" />
+                                                </a>
+                                            </div>
+                                            <p class="text-center">O'Reilly</p>
+                                        </div>
+                                        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                            <div class="logo-location-img">
+                                                <a href="#">
+                                                    <img src="../Content/img/20126510372495948.jpg" />
+                                                </a>
+                                            </div>
+                                            <p class="text-center">Family Doolor</p>
+                                        </div>
+                                        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                            <div class="logo-location-img">
+                                                <a href="#">
+                                                    <img src="../Content/img/2012121916175382788.jpg" />
+                                                </a>
+                                            </div>
+                                            <p class="text-center">O'Reilly</p>
+                                        </div>
+                                        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                            <div class="logo-location-img">
+                                                <a href="#">
+                                                    <img src="../Content/img/20126510372495948.jpg" />
+                                                </a>
+                                            </div>
+                                            <p class="text-center">O'Reilly</p>
+                                        </div>
+                                        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                            <div class="logo-location-img">
+                                                <a href="#">
+                                                    <img src="../Content/img/2012121916175382788.jpg" />
+                                                </a>
+                                            </div>
+                                            <p class="text-center">O'Reilly</p>
+                                        </div>
+                                        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                            <div class="logo-location-img">
+                                                <a href="#">
+                                                    <img src="../Content/img/2012121916175382788.jpg" />
+                                                </a>
+                                            </div>
+                                            <p class="text-center">O'Reilly</p>
+                                        </div>
+                                        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                            <div class="logo-location-img">
+                                                <a href="#">
+                                                    <img src="../Content/img/2012121916175382788.jpg" />
+                                                </a>
+                                            </div>
+                                            <p class="text-center">O'Reilly</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel hidden" id="stepTwo">
+                                    <div class="panel-heading clearfix">
+                                        <h3 class="panel-title">WO History</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <!-- Custom start -->
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-condensed table-hover table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Location #</th>
+                                                        <th class="sorting">Store #</th>
+                                                        <th class="sorting-asc">Address</th>
+                                                        <th class="sorting-desc">City</th>
+                                                        <th class="sorting">State</th>
+                                                        <th class="sorting">Zip</th>
+                                                        <th class="sorting">Phone</th>
+                                                        <th class="sorting"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>DG10001</td>
+                                                        <td>10001</td>
+                                                        <td>1010 COUNTRYSIDE PKWY</td>
+                                                        <td>MONDOVI</td>
+                                                        <td>WI</td>
+                                                        <td>54755</td>
+                                                        <td>(715) 926-5216</td>
+                                                        <td><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myModal">Place Call</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DG10001</td>
+                                                        <td>10001</td>
+                                                        <td>1010 COUNTRYSIDE PKWY</td>
+                                                        <td>MONDOVI</td>
+                                                        <td>WI</td>
+                                                        <td>54755</td>
+                                                        <td>(715) 926-5216</td>
+                                                        <td><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myModal">Place Call</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DG10001</td>
+                                                        <td>10001</td>
+                                                        <td>1010 COUNTRYSIDE PKWY</td>
+                                                        <td>MONDOVI</td>
+                                                        <td>WI</td>
+                                                        <td>54755</td>
+                                                        <td>(715) 926-5216</td>
+                                                        <td><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myModal">Place Call</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DG10001</td>
+                                                        <td>10001</td>
+                                                        <td>1010 COUNTRYSIDE PKWY</td>
+                                                        <td>MONDOVI</td>
+                                                        <td>WI</td>
+                                                        <td>54755</td>
+                                                        <td>(715) 926-5216</td>
+                                                        <td><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myModal">Place Call</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DG10001</td>
+                                                        <td>10001</td>
+                                                        <td>1010 COUNTRYSIDE PKWY</td>
+                                                        <td>MONDOVI</td>
+                                                        <td>WI</td>
+                                                        <td>54755</td>
+                                                        <td>(715) 926-5216</td>
+                                                        <td><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myModal">Place Call</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DG10001</td>
+                                                        <td>10001</td>
+                                                        <td>1010 COUNTRYSIDE PKWY</td>
+                                                        <td>MONDOVI</td>
+                                                        <td>WI</td>
+                                                        <td>54755</td>
+                                                        <td>(715) 926-5216</td>
+                                                        <td><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myModal">Place Call</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DG10001</td>
+                                                        <td>10001</td>
+                                                        <td>1010 COUNTRYSIDE PKWY</td>
+                                                        <td>MONDOVI</td>
+                                                        <td>WI</td>
+                                                        <td>54755</td>
+                                                        <td>(715) 926-5216</td>
+                                                        <td><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myModal">Place Call</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DG10001</td>
+                                                        <td>10001</td>
+                                                        <td>1010 COUNTRYSIDE PKWY</td>
+                                                        <td>MONDOVI</td>
+                                                        <td>WI</td>
+                                                        <td>54755</td>
+                                                        <td>(715) 926-5216</td>
+                                                        <td><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myModal">Place Call</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DG10001</td>
+                                                        <td>10001</td>
+                                                        <td>1010 COUNTRYSIDE PKWY</td>
+                                                        <td>MONDOVI</td>
+                                                        <td>WI</td>
+                                                        <td>54755</td>
+                                                        <td>(715) 926-5216</td>
+                                                        <td><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myModal">Place Call</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DG10001</td>
+                                                        <td>10001</td>
+                                                        <td>1010 COUNTRYSIDE PKWY</td>
+                                                        <td>MONDOVI</td>
+                                                        <td>WI</td>
+                                                        <td>54755</td>
+                                                        <td>(715) 926-5216</td>
+                                                        <td><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myModal">Place Call</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DG10001</td>
+                                                        <td>10001</td>
+                                                        <td>1010 COUNTRYSIDE PKWY</td>
+                                                        <td>MONDOVI</td>
+                                                        <td>WI</td>
+                                                        <td>54755</td>
+                                                        <td>(715) 926-5216</td>
+                                                        <td><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myModal">Place Call</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DG10001</td>
+                                                        <td>10001</td>
+                                                        <td>1010 COUNTRYSIDE PKWY</td>
+                                                        <td>MONDOVI</td>
+                                                        <td>WI</td>
+                                                        <td>54755</td>
+                                                        <td>(715) 926-5216</td>
+                                                        <td><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myModal">Place Call</button></td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <p>Showing&nbsp;<strong>1</strong>&nbsp;to&nbsp;<strong>5</strong>&nbsp;of&nbsp;<strong>29</strong>&nbsp;entries</p>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <ul class="pagination pagination-sm pull-right">
+                                                    <li class="disabled"><a href="javascript:"><<</a></li>
+                                                    <li class="active"><a href="javascript:">1</a></li>
+                                                    <li><a href="javascript:">2</a></li>
+                                                    <li><a href="javascript:">3</a></li>
+                                                    <li><a href="javascript:">4</a></li>
+                                                    <li><a href="javascript:">5</a></li>
+                                                    <li><a href="javascript:">>></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- Custom end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Custom end -->
+                    </div>
+                </div>
+
+            </div>
+            <!-- Row end -->
+        </div>
+
+    </div>
+    <!-- Main Container end -->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">O'Reilly</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="table-responsive ">
+                        <table class="table table-striped table-condensed table-hover table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Store #</th>
+                                    <th>Address</th>
+                                    <th>City</th>
+                                    <th>State</th>
+                                    <th>Turf</th>
+                                    <th>Irrigation</th>
+                                    <th>Landscaping Size</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="active">
+                                    <td>2008</td>
+                                    <td>46 19th street SW</td>
+                                    <td>Forest Lake</td>
+                                    <td>MN</td>
+                                    <td>N/A</td>
+                                    <td>N/A</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <form class="clearfix">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>Service Type</label><span class="required">*</span>
+                                <select class="form-control input-sm">
+                                    <option value="">Select a Service Type</option>
+                                    <option value="1">Landscaping</option>
+                                    <option value="2">Striping</option>
+                                    <option value="3">Light Debris Removal</option>
+                                    <option value="5">Snow</option>
+                                    <option value="6">IVR Fine</option>
+                                    <option value="7">Floor Care</option>
+                                    <option value="50">Not cooling</option>
+                                    <option value="51">Not heating</option>
+                                    <option value="52">No airflow</option>
+                                    <option value="53">Making noise</option>
+                                    <option value="54">Water leak</option>
+                                    <option value="55">Vandalism</option>
+                                    <option value="56">Other</option>
+                                    <option value="57">Temporary Units</option>
+                                    <option value="58">EMS</option>
+                                    <option value="59">Cages</option>
+                                    <option value="60">Coke</option>
+                                    <option value="61">Cooler</option>
+                                    <option value="62">Freezer</option>
+                                    <option value="63">Good Humor</option>
+                                    <option value="64">Pepsi</option>
+                                    <option value="65">Reddy Ice</option>
+                                    <option value="66">Backflow test</option>
+                                    <option value="67">Birds/bats</option>
+                                    <option value="68">Building sign</option>
+                                    <option value="69">Canopy lighting</option>
+                                    <option value="70">Directional</option>
+                                    <option value="71">Door glass</option>
+                                    <option value="72">Downspouts</option>
+                                    <option value="73">EMS</option>
+                                    <option value="74">Entrance Doors</option>
+                                    <option value="75">Exterior electrical</option>
+                                    <option value="76">Exterior hose bib/water meter</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Service Code</label><span class="required">*</span>
+                                <select class="form-control input-sm">
+                                    <option value="">Select a Service Code</option>
+                                    <option value="1">2324234</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Caller Name</label><span class="required">*</span>
+                                <select class="form-control input-sm">
+                                    <option value="0">N/A</option>
+                                    <option value="1">Recurrent Service</option>
+                                    <option value="2" selected="selected">Generic WO</option>
+                                    <option value="3">Other WO</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Special Instruction</label>
+                                <textarea class="form-control"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>Call Category</label>
+                                <select class="form-control input-sm">
+                                    <option value="">Select a Call Category</option>
+                                    <option value="0">Other</option>
+                                    <option value="1">Landlord</option>
+                                    <option value="2">Sourcing</option>
+                                    <option value="3">Service Request</option>
+                                    <option value="4">Affiliate</option>
+                                    <option value="5">IVR</option>
+                                    <option value="6">Additional Service Request</option>
+                                    <option value="7">Email dispute</option>
+                                    <option value="8">Email not satisfied</option>
+                                    <option value="9">Proposal</option>
+                                    <option value="10">Survey</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Received Date</label>
+                                <input type="text" class="form-control input-sm" id="receivedDate">
+                            </div>
+                            <div class="form-group">
+                                <label>Caller Type</label>
+                                <select class="form-control input-sm">
+                                    <option value="">Select a Call Type</option>
+                                    <option value="0">N/A</option>
+                                    <option value="1">Store manager</option>
+                                    <option value="2">Assistant store manager</option>
+                                    <option value="3">District Manager</option>
+                                    <option value="4">Region Manager</option>
+                                    <option value="5">Region VP</option>
+                                    <option value="6">Store Operations</option>
+                                    <option value="7">FAM</option>
+                                    <option value="8">Community Leader</option>
+                                    <option value="9">CBRE tech</option>
+                                    <option value="10">CBRE</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../Scripts/jquery-1.11.0.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../Scripts/bootstrap.min.js"></script>
+
+    <!-- nprogress JS -->
+    <script src="../Scripts/nprogress.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../Scripts/custom.js"></script>
+    <script src="../Scripts/moment.min.js"></script>
+    <script src="../Scripts/bootstrap-datetimepicker.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#receivedDate").datetimepicker({
+                format: 'mm/dd/yyyy h:ii P',
+                weekStart: 1,
+                todayBtn: 1,
+                autoclose: 1,
+                todayHighlight: 1,
+                startView: 2,
+                minView: 2,
+                forceParse: 0
+            });
+            $('.logo-location-img > a').on('click', function () {
+                $('#stepOne').slideUp('fast', function () {
+                    $('#haveChoose,#stepTwo').removeClass('hidden');
+                });
+            });
+            $('#reChoose').click(function () {
+                $('#haveChoose,#stepTwo').addClass('hidden');
+                $('#stepOne').slideDown('fast');
+            });
+        });
+    </script>
+</body>
+</html>

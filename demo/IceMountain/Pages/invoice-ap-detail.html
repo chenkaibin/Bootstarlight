@@ -1,0 +1,407 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Invoice-ap-detail - DSS
+    </title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/icomoon.css">
+    <link rel="stylesheet" href="../styles/animate.css">
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+    <div class="all-doc">
+
+        <!-- Navigation -->
+        <div class="navbar navbar-fixed-top scroll-hide">
+            <div class="top-bar">
+                <div class="pull-right">
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="hidden-xs">
+                            <a href="../../HTML/login.html">
+                                <span aria-hidden="true" class="icon-dss-presentation"></span>
+                                <div class="sr-only">
+                                    Old Version
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown hidden-xs">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <span aria-hidden="true" class="icon-dss-alarmclock"></span>
+                                <div class="sr-only">
+                                    Follow Up
+                                </div>
+                                <p class="counter">
+                                    3
+                                </p>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">02/05/2014 00:00 AM Affiliate #18180</a>
+                                </li>
+                                <li>
+                                    <a href="#">08/19/2014 03:44 PM Request #183297</a>
+                                </li>
+                                <li>
+                                    <a href="#">08/22/2014 10:45 PM Call Request #15133</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown user hidden-xs">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span aria-hidden="true" class="icon-dss-profile-male"></span>Franki Yu<b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-user"></i>User Management</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-gear"></i>Role Management</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-gear"></i>Resource Management</a>
+                                </li>
+                                <li>
+                                    <a href="signin.html">
+                                        <i class="icon-signout"></i>Sign Out</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <button class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button><a class="logo" href="index.html">Dynamic Service <span class="text-primary">System</span></a>
+            </div>
+            <div class="main-nav clearfix">
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li>
+                            <a href="index.html">
+                                <span aria-hidden="true" class="icon-dss-house"></span>Dashboard</a>
+                        </li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" href="#">
+                                <span aria-hidden="true" class="icon-dss-search"></span>Exterior<b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="wo-list.html">WO Management</a>
+                                </li>
+                                <li>
+                                    <a href="wo-new.html">New WO</a>
+                                </li>
+                                <li>
+                                    <a href="#">Landscaping</a>
+                                </li>
+                                <li>
+                                    <a href="#">Stripping</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sweeping</a>
+                                </li>
+                                <li>
+                                    <a href="#">Invoice Management</a>
+                                </li>
+                                <li>
+                                    <a href="#">Plan</a>
+                                </li>
+                                <li>
+                                    <a href="#">Budget</a>
+                                </li>
+                                <li>
+                                    <a href="#">Report</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" href="#">
+                                <span aria-hidden="true" class="icon-dss-notebook"></span>Interior<b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="wo-list.html">WO Management</a>
+                                </li>
+                                <li>
+                                    <a href="wo-new.html">New WO</a>
+                                </li>
+                                <li>
+                                    <a href="#">Floor Care</a>
+                                </li>
+                                <li>
+                                    <a href="#">Windows</a>
+                                </li>
+                                <li>
+                                    <a href="#">Invoice Management</a>
+                                </li>
+                                <li>
+                                    <a href="#">Windows</a>
+                                </li>
+                                <li>
+                                    <a href="#">Plan</a>
+                                </li>
+                                <li>
+                                    <a href="#">Budget</a>
+                                </li>
+                                <li>
+                                    <a href="#">Report</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" href="#">
+                                <span aria-hidden="true" class="icon-dss-layers"></span>Facilities<b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">WO Management</a>
+                                </li>
+                                <li>
+                                    <a href="#">New WO</a>
+                                </li>
+                                <li>
+                                    <a href="#">Dispatch Center</a>
+                                </li>
+                                <li>
+                                    <a href="#">Location Management</a>
+                                </li>
+                                <li>
+                                    <a href="#">Invoice Management</a>
+                                </li>
+                                <li>
+                                    <a href="#">Report</a>
+                                </li>
+                                <li>
+                                    <a href="#">WO Archives</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" href="#">
+                                <span aria-hidden="true" class="icon-dss-flag"></span>Call Center<b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">All Calls</a>
+                                </li>
+                                <li>
+                                    <a href="#">Incoming Open Call</a>
+                                </li>
+                                <li>
+                                    <a href="#">In Progress</a>
+                                </li>
+                                <li>
+                                    <a href="#">ETA Pending</a>
+                                </li>
+                                <li>
+                                    <a href="#">Completed</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="current"  data-toggle="dropdown" href="#">
+                                <span aria-hidden="true" class="icon-dss-wallet"></span>Invoice<b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="invoice-list.html">All Batch Invoice</a>
+                                </li>
+                                <li>
+                                    <a href="invoice-ap-list.html">AP</a>
+                                </li>
+                                <li>
+                                    <a href="#">Report</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" href="#">
+                                <span aria-hidden="true" class="icon-dss-global"></span>Affiliate<b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Affiliate Management</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contract</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contract Request</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contract Template</a>
+                                </li>
+                                <li>
+                                    <a href="#">Paperwork Template</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sourcing</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span aria-hidden="true" class="icon-dss-bargraph"></span>Report</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Navigation -->
+
+        <!-- Main Content -->
+        <div class="main-content">
+
+            <!-- Table Content -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card -->
+                    <div class="widget-container fluid-height clearfix">
+                        <div class="widget-content p20 clearfix">
+
+                            <!-- Function Button -->
+                            <div class="details-content">
+                                <h3 class="text-center">Batch Invoice #:&nbsp;<strong>FM WT 3.4.2014</strong>&nbsp;<small><label class="btn btn-xs btn-primary-outline">PENDING</label></small></h3>
+                                <div class="col-xs-12">
+                                    <div class="pull-left">
+                                        <h2 class="text-default">FROM</h2>
+                                        <address>
+                                            <strong>North Kansas City Electric Co., Inc.</strong><br>
+                                            200 E 15th Ave, Kansas City<br>
+                                            MO 64116, United States<br>
+                                            <abbr title="Phone">P:</abbr>
+                                            816-421-2352
+                                        </address>
+                                    </div>
+                                    <div class="pull-right">
+                                        <h2 class="text-default">TO</h2>
+                                        <address>
+                                            <strong>SMS Assist LLC</strong><br>
+                                            875 N Michigan Ave #2800, Chicago<br>
+                                            IL 60611, United States<br>
+                                            <abbr title="Phone">P:</abbr>
+                                            312-698-7000
+                                        </address>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="table-responsive">
+                                        <div class="alert alert-info comment-info">
+                                            <p>Affiliate Code:&nbsp;<strong>NCR92081CA</strong>
+                                            SMS Check #:&nbsp;<strong>77</strong>
+                                            Issue Date:&nbsp;<strong>2/7/2014</strong></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Function Button -->
+
+                            <!-- Table -->
+                            <div class="table-responsive">
+                                <table class="table table-striped table-condensed table-hover table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Store #</th>
+                                            <th>City</th>
+                                            <th>State</th>
+                                            <th>SMS Invoice Date</th>
+                                            <th>Service Type Category</th>
+                                            <th>Service Date</th>
+                                            <th>Sub Invoice #</th>
+                                            <th>Work Order #</th>
+                                            <th>Amount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>WT2418</td>
+                                            <td>PLACERVILLE</td>
+                                            <td>CA</td>
+                                            <td>3/4/2014</td>
+                                            <td>Flooring</td>
+                                            <td>1/27/2014</td>
+                                            <td>371671</td>
+                                            <td><a href="#">WO89039</a></td>
+                                            <td><a href="#">$289.61</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="9" class="text-right"><span>Totle&nbsp;&nbsp;%289.61</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- End Table -->
+
+                            <!-- Pagination -->
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <p class="paginate-entries">Showing&nbsp;
+                                        <strong>1</strong>&nbsp;to&nbsp;
+                                        <strong>20</strong>&nbsp;of&nbsp;
+                                        <strong>129</strong>&nbsp;entries</p>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="paginate paging-full-numbers">
+                                        <a class="paginate-button paginate-button-disabled">First</a>
+                                        <a class="paginate-button paginate-button-disabled">Previous</a>
+                                        <span>
+                                            <a class="paginate-active">1</a>
+                                            <a class="paginate-button">2</a>
+                                        </span>
+                                        <a class="paginate-button">Next</a>
+                                        <a class="paginate-button">Last</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Pagination -->
+
+                        </div>
+                    </div>
+                    <!-- End Card -->
+
+                </div>
+            </div>
+            <!-- End Table Content -->
+
+        </div>
+        <!-- End Main Content -->
+
+    </div>
+
+    <!-- Extend Html Popover -->
+    <div id="advanceSearchContent" class="hidden">
+        <form class="search-form">
+            <input type="text" class="form-control input-sm" placeholder="Request #">
+            <input type="text" class="form-control input-sm" placeholder="Affiliate Code">
+            <input type="text" class="form-control input-sm" placeholder="Request #">
+            <button class="btn btn-sm btn-block btn-primary-outline" data-style="expand-right" data-size="xs">Search</button>
+        </form>
+    </div>
+    <!-- End Extend Html Popover -->
+
+    <script type="text/javascript" src="../Scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../Scripts/main.js"></script>
+    <script type="text/javascript">
+    $('#advanceSearch').popover({
+        html: true,
+        placement: 'bottom',
+        content: function() {
+            return $("#advanceSearchContent").html();
+        }
+    });
+    </script>
+</body>
+
+</html>

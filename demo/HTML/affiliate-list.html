@@ -1,0 +1,1095 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Affiliate List</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="新框架DEMO" />
+    <!-- Main CSS -->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet">
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Content/animate.css" rel="stylesheet" />
+    <link href="../Content/nprogress.css" rel="stylesheet" />
+    <link href="../Content/main.css" rel="stylesheet" />
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../Scripts/html5shiv.js"></script>
+    <script src="../Scripts/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="animated fadeIn">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-header visible-xs-block">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-xs">
+            </a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse" id="topnav">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href='dashboard.html'><i class="fa fa-dashboard"></i>&nbsp;Dashboard</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-circle-o"></i>&nbsp;Exterior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='#'>Landscaping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Stripping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Sweeping</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-dot-circle-o"></i>&nbsp;Interior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='floorcare-list.html'>Floorcare</a>
+                        </li>
+                        <li>
+                            <a href='#'>Windows</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-wrench"></i>&nbsp;Facilities</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='facilities-wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='facilities-wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='facilities-dispatch-list.html'>Dispatch Center</a>
+                        </li>
+                        <li>
+                            <a href='facilities-location-list.html'>Location Management</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                        <li>
+                            <a href='#'>WO Archives</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-headphones"></i>&nbsp;Call Center</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='callcenter-list.html'>All Calls</a>
+                        </li>
+                        <li>
+                            <a href='#'>Incoming Open Call</a>
+                        </li>
+                        <li>
+                            <a href='#'>In Progress</a>
+                        </li>
+                        <li>
+                            <a href='#'>ETA Pending</a>
+                        </li>
+                        <li>
+                            <a href='#'>Completed</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-ticket"></i>&nbsp;Invoice</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='invoice-list.html'>All Batch Invoice</a>
+                        </li>
+                        <li>
+                            <a href='invoice-ap-list.html'>AN AP</a>
+                        </li>
+                        <li>
+                            <a href='invoice-recurring-batch.html'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href='#'><i class="fa fa-users"></i>&nbsp;Affiliate</a>
+                    <ul class="submenu">
+                        <li class="active"><a href="affiliate-list.html">Affiliate Management</a></li>
+                        <li><a href="affiliate-contract-list.html">Contract</a></li>
+                        <li><a href="affiliate-contract-request-list.html">Contract Request</a></li>
+                        <li><a href="affiliate-claim-list.html">Claim</a></li>
+                        <li><a href="affiliate-contract-template-list.html">Contract Template</a></li>
+                        <li><a href="affiliate-paperwork-template-list.html">Paperwork Template</a></li>
+                        <li><a href="affiliate-sourcing-list.html">Sourcing</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-bar-chart-o"></i>&nbsp;Report</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-user"></i>&nbsp;Client</a>
+                    <ul class="submenu">
+                        <li><a href="client-location-info.html">Location Info</a></li>
+                        <li><a href="client-client-info.html">Client Info</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-lg">
+                </li>
+            </ul>
+
+        </div>
+        <div class="nav-btn hidden-xs">
+            <form action="javascript:void(0);" method="get">
+                <fieldset>
+                    <ul class="toolbar clearfix">
+                        <li>
+                            <input type="search" id="search" placeholder="What are you looking for?">
+                        </li>
+                        <li>
+                            <button type="submit" id="btn-search"><span class="fa fa-search"></span></button>
+                        </li>
+                        <li><a href="usercontrol-list.html" class="fa fa-gear"></a></li>
+                        <li><a href="#" class="fa fa-lock"></a></li>
+                        <li><a href="#" class="fa fa-heart open-lauch"></a></li>
+                        <li><a href="#" class="fa fa-sign-out"></a></li>
+                    </ul>
+                </fieldset>
+
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Main Container start -->
+    <div class="dashboard-wrapper">
+
+        <div class="container-fluid">
+            <!-- Row start -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="list-content">
+                        <!-- Custom start -->
+                        <div class="row table-tools">
+                            <div class="pull-right">
+                                <form class="form-inline">
+                                    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>&nbsp;New Affiliate</button>
+                                </form>
+                            </div>
+                            <div class="search-form clearfix">
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control input-sm" placeholder="Legal Name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control input-sm" placeholder="Address">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control input-sm" placeholder="City">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control input-sm" placeholder="State">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control input-sm" placeholder="Zipcode">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control input-sm" placeholder="DBA Name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control input-sm" placeholder="Affiliate #">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control input-sm" placeholder="Status">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control input-sm" placeholder="Phone">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control input-sm" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <button class="btn btn-info btn-xs transparent-btn search-all" type="button" id="def-search" onclick="javascript:window.location.href ='affiliate-search.html';">Search</button>&nbsp;
+                                    <button class="btn btn-info btn-xs transparent-btn search-all" type="button" id="adv-search">Advanced Search</button>
+                                </div>
+                                <!--popover-->
+                                <div id="popover-content" class="hidden">
+                                    <form>
+                                        <h4 class="text-center margin-10">Service Type</h4>
+                                        <div class="panel-body has-tabcontent">
+                                            <ul class="nav nav-tabs" id="myTabs">
+                                                <li class="active">
+                                                    <a href="#tab-1" data-toggle="tab">Repair &amp; Maintenance</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-2" data-toggle="tab">Recurring Internal</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-3" data-toggle="tab">Exterior</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-4" data-toggle="tab">Survey</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div class="tab-pane clearfix active" id="tab-1">
+                                                    <div class="row">
+                                                        <div class="col-xs-6">
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Refrigeration
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">HVAC
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Electrical
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Plumbing
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">General Maintenance
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Glass
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Doors
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Locks
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Roofing
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Gates/Grills
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Fencing
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Painting
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Signage
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Lighting
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Parking Lots
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Kitchen/Restaurant Equipment
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="tab-2">
+                                                    <div class="row">
+                                                        <div class="col-xs-6">
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">VCT Tile Floor Care
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Spin Jet Technology
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Windows
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Pressure Washing
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Carpet Extraction - Mobile
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Carpet Extraction - Truck Mounted
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="tab-3">
+                                                    <div class="row">
+                                                        <div class="col-xs-6">
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Landscaping
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Parking Lot Repairs
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Parking Lot Striping
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Parking Lot Sweeping
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Pressure Washing
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Snow Removal- Large Lots
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Snow Removal- Medium Lots
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Snow Removal- Small Lots
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Snow Removal- Stationary
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="tab-4">
+                                                    <div class="row">
+                                                        <div class="col-xs-6">
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Exterior
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Interior
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row modal-footer">
+                                                <div class="col-xs-6">
+                                                    <button type="button" class="btn btn-default pull-left btn-block" data-dismiss="modal">Cancel</button>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <button type="button" class="btn btn-primary btn-block" onclick="javascript: window.location.href = 'affiliate-search-detail.html';">Search</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-condensed table-hover table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Affiliate #</th>
+                                        <th class="sorting">Legal Name</th>
+                                        <th class="sorting-asc">Address</th>
+                                        <th class="sorting">City</th>
+                                        <th class="sorting">State</th>
+                                        <th class="sorting">Zip</th>
+                                        <th class="sorting">Phone #</th>
+                                        <th class="sorting">Status</th>
+                                        <th class="sorting">Recorded By</th>
+                                        <th class="sorting">Recorded Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>
+                                            <a href="affiliate-detail.html">Royal Service Affiliate</a>
+                                        </td>
+                                        <td>1600 Pennsylvania Avenue</td>
+                                        <td>Washington</td>
+                                        <td>DC</td>
+                                        <td>20500</td>
+                                        <td>202-456-1111</td>
+                                        <td>Active</td>
+                                        <td>Obama</td>
+                                        <td>2014-11-11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>
+                                            <a href="affiliate-detail.html">Royal Service Affiliate</a>
+                                        </td>
+                                        <td>1600 Pennsylvania Avenue</td>
+                                        <td>Washington</td>
+                                        <td>DC</td>
+                                        <td>20500</td>
+                                        <td>202-456-1111</td>
+                                        <td>Active</td>
+                                        <td>Obama</td>
+                                        <td>2014-11-11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>
+                                            <a href="affiliate-detail.html">Royal Service Affiliate</a>
+                                        </td>
+                                        <td>1600 Pennsylvania Avenue</td>
+                                        <td>Washington</td>
+                                        <td>DC</td>
+                                        <td>20500</td>
+                                        <td>202-456-1111</td>
+                                        <td>Active</td>
+                                        <td>Obama</td>
+                                        <td>2014-11-11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>
+                                            <a href="affiliate-detail.html">Royal Service Affiliate</a>
+                                        </td>
+                                        <td>1600 Pennsylvania Avenue</td>
+                                        <td>Washington</td>
+                                        <td>DC</td>
+                                        <td>20500</td>
+                                        <td>202-456-1111</td>
+                                        <td>Active</td>
+                                        <td>Obama</td>
+                                        <td>2014-11-11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>
+                                            <a href="affiliate-detail.html">Royal Service Affiliate</a>
+                                        </td>
+                                        <td>1600 Pennsylvania Avenue</td>
+                                        <td>Washington</td>
+                                        <td>DC</td>
+                                        <td>20500</td>
+                                        <td>202-456-1111</td>
+                                        <td>Active</td>
+                                        <td>Obama</td>
+                                        <td>2014-11-11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>
+                                            <a href="affiliate-detail.html">Royal Service Affiliate</a>
+                                        </td>
+                                        <td>1600 Pennsylvania Avenue</td>
+                                        <td>Washington</td>
+                                        <td>DC</td>
+                                        <td>20500</td>
+                                        <td>202-456-1111</td>
+                                        <td>Active</td>
+                                        <td>Obama</td>
+                                        <td>2014-11-11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>
+                                            <a href="affiliate-detail.html">Royal Service Affiliate</a>
+                                        </td>
+                                        <td>1600 Pennsylvania Avenue</td>
+                                        <td>Washington</td>
+                                        <td>DC</td>
+                                        <td>20500</td>
+                                        <td>202-456-1111</td>
+                                        <td>Active</td>
+                                        <td>Obama</td>
+                                        <td>2014-11-11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>
+                                            <a href="affiliate-detail.html">Royal Service Affiliate</a>
+                                        </td>
+                                        <td>1600 Pennsylvania Avenue</td>
+                                        <td>Washington</td>
+                                        <td>DC</td>
+                                        <td>20500</td>
+                                        <td>202-456-1111</td>
+                                        <td>Active</td>
+                                        <td>Obama</td>
+                                        <td>2014-11-11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>
+                                            <a href="affiliate-detail.html">Royal Service Affiliate</a>
+                                        </td>
+                                        <td>1600 Pennsylvania Avenue</td>
+                                        <td>Washington</td>
+                                        <td>DC</td>
+                                        <td>20500</td>
+                                        <td>202-456-1111</td>
+                                        <td>Active</td>
+                                        <td>Obama</td>
+                                        <td>2014-11-11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>
+                                            <a href="affiliate-detail.html">Royal Service Affiliate</a>
+                                        </td>
+                                        <td>1600 Pennsylvania Avenue</td>
+                                        <td>Washington</td>
+                                        <td>DC</td>
+                                        <td>20500</td>
+                                        <td>202-456-1111</td>
+                                        <td>Active</td>
+                                        <td>Obama</td>
+                                        <td>2014-11-11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>
+                                            <a href="affiliate-detail.html">Royal Service Affiliate</a>
+                                        </td>
+                                        <td>1600 Pennsylvania Avenue</td>
+                                        <td>Washington</td>
+                                        <td>DC</td>
+                                        <td>20500</td>
+                                        <td>202-456-1111</td>
+                                        <td>Active</td>
+                                        <td>Obama</td>
+                                        <td>2014-11-11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>
+                                            <a href="affiliate-detail.html">Royal Service Affiliate</a>
+                                        </td>
+                                        <td>1600 Pennsylvania Avenue</td>
+                                        <td>Washington</td>
+                                        <td>DC</td>
+                                        <td>20500</td>
+                                        <td>202-456-1111</td>
+                                        <td>Active</td>
+                                        <td>Obama</td>
+                                        <td>2014-11-11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>
+                                            <a href="affiliate-detail.html">Royal Service Affiliate</a>
+                                        </td>
+                                        <td>1600 Pennsylvania Avenue</td>
+                                        <td>Washington</td>
+                                        <td>DC</td>
+                                        <td>20500</td>
+                                        <td>202-456-1111</td>
+                                        <td>Active</td>
+                                        <td>Obama</td>
+                                        <td>2014-11-11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>
+                                            <a href="affiliate-detail.html">Royal Service Affiliate</a>
+                                        </td>
+                                        <td>1600 Pennsylvania Avenue</td>
+                                        <td>Washington</td>
+                                        <td>DC</td>
+                                        <td>20500</td>
+                                        <td>202-456-1111</td>
+                                        <td>Active</td>
+                                        <td>Obama</td>
+                                        <td>2014-11-11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>
+                                            <a href="affiliate-detail.html">Royal Service Affiliate</a>
+                                        </td>
+                                        <td>1600 Pennsylvania Avenue</td>
+                                        <td>Washington</td>
+                                        <td>DC</td>
+                                        <td>20500</td>
+                                        <td>202-456-1111</td>
+                                        <td>Active</td>
+                                        <td>Obama</td>
+                                        <td>2014-11-11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>
+                                            <a href="affiliate-detail.html">Royal Service Affiliate</a>
+                                        </td>
+                                        <td>1600 Pennsylvania Avenue</td>
+                                        <td>Washington</td>
+                                        <td>DC</td>
+                                        <td>20500</td>
+                                        <td>202-456-1111</td>
+                                        <td>Active</td>
+                                        <td>Obama</td>
+                                        <td>2014-11-11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>
+                                            <a href="affiliate-detail.html">Royal Service Affiliate</a>
+                                        </td>
+                                        <td>1600 Pennsylvania Avenue</td>
+                                        <td>Washington</td>
+                                        <td>DC</td>
+                                        <td>20500</td>
+                                        <td>202-456-1111</td>
+                                        <td>Active</td>
+                                        <td>Obama</td>
+                                        <td>2014-11-11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>
+                                            <a href="affiliate-detail.html">Royal Service Affiliate</a>
+                                        </td>
+                                        <td>1600 Pennsylvania Avenue</td>
+                                        <td>Washington</td>
+                                        <td>DC</td>
+                                        <td>20500</td>
+                                        <td>202-456-1111</td>
+                                        <td>Active</td>
+                                        <td>Obama</td>
+                                        <td>2014-11-11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>
+                                            <a href="affiliate-detail.html">Royal Service Affiliate</a>
+                                        </td>
+                                        <td>1600 Pennsylvania Avenue</td>
+                                        <td>Washington</td>
+                                        <td>DC</td>
+                                        <td>20500</td>
+                                        <td>202-456-1111</td>
+                                        <td>Active</td>
+                                        <td>Obama</td>
+                                        <td>2014-11-11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>
+                                            <a href="affiliate-detail.html">Royal Service Affiliate</a>
+                                        </td>
+                                        <td>1600 Pennsylvania Avenue</td>
+                                        <td>Washington</td>
+                                        <td>DC</td>
+                                        <td>20500</td>
+                                        <td>202-456-1111</td>
+                                        <td>Active</td>
+                                        <td>Obama</td>
+                                        <td>2014-11-11</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <p>Showing&nbsp;<strong>1</strong>&nbsp;to&nbsp;<strong>20</strong>&nbsp;of&nbsp;<strong>29</strong>&nbsp;entries</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <ul class="pagination pagination-sm pull-right">
+                                    <li class="disabled"><a href="javascript:"><<</a></li>
+                                    <li class="active"><a href="javascript:">1</a></li>
+                                    <li><a href="javascript:">2</a></li>
+                                    <li><a href="javascript:">3</a></li>
+                                    <li><a href="javascript:">4</a></li>
+                                    <li><a href="javascript:">5</a></li>
+                                    <li><a href="javascript:">>></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Custom end -->
+                    </div>
+                </div>
+            </div>
+            <!-- Row end -->
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">New Affiliate</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="clearfix">
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <label>Legal Name</label><span class="required">*</span>
+                                <input class="form-control input-sm" id="autoComplete" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>Address</label><span class="required">*</span>
+                                <input class="form-control input-sm" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>State</label><span class="required">*</span>
+                                <select class="form-control input-sm">
+                                    <option value="" selected="selected">Please Select a State</option>
+                                    <option value="alabama">alabama</option>
+                                    <option value="alaska">alaska</option>
+                                    <option value="arizona">arizona</option>
+                                    <option value="arkansas">arkansas</option>
+                                    <option value="california">california</option>
+                                    <option value="colorado">colorado</option>
+                                    <option value="connecticut">connecticut</option>
+                                    <option value="delaware">delaware</option>
+                                    <option value="florida">florida</option>
+                                    <option value="hawaii">hawaii</option>
+                                    <option value="idaho">idaho</option>
+                                    <option value="lllinois">lllinois</option>
+                                    <option value="indiana">indiana</option>
+                                    <option value="lowa">lowa</option>
+                                    <option value="kansas">kansas</option>
+                                    <option value="kentucky">kentucky</option>
+                                    <option value="louisiana">louisiana</option>
+                                    <option value="maine">maine</option>
+                                    <option value="maryland">maryland</option>
+                                    <option value="massachusetts">massachusetts</option>
+                                    <option value="michigan">michigan</option>
+                                    <option value="minnesota">minnesota</option>
+                                    <option value="mississippi">mississippi</option>
+                                    <option value="missouri">missouri</option>
+                                    <option value="montana">montana</option>
+                                    <option value="nebraska">nebraska</option>
+                                    <option value="nevada">nevada</option>
+                                    <option value="new hampshire">new hampshire</option>
+                                    <option value="new jersey">new jersey</option>
+                                    <option value="new mexico">new mexico</option>
+                                    <option value="new york">new york</option>
+                                    <option value="north carolina">north carolina</option>
+                                    <option value="north dakota">north dakota</option>
+                                    <option value="ohio">ohio</option>
+                                    <option value="oklahoma">oklahoma</option>
+                                    <option value="oregon">oregon</option>
+                                    <option value="pennsylvania">pennsylvania</option>
+                                    <option value="rhode island">rhode island</option>
+                                    <option value="south carolina">south carolina</option>
+                                    <option value="south dakota">south dakota</option>
+                                    <option value="tennessee">tennessee</option>
+                                    <option value="texas">texas</option>
+                                    <option value="utah">utah</option>
+                                    <option value="vermont">vermont</option>
+                                    <option value="virginia">virginia</option>
+                                    <option value="washington">washington</option>
+                                    <option value="west virginia">west virginia</option>
+                                    <option value="wisconsin">wisconsin</option>
+                                    <option value="wyoming">wyoming</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone</label><span class="required">*</span>
+                                <input class="form-control input-sm" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>Fax</label>
+                                <input class="form-control input-sm" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>EIN</label>
+                                <input class="form-control input-sm" type="text" />
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <label>DBA Name</label><span class="required">*</span>
+                                <input class="form-control input-sm" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>City</label><span class="required">*</span>
+                                <input class="form-control input-sm" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>Zip/Postal</label><span class="required">*</span>
+                                <input class="form-control input-sm" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label><span class="required">*</span>
+                                <input class="form-control input-sm" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>SSN</label>
+                                <input class="form-control input-sm" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>Service States</label>
+                                <input class="form-control input-sm" type="text"/>
+                                <p class="help-block">Enter states seperated by ","</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" onclick="javascript: window.location.href = 'affiliate-detail.html';">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="launchpad" class="hide">
+        <div class="icon">
+            <img src="../Content/img/mac/candy.png" title="Dashboard" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/clock.png" title="safari" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/tactics.png" title="Mail" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/packman.png" title="Appstore" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/map.png" title="Pages" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/open-letter.png" title="Numbers" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/chalkboard.png" title="Keynote" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/car.png" title="Aperture" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/label.png" title="AddressBook" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/drop.png" title="iCalendar" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/store.png" title="FaceTime" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/map2.png" title="iPhoto" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/cloud-down.png" title="iMovie" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/train.png" title="GarageBand" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/umbrella.png" title="Djay" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/rocket.png" title="iTunes" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/bookshelf.png" title="PhotoBooth" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/glasses.png" title="Compartments" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/paper-plane.png" title="Developer" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/backpack-2.png" title="Pixelmator" /><span></span>
+        </div>
+    </div>
+    <!-- Main Container end -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../Scripts/jquery-1.11.0.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../Scripts/bootstrap.min.js"></script>
+
+    <!-- nprogress JS -->
+    <script src="../Scripts/nprogress.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../Scripts/custom.js"></script>
+    <script src="../Scripts/typeahead.jquery.min.js"></script>
+    <script>
+        var substringMatcher = function (strs) {
+            return function findMatches(q, cb) {
+                var matches, substrRegex;
+
+                // an array that will be populated with substring matches
+                matches = [];
+
+                // regex used to determine if a string contains the substring `q`
+                substrRegex = new RegExp(q, 'i');
+
+                // iterate through the pool of strings and for any string that
+                // contains the substring `q`, add it to the `matches` array
+                $.each(strs, function (i, str) {
+                    if (substrRegex.test(str)) {
+                        // the typeahead jQuery plugin expects suggestions to a
+                        // JavaScript object, refer to typeahead docs for more info
+                        matches.push({ value: str });
+                    }
+                });
+                cb(matches);
+            };
+        };
+        $(function() {
+            var legalName = ['Family Dollar', 'KFC'];
+            $('#autoComplete').typeahead({
+                hint: true,
+                highlight: true,
+                minLength: 1
+            },
+            {
+                name: 'states',
+                displayKey: 'value',
+                source: substringMatcher(legalName)
+            });
+            var n = 0;
+            $("#adv-search").click(function() {
+                if ($("#def-search").click) {
+                    n += 1;
+                    for (var i = 0; i < n; i++) {
+                        if (n % 2 == 1) {
+                            $("#def-search").hide();
+                        } else {
+                            $("#def-search").show();
+                        }
+                    }
+                };
+            });
+            $('#adv-search').popover({
+                html: true,
+                placement: 'bottom',
+                content: function () {
+                    return $("#popover-content").html();
+                }
+            });
+            $(window).scroll(function() {
+                $('#adv-search').popover('hide');
+            });
+        });
+    </script>
+</body>
+</html>

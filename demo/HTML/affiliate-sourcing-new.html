@@ -1,0 +1,548 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Affiliate List</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="新框架DEMO" />
+    <!-- Main CSS -->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet">
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Content/animate.css" rel="stylesheet" />
+    <link href="../Content/nprogress.css" rel="stylesheet" />
+    <link href="../Content/main.css" rel="stylesheet" />
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../Scripts/html5shiv.js"></script>
+    <script src="../Scripts/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="animated fadeIn">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-header visible-xs-block">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-xs">
+            </a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse" id="topnav">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href='dashboard.html'><i class="fa fa-dashboard"></i>&nbsp;Dashboard</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-circle-o"></i>&nbsp;Exterior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='#'>Landscaping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Stripping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Sweeping</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-dot-circle-o"></i>&nbsp;Interior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='floorcare-list.html'>Floorcare</a>
+                        </li>
+                        <li>
+                            <a href='#'>Windows</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-wrench"></i>&nbsp;Facilities</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='facilities-wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='facilities-wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='facilities-dispatch-list.html'>Dispatch Center</a>
+                        </li>
+                        <li>
+                            <a href='facilities-location-list.html'>Location Management</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                        <li>
+                            <a href='#'>WO Archives</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-headphones"></i>&nbsp;Call Center</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='callcenter-list.html'>All Calls</a>
+                        </li>
+                        <li>
+                            <a href='#'>Incoming Open Call</a>
+                        </li>
+                        <li>
+                            <a href='#'>In Progress</a>
+                        </li>
+                        <li>
+                            <a href='#'>ETA Pending</a>
+                        </li>
+                        <li>
+                            <a href='#'>Completed</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-ticket"></i>&nbsp;Invoice</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='invoice-list.html'>All Batch Invoice</a>
+                        </li>
+                        <li>
+                            <a href='invoice-ap-list.html'>AN AP</a>
+                        </li>
+                        <li>
+                            <a href='invoice-recurring-batch.html'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href='#'><i class="fa fa-users"></i>&nbsp;Affiliate</a>
+                    <ul class="submenu">
+                        <li><a href="affiliate-list.html">Affiliate Management</a></li>
+                        <li><a href="affiliate-contract-list.html">Contract</a></li>
+                        <li><a href="affiliate-contract-request-list.html">Contract Request</a></li>
+                        <li><a href="affiliate-claim-list.html">Claim</a></li>
+                        <li><a href="affiliate-contract-template-list.html">Contract Template</a></li>
+                        <li><a href="affiliate-paperwork-template-list.html">Paperwork Template</a></li>
+                        <li class="active"><a href="affiliate-sourcing-list.html">Sourcing</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-bar-chart-o"></i>&nbsp;Report</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-user"></i>&nbsp;Client</a>
+                    <ul class="submenu">
+                        <li><a href="client-location-info.html">Location Info</a></li>
+                        <li><a href="client-client-info.html">Client Info</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-lg">
+                </li>
+            </ul>
+
+        </div>
+        <div class="nav-btn hidden-xs">
+            <form action="javascript:void(0);" method="get">
+                <fieldset>
+                    <ul class="toolbar clearfix">
+                        <li>
+                            <input type="search" id="search" placeholder="What are you looking for?">
+                        </li>
+                        <li>
+                            <button type="submit" id="btn-search"><span class="fa fa-search"></span></button>
+                        </li>
+                        <li><a href="usercontrol-list.html" class="fa fa-gear"></a></li>
+                        <li><a href="#" class="fa fa-lock"></a></li>
+                        <li><a href="#" class="fa fa-heart open-lauch"></a></li>
+                        <li><a href="#" class="fa fa-sign-out"></a></li>
+                    </ul>
+                </fieldset>
+
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Main Container start -->
+    <div class="dashboard-wrapper">
+        <div class="container-fluid">
+            <!-- Row start -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="details-content">
+                        <!-- Custom start -->
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                            <div class="panel">
+                                <div class="panel-heading clearfix">
+                                    <h3 class="panel-title">Enter new lead information</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <form class="clearfix">
+                                        <div class="panel-sub-title">
+                                            <h5>Profile</h5>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label>Legal Name</label><span class="required">*</span>
+                                                <input type="text" class="form-control input-sm" value="dsad">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Entity Type</label><span class="required">*</span>
+                                                <select class="form-control input-sm">
+                                                    <option value="0">LLP</option>
+                                                    <option value="1">LLC</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>State Registered</label><span class="required">*</span>
+                                                <select class="form-control input-sm">
+                                                    <option value="282">American Samoa (AS)</option>
+                                                    <option value="279">Additional Strip - (Floor Care)</option>
+                                                    <option value="280">Additional Wax - (Floor Care)</option>
+                                                    <option value="91">Vent Cleaning by service - (Floor Care)</option>
+                                                    <option value="92">White Board Cleaning - (Floor Care)</option>
+                                                    <option value="2351">Window Monthly - (Floor Care)</option>
+                                                    <option value="94">Wood Cleaning Service - (Floor Care)</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Office Phone #</label><span class="required">*</span>
+                                                <input type="text" class="form-control input-sm" value="221 321 3213-123213">
+                                            </div>
+                                        </div>
+                                        <div class="panel-sub-title w pull-left">
+                                            <h5>Main Contact</h5>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label>Office #</label><span class="required">*</span>
+                                                <input type="text" class="form-control input-sm" value="221 321 3213-123213">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Mobile #</label>
+                                                <input type="text" class="form-control input-sm" value="221 321 3213">
+                                            </div>
+                                        </div>
+                                        <div class="text-center details-btn">
+                                            <button class="btn btn-info" id="js-tmp3" type="button">Search for Duplicates</button>
+                                            <button class="btn btn-success hidden" id="js-tmp2" type="button" data-toggle="modal" data-target="#myModal">New Lead</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Custom end -->
+                        <!-- Custom start -->
+                        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <div id="js-tmp" class="hidden">
+                                        <div class="panel-sub-title">
+                                            <h5>Similar Search Results</h5>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <div class="alert alert-danger"><i class="fa fa-exclamation-triangle"></i>&nbsp;This affiliate already exists in the system.</div>
+                                            <table class="table table-bordered table-condensed table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Legal Name</th>
+                                                        <th>Entity Type</th>
+                                                        <th>State Registered</th>
+                                                        <th>Office Phone #</th>
+                                                        <th>Contact Office #</th>
+                                                        <th>Mobile #</th>
+                                                        <th>Type</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="affiliate-detail.html">Affiliate Test</a></td>
+                                                        <td>Sole Propritetor</td>
+                                                        <td>N/A</td>
+                                                        <td>666-666-6789 ext. 66231</td>
+                                                        <td>234-111-6789 ext. 21001</td>
+                                                        <td>888-888-8795</td>
+                                                        <td>Affiliate</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="affiliate-detail.html">Affiliate Test</a></td>
+                                                        <td>Sole Propritetor</td>
+                                                        <td>N/A</td>
+                                                        <td>666-666-6789 ext. 66231</td>
+                                                        <td>234-111-6789 ext. 21001</td>
+                                                        <td>888-888-8795</td>
+                                                        <td>Affiliate</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="affiliate-detail.html">Affiliate Test</a></td>
+                                                        <td>Sole Propritetor</td>
+                                                        <td>N/A</td>
+                                                        <td>666-666-6789 ext. 66231</td>
+                                                        <td>234-111-6789 ext. 21001</td>
+                                                        <td>888-888-8795</td>
+                                                        <td>Affiliate</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="affiliate-detail.html">Affiliate Test</a></td>
+                                                        <td>Sole Propritetor</td>
+                                                        <td>N/A</td>
+                                                        <td>666-666-6789 ext. 66231</td>
+                                                        <td>234-111-6789 ext. 21001</td>
+                                                        <td>888-888-8795</td>
+                                                        <td>Affiliate</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="affiliate-detail.html">Affiliate Test</a></td>
+                                                        <td>Sole Propritetor</td>
+                                                        <td>N/A</td>
+                                                        <td>666-666-6789 ext. 66231</td>
+                                                        <td>234-111-6789 ext. 21001</td>
+                                                        <td>888-888-8795</td>
+                                                        <td>Affiliate</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="affiliate-detail.html">Affiliate Test</a></td>
+                                                        <td>Sole Propritetor</td>
+                                                        <td>N/A</td>
+                                                        <td>666-666-6789 ext. 66231</td>
+                                                        <td>234-111-6789 ext. 21001</td>
+                                                        <td>888-888-8795</td>
+                                                        <td>Affiliate</td>
+                                                    </tr>
+                                                    <tr class="danger">
+                                                        <td><a href="affiliate-detail.html">Affiliate Test</a></td>
+                                                        <td>Sole Propritetor</td>
+                                                        <td>N/A</td>
+                                                        <td>666-666-6789 ext. 66231</td>
+                                                        <td>234-111-6789 ext. 21001</td>
+                                                        <td>888-888-8795</td>
+                                                        <td>Affiliate</td>
+                                                    </tr>
+                                                    <tr class="warning">
+                                                        <td><a href="affiliate-detail.html">Affiliate Test</a></td>
+                                                        <td>Sole Propritetor</td>
+                                                        <td>N/A</td>
+                                                        <td>666-666-6789 ext. 66231</td>
+                                                        <td>234-111-6789 ext. 21001</td>
+                                                        <td>888-888-8795</td>
+                                                        <td>Affiliate</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="affiliate-detail.html">Affiliate Test</a></td>
+                                                        <td>Sole Propritetor</td>
+                                                        <td>N/A</td>
+                                                        <td>666-666-6789 ext. 66231</td>
+                                                        <td>234-111-6789 ext. 21001</td>
+                                                        <td>888-888-8795</td>
+                                                        <td>Affiliate</td>
+                                                    </tr>
+                                                    <tr class="warning">
+                                                        <td><a href="affiliate-detail.html">Affiliate Test</a></td>
+                                                        <td>Sole Propritetor</td>
+                                                        <td>N/A</td>
+                                                        <td>666-666-6789 ext. 66231</td>
+                                                        <td>234-111-6789 ext. 21001</td>
+                                                        <td>888-888-8795</td>
+                                                        <td>Affiliate</td>
+                                                    </tr>
+                                                    <tr class="warning">
+                                                        <td><a href="affiliate-detail.html">Affiliate Test</a></td>
+                                                        <td>Sole Propritetor</td>
+                                                        <td>N/A</td>
+                                                        <td>666-666-6789 ext. 66231</td>
+                                                        <td>234-111-6789 ext. 21001</td>
+                                                        <td>888-888-8795</td>
+                                                        <td>Affiliate</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="affiliate-detail.html">Affiliate Test</a></td>
+                                                        <td>Sole Propritetor</td>
+                                                        <td>N/A</td>
+                                                        <td>666-666-6789 ext. 66231</td>
+                                                        <td>234-111-6789 ext. 21001</td>
+                                                        <td>888-888-8795</td>
+                                                        <td>Affiliate</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="affiliate-detail.html">Affiliate Test</a></td>
+                                                        <td>Sole Propritetor</td>
+                                                        <td>N/A</td>
+                                                        <td>666-666-6789 ext. 66231</td>
+                                                        <td>234-111-6789 ext. 21001</td>
+                                                        <td>888-888-8795</td>
+                                                        <td>Affiliate</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <p>Showing&nbsp;<strong>1</strong>&nbsp;to&nbsp;<strong>20</strong>&nbsp;of&nbsp;<strong>29</strong>&nbsp;entries</p>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <ul class="pagination pagination-sm pull-right">
+                                                    <li class="disabled"><a href="javascript:"><<</a></li>
+                                                    <li class="active"><a href="javascript:">1</a></li>
+                                                    <li><a href="javascript:">2</a></li>
+                                                    <li><a href="javascript:">3</a></li>
+                                                    <li><a href="javascript:">4</a></li>
+                                                    <li><a href="javascript:">5</a></li>
+                                                    <li><a href="javascript:">>></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="similar-results" id="js-tmp1">
+                                        <div class="similar-bg">
+                                            <img class="img-responsive" src="../Content/img/similar-bg.png" />
+                                            <p>Please first enter the lead information and then search for the duplicates.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Custom end -->
+                    </div>
+                </div>
+
+            </div>
+            <!-- Row end -->
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">New Lead</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="clearfix">
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <label>Status </label><span class="required">*</span>
+                                <input class="form-control input-sm" type="text" value="prospect" readonly="readonly" />
+                            </div>
+                            <div class="form-group">
+                                <label>Sourcing Channel</label><span class="required">*</span>
+                                <select class="form-control input-sm">
+                                    <option selected="selected" value="Web Search">Web Search</option>
+                                    <option value="Customer Referral">Customer Referral</option>
+                                    <option value="Yellow Pages">Yellow Pages</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Other Name</label>
+                                <input class="form-control input-sm" type="text"/>
+                            </div>
+                            <div class="form-group">
+                                <label>Office Phone #</label><span class="required">*</span>
+                                <input class="form-control input-sm" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>Company Website</label>
+                                <input class="form-control input-sm" type="text" />
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <label>Legal Name</label><span class="required">*</span>
+                                <input class="form-control input-sm" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>DBA Name</label><span class="required">*</span>
+                                <input class="form-control input-sm" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>State Registered</label><span class="required">*</span>
+                                <input class="form-control input-sm" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>Fax #</label>
+                                <input class="form-control input-sm" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>Service States</label>
+                                <input class="form-control input-sm" type="text" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" onclick="javascript: window.location.href = 'affiliate-sourcing-detail.html';">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Container end -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../Scripts/jquery-1.11.0.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../Scripts/bootstrap.min.js"></script>
+
+    <!-- nprogress JS -->
+    <script src="../Scripts/nprogress.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../Scripts/custom.js"></script>
+    <script>
+        $(function () {
+            $('#js-tmp3').on('click', function () {
+                $('#js-tmp,#js-tmp2').removeClass('hidden');
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>

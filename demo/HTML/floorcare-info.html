@@ -1,0 +1,1550 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Floor Care Info</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="新框架DEMO" />
+    <!-- Main CSS -->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet">
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Content/animate.css" rel="stylesheet" />
+    <link href="../Content/nprogress.css" rel="stylesheet" />
+    <link href="../Content/dropzone.css" rel="stylesheet" />
+    <link href="../Content/main.css" rel="stylesheet" />
+    <style>
+        #mapcanvas {
+            width: 100%;
+            height: 450px;
+        }
+    </style>
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../Scripts/html5shiv.js"></script>
+    <script src="../Scripts/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="animated fadeIn">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-header visible-xs-block">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-xs">
+            </a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse" id="topnav">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href='dashboard.html'><i class="fa fa-dashboard"></i>&nbsp;Dashboard</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-circle-o"></i>&nbsp;Exterior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='#'>Landscaping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Stripping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Sweeping</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href='#'><i class="fa fa-dot-circle-o"></i>&nbsp;Interior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li class="active">
+                            <a href='floorcare-list.html'>Floorcare</a>
+                        </li>
+                        <li>
+                            <a href='#'>Windows</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-wrench"></i>&nbsp;Facilities</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='facilities-wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='facilities-wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='facilities-dispatch-list.html'>Dispatch Center</a>
+                        </li>
+                        <li>
+                            <a href='facilities-location-list.html'>Location Management</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                        <li>
+                            <a href='#'>WO Archives</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-headphones"></i>&nbsp;Call Center</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='callcenter-list.html'>All Calls</a>
+                        </li>
+                        <li>
+                            <a href='#'>Incoming Open Call</a>
+                        </li>
+                        <li>
+                            <a href='#'>In Progress</a>
+                        </li>
+                        <li>
+                            <a href='#'>ETA Pending</a>
+                        </li>
+                        <li>
+                            <a href='#'>Completed</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-ticket"></i>&nbsp;Invoice</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='invoice-list.html'>All Batch Invoice</a>
+                        </li>
+                        <li>
+                            <a href='invoice-ap-list.html'>AN AP</a>
+                        </li>
+                        <li>
+                            <a href='invoice-recurring-batch.html'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-users"></i>&nbsp;Affiliate</a>
+                    <ul class="submenu">
+                        <li><a href="affiliate-list.html">Affiliate Management</a></li>
+                        <li><a href="affiliate-contract-list.html">Contract</a></li>
+                        <li><a href="affiliate-contract-request-list.html">Contract Request</a></li>
+                        <li><a href="affiliate-claim-list.html">Claim</a></li>
+                        <li><a href="affiliate-contract-template-list.html">Contract Template</a></li>
+                        <li><a href="affiliate-paperwork-template-list.html">Paperwork Template</a></li>
+                        <li><a href="affiliate-sourcing-list.html">Sourcing</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-bar-chart-o"></i>&nbsp;Report</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-user"></i>&nbsp;Client</a>
+                    <ul class="submenu">
+                        <li><a href="client-location-info.html">Location Info</a></li>
+                        <li><a href="client-client-info.html">Client Info</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-lg">
+                </li>
+            </ul>
+
+        </div>
+        <div class="nav-btn hidden-xs">
+            <form action="javascript:void(0);" method="get">
+                <fieldset>
+                    <ul class="toolbar clearfix">
+                        <li>
+                            <input type="search" id="search" placeholder="What are you looking for?">
+                        </li>
+                        <li>
+                            <button type="submit" id="btn-search"><span class="fa fa-search"></span></button>
+                        </li>
+                        <li><a href="usercontrol-list.html" class="fa fa-gear"></a></li>
+                        <li><a href="#" class="fa fa-lock"></a></li>
+                        <li><a href="#" class="fa fa-heart open-lauch"></a></li>
+                        <li><a href="#" class="fa fa-sign-out"></a></li>
+                    </ul>
+                </fieldset>
+
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Main Container start -->
+    <div class="dashboard-wrapper">
+
+        <div class="container-fluid">
+            <!-- Row start -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="details-content">
+                        <!-- Custom start -->
+                        <div class="col-xs-12">
+                            <div class="panel">
+                                <div class="panel-heading clearfix">
+                                    <h3 class="panel-title">Location Setup</h3>
+                                </div>
+                                <div class="panel-body has-tabcontent">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a href="#Information" data-toggle="tab">Information</a></li>
+                                        <li><a href="#AssignedAffiliate" data-toggle="tab">Assigned Affiliate</a></li>
+                                        <li><a href="#Documents" data-toggle="tab">Documents</a></li>
+                                        <li><a href="#Direction" data-toggle="tab">Direction</a></li>
+                                        <li><a href="#OpenWorkOrders" data-toggle="tab">Open Work Orders</a></li>
+                                        <li><a href="#InvoiceHistory" data-toggle="tab">Invoice History</a></li>
+                                        <li><a href="#Plan" data-toggle="tab">Plan</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="Information">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                    <div class="panel-sub-title">
+                                                        <h5>Information</h5>
+                                                    </div>
+                                                    <form class="form-horizontal margin-20 clearfix">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                            <div class="form-group">
+                                                                <label class="col-sm-5 control-label">Store Number</label>
+                                                                <div class="col-sm-7">
+                                                                    <p class="text-only">1</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-5 control-label">Address</label>
+                                                                <div class="col-sm-7">
+                                                                    <p class="text-only">309 S HARRIS ST</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-5 control-label">St/Pv</label>
+                                                                <div class="col-sm-7">
+                                                                    <p class="text-only">GA</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-5 control-label">District</label>
+                                                                <div class="col-sm-7">
+                                                                    <p class="text-only">546</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-5 control-label">Region</label>
+                                                                <div class="col-sm-7">
+                                                                    <p class="text-only">3</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-5 control-label">Division</label>
+                                                                <div class="col-sm-7">
+                                                                    <p class="text-only">6618</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-5 control-label">Landscaping Size</label>
+                                                                <div class="col-sm-7">
+                                                                    <p class="text-only">7543</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-5 control-label">Turf</label>
+                                                                <div class="col-sm-7">
+                                                                    <p class="text-only">N/A</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                            <div class="form-group">
+                                                                <label class="col-sm-5 control-label">24 HR</label>
+                                                                <div class="col-sm-7">
+                                                                    <p class="text-only">TBD</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-5 control-label">Responsible Entity</label>
+                                                                <div class="col-sm-7">
+                                                                    <p class="text-only">SMS Responsible</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-5 control-label">Active</label>
+                                                                <div class="col-sm-7">
+                                                                    <p class="text-only">YES</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-5 control-label">Area Manager / Contact</label>
+                                                                <div class="col-sm-7">
+                                                                    <p class="text-only"></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-5 control-label">Retailer</label>
+                                                                <div class="col-sm-7">
+                                                                    <p class="text-only">Family Dollar</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-5 control-label">Location ID</label>
+                                                                <div class="col-sm-7">
+                                                                    <p class="text-only">FD1</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-5 control-label">City</label>
+                                                                <div class="col-sm-7">
+                                                                    <p class="text-only">SANDERSVILLE</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-5 control-label">Zip/Post</label>
+                                                                <div class="col-sm-7">
+                                                                    <p class="text-only">31082</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-5 control-label">DM</label>
+                                                                <div class="col-sm-7">
+                                                                    <p class="text-only">BRAZEAU, DANIEL</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </form>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                    <div class="panel-sub-title">
+                                                        <h5>Floor Care</h5>
+                                                    </div>
+                                                    <form class="clearfix">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                            <div class="form-group">
+                                                                <label>Floor Type</label>
+                                                                <input type="text" class="form-control input-sm" value="VCT">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>VCTSQFT</label>
+                                                                <input type="text" class="form-control input-sm" value="">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>CONCRETESQFT</label>
+                                                                <input type="text" class="form-control input-sm" value="">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label># of Restrooms</label>
+                                                                <input type="text" class="form-control input-sm" value="2">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Truck Day</label>
+                                                                <input type="text" class="form-control input-sm" value="WED">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Store Status</label>
+                                                                <div class="form-control input-sm no-all">
+                                                                    <label class="radio-inline">
+                                                                        <input type="radio" name="Open" value="Open" checked="checked" /> Open
+                                                                    </label>
+                                                                    <label class="radio-inline">
+                                                                        <input type="radio" name="Closed" value="Closed" /> Closed
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                            <div class="form-group">
+                                                                <label>TTSQFT</label>
+                                                                <input type="text" class="form-control input-sm" value="6618">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>CARPETSQFT</label>
+                                                                <input type="text" class="form-control input-sm" value="">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Frequency</label>
+                                                                <input type="text" class="form-control input-sm" value="17SMB">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>FC Store Type</label>
+                                                                <input type="text" class="form-control input-sm" value="507">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Project Manager</label>
+                                                                <select class="form-control input-sm">
+                                                                    <option value="0">TBD</option>
+                                                                    <option value="2145">Aileen Garde</option>
+                                                                    <option value="654">Alex Cotto</option>
+                                                                    <option value="3351">Zachary Schaefer</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-center details-btn">
+                                                            <button class="btn btn-default">Cancel</button>
+                                                            <button class="btn btn-danger">Delete</button>
+                                                            <button class="btn btn-success">Save</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                    <div class="panel-sub-title">
+                                                        <h5>Comments</h5>
+                                                    </div>
+
+                                                    <div class="conversation-loadmore">
+                                                        <button class="btn btn-load btn-block" id="loading-example-btn" data-loading-text="Loading...">Load more</button>
+                                                    </div>
+                                                    <div class="chat-conversation">
+                                                        <ul class="conversation-list">
+                                                            <li>
+                                                                <div class="conversation-text">
+                                                                    <div class="ctext-wrap">
+                                                                        <p>
+                                                                            Hello!
+                                                                        </p>
+                                                                        <i><small>5/12/2014 8:00:00 PM</small></i>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="conversation-text">
+                                                                    <div class="ctext-wrap">
+                                                                        <p>
+                                                                            Hi, How are you? What about our next meeting? What about our next meeting? What about our next meeting? What about our next meeting? What about our next meeting? What about our next meeting...
+                                                                        </p>
+                                                                        <i><small>5/12/2014 8:00:00 PM</small></i>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="conversation-text">
+                                                                    <div class="ctext-wrap">
+                                                                        <p>
+                                                                            Hi, How are you? What about our next meeting? What about our next meeting? What about our next meeting? What about our next meeting? What about our next meeting? What about our next meeting...
+                                                                        </p>
+                                                                        <i><small>5/12/2014 8:00:00 PM</small></i>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="conversation-text">
+                                                                    <div class="ctext-wrap">
+                                                                        <p>
+                                                                            Hi, How are you? What about our next meeting? What about our next meeting? What about our next meeting? What about our next meeting? What about our next meeting? What about our next meeting...
+                                                                        </p>
+                                                                        <i><small>5/12/2014 8:00:00 PM</small></i>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="conversation-text">
+                                                                    <div class="ctext-wrap">
+                                                                        <p>
+                                                                            Hi, How are you? What about our next meeting? What about our next meeting? What about our next meeting? What about our next meeting? What about our next meeting? What about our next meeting...
+                                                                        </p>
+                                                                        <i><small>5/12/2014 8:00:00 PM</small></i>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="AssignedAffiliate">
+                                            <div class="alert alert-info">
+                                                <strong>Location #:</strong> FD1
+                                            </div>
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-hover table-condensed table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Service Code</th>
+                                                            <th>Customer Price <a href="#"><i class="fa fa-gear"></i></a></th>
+                                                            <th>
+                                                                <a class="no-margin no-border">
+                                                                    <span class="info-bg drag-title">Primary</span>
+                                                                    <span class="info-bg drag-content">Carolina Cleaning Services, Inc. (SC) <i class="fa fa-gear">&nbsp;</i><i class="fa fa-trash-o">&nbsp;</i></span>
+                                                                </a>
+                                                            </th>
+                                                            <th>
+                                                                <a class=" no-margin no-border">
+                                                                    <span class="warning-bg drag-title">Secondary</span>
+                                                                    <span class="warning-bg drag-content">Carolina Cleaning Services, Inc. (SC) <i class="fa fa-gear">&nbsp;</i><i class="fa fa-trash-o">&nbsp;</i></span>
+                                                                </a>
+                                                            </th>
+                                                            <th>
+                                                                <a class="no-margin no-border">
+                                                                    <span class="grey-bg drag-title">Tertiary</span>
+                                                                    <span class="grey-bg drag-content">Carolina Cleaning Services, Inc. (SC) <i class="fa fa-gear">&nbsp;</i><i class="fa fa-trash-o">&nbsp;</i></span>
+                                                                </a>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>ALT (Alternative Floors)</td>
+                                                            <td>$165.45</td>
+                                                            <td>#252.74</td>
+                                                            <td>#252.74</td>
+                                                            <td>#252.74</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>CAR EX (Carpet extraction)</td>
+                                                            <td>$737.11</td>
+                                                            <td>#252.74</td>
+                                                            <td>#252.74</td>
+                                                            <td>#252.74</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>CON SMB (Sweep Mop and Buff bill to Construction)</td>
+                                                            <td>$119.32</td>
+                                                            <td>#252.74</td>
+                                                            <td>#252.74</td>
+                                                            <td>#252.74</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>CON SW (Strip and Wax bill to Construction )</td>
+                                                            <td>$165.45</td>
+                                                            <td>#252.74</td>
+                                                            <td>#252.74</td>
+                                                            <td>#252.74</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>FBSW (Fastbreak Service)</td>
+                                                            <td>$165.45</td>
+                                                            <td>#252.74</td>
+                                                            <td>#252.74</td>
+                                                            <td>#252.74</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>FC (Fuel Surcharge)</td>
+                                                            <td>$165.45</td>
+                                                            <td>#252.74</td>
+                                                            <td>#252.74</td>
+                                                            <td>#252.74</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>OFF (Strip and Wax OFF Service)</td>
+                                                            <td>$165.45</td>
+                                                            <td>#252.74</td>
+                                                            <td>#252.74</td>
+                                                            <td>#252.74</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>RFSH (Refresh Service (Front SR and back SMB))</td>
+                                                            <td>$165.45</td>
+                                                            <td>#252.74</td>
+                                                            <td>#252.74</td>
+                                                            <td>#252.74</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>RR (Strip and Wax RR Service)</td>
+                                                            <td>$165.45</td>
+                                                            <td>#252.74</td>
+                                                            <td>#252.74</td>
+                                                            <td>#252.74</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>SMB (Sweep Mop and Buff)</td>
+                                                            <td>$165.45</td>
+                                                            <td>#252.74</td>
+                                                            <td>#252.74</td>
+                                                            <td>#252.74</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>SR (Scrub and Recoat)</td>
+                                                            <td>$165.45</td>
+                                                            <td>#252.74</td>
+                                                            <td>#252.74</td>
+                                                            <td>#252.74</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>SW (Strip and Wax)</td>
+                                                            <td>$165.45</td>
+                                                            <td>#252.74</td>
+                                                            <td>#252.74</td>
+                                                            <td>#252.74</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="Documents">
+                                            <button class="btn btn-primary btn-xs margin-20" data-toggle="modal" data-target="#myModal">New Document</button>
+                                            <div class="row">
+                                                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                                    <div class="thumbnail">
+                                                        <img data-src="holder.js/300x200" alt="300x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjE1MCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE5cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MzAweDIwMDwvdGV4dD48L3N2Zz4=" style="width: 300px; height: 200px;">
+                                                        <div class="caption">
+                                                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. </p>
+                                                            <p><a href="javascript:void(0);" class="btn btn-info" role="button">View</a> <a href="javascript:void(0);" class="btn btn-danger" role="button">Delete</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                                    <div class="thumbnail">
+                                                        <img data-src="holder.js/300x200" alt="300x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjE1MCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE5cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MzAweDIwMDwvdGV4dD48L3N2Zz4=" style="width: 300px; height: 200px;">
+                                                        <div class="caption">
+                                                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. </p>
+                                                            <p><a href="javascript:void(0);" class="btn btn-info" role="button">View</a> <a href="javascript:void(0);" class="btn btn-danger" role="button">Delete</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                                    <div class="thumbnail">
+                                                        <img data-src="holder.js/300x200" alt="300x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjE1MCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE5cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MzAweDIwMDwvdGV4dD48L3N2Zz4=" style="width: 300px; height: 200px;">
+                                                        <div class="caption">
+                                                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. </p>
+                                                            <p><a href="javascript:void(0);" class="btn btn-info" role="button">View</a> <a href="javascript:void(0);" class="btn btn-danger" role="button">Delete</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                                    <div class="thumbnail">
+                                                        <img data-src="holder.js/300x200" alt="300x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjE1MCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE5cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MzAweDIwMDwvdGV4dD48L3N2Zz4=" style="width: 300px; height: 200px;">
+                                                        <div class="caption">
+                                                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. </p>
+                                                            <p><a href="javascript:void(0);" class="btn btn-info" role="button">View</a> <a href="javascript:void(0);" class="btn btn-danger" role="button">Delete</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                                    <div class="thumbnail">
+                                                        <img data-src="holder.js/300x200" alt="300x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjE1MCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE5cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MzAweDIwMDwvdGV4dD48L3N2Zz4=" style="width: 300px; height: 200px;">
+                                                        <div class="caption">
+                                                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. </p>
+                                                            <p><a href="javascript:void(0);" class="btn btn-info" role="button">View</a> <a href="javascript:void(0);" class="btn btn-danger" role="button">Delete</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                                    <div class="thumbnail">
+                                                        <img data-src="holder.js/300x200" alt="300x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjE1MCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE5cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MzAweDIwMDwvdGV4dD48L3N2Zz4=" style="width: 300px; height: 200px;">
+                                                        <div class="caption">
+                                                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. </p>
+                                                            <p><a href="javascript:void(0);" class="btn btn-info" role="button">View</a> <a href="javascript:void(0);" class="btn btn-danger" role="button">Delete</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="Direction">
+                                            <section id="mapcanvas"></section>
+                                        </div>
+                                        <div class="tab-pane" id="OpenWorkOrders">
+                                            <!-- Custom start -->
+                                            <ul class="filter-nav">
+                                                <li class="current">
+                                                    <a href="#">ALL</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Unscheduled</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Scheduled</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Missed</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Rescheduled</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">In Progress</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Completed</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Billed</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Pay to Affiliate</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Expired</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Resolved Without Invoice</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Deferred</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Void</a>
+                                                </li>
+                                            </ul>
+                                            <div class="row table-tools">
+                                                <div class="pull-right">
+                                                    <form class="form-inline">
+                                                        <button type="button" class="btn btn-primary btn-xs" onclick="javascript:location.href = 'wo-new.html';"><i class="fa fa-plus"></i>&nbsp;New WO</button>
+                                                    </form>
+                                                </div>
+                                                <div class="search-form clearfix">
+                                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                                        <input type="text" class="form-control input-sm" placeholder="Request #">
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                                        <input type="text" class="form-control input-sm" placeholder="Affiliate Code">
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                                        <input type="text" class="form-control input-sm" placeholder="Request #">
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                                        <button class="btn btn-info btn-xs transparent-btn search-all" type="button">Search</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <table class="table table-striped table-condensed table-hover table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Request #</th>
+                                                            <th class="sorting">Schedule Time</th>
+                                                            <th class="sorting-asc">Service Time</th>
+                                                            <th class="sorting-desc">Service Type</th>
+                                                            <th class="sorting">Service Code</th>
+                                                            <th class="sorting">Request Category</th>
+                                                            <th class="sorting">Location ID</th>
+                                                            <th class="sorting">City</th>
+                                                            <th class="sorting">State</th>
+                                                            <th class="sorting">District</th>
+                                                            <th class="sorting">Region</th>
+                                                            <th class="sorting">Status</th>
+                                                            <th class="sorting">Affilate</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><a href="wo-detail-edit.html">735777</a></td>
+                                                            <td>2/27/2014 2:00:00 PM</td>
+                                                            <td>2/27/2014 6:33:15 PM</td>
+                                                            <td>Floor Care</td>
+                                                            <td>Strip Complete</td>
+                                                            <td>Emergency Request</td>
+                                                            <td>FD6334</td>
+                                                            <td>NEW HAVEN</td>
+                                                            <td>IN</td>
+                                                            <td>203</td>
+                                                            <td>47</td>
+
+                                                            <td>In Progress</td>
+                                                            <td>J. Peterman Enterprises, LLC (OH)</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="wo-detail-edit.html">728177</a></td>
+                                                            <td>2/27/2014 10:00:00 PM</td>
+                                                            <td>2/27/2014 9:38:32 PM</td>
+                                                            <td>Floor Care</td>
+                                                            <td>Strip and Wax OFF Service</td>
+                                                            <td>Contracted Service</td>
+                                                            <td>FD5140</td>
+                                                            <td>SHREVEPORT</td>
+                                                            <td>LA</td>
+                                                            <td>337</td>
+                                                            <td>38</td>
+
+                                                            <td>In Progress</td>
+                                                            <td>Michael Rawls (TX)</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="wo-detail-edit.html">735777</a></td>
+                                                            <td>2/27/2014 2:00:00 PM</td>
+                                                            <td>2/27/2014 6:33:15 PM</td>
+                                                            <td>Floor Care</td>
+                                                            <td>Strip Complete</td>
+                                                            <td>Emergency Request</td>
+                                                            <td>FD6334</td>
+                                                            <td>NEW HAVEN</td>
+                                                            <td>IN</td>
+                                                            <td>203</td>
+                                                            <td>47</td>
+
+                                                            <td>In Progress</td>
+                                                            <td>J. Peterman Enterprises, LLC (OH)</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="wo-detail-edit.html">728177</a></td>
+                                                            <td>2/27/2014 10:00:00 PM</td>
+                                                            <td>2/27/2014 9:38:32 PM</td>
+                                                            <td>Floor Care</td>
+                                                            <td>Strip and Wax OFF Service</td>
+                                                            <td>Contracted Service</td>
+                                                            <td>FD5140</td>
+                                                            <td>SHREVEPORT</td>
+                                                            <td>LA</td>
+                                                            <td>337</td>
+                                                            <td>38</td>
+
+                                                            <td>In Progress</td>
+                                                            <td>Michael Rawls (TX)</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="wo-detail-edit.html">735777</a></td>
+                                                            <td>2/27/2014 2:00:00 PM</td>
+                                                            <td>2/27/2014 6:33:15 PM</td>
+                                                            <td>Floor Care</td>
+                                                            <td>Strip Complete</td>
+                                                            <td>Emergency Request</td>
+                                                            <td>FD6334</td>
+                                                            <td>NEW HAVEN</td>
+                                                            <td>IN</td>
+                                                            <td>203</td>
+                                                            <td>47</td>
+
+                                                            <td>In Progress</td>
+                                                            <td>J. Peterman Enterprises, LLC (OH)</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="wo-detail-edit.html">728177</a></td>
+                                                            <td>2/27/2014 10:00:00 PM</td>
+                                                            <td>2/27/2014 9:38:32 PM</td>
+                                                            <td>Floor Care</td>
+                                                            <td>Strip and Wax OFF Service</td>
+                                                            <td>Contracted Service</td>
+                                                            <td>FD5140</td>
+                                                            <td>SHREVEPORT</td>
+                                                            <td>LA</td>
+                                                            <td>337</td>
+                                                            <td>38</td>
+
+                                                            <td>In Progress</td>
+                                                            <td>Michael Rawls (TX)</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="wo-detail-edit.html">735777</a></td>
+                                                            <td>2/27/2014 2:00:00 PM</td>
+                                                            <td>2/27/2014 6:33:15 PM</td>
+                                                            <td>Floor Care</td>
+                                                            <td>Strip Complete</td>
+                                                            <td>Emergency Request</td>
+                                                            <td>FD6334</td>
+                                                            <td>NEW HAVEN</td>
+                                                            <td>IN</td>
+                                                            <td>203</td>
+                                                            <td>47</td>
+
+                                                            <td>In Progress</td>
+                                                            <td>J. Peterman Enterprises, LLC (OH)</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="wo-detail-edit.html">728177</a></td>
+                                                            <td>2/27/2014 10:00:00 PM</td>
+                                                            <td>2/27/2014 9:38:32 PM</td>
+                                                            <td>Floor Care</td>
+                                                            <td>Strip and Wax OFF Service</td>
+                                                            <td>Contracted Service</td>
+                                                            <td>FD5140</td>
+                                                            <td>SHREVEPORT</td>
+                                                            <td>LA</td>
+                                                            <td>337</td>
+                                                            <td>38</td>
+
+                                                            <td>In Progress</td>
+                                                            <td>Michael Rawls (TX)</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="wo-detail-edit.html">735777</a></td>
+                                                            <td>2/27/2014 2:00:00 PM</td>
+                                                            <td>2/27/2014 6:33:15 PM</td>
+                                                            <td>Floor Care</td>
+                                                            <td>Strip Complete</td>
+                                                            <td>Emergency Request</td>
+                                                            <td>FD6334</td>
+                                                            <td>NEW HAVEN</td>
+                                                            <td>IN</td>
+                                                            <td>203</td>
+                                                            <td>47</td>
+
+                                                            <td>In Progress</td>
+                                                            <td>J. Peterman Enterprises, LLC (OH)</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="wo-detail-edit.html">728177</a></td>
+                                                            <td>2/27/2014 10:00:00 PM</td>
+                                                            <td>2/27/2014 9:38:32 PM</td>
+                                                            <td>Floor Care</td>
+                                                            <td>Strip and Wax OFF Service</td>
+                                                            <td>Contracted Service</td>
+                                                            <td>FD5140</td>
+                                                            <td>SHREVEPORT</td>
+                                                            <td>LA</td>
+                                                            <td>337</td>
+                                                            <td>38</td>
+
+                                                            <td>In Progress</td>
+                                                            <td>Michael Rawls (TX)</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="wo-detail-edit.html">735777</a></td>
+                                                            <td>2/27/2014 2:00:00 PM</td>
+                                                            <td>2/27/2014 6:33:15 PM</td>
+                                                            <td>Floor Care</td>
+                                                            <td>Strip Complete</td>
+                                                            <td>Emergency Request</td>
+                                                            <td>FD6334</td>
+                                                            <td>NEW HAVEN</td>
+                                                            <td>IN</td>
+                                                            <td>203</td>
+                                                            <td>47</td>
+
+                                                            <td>In Progress</td>
+                                                            <td>J. Peterman Enterprises, LLC (OH)</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="wo-detail-edit.html">728177</a></td>
+                                                            <td>2/27/2014 10:00:00 PM</td>
+                                                            <td>2/27/2014 9:38:32 PM</td>
+                                                            <td>Floor Care</td>
+                                                            <td>Strip and Wax OFF Service</td>
+                                                            <td>Contracted Service</td>
+                                                            <td>FD5140</td>
+                                                            <td>SHREVEPORT</td>
+                                                            <td>LA</td>
+                                                            <td>337</td>
+                                                            <td>38</td>
+
+                                                            <td>In Progress</td>
+                                                            <td>Michael Rawls (TX)</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="wo-detail-edit.html">735777</a></td>
+                                                            <td>2/27/2014 2:00:00 PM</td>
+                                                            <td>2/27/2014 6:33:15 PM</td>
+                                                            <td>Floor Care</td>
+                                                            <td>Strip Complete</td>
+                                                            <td>Emergency Request</td>
+                                                            <td>FD6334</td>
+                                                            <td>NEW HAVEN</td>
+                                                            <td>IN</td>
+                                                            <td>203</td>
+                                                            <td>47</td>
+
+                                                            <td>In Progress</td>
+                                                            <td>J. Peterman Enterprises, LLC (OH)</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="wo-detail-edit.html">728177</a></td>
+                                                            <td>2/27/2014 10:00:00 PM</td>
+                                                            <td>2/27/2014 9:38:32 PM</td>
+                                                            <td>Floor Care</td>
+                                                            <td>Strip and Wax OFF Service</td>
+                                                            <td>Contracted Service</td>
+                                                            <td>FD5140</td>
+                                                            <td>SHREVEPORT</td>
+                                                            <td>LA</td>
+                                                            <td>337</td>
+                                                            <td>38</td>
+
+                                                            <td>In Progress</td>
+                                                            <td>Michael Rawls (TX)</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="wo-detail-edit.html">735777</a></td>
+                                                            <td>2/27/2014 2:00:00 PM</td>
+                                                            <td>2/27/2014 6:33:15 PM</td>
+                                                            <td>Floor Care</td>
+                                                            <td>Strip Complete</td>
+                                                            <td>Emergency Request</td>
+                                                            <td>FD6334</td>
+                                                            <td>NEW HAVEN</td>
+                                                            <td>IN</td>
+                                                            <td>203</td>
+                                                            <td>47</td>
+
+                                                            <td>In Progress</td>
+                                                            <td>J. Peterman Enterprises, LLC (OH)</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="wo-detail-edit.html">728177</a></td>
+                                                            <td>2/27/2014 10:00:00 PM</td>
+                                                            <td>2/27/2014 9:38:32 PM</td>
+                                                            <td>Floor Care</td>
+                                                            <td>Strip and Wax OFF Service</td>
+                                                            <td>Contracted Service</td>
+                                                            <td>FD5140</td>
+                                                            <td>SHREVEPORT</td>
+                                                            <td>LA</td>
+                                                            <td>337</td>
+                                                            <td>38</td>
+
+                                                            <td>In Progress</td>
+                                                            <td>Michael Rawls (TX)</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="wo-detail-edit.html">735777</a></td>
+                                                            <td>2/27/2014 2:00:00 PM</td>
+                                                            <td>2/27/2014 6:33:15 PM</td>
+                                                            <td>Floor Care</td>
+                                                            <td>Strip Complete</td>
+                                                            <td>Emergency Request</td>
+                                                            <td>FD6334</td>
+                                                            <td>NEW HAVEN</td>
+                                                            <td>IN</td>
+                                                            <td>203</td>
+                                                            <td>47</td>
+
+                                                            <td>In Progress</td>
+                                                            <td>J. Peterman Enterprises, LLC (OH)</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="wo-detail-edit.html">728177</a></td>
+                                                            <td>2/27/2014 10:00:00 PM</td>
+                                                            <td>2/27/2014 9:38:32 PM</td>
+                                                            <td>Floor Care</td>
+                                                            <td>Strip and Wax OFF Service</td>
+                                                            <td>Contracted Service</td>
+                                                            <td>FD5140</td>
+                                                            <td>SHREVEPORT</td>
+                                                            <td>LA</td>
+                                                            <td>337</td>
+                                                            <td>38</td>
+
+                                                            <td>In Progress</td>
+                                                            <td>Michael Rawls (TX)</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="wo-detail-edit.html">735777</a></td>
+                                                            <td>2/27/2014 2:00:00 PM</td>
+                                                            <td>2/27/2014 6:33:15 PM</td>
+                                                            <td>Floor Care</td>
+                                                            <td>Strip Complete</td>
+                                                            <td>Emergency Request</td>
+                                                            <td>FD6334</td>
+                                                            <td>NEW HAVEN</td>
+                                                            <td>IN</td>
+                                                            <td>203</td>
+                                                            <td>47</td>
+
+                                                            <td>In Progress</td>
+                                                            <td>J. Peterman Enterprises, LLC (OH)</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="wo-detail-edit.html">728177</a></td>
+                                                            <td>2/27/2014 10:00:00 PM</td>
+                                                            <td>2/27/2014 9:38:32 PM</td>
+                                                            <td>Floor Care</td>
+                                                            <td>Strip and Wax OFF Service</td>
+                                                            <td>Contracted Service</td>
+                                                            <td>FD5140</td>
+                                                            <td>SHREVEPORT</td>
+                                                            <td>LA</td>
+                                                            <td>337</td>
+                                                            <td>38</td>
+
+                                                            <td>In Progress</td>
+                                                            <td>Michael Rawls (TX)</td>
+
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <p>Showing&nbsp;<strong>1</strong>&nbsp;to&nbsp;<strong>5</strong>&nbsp;of&nbsp;<strong>29</strong>&nbsp;entries</p>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <ul class="pagination pagination-sm pull-right">
+                                                        <li class="disabled"><a href="javascript:"><<</a></li>
+                                                        <li class="active"><a href="javascript:">1</a></li>
+                                                        <li><a href="javascript:">2</a></li>
+                                                        <li><a href="javascript:">3</a></li>
+                                                        <li><a href="javascript:">4</a></li>
+                                                        <li><a href="javascript:">5</a></li>
+                                                        <li><a href="javascript:">>></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- Custom end -->
+                                        </div>
+                                        <div class="tab-pane" id="InvoiceHistory">
+                                            <!-- Custom start -->
+                                            <div class="row table-tools">
+                                                <div class="pull-right">
+                                                    <form class="form-inline">
+                                                        <button class="btn btn-primary btn-xs" type="button" onclick="javascrtpt: window.location.href = 'invoice-new.html';"><i class="fa fa-plus"></i>&nbsp;New Invoice</button>
+                                                    </form>
+                                                </div>
+                                                <div class="search-form clearfix">
+                                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                                        <input type="text" class="form-control input-sm" placeholder="Request #">
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                                        <input type="text" class="form-control input-sm" placeholder="Affiliate Code">
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                                        <input type="text" class="form-control input-sm" placeholder="Request #">
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                                        <button class="btn btn-info btn-xs transparent-btn search-all" type="button">Search</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <table class="table table-striped table-condensed table-hover table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Invoice #</th>
+                                                            <th class="sorting">WO #</th>
+                                                            <th class="sorting-asc">Amount</th>
+                                                            <th class="sorting-desc">Creator</th>
+                                                            <th class="sorting">Date</th>
+                                                            <th class="sorting">Client Name</th>
+                                                            <th class="sorting">Total Cost</th>
+                                                            <th class="sorting">Total Price</th>
+                                                            <th class="sorting"><a href="#">Margin</a></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><a href="invoice-generate.html">FM WT 3.4.2014</a></td>
+                                                            <td>423432</td>
+                                                            <td>123</td>
+                                                            <td>John Smith</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>Dave Quiring Construction, Inc. (CA)</td>
+                                                            <td>$289.61</td>
+                                                            <td>$122.10</td>
+                                                            <td>0.8%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="invoice-generate.html">FM WT 3.4.2014</a></td>
+                                                            <td>423432</td>
+                                                            <td>212</td>
+                                                            <td>Mike Tang</td>
+                                                            <td>3/3/2014</td>
+                                                            <td>ACS Commercial Services, L.L.C. (TX)</td>
+                                                            <td>$49.77</td>
+                                                            <td>$942.56</td>
+                                                            <td>0.2%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="invoice-generate.html">FM WT 3.4.2014</a></td>
+                                                            <td>423432</td>
+                                                            <td>123</td>
+                                                            <td>John Smith</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>Dave Quiring Construction, Inc. (CA)</td>
+                                                            <td>$289.61</td>
+                                                            <td>$122.10</td>
+                                                            <td>0.8%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="invoice-generate.html">FM WT 3.4.2014</a></td>
+                                                            <td>423432</td>
+                                                            <td>212</td>
+                                                            <td>Mike Tang</td>
+                                                            <td>3/3/2014</td>
+                                                            <td>ACS Commercial Services, L.L.C. (TX)</td>
+                                                            <td>$49.77</td>
+                                                            <td>$942.56</td>
+                                                            <td>0.2%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="invoice-generate.html">FM WT 3.4.2014</a></td>
+                                                            <td>423432</td>
+                                                            <td>123</td>
+                                                            <td>John Smith</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>Dave Quiring Construction, Inc. (CA)</td>
+                                                            <td>$289.61</td>
+                                                            <td>$122.10</td>
+                                                            <td>0.8%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="invoice-generate.html">FM WT 3.4.2014</a></td>
+                                                            <td>423432</td>
+                                                            <td>212</td>
+                                                            <td>Mike Tang</td>
+                                                            <td>3/3/2014</td>
+                                                            <td>ACS Commercial Services, L.L.C. (TX)</td>
+                                                            <td>$49.77</td>
+                                                            <td>$942.56</td>
+                                                            <td>0.2%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="invoice-generate.html">FM WT 3.4.2014</a></td>
+                                                            <td>423432</td>
+                                                            <td>123</td>
+                                                            <td>John Smith</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>Dave Quiring Construction, Inc. (CA)</td>
+                                                            <td>$289.61</td>
+                                                            <td>$122.10</td>
+                                                            <td>0.8%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="invoice-generate.html">FM WT 3.4.2014</a></td>
+                                                            <td>423432</td>
+                                                            <td>212</td>
+                                                            <td>Mike Tang</td>
+                                                            <td>3/3/2014</td>
+                                                            <td>ACS Commercial Services, L.L.C. (TX)</td>
+                                                            <td>$49.77</td>
+                                                            <td>$942.56</td>
+                                                            <td>0.2%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="invoice-generate.html">FM WT 3.4.2014</a></td>
+                                                            <td>423432</td>
+                                                            <td>123</td>
+                                                            <td>John Smith</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>Dave Quiring Construction, Inc. (CA)</td>
+                                                            <td>$289.61</td>
+                                                            <td>$122.10</td>
+                                                            <td>0.8%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="invoice-generate.html">FM WT 3.4.2014</a></td>
+                                                            <td>423432</td>
+                                                            <td>212</td>
+                                                            <td>Mike Tang</td>
+                                                            <td>3/3/2014</td>
+                                                            <td>ACS Commercial Services, L.L.C. (TX)</td>
+                                                            <td>$49.77</td>
+                                                            <td>$942.56</td>
+                                                            <td>0.2%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="invoice-generate.html">FM WT 3.4.2014</a></td>
+                                                            <td>423432</td>
+                                                            <td>123</td>
+                                                            <td>John Smith</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>Dave Quiring Construction, Inc. (CA)</td>
+                                                            <td>$289.61</td>
+                                                            <td>$122.10</td>
+                                                            <td>0.8%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="invoice-generate.html">FM WT 3.4.2014</a></td>
+                                                            <td>423432</td>
+                                                            <td>212</td>
+                                                            <td>Mike Tang</td>
+                                                            <td>3/3/2014</td>
+                                                            <td>ACS Commercial Services, L.L.C. (TX)</td>
+                                                            <td>$49.77</td>
+                                                            <td>$942.56</td>
+                                                            <td>0.2%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="invoice-generate.html">FM WT 3.4.2014</a></td>
+                                                            <td>423432</td>
+                                                            <td>123</td>
+                                                            <td>John Smith</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>Dave Quiring Construction, Inc. (CA)</td>
+                                                            <td>$289.61</td>
+                                                            <td>$122.10</td>
+                                                            <td>0.8%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="invoice-generate.html">FM WT 3.4.2014</a></td>
+                                                            <td>423432</td>
+                                                            <td>212</td>
+                                                            <td>Mike Tang</td>
+                                                            <td>3/3/2014</td>
+                                                            <td>ACS Commercial Services, L.L.C. (TX)</td>
+                                                            <td>$49.77</td>
+                                                            <td>$942.56</td>
+                                                            <td>0.2%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="invoice-generate.html">FM WT 3.4.2014</a></td>
+                                                            <td>423432</td>
+                                                            <td>123</td>
+                                                            <td>John Smith</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>Dave Quiring Construction, Inc. (CA)</td>
+                                                            <td>$289.61</td>
+                                                            <td>$122.10</td>
+                                                            <td>0.8%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="invoice-generate.html">FM WT 3.4.2014</a></td>
+                                                            <td>423432</td>
+                                                            <td>212</td>
+                                                            <td>Mike Tang</td>
+                                                            <td>3/3/2014</td>
+                                                            <td>ACS Commercial Services, L.L.C. (TX)</td>
+                                                            <td>$49.77</td>
+                                                            <td>$942.56</td>
+                                                            <td>0.2%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="invoice-generate.html">FM WT 3.4.2014</a></td>
+                                                            <td>423432</td>
+                                                            <td>123</td>
+                                                            <td>John Smith</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>Dave Quiring Construction, Inc. (CA)</td>
+                                                            <td>$289.61</td>
+                                                            <td>$122.10</td>
+                                                            <td>0.8%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="invoice-generate.html">FM WT 3.4.2014</a></td>
+                                                            <td>423432</td>
+                                                            <td>212</td>
+                                                            <td>Mike Tang</td>
+                                                            <td>3/3/2014</td>
+                                                            <td>ACS Commercial Services, L.L.C. (TX)</td>
+                                                            <td>$49.77</td>
+                                                            <td>$942.56</td>
+                                                            <td>0.2%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="invoice-generate.html">FM WT 3.4.2014</a></td>
+                                                            <td>423432</td>
+                                                            <td>123</td>
+                                                            <td>John Smith</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>Dave Quiring Construction, Inc. (CA)</td>
+                                                            <td>$289.61</td>
+                                                            <td>$122.10</td>
+                                                            <td>0.8%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="invoice-generate.html">FM WT 3.4.2014</a></td>
+                                                            <td>423432</td>
+                                                            <td>212</td>
+                                                            <td>Mike Tang</td>
+                                                            <td>3/3/2014</td>
+                                                            <td>ACS Commercial Services, L.L.C. (TX)</td>
+                                                            <td>$49.77</td>
+                                                            <td>$942.56</td>
+                                                            <td>0.2%</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <p>Showing&nbsp;<strong>1</strong>&nbsp;to&nbsp;<strong>5</strong>&nbsp;of&nbsp;<strong>29</strong>&nbsp;entries</p>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <ul class="pagination pagination-sm pull-right">
+                                                        <li class="disabled"><a href="javascript:"><<</a></li>
+                                                        <li class="active"><a href="javascript:">1</a></li>
+                                                        <li><a href="javascript:">2</a></li>
+                                                        <li><a href="javascript:">3</a></li>
+                                                        <li><a href="javascript:">4</a></li>
+                                                        <li><a href="javascript:">5</a></li>
+                                                        <li><a href="javascript:">>></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- Custom end -->
+                                        </div>
+                                        <div class="tab-pane" id="Plan">...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Custom end -->
+                    </div>
+                </div>
+
+            </div>
+            <!-- Row end -->
+        </div>
+
+    </div>
+    <div id="launchpad" class="hide">
+        <div class="icon">
+            <img src="../Content/img/mac/candy.png" title="Dashboard" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/clock.png" title="safari" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/tactics.png" title="Mail" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/packman.png" title="Appstore" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/map.png" title="Pages" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/open-letter.png" title="Numbers" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/chalkboard.png" title="Keynote" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/car.png" title="Aperture" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/label.png" title="AddressBook" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/drop.png" title="iCalendar" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/store.png" title="FaceTime" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/map2.png" title="iPhoto" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/cloud-down.png" title="iMovie" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/train.png" title="GarageBand" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/umbrella.png" title="Djay" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/rocket.png" title="iTunes" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/bookshelf.png" title="PhotoBooth" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/glasses.png" title="Compartments" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/paper-plane.png" title="Developer" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/backpack-2.png" title="Pixelmator" /><span></span>
+        </div>
+    </div>
+    <!-- Main Container end -->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">New Document</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="dropzone">
+                        <form action="http://www.torrentplease.com/dropzone.php" class="dropzone" id="demo-upload">
+                            <div class="dz-default dz-message">
+                                <span>Drop files here to upload</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-xs-10">
+                        <textarea class="form-control" placeholder="Please input your description"></textarea>
+                    </div>
+                    <div class="col-xs-2">
+                        <button class="btn btn-success">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../Scripts/jquery-1.11.0.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../Scripts/bootstrap.min.js"></script>
+
+    <!-- nprogress JS -->
+    <script src="../Scripts/nprogress.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../Scripts/custom.js"></script>
+    <script src="../Scripts/dropzone.min.js"></script>
+    <script type="text/javascript">
+        $("#dropzone").dropzone({ url: "http://www.torrentplease.com/dropzone.php" });
+        function initialize() {
+            var mapOptions = {
+                zoom: 8,
+                center: new google.maps.LatLng(-34.397, 150.644)
+            };
+
+            var map = new google.maps.Map(document.getElementById('mapcanvas'), mapOptions);
+        }
+
+        function loadScript() {
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
+                'callback=initialize';
+            document.body.appendChild(script);
+        }
+
+        window.onload = loadScript;
+    </script>
+</body>
+</html>

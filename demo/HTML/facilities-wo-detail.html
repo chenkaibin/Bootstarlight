@@ -1,0 +1,1227 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Facilities WO Detail</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="新框架DEMO" />
+    <!-- Main CSS -->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet">
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Content/colorbox.css" rel="stylesheet" />
+    <link href="../Content/animate.css" rel="stylesheet" />
+    <link href="../Content/nprogress.css" rel="stylesheet" />
+    <link href="../Content/dropzone.css" rel="stylesheet" />
+    <link href="../Content/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <link href="../Content/main.css" rel="stylesheet" />
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../Scripts/html5shiv.js"></script>
+    <script src="../Scripts/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="animated fadeIn">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-header visible-xs-block">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-xs">
+            </a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse" id="topnav">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href='dashboard.html'><i class="fa fa-dashboard"></i>&nbsp;Dashboard</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-circle-o"></i>&nbsp;Exterior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='#'>Landscaping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Stripping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Sweeping</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-dot-circle-o"></i>&nbsp;Interior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='floorcare-list.html'>Floorcare</a>
+                        </li>
+                        <li>
+                            <a href='#'>Windows</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href='#'><i class="fa fa-wrench"></i>&nbsp;Facilities</a>
+                    <ul class="submenu">
+                        <li class="active">
+                            <a href='facilities-wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='facilities-wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='facilities-dispatch-list.html'>Dispatch Center</a>
+                        </li>
+                        <li>
+                            <a href='facilities-location-list.html'>Location Management</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                        <li>
+                            <a href='#'>WO Archives</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-headphones"></i>&nbsp;Call Center</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='callcenter-list.html'>All Calls</a>
+                        </li>
+                        <li>
+                            <a href='#'>Incoming Open Call</a>
+                        </li>
+                        <li>
+                            <a href='#'>In Progress</a>
+                        </li>
+                        <li>
+                            <a href='#'>ETA Pending</a>
+                        </li>
+                        <li>
+                            <a href='#'>Completed</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-ticket"></i>&nbsp;Invoice</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='invoice-list.html'>All Batch Invoice</a>
+                        </li>
+                        <li>
+                            <a href='invoice-ap-list.html'>AN AP</a>
+                        </li>
+                        <li>
+                            <a href='invoice-recurring-batch.html'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-users"></i>&nbsp;Affiliate</a>
+                    <ul class="submenu">
+                        <li><a href="affiliate-list.html">Affiliate Management</a></li>
+                        <li><a href="affiliate-contract-list.html">Contract</a></li>
+                        <li><a href="affiliate-contract-request-list.html">Contract Request</a></li>
+                        <li><a href="affiliate-claim-list.html">Claim</a></li>
+                        <li><a href="affiliate-contract-template-list.html">Contract Template</a></li>
+                        <li><a href="affiliate-paperwork-template-list.html">Paperwork Template</a></li>
+                        <li><a href="affiliate-sourcing-list.html">Sourcing</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-bar-chart-o"></i>&nbsp;Report</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-user"></i>&nbsp;Client</a>
+                    <ul class="submenu">
+                        <li><a href="client-location-info.html">Location Info</a></li>
+                        <li><a href="client-client-info.html">Client Info</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-lg">
+                </li>
+            </ul>
+
+        </div>
+        <div class="nav-btn hidden-xs">
+            <form action="javascript:void(0);" method="get">
+                <fieldset>
+                    <ul class="toolbar clearfix">
+                        <li>
+                            <input type="search" id="search" placeholder="What are you looking for?">
+                        </li>
+                        <li>
+                            <button type="submit" id="btn-search"><span class="fa fa-search"></span></button>
+                        </li>
+                        <li><a href="usercontrol-list.html" class="fa fa-gear"></a></li>
+                        <li><a href="#" class="fa fa-lock"></a></li>
+                        <li><a href="#" class="fa fa-heart open-lauch"></a></li>
+                        <li><a href="#" class="fa fa-sign-out"></a></li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Main Container start -->
+    <div class="dashboard-wrapper">
+
+        <div class="container-fluid">
+            <!-- Row start -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="details-content">
+                        <!-- Custom start -->
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                            <div class="panel">
+                                <div class="panel-heading clearfix">
+                                    <h3 class="panel-title pull-left">WO Request</h3>
+                                    <div class="pull-right btn-group btn-group-xs">
+                                        <button type="button" class="btn btn-warning btn-sm"><i class="fa fa-check-square-o"></i>&nbsp;Re-dispatch</button>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="panel-sub-title">
+                                        <h5 class="pull-left">Location</h5>
+                                    </div>
+                                    <form class="clearfix form-horizontal">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Location ID</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only"><a href="#">CAH113143-1</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Location Name</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only"></p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Address</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">449 N Main Avenue</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">City, State Zip</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">Scranton, GA 30034</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Phone</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">5703471517</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Landlord Name</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">Jill Hieber</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Landlord Email</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">jill@jrbmgmt.com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Store Manager</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">Joey Beverly</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">District</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">237</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Region</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">CAH-ATL (SC)</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Group</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">10</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Store Opened</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">1971-12-02</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Landlord Phone</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">260-701-4654</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <hr />
+                                    <form class="clearfix form-horizontal">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Total Invoice</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">$0.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Total Customer NTE</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">$750.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <hr />
+                                    <form class="clearfix form-horizontal">
+                                        <div class="col-xs-12">
+                                            <div class="form-group text-center">
+                                                <label class="col-sm-7 control-label">Total Invoice and Custorm NTE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                                <div class="col-sm-5">
+                                                    <p class="text-only text-left"><a href="#">$750.00</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="panel-sub-title">
+                                        <h5 class="pull-left">Affiliate</h5>
+                                        <div class="pull-right btn-group btn-group-xs">
+                                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myLandModal"><i class="fa fa-plus"></i>&nbsp;Add Landlord Communication</button>
+                                        </div>
+                                    </div>
+                                    <form class="clearfix form-horizontal">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Affiliate #</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only"><a href="#">63234</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Location Name</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">Zero Zone, Inc. (WI)</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Phone</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">262-392-1429</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Address</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">110 North Oakridge Drive</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">City, State Zip</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">North Prairie, WI 53153</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Email</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">fdservice@zero-zone.com</p>
+                                                    <p class="text-only">1544@continentalmessage.com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="panel-sub-title">
+                                        <h5>Request Detail</h5>
+                                    </div>
+                                    <form class="clearfix">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label>WO #</label>
+                                                <input type="text" class="form-control input-sm" value="WO135799" disabled="disabled">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Created By</label>
+                                                <input type="text" class="form-control input-sm red-color" value="FD1130" disabled="disabled">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Work Order Status</label>
+                                                <select class="form-control input-sm">
+                                                    <option value="1">Pending Dispatch</option>
+                                                    <option value="2">Pending Vendor Acceptance</option>
+                                                    <option value="3" selected="selected">Scheduled</option>
+                                                    <option value="4">In Progress</option>
+                                                    <option value="5">Pending Vendor Quote</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Service Category</label>
+                                                <select class="form-control input-sm">
+                                                    <option value="1">Air Conditioning / Heating</option>
+                                                    <option value="2" selected="selected">Coolers/Freezers</option>
+                                                    <option value="3">Doors/Locks/Gates/Grilles/Glass</option>
+                                                    <option value="5">Electrical/Lighting</option>
+                                                    <option value="14">Exterior</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Problem Code</label>
+                                                <select class="form-control input-sm">
+                                                    <option value="325" selected="selected">Cooling issue</option>
+                                                    <option value="327">Door</option>
+                                                    <option value="329">Glass</option>
+                                                    <option value="331">Handle</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Customer NTE</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control input-sm red-color" disabled="disabled" value="750">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-success btn-xs" type="button">Update</button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Caller Name</label>
+                                                <input type="text" class="form-control input-sm" value="Jennifer Becker">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Schedule Start</label>
+                                                <input type="text" class="form-control input-sm" value="6/23/2014">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Complete Time</label>
+                                                <input type="text" class="form-control input-sm">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Problem Description</label>
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Additional Detail</label>
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label>Call Date & Time</label>
+                                                <input type="text" class="form-control input-sm" value="6/22/2014 5:04:39 PM" disabled="disabled">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Ref #</label>
+                                                <input type="text" class="form-control input-sm">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>WO Type</label>
+                                                <select class="form-control input-sm">
+                                                    <option value="1">Capital - Lease Hold Improvement</option>
+                                                    <option value="2">Capital-Owned</option>
+                                                    <option value="4">Closed Store - Inspection</option>
+                                                    <option value="5">Closed Store - Landlord</option>
+                                                    <option value="3">Closed Store - Maintenance</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Service Type</label>
+                                                <select class="form-control input-sm">
+                                                    <option value="60">Coke</option>
+                                                    <option value="61">Cooler</option>
+                                                    <option value="62" selected="selected">Freezer</option>
+                                                    <option value="63">Good Humor</option>
+                                                    <option value="64">Pepsi</option>
+                                                    <option value="65">Reddy Ice</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Response Window</label>
+                                                <select class="form-control input-sm">
+                                                    <option value="1">Immediate Service - 2 hour response</option>
+                                                    <option value="2">Emergency Service - 4 hour response</option>
+                                                    <option value="3" selected="selected">Next Day Service - 24 hour response</option>
+                                                    <option value="4">Normal Service - 48 hour response</option>
+                                                    <option value="5">Non-Critical - 7 day response</option>
+                                                    <option value="6">Non-Critical - 14 day response</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Vendor NTE</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control input-sm red-color" disabled="disabled" value="550">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-success btn-xs" type="button">Update</button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Position</label>
+                                                <select class="form-control input-sm">
+                                                    <option value="0">Please select an item</option>
+                                                    <option value="1">Store Manager</option>
+                                                    <option value="2" selected="selected">Assistant</option>
+                                                    <option value="3">CSR</option>
+                                                    <option value="4">Other</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Schedule End</label>
+                                                <input type="text" class="form-control input-sm" value="6/23/2014 5:00:00 PM">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Purchase Order #</label>
+                                                <input type="text" class="form-control input-sm">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Special Billing Instruction</label>
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Responsibility Entity</label>
+                                                <input type="text" class="form-control input-sm red-color" value="Family Dollar" disabled="disabled">
+                                            </div>
+                                        </div>
+                                        <div class="text-center details-btn">
+                                            <button class="btn btn-default">Reset</button>
+                                            <button class="btn btn-success">Save</button>
+                                        </div>
+                                    </form>
+                                    <div class="panel-sub-title">
+                                        <h5 class="pull-left">SMS Proposal</h5>
+                                        <div class="pull-right">
+                                            <button type="button" class="btn btn-warning btn-xs" onclick="javascrtpt: window.location.href = 'facilities-wo-datail-proposal-edit.html';"><i class="fa fa-pencil"></i>&nbsp;Edit Proposal</button>
+                                            <button type="button" class="btn btn-primary btn-xs"><i class="fa fa-paste"></i>&nbsp;Create from Vendor Proposal</button>
+                                        </div>
+                                    </div>
+                                    <form class="clearfix form-horizontal">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Proposal #</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">WO135764</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Submitted by</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">Bo Wang</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Status</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only red-color">Pending</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Recorder Date</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Amount</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">$0.00</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Submitted Date</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">7/2/2014 9:30:32 PM</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Recorded By</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">Recorded Date</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Comments</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Custom end -->
+                        <!-- Custom start -->
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <div class="panel-sub-title">
+                                        <h5 class="pull-left">SMS Call Center Message</h5>
+                                    </div>
+                                    <div class="conversation-loadmore">
+                                        <button class="btn btn-load btn-block" data-loading-text="Loading...">Load more</button>
+                                    </div>
+                                    <div class="chat-conversation">
+                                        <ul class="conversation-list">
+                                            <li>
+                                                <div class="conversation-text">
+                                                    <div class="ctext-wrap">
+                                                        <p>
+                                                            Hello!
+                                                        </p>
+                                                        <i><small>5/12/2014 8:00:00 PM</small><a href="#">John Carry</a><em>to</em><a href="#">Store Service</a></i>
+                                                    </div>
+                                                    <div class="conversation-status unread-status"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="conversation-text">
+                                                    <div class="ctext-wrap">
+                                                        <p>
+                                                            Hi, How are you? What about our next meeting? What about our next meeting? What about our next meeting? What about our next meeting? What about our next meeting? What about our next meeting...&nbsp;<a href="#">Display All</a>
+                                                        </p>
+                                                        <i><small>5/12/2014 8:00:00 PM</small><a href="#">Lisa Peterson</a><em>to</em><a href="#">Store Service</a></i>
+                                                    </div>
+                                                    <div class="conversation-status new-status"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="conversation-text">
+                                                    <div class="ctext-wrap">
+                                                        <p>
+                                                            Yeah everything is fine
+                                                        </p>
+                                                        <i><small>5/12/2014 8:01:12 PM</small><a href="#">John Carry</a><em>to</em><a href="#">Store Service</a></i>
+                                                    </div>
+                                                    <div class="conversation-status"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="conversation-text">
+                                                    <div class="ctext-wrap">
+                                                        <p>
+                                                            Wow that's great
+                                                        </p>
+                                                        <i><small>5/12/2014 8:01:33 PM</small><a href="#">Lisa Peterson</a><em>to</em><a href="#">Store Service</a></i>
+                                                    </div>
+                                                    <div class="conversation-status"></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="row sendarea">
+                                        <div class="col-xs-10">
+                                            <div class="send-who">
+                                                <label>Send to:</label>
+                                                <select class="form-control input-sm send-choice">
+                                                    <option>Jack</option>
+                                                    <option>Jane</option>
+                                                </select>
+                                            </div>
+                                            <textarea placeholder="To: Bo Wang" class="form-control"></textarea>
+
+                                        </div>
+                                        <div class="col-xs-2 chat-send">
+                                            <button type="submit" class="btn btn-success btn-block">Send</button>
+                                        </div>
+                                    </div>
+                                    <div class="panel-sub-title">
+                                        <h5 class="pull-left">Communication</h5>
+                                        <div id="rate" class="custom-rate"></div>
+                                        <div class="pull-right btn-group btn-group-xs">
+                                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myCallModal"><i class="fa fa-phone"></i>&nbsp;New Call</button>
+                                        </div>
+                                    </div>
+                                    <div class="conversation-loadmore">
+                                        <button class="btn btn-load btn-block" id="loading-example-btn" data-loading-text="Loading...">Load more</button>
+                                    </div>
+                                    <div class="chat-conversation">
+                                        <ul class="conversation-list">
+                                            <li>
+                                                <div class="conversation-text">
+                                                    <div class="ctext-wrap">
+                                                        <p>
+                                                            Hello!
+                                                        </p>
+                                                        <i><small>5/12/2014 8:00:00 PM</small><a href="#">John Carry</a><em>to</em><a href="#">Store Service</a></i>
+                                                    </div>
+                                                    <div class="conversation-status unread-status"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="conversation-text">
+                                                    <div class="ctext-wrap">
+                                                        <p>
+                                                            Hi, How are you? What about our next meeting? What about our next meeting? What about our next meeting? What about our next meeting? What about our next meeting? What about our next meeting...&nbsp;<a href="#">Display All</a>
+                                                        </p>
+                                                        <i><small>5/12/2014 8:00:00 PM</small><a href="#">Lisa Peterson</a><em>to</em><a href="#">Store Service</a></i>
+                                                    </div>
+                                                    <div class="conversation-status new-status"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="conversation-text">
+                                                    <div class="ctext-wrap">
+                                                        <p>
+                                                            Yeah everything is fine
+                                                        </p>
+                                                        <i><small>5/12/2014 8:01:12 PM</small><a href="#">John Carry</a><em>to</em><a href="#">Store Service</a></i>
+                                                    </div>
+                                                    <div class="conversation-status"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="conversation-text">
+                                                    <div class="ctext-wrap">
+                                                        <p>
+                                                            Wow that's great
+                                                        </p>
+                                                        <i><small>5/12/2014 8:01:33 PM</small><a href="#">Lisa Peterson</a><em>to</em><a href="#">Store Service</a></i>
+                                                    </div>
+                                                    <div class="conversation-status"></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="row sendarea">
+                                        <div class="col-xs-10">
+                                            <div class="send-who">
+                                                <label>Send to:</label>
+                                                <select class="form-control input-sm send-choice">
+                                                    <option>Jack</option>
+                                                    <option>Jane</option>
+                                                </select>
+                                            </div>
+                                            <div class="checkbox request-checkbox">
+                                                <label>
+                                                    <input type="checkbox" id="requestInfo">
+                                                    Request For Information
+                                                </label>
+                                            </div>
+                                            <select class="form-control input-sm request-choice hidden" id="son">
+                                                <option selected="selected">Please select a request</option>
+                                                <option>Store is under warranty. Please advise who is responsible for repairs.</option>
+                                                <option>The landlord listed is no longer the landlord for this property. Please provide updated landlord contact information.</option>
+                                                <option>Please provide landlord contact information.</option>
+                                                <option>Please clarify responsible entity.</option>
+                                                <option>Please advise on request for frequency change.</option>
+                                                <option>Please provide inspection paperwork.</option>
+                                                <option>Please upload self help approval form.</option>
+                                                <option>Please provide DM’s phone number.</option>
+                                            </select>
+                                            <textarea placeholder="To: Bo Wang" class="form-control"></textarea>
+                                        </div>
+                                        <div class="col-xs-2 chat-send">
+                                            <button type="submit" class="btn btn-success btn-block">Send</button>
+                                        </div>
+                                    </div>
+                                    <div class="panel-sub-title">
+                                        <h5>Troubleshooting</h5>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-condensed table-striped table-hover table-bordered">
+                                            <tr>
+                                                <td>What are present temperature readings at unit 1?</td>
+                                                <td><strong>&lt;64</strong></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Is problem intermittent?</td>
+                                                <td><strong>Yes</strong></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Do you smell gas?</td>
+                                                <td><strong>Yes</strong></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Are units on roof, ground, or do not know?</td>
+                                                <td><strong>Roof</strong></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Has local inspector been involved?</td>
+                                                <td><strong>Yes</strong></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Name of inspector, phone number, and due date</td>
+                                                <td><strong>10/23/2014 10:34:21 AM</strong></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="panel-sub-title">
+                                        <h5>Key Question</h5>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-condensed table-striped table-hover table-bordered">
+                                            <tr>
+                                                <td>Has this maintenance issue caused the store to close?</td>
+                                                <td><strong>No</strong></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Has an inspector instructed you to stop selling food?</td>
+                                                <td><strong>Yes</strong></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="panel-sub-title">
+                                        <h5>IVR Detail</h5>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-condensed table-striped table-hover table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Caller From</th>
+                                                    <th>Date/Time</th>
+                                                    <th>Check in/out</th>
+                                                    <th>Status</th>
+                                                    <th>Total Hours</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Meredith Goldberg</td>
+                                                    <td>12/23/2014 8:23:12 PM</td>
+                                                    <td>12/24/2014 11:07:12 AM</td>
+                                                    <td>Pending</td>
+                                                    <td>4 hours</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Custom end -->
+                    </div>
+                </div>
+
+            </div>
+            <!-- Row end -->
+        </div>
+
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Edit Request</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="clearfix">
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <label>Response Window</label>
+                                <select class="form-control input-sm">
+                                    <option value="1" selected="selected">Immediate Service - 2 hour response</option>
+                                    <option value="2">Emergency Service - 4 hour response</option>
+                                    <option value="3">Next Day Service - 24 hour response</option>
+                                    <option value="4">Normal Service - 48 hour response</option>
+                                    <option value="5">Non-Critical - 7 day response</option>
+                                    <option value="6">Non-Critical - 14 day response</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>WO Type</label>
+                                <select class="form-control input-sm">
+                                    <option value="1">Capital - Lease Hold Improvement</option>
+                                    <option value="2">Capital-Owned</option>
+                                    <option value="4">Closed Store - Inspection</option>
+                                    <option value="5">Closed Store - Landlord</option>
+                                    <option value="3">Closed Store - Maintenance</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Custorm NTE</label>
+                                <input type="text" class="form-control input-sm" value="750">
+                            </div>
+                            <div class="form-group">
+                                <label>Vendor NTE</label>
+                                <input type="text" class="form-control input-sm" value="550">
+                            </div>
+                            <div class="form-group">
+                                <label>Caller Name</label>
+                                <input type="text" class="form-control input-sm" value="Joey Beverly">
+                            </div>
+                            <div class="form-group">
+                                <label>Position</label>
+                                <select class="form-control input-sm">
+                                    <option value="0">Please select an item</option>
+                                    <option value="1" selected="selected">Store Manager</option>
+                                    <option value="2">Assistant</option>
+                                    <option value="3">CSR</option>
+                                    <option value="4">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Additional Detail</label>
+                                <textarea class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myLandModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Add Landlord</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="clearfix">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>Phone</label>
+                                <input class="form-control input-sm" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input class="form-control input-sm" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>Certified Mail #</label>
+                                <input type="text" class="form-control input-sm">
+                            </div>
+                            <div class="form-group">
+                                <label>Fax</label>
+                                <input type="text" class="form-control input-sm">
+                            </div>
+                            <div class="form-group">
+                                <label>Description</label>
+                                <textarea class="form-control no-resize"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Page 1</label>
+                                <div class="radio no-margin">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                        Use if Maintenance/Repair provisions do not make the repairs the explicit obligation of LL.
+                                    </label>
+                                </div>
+                                <div class="radio no-margin">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                        Use if Maintenance/Repair provisions make the repairs the explicit obligation of LL.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Page 2</label>
+                                <div class="radio no-margin">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                        Use if invoice will be included in the letter
+                                    </label>
+                                </div>
+                                <div class="radio no-margin">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                        Use if invoice will not be included in the letter
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>Call Date</label>
+                                <input class="form-control input-sm" id="callDate" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>Email Date</label>
+                                <input type="text" class="form-control input-sm" id="emailDate">
+                            </div>
+                            <div class="form-group">
+                                <label>Cert Mail Date</label>
+                                <input type="text" class="form-control input-sm" id="certDate">
+                            </div>
+                            <div class="form-group">
+                                <label>Fax Date</label>
+                                <input type="text" class="form-control input-sm" id="faxDate">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default">Reset</button>
+                    <button type="button" class="btn btn-success">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myCallModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Confirmation Status</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="clearfix">
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <label>Store confirmation status</label>
+                                <select class="form-control input-sm">
+                                    <option value="0" selected="selected">Pending</option>
+                                    <option value="1">Confirmed</option>
+                                    <option value="2">Do not Invoice</option>
+                                    <option value="3">Further Confirm</option>
+                                    <option value="4">Research Confirm</option>
+                                    <option value="5">Auto-confirm</option>
+                                    <option value="6">Email Confirmation Satisfied</option>
+                                    <option value="7">Email Dispute</option>
+                                    <option value="8">Email Confirmation not Satisfied</option>
+                                    <option value="9">Online Confirmed</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Standard Notes</label>
+                                <select class="form-control input-sm">
+                                    <option value="" selected="selected">Please Select a Standard Note</option>
+                                    <option value="Service was warranted and completed to satisfaction.">Service was warranted and completed to satisfaction.</option>
+                                    <option value="Service was warranted however not completed to satisfaction.">Service was warranted however not completed to satisfaction.</option>
+                                    <option value="Service was not warranted.">Service was not warranted.</option>
+                                    <option value="Service was warranted and completed to satisfaction. Store Manager will respond to email. Per SM">Service was warranted and completed to satisfaction. Store Manager will respond to email. Per SM </option>
+                                    <option value="Service was warranted however not completed to satisfaction. Store Manager will respond to email. Per SM">Service was warranted however not completed to satisfaction. Store Manager will respond to email. Per SM</option>
+                                    <option value="Service was not warranted. Store Manager will respond to email. Per SM">Service was not warranted. Store Manager will respond to email. Per SM</option>
+                                    <option value="Confirmed with signed and stamped job report.">Confirmed with signed and stamped job report</option>
+                                    <option value="SM was unable to confirm service.">SM was unable to confirm service</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Notes</label>
+                                <textarea class="form-control"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Customer Satisfaction</label>
+                                <div id="star"></div><div id="hint" class="text-danger"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="launchpad" class="hide">
+        <div class="icon">
+            <img src="../Content/img/mac/candy.png" title="Dashboard" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/clock.png" title="safari" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/tactics.png" title="Mail" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/packman.png" title="Appstore" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/map.png" title="Pages" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/open-letter.png" title="Numbers" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/chalkboard.png" title="Keynote" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/car.png" title="Aperture" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/label.png" title="AddressBook" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/drop.png" title="iCalendar" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/store.png" title="FaceTime" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/map2.png" title="iPhoto" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/cloud-down.png" title="iMovie" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/train.png" title="GarageBand" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/umbrella.png" title="Djay" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/rocket.png" title="iTunes" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/bookshelf.png" title="PhotoBooth" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/glasses.png" title="Compartments" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/paper-plane.png" title="Developer" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/backpack-2.png" title="Pixelmator" /><span></span>
+        </div>
+    </div>
+    <!-- Main Container end -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../Scripts/jquery-1.11.0.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../Scripts/bootstrap.min.js"></script>
+
+    <!-- nprogress JS -->
+    <script src="../Scripts/nprogress.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../Scripts/custom.js"></script>
+    <script src="../Scripts/jquery.colorbox-min.js"></script>
+    <script src="../Scripts/dropzone.min.js"></script>
+    <script src="../Scripts/bootstrap-datetimepicker.min.js"></script>
+    <script src="../Scripts/jquery.raty.min.js"></script>
+    <script>
+        $('#star').raty({
+            path: '../content/img/star',
+            cancel: true,
+            cancelPlace: 'right',
+            target: '#hint',
+            targetFormat: 'Rating: {score}',
+            targetText: 'Please give your rating.',
+            targetKeep: true
+        });
+        $('#rate').raty({
+            path: '../content/img/star',
+            readOnly: true,
+            score: 3
+        });
+        $("#dropzone").dropzone({ url: "http://www.torrentplease.com/dropzone.php" });
+        $('.btn-load').click(function () {
+            var btn = $(this);
+            btn.button('loading');
+            setTimeout(function () {
+                btn.button('reset');
+            }, 3000);
+        });
+        jQuery(function ($) {
+            $(document).ready(function () {
+                $("#callDate,#emailDate,#certDate,#faxDate").datetimepicker({
+                    format: 'mm/dd/yyyy h:ii P',
+                    autoclose: 1
+                });
+            });
+            var colorbox_params = {
+                reposition: true,
+                scalePhotos: true,
+                scrolling: false,
+                previous: '<i class="fa fa-arrow-left"></i>',
+                next: '<i class="fa fa-arrow-right"></i>',
+                close: '&times;',
+                current: '{current} of {total}',
+                maxWidth: '100%',
+                maxHeight: '100%',
+                onOpen: function () {
+                    document.body.style.overflow = 'hidden';
+                },
+                onClosed: function () {
+                    document.body.style.overflow = 'auto';
+                },
+                onComplete: function () {
+                    $.colorbox.resize();
+                }
+            };
+            $('.thumbnails [data-rel="colorbox"]').colorbox(colorbox_params);
+            $("#cboxLoadingGraphic").append("<i class='fa fa-spinner'></i>");
+        });
+        $('#requestInfo').click(function () {
+            var slength = 0;
+            slength = $("#requestInfo:checked").size();
+            if (slength > 0) {
+                $('#son').removeClass('hidden');
+            } else {
+                $('#son').addClass('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

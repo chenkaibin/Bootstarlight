@@ -1,0 +1,703 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Invoice New - DSS
+    </title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/icomoon.css">
+    <link rel="stylesheet" href="../styles/animate.css">
+    <link rel="stylesheet" href="../styles/datepicker.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/full-step.css">
+</head>
+
+<body>
+
+    <!-- DSS Container -->
+    <div class="dss-container">
+
+        <!-- Form Wrapper -->
+        <div class="fs-form-wrap" id="fsFormWrap">
+            <div class="fs-title">
+                <h1><i class="fa fa-angle-left cp" onclick="javascript:location.href = 'invoice-list.html';"></i>&nbsp;&nbsp;New Invoice</h1>
+            </div>
+
+            <!-- New WO Form -->
+            <form id="newWoForm" class="fs-form fs-form-full" autocomplete="off">
+                <ol class="fs-fields">
+                    <li data-input-trigger>
+                        <label class="fs-field-label fs-anim-upper" data-info="This is a necessary, if give up choice, you can click on the upper left corner to return.">Select your customers</label>
+                        <div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+                            <div class="customers-box">
+                                <input name="custorms" type="radio" />
+                                <div class="logo-location-img">
+                                    <a href="#">
+                                        <img src="../Sources/images/fd.jpg">
+                                    </a>
+                                </div>
+                                <p class="text-center">Family Doolor</p>
+                            </div>
+                            <div class="customers-box">
+                                <input name="custorms" type="radio" />
+                                <div class="logo-location-img">
+                                    <a href="#">
+                                        <img src="../Sources/images/ore.jpg">
+                                    </a>
+                                </div>
+                                <p class="text-center">O'Reilly</p>
+                            </div>
+                            <div class="customers-box">
+                                <input name="custorms" type="radio" />
+                                <div class="logo-location-img">
+                                    <a href="#">
+                                        <img src="../Sources/images/fd.jpg">
+                                    </a>
+                                </div>
+                                <p class="text-center">Family Doolor</p>
+                            </div>
+                            <div class="customers-box">
+                                <input name="custorms" type="radio" />
+                                <div class="logo-location-img">
+                                    <a href="#">
+                                        <img src="../Sources/images/ore.jpg">
+                                    </a>
+                                </div>
+                                <p class="text-center">O'Reilly</p>
+                            </div>
+                            <div class="customers-box">
+                                <input name="custorms" type="radio" />
+                                <div class="logo-location-img">
+                                    <a href="#">
+                                        <img src="../Sources/images/fd.jpg">
+                                    </a>
+                                </div>
+                                <p class="text-center">Family Doolor</p>
+                            </div>
+                            <div class="customers-box">
+                                <input name="custorms" type="radio" />
+                                <div class="logo-location-img">
+                                    <a href="#">
+                                        <img src="../Sources/images/ore.jpg">
+                                    </a>
+                                </div>
+                                <p class="text-center">O'Reilly</p>
+                            </div>
+                            <div class="customers-box">
+                                <input name="custorms" type="radio" />
+                                <div class="logo-location-img">
+                                    <a href="#">
+                                        <img src="../Sources/images/fd.jpg">
+                                    </a>
+                                </div>
+                                <p class="text-center">Family Doolor</p>
+                            </div>
+                            <div class="customers-box">
+                                <input name="custorms" type="radio" />
+                                <div class="logo-location-img">
+                                    <a href="#">
+                                        <img src="../Sources/images/ore.jpg">
+                                    </a>
+                                </div>
+                                <p class="text-center">O'Reilly</p>
+                            </div>
+                            <div class="customers-box">
+                                <input name="custorms" type="radio" />
+                                <div class="logo-location-img">
+                                    <a href="#">
+                                        <img src="../Sources/images/fd.jpg">
+                                    </a>
+                                </div>
+                                <p class="text-center">Family Doolor</p>
+                            </div>
+                            <div class="customers-box">
+                                <input name="custorms" type="radio" />
+                                <div class="logo-location-img">
+                                    <a href="#">
+                                        <img src="../Sources/images/ore.jpg">
+                                    </a>
+                                </div>
+                                <p class="text-center">O'Reilly</p>
+                            </div>
+                            <div class="customers-box">
+                                <input name="custorms" type="radio" />
+                                <div class="logo-location-img">
+                                    <a href="#">
+                                        <img src="../Sources/images/fd.jpg">
+                                    </a>
+                                </div>
+                                <p class="text-center">Family Doolor</p>
+                            </div>
+                            <div class="customers-box">
+                                <input name="custorms" type="radio" />
+                                <div class="logo-location-img">
+                                    <a href="#">
+                                        <img src="../Sources/images/ore.jpg">
+                                    </a>
+                                </div>
+                                <p class="text-center">O'Reilly</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="fs-field-label fs-anim-upper">
+                            You have chosen the
+                            <strong>O'Reilly</strong>
+                        </label>
+                        <div class="fs-anim-lower">
+                            <!-- Card -->
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="widget-container fluid-height clearfix">
+                                        <div class="widget-content clearfix">
+
+                                            <!-- Form -->
+                                            <div class="row" id="bussinessUnit">
+                                                <div class="col-xs-2">
+                                                    <button class="btn btn-primary-outline btn-block m0">Facility Facility</button>
+                                                </div>
+                                                <div class="col-xs-2">
+                                                    <button class="btn btn-primary-outline btn-block m0">Landscaping</button>
+                                                </div>
+                                                <div class="col-xs-2">
+                                                    <button class="btn btn-primary-outline btn-block m0 active">Windows</button>
+                                                </div>
+                                                <div class="col-xs-2">
+                                                    <button class="btn btn-primary-outline btn-block m0">Floor Care</button>
+                                                </div>
+                                                <div class="col-xs-2">
+                                                    <button class="btn btn-primary-outline btn-block m0">Sweeping</button>
+                                                </div>
+                                                <div class="col-xs-2">
+                                                    <button class="btn btn-primary-outline btn-block m0">Striping</button>
+                                                </div>
+                                            </div>
+                                            <!-- End Form -->
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Card -->
+
+                            <!-- Card -->
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-12">
+
+                                    <!-- Left Card -->
+                                    <div class="widget-container fluid-height clearfix">
+                                        <div class="widget-content clearfix">
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <div class="checkbox">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox">
+                                                            <span>Bathroom Doors</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox">
+                                                            <span>BedBugs</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox">
+                                                            <span>Ants</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox">
+                                                            <span>Bathroom Doors</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox">
+                                                            <span>BedBugs</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox">
+                                                            <span>Ants</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox">
+                                                            <span>Bathroom Doors</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox">
+                                                            <span>BedBugs</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <div class="checkbox">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox">
+                                                            <span>Bathroom Doors</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox">
+                                                            <span>BedBugs</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox">
+                                                            <span>Ants</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox">
+                                                            <span>Bathroom Doors</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox">
+                                                            <span>BedBugs</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox">
+                                                            <span>Ants</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox">
+                                                            <span>Bathroom Doors</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox">
+                                                            <span>BedBugs</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Left Card -->
+
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+
+                                    <!-- Right Card -->
+                                    <div class="widget-container fluid-height clearfix">
+                                        <div class="widget-content clearfix">
+                                            <div class="form-group">
+                                                <label>From</label>
+                                                <input type="text" class="form-control input-sm" id="starTime">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>To</label>
+                                                <input type="text" class="form-control input-sm" id="endTime">
+                                            </div>
+                                            <div class="checkbox">
+                                                <label class="checkbox">
+                                                    <input type="checkbox" checked="checked">
+                                                    <span>Reactive Service</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label class="checkbox">
+                                                    <input type="checkbox" checked="checked">
+                                                    <span>Contracted Service</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Righgt Card -->
+
+                                </div>
+                            </div>
+                            <!-- End Card -->
+
+                        </div>
+                    </li>
+                    <li>
+                        <label class="fs-field-label fs-anim-upper">
+                            You have chosen the
+                            <strong>O'Reilly</strong>
+                        </label>
+                        <div class="fs-anim-lower">
+                            <div class="row">
+                                <div class="col-xs-12">
+
+                                    <!-- Card -->
+                                    <div class="widget-container fluid-height clearfix">
+                                        <div class="widget-content clearfix">
+                                            <!-- Function Button -->
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-horizontal table-extra">
+                                                        <div class="col-md-3 col-sm-12 col-xs-12">
+                                                            <div class="form-group">
+                                                                <label class="col-sm-5 control-label"># of Service</label>
+                                                                <div class="col-sm-7">
+                                                                    <p class="text-only">2324</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-12 col-xs-12">
+                                                            <div class="form-group">
+                                                                <label class="col-sm-5 control-label">Total Cost</label>
+                                                                <div class="col-sm-7">
+                                                                    <p class="text-only">2324</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-12 col-xs-12">
+                                                            <div class="form-group">
+                                                                <label class="col-sm-5 control-label">Total Price</label>
+                                                                <div class="col-sm-7">
+                                                                    <p class="text-only">2324</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-12 col-xs-12">
+                                                            <div class="form-group">
+                                                                <label class="col-sm-5 control-label">Margin</label>
+                                                                <div class="col-sm-7">
+                                                                    <p class="text-only">0.5%</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <label>Show&nbsp;
+                                                        <select size="1">
+                                                            <option value="10" selected="selected">10</option>
+                                                            <option value="25">25</option>
+                                                            <option value="50">50</option>
+                                                            <option value="100">100</option>
+                                                        </select>&nbsp;entries</label>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <button type="button" class="btn btn-xs btn-primary-outline mr0 pull-right"><i class="fa fa-share-square-o"></i>&nbsp; Export Detail to Excel</button>
+                                                </div>
+                                            </div>
+                                            <!-- Table -->
+                                            <div class="table-responsive">
+                                                <table class="table table-striped table-condensed table-hover table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Store #</th>
+                                                            <th>City</th>
+                                                            <th>State</th>
+                                                            <th>Name</th>
+                                                            <th>Request #</th>
+                                                            <th>Service Date</th>
+                                                            <th>Service Type</th>
+                                                            <th>Service Code</th>
+                                                            <th>SMS Invoice #</th>
+                                                            <th>Invoice Date</th>
+                                                            <th>Affiliate #</th>
+                                                            <th>Affiliate Name</th>
+                                                            <th>Customer WO</th>
+                                                            <th>Cost</th>
+                                                            <th>Price</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>FM WT0215</td>
+                                                            <td>Vista</td>
+                                                            <td>CA</td>
+                                                            <td>NCRC, Inc. (CA)</td>
+                                                            <td>23134</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>Flooring</td>
+                                                            <td>1123</td>
+                                                            <td>ABA08005NJ</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>324312</td>
+                                                            <td>Advanced Mechanical Plus, Inc. (OH)</td>
+                                                            <td>41867</td>
+                                                            <td>$289.61</td>
+                                                            <td>$20.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>FM WT0215</td>
+                                                            <td>Vista</td>
+                                                            <td>CA</td>
+                                                            <td>NCRC, Inc. (CA)</td>
+                                                            <td>23134</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>Flooring</td>
+                                                            <td>1123</td>
+                                                            <td>ABA08005NJ</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>324312</td>
+                                                            <td>Advanced Mechanical Plus, Inc. (OH)</td>
+                                                            <td>41867</td>
+                                                            <td>$289.61</td>
+                                                            <td>$20.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>FM WT0215</td>
+                                                            <td>Vista</td>
+                                                            <td>CA</td>
+                                                            <td>NCRC, Inc. (CA)</td>
+                                                            <td>23134</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>Flooring</td>
+                                                            <td>1123</td>
+                                                            <td>ABA08005NJ</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>324312</td>
+                                                            <td>Advanced Mechanical Plus, Inc. (OH)</td>
+                                                            <td>41867</td>
+                                                            <td>$289.61</td>
+                                                            <td>$20.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>FM WT0215</td>
+                                                            <td>Vista</td>
+                                                            <td>CA</td>
+                                                            <td>NCRC, Inc. (CA)</td>
+                                                            <td>23134</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>Flooring</td>
+                                                            <td>1123</td>
+                                                            <td>ABA08005NJ</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>324312</td>
+                                                            <td>Advanced Mechanical Plus, Inc. (OH)</td>
+                                                            <td>41867</td>
+                                                            <td>$289.61</td>
+                                                            <td>$20.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>FM WT0215</td>
+                                                            <td>Vista</td>
+                                                            <td>CA</td>
+                                                            <td>NCRC, Inc. (CA)</td>
+                                                            <td>23134</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>Flooring</td>
+                                                            <td>1123</td>
+                                                            <td>ABA08005NJ</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>324312</td>
+                                                            <td>Advanced Mechanical Plus, Inc. (OH)</td>
+                                                            <td>41867</td>
+                                                            <td>$289.61</td>
+                                                            <td>$20.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>FM WT0215</td>
+                                                            <td>Vista</td>
+                                                            <td>CA</td>
+                                                            <td>NCRC, Inc. (CA)</td>
+                                                            <td>23134</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>Flooring</td>
+                                                            <td>1123</td>
+                                                            <td>ABA08005NJ</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>324312</td>
+                                                            <td>Advanced Mechanical Plus, Inc. (OH)</td>
+                                                            <td>41867</td>
+                                                            <td>$289.61</td>
+                                                            <td>$20.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>FM WT0215</td>
+                                                            <td>Vista</td>
+                                                            <td>CA</td>
+                                                            <td>NCRC, Inc. (CA)</td>
+                                                            <td>23134</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>Flooring</td>
+                                                            <td>1123</td>
+                                                            <td>ABA08005NJ</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>324312</td>
+                                                            <td>Advanced Mechanical Plus, Inc. (OH)</td>
+                                                            <td>41867</td>
+                                                            <td>$289.61</td>
+                                                            <td>$20.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>FM WT0215</td>
+                                                            <td>Vista</td>
+                                                            <td>CA</td>
+                                                            <td>NCRC, Inc. (CA)</td>
+                                                            <td>23134</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>Flooring</td>
+                                                            <td>1123</td>
+                                                            <td>ABA08005NJ</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>324312</td>
+                                                            <td>Advanced Mechanical Plus, Inc. (OH)</td>
+                                                            <td>41867</td>
+                                                            <td>$289.61</td>
+                                                            <td>$20.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>FM WT0215</td>
+                                                            <td>Vista</td>
+                                                            <td>CA</td>
+                                                            <td>NCRC, Inc. (CA)</td>
+                                                            <td>23134</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>Flooring</td>
+                                                            <td>1123</td>
+                                                            <td>ABA08005NJ</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>324312</td>
+                                                            <td>Advanced Mechanical Plus, Inc. (OH)</td>
+                                                            <td>41867</td>
+                                                            <td>$289.61</td>
+                                                            <td>$20.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>FM WT0215</td>
+                                                            <td>Vista</td>
+                                                            <td>CA</td>
+                                                            <td>NCRC, Inc. (CA)</td>
+                                                            <td>23134</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>Flooring</td>
+                                                            <td>1123</td>
+                                                            <td>ABA08005NJ</td>
+                                                            <td>3/4/2014</td>
+                                                            <td>324312</td>
+                                                            <td>Advanced Mechanical Plus, Inc. (OH)</td>
+                                                            <td>41867</td>
+                                                            <td>$289.61</td>
+                                                            <td>$20.00</td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- End Table -->
+                                            <!-- Pagination -->
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <p class="paginate-entries">
+                                                        Showing&nbsp;
+                                                        <strong>1</strong>&nbsp;to&nbsp;
+                                                        <strong>12</strong>&nbsp;of&nbsp;
+                                                        <strong>78</strong>&nbsp;entries
+                                                    </p>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <div class="paginate paging-full-numbers">
+                                                        <a class="paginate-button paginate-button-disabled">First</a>
+                                                        <a class="paginate-button paginate-button-disabled">Previous</a>
+                                                        <span>
+                                                            <a class="paginate-active">1</a>
+                                                            <a class="paginate-button">2</a>
+                                                        </span>
+                                                        <a class="paginate-button">Next</a>
+                                                        <a class="paginate-button">Last</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Pagination -->
+
+                                        </div>
+                                    </div>
+                                    <!-- End Card -->
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                            <label class="fs-field-label fs-anim-upper">What's your due date?</label>
+                            <input class="fs-anim-lower fs-input" type="text" placeholder="Due date" id="dueDate">
+                    </li>
+                </ol>
+                <!-- /fs-fields -->
+                <button class="fs-submit none" type="submit" onclick="javascript:location.href = 'invoice-list.html';return false;">Generate AP/AR</button>
+            </form>
+            <!-- End New WO Form -->
+
+        </div>
+        <!-- End Form Wrapper -->
+
+    </div>
+    <!-- End DSS Container -->
+
+    <script type="text/javascript" src="../Scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../Scripts/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="../Scripts/main.js"></script>
+    <script type="text/javascript" src="../Scripts/modernizr.custom.js"></script>
+    <script type="text/javascript" src="../Scripts/classie.js"></script>
+    <script type="text/javascript" src="../Scripts/fullscreenForm.js"></script>
+    <script>
+    (function() {
+        var formWrap = document.getElementById('fsFormWrap');
+        new FForm(formWrap);
+        $('#bussinessUnit').find("button").on('click', function() {
+            $('#bussinessUnit').find("button.active").removeClass('active');
+            $(this).addClass('active');
+            return false;
+        });
+        $('.datepicker').datepicker();
+        $('#dueDate').datepicker({
+            autoclose: true
+        });
+        nowTemp = new Date();
+        now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+        checkin = $("#starTime").datepicker({
+            onRender: function(date) {
+                if (date.valueOf() < now.valueOf()) {
+                    return "disabled";
+                } else {
+                    return "";
+                }
+            }
+        }).on("changeDate", function(ev) {
+            var newDate;
+            if (ev.date.valueOf() > checkout.date.valueOf()) {
+                newDate = new Date(ev.date);
+                newDate.setDate(newDate.getDate() + 1);
+                checkout.setValue(newDate);
+            }
+            checkin.hide();
+            return $("#endTime")[0].focus();
+        }).data("datepicker");
+        checkout = $("#endTime").datepicker({
+            onRender: function(date) {
+                if (date.valueOf() <= checkin.date.valueOf()) {
+                    return "disabled";
+                } else {
+                    return "";
+                }
+            }
+        }).on("changeDate", function(ev) {
+            return checkout.hide();
+        }).data("datepicker");
+    })();
+    </script>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -9,13 +9,13 @@
     <style>
         .jumbotron {
             color: #fff;
-            background-image: -webkit-gradient(linear,left bottom,right top,color-stop(0%,#0a1855),color-stop(100%,#da0024));
-            background-image: -webkit-linear-gradient(45deg,#0a1855 0,#da0024 100%);
-            background-image: -moz-linear-gradient(45deg,#0a1855 0,#da0024 100%);
-            background-image: -ms-linear-gradient(45deg,#0a1855 0,#da0024 100%);
-            background-image: -o-linear-gradient(45deg,#0a1855 0,#da0024 100%);
-            background-image: linear-gradient(45deg,#0a1855 0,#da0024 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a1855', endColorstr='#da0024', GradientType=1);
+            background: #3f77a4; /* Old browsers */
+            background: -webkit-linear-gradient(top, #01a177, #1779a1);
+            background: -moz-linear-gradient(top, #01a177, #1779a1);
+            background: -o-linear-gradient(top, #01a177, #1779a1);
+            background: -ms-linear-gradient(top, #01a177, #1779a1);
+            background: linear-gradient(top, #01a177, #1779a1);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#01a177', endColorstr='#1779a1', GradientType=1);
         }
     </style>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -63,7 +63,7 @@
                         <a href="w3c/index.html">编码规范</a>
                     </li>
                     <li>
-                        <a href="demo/login.html">新框架</a>
+                        <a href="demo/IceMountain/Pages/signin.html">新框架v3<img src="assets/css/new.gif" style="position: absolute;top: 0;left: 60px;" /></a>
                     </li>
                     <li>
                         <a href="log.html">更新说明</a>
@@ -71,14 +71,10 @@
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:" id="js">JavaScript <span class="caret"></span></a>
                         <ul class="dropdown-menu" aria-labelledby="js">
-                            <li><a href="javascript/ChosenforBootstrapVer3.1.1/index.html">Chosen</a></li>
+                            <li><a href="javascript/ChosenforBootstrapVer3.2.0/index.html">Chosen</a></li>
                             <li><a href="javascript/DatePicker/index.html">DatePicker</a></li>
                             <li><a href="javascript/dropzoneforBootstrap/index.html">Dropzone</a></li>
-                            <li><a href="bootstrap-magic/app/index.html">Bootstrap Magic</a></li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="2/default/index.html">基于Bootstrap Ver 2.3.2</a>
                     </li>
                 </ul>
 
@@ -98,8 +94,8 @@
                 <div class="col-lg-12">
                     <div class="bs-component">
                         <div class="jumbotron">
-                            <h1>Bootstarlight 更新说明</h1>
-                            <p>This is a UI kit for StarLight base on bootstrap.</p>
+                            <h1>Get immersed, natural and effortless.</h1>
+                            <p>还原情境 真实生动。一切都如此自然。</p>
                             <p><a class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">了解更多</a></p>
                         </div>
                     </div>
@@ -110,6 +106,49 @@
         <!-- Navbar
       ================================================== -->
         <div class="bs-docs-section clearfix">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel-heading">
+                        <h1>Bootstarlight for DSS Ver 3.0.0 released</h1>
+                        <h4><small>24 Sep 2014</small></h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>我希望创造最优秀的用户体验。我相信只有提炼产品的本质，专注你在意的内容，融合你熟悉的情景，才能直达美妙的使用感受。这就是DSS V3的极简美学。由此，轻装再出发。我希望人们在从历史系统转向新的系统操作时，无需额外的学习，就可以立刻开始使用。为此，我将新的框架层层剥开，寻找最符合人们心里潜意识的模型，抽象成为设计的核心。去除装饰，简化层级，让一切回归最简单。当你打开DSS V3时，一切都如此自然。人们重视内容和功能多过形式，我从千万种可能性中寻找最合适的一种表现方式。简化不必要的装饰，合理组织内容与功能的层次，使你可以更加专注于内容本身。</p>
+                        <p>设计的原则就是：提炼本质、专注内容、还原情境</p>
+                        <p class="lead">具体更新如下：</p>
+                        <dl>
+                            <dt>重新设计了新框架的样式风格</dt>
+                            <dd>设计了全新的二分流式布局。</dd>
+                            <dd>全新卡片式设计。</dd>
+                            <dd>全新侧边栏导航设计。</dd>
+                            <dd>情景化的主菜单设计。</dd>
+                            <dt>业务更新</dt>
+                            <dt>完成了WO流程的创建与详情。</dt>
+                            <dd>针对编辑状态在DSS中的情景，设计了编辑模式组件。</dd>
+                            <dt>完成了Invoice流程的创建与详情</dt>
+                            <dt>BUG修复</dt>
+                            <dd>修复了Mac OS下各浏览器的兼容性问题</dd>
+                            <dd>修复了侧边栏导航高度丢失的问题。</dd>
+                            <dd>修复了自动跳转404页面的问题</dd>
+                            <dt>组件更新</dt>
+                            <dd>更新FontAwesome至4.2.0</dd>
+                            <dd>更新Bootstrap至3.2.0</dd>
+                            <dd>加入了Facybox2，二次开发使其符合设计的通用弹出框组件。解决从哪里来，到哪里去的问题。</dd>
+                            <dd>加入了文件上传组件。</dd>
+                            <dd>移除了在线LESS编译的Bootstrap Magic和Bootstrap2.3.2系列风格。</dd>
+                            <dt>UI优化</dt>
+                            <dd>优化了主页风格</dd>
+                            <dd>调整了主页文案。</dd>
+                            <dd>其它细节优化。</dd>
+                        </dl>
+                    </div>
+                    <div class="panel-footer">
+                        <a type="button" href="Changelog/Bootstarlight_Ver3.0.0.zip" class="btn btn-primary btn-lg">
+                            <span class="fa fa-check"></span>下载此版本 27.7 Mb
+                        </a>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="panel-heading">
@@ -195,13 +234,13 @@
                         <p class="lead">具体更新如下：</p>
                         <dl>
                             <dt>30套各具特色的UI样式</dt>
-                            <dd>其中14套基于Bootstrap2.3.2和16套基于Bootstrap3.1.1样式的主题，涵盖目前主流设计风格。包括默认的风格、暗夜蓝、光之影、海天蓝、黑色系、极简红、经典银、喇嘛红、老年版、商务蓝、时尚粉、乌邦图、西部黄、卡巴绿、质感黑、Metro风和Flat UI等。</dd>
+                            <dd>其中14套基于Bootstrap2.3.2和16套基于Bootstrap3.2.0样式的主题，涵盖目前主流设计风格。包括默认的风格、暗夜蓝、光之影、海天蓝、黑色系、极简红、经典银、喇嘛红、老年版、商务蓝、时尚粉、乌邦图、西部黄、卡巴绿、质感黑、Metro风和Flat UI等。</dd>
                             <dt>直观的代码介绍</dt>
                             <dd>对每个单独的CSS组件都可以迅速查看源代码。</dd>
                             <dt>焕然一新的DSS框架</dt>
                             <dd>针对DSS业务开发中遇到的一些问题，简化了对应的语义结构和样式冗余，抛弃了多余且不常用的功能，加入了 <a href="https://daneden.me/animate/" target="_blank">animate.css</a> 更具科技感。</dd>
                             <dt>编码规范</dt>
-                            <dd>依据 <a href="http://www.w3.org/" target="_blank">W3C标准</a>、<a href="http://mdo.github.io/code-guide/" target="_blank"> Code Guide </a>、<a href="https://github.com/necolas/idiomatic-css" target="_blank">Idiomatic CSS</a> 和 <a href="http://getbootstrap.com" target="_blank">Bootstrap官方文档</a> 整理制作了Bootstrap Ver 3.1.1编码规范。</dd>
+                            <dd>依据 <a href="http://www.w3.org/" target="_blank">W3C标准</a>、<a href="http://mdo.github.io/code-guide/" target="_blank"> Code Guide </a>、<a href="https://github.com/necolas/idiomatic-css" target="_blank">Idiomatic CSS</a> 和 <a href="http://getbootstrap.com" target="_blank">Bootstrap官方文档</a> 整理制作了Bootstrap Ver 3.2.0编码规范。</dd>
                             <dt>新增新框架表单实例</dt>
                             <dd>正对DSS业务开发制作的表单demo，包括内容布局，子项与子子项的排版，按钮位置，表单验证等。</dd>
                         </dl>
@@ -289,9 +328,11 @@
                 <div class="modal-body">
                     <p>
                         Bootstarlight 新框架是由 <a href="http://126.am/franki" target="_blank">Franki Yu</a> 抽取整合 <a href="http://getbootstrap.com">Bootstrap</a> 常用组件，在此基础上设计了多款样式，收集了目前常用的JavaScript组件并对跟Bootstrap的兼容性做了修改。
+
                     </p>
                     <p>
                         如果你发现本框架中有任何错误，敬请指正。通过下方的反馈按钮或访问 <a href="javascript:" target="_blank">Open an issue on GitHub</a> 为本框架添加或贡献内容。
+
                     </p>
                 </div>
                 <div class="modal-footer">

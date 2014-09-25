@@ -1,0 +1,352 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-4raogr');
+	src:url('fonts/icomoon.eot?#iefix-4raogr') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-4raogr') format('woff'),
+		url('fonts/icomoon.ttf?-4raogr') format('truetype'),
+		url('fonts/icomoon.svg?-4raogr#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dss-mobile:before {
+	content: "\e000";
+}
+.icon-dss-laptop:before {
+	content: "\e001";
+}
+.icon-dss-desktop:before {
+	content: "\e002";
+}
+.icon-dss-tablet:before {
+	content: "\e003";
+}
+.icon-dss-phone:before {
+	content: "\e004";
+}
+.icon-dss-document:before {
+	content: "\e005";
+}
+.icon-dss-documents:before {
+	content: "\e006";
+}
+.icon-dss-search:before {
+	content: "\e007";
+}
+.icon-dss-clipboard:before {
+	content: "\e008";
+}
+.icon-dss-newspaper:before {
+	content: "\e009";
+}
+.icon-dss-notebook:before {
+	content: "\e00a";
+}
+.icon-dss-book-open:before {
+	content: "\e00b";
+}
+.icon-dss-browser:before {
+	content: "\e00c";
+}
+.icon-dss-calendar:before {
+	content: "\e00d";
+}
+.icon-dss-presentation:before {
+	content: "\e00e";
+}
+.icon-dss-picture:before {
+	content: "\e00f";
+}
+.icon-dss-pictures:before {
+	content: "\e010";
+}
+.icon-dss-video:before {
+	content: "\e011";
+}
+.icon-dss-camera:before {
+	content: "\e012";
+}
+.icon-dss-printer:before {
+	content: "\e013";
+}
+.icon-dss-toolbox:before {
+	content: "\e014";
+}
+.icon-dss-briefcase:before {
+	content: "\e015";
+}
+.icon-dss-wallet:before {
+	content: "\e016";
+}
+.icon-dss-gift:before {
+	content: "\e017";
+}
+.icon-dss-bargraph:before {
+	content: "\e018";
+}
+.icon-dss-grid:before {
+	content: "\e019";
+}
+.icon-dss-expand:before {
+	content: "\e01a";
+}
+.icon-dss-focus:before {
+	content: "\e01b";
+}
+.icon-dss-edit:before {
+	content: "\e01c";
+}
+.icon-dss-adjustments:before {
+	content: "\e01d";
+}
+.icon-dss-ribbon:before {
+	content: "\e01e";
+}
+.icon-dss-hourglass:before {
+	content: "\e01f";
+}
+.icon-dss-lock:before {
+	content: "\e020";
+}
+.icon-dss-megaphone:before {
+	content: "\e021";
+}
+.icon-dss-shield:before {
+	content: "\e022";
+}
+.icon-dss-trophy:before {
+	content: "\e023";
+}
+.icon-dss-flag:before {
+	content: "\e024";
+}
+.icon-dss-map:before {
+	content: "\e025";
+}
+.icon-dss-puzzle:before {
+	content: "\e026";
+}
+.icon-dss-basket:before {
+	content: "\e027";
+}
+.icon-dss-envelope:before {
+	content: "\e028";
+}
+.icon-dss-streetsign:before {
+	content: "\e029";
+}
+.icon-dss-telescope:before {
+	content: "\e02a";
+}
+.icon-dss-gears:before {
+	content: "\e02b";
+}
+.icon-dss-key:before {
+	content: "\e02c";
+}
+.icon-dss-paperclip:before {
+	content: "\e02d";
+}
+.icon-dss-attachment:before {
+	content: "\e02e";
+}
+.icon-dss-pricetags:before {
+	content: "\e02f";
+}
+.icon-dss-lightbulb:before {
+	content: "\e030";
+}
+.icon-dss-layers:before {
+	content: "\e031";
+}
+.icon-dss-pencil:before {
+	content: "\e032";
+}
+.icon-dss-tools:before {
+	content: "\e033";
+}
+.icon-dss-tools-2:before {
+	content: "\e034";
+}
+.icon-dss-scissors:before {
+	content: "\e035";
+}
+.icon-dss-paintbrush:before {
+	content: "\e036";
+}
+.icon-dss-magnifying-glass:before {
+	content: "\e037";
+}
+.icon-dss-circle-compass:before {
+	content: "\e038";
+}
+.icon-dss-linegraph:before {
+	content: "\e039";
+}
+.icon-dss-mic:before {
+	content: "\e03a";
+}
+.icon-dss-strategy:before {
+	content: "\e03b";
+}
+.icon-dss-beaker:before {
+	content: "\e03c";
+}
+.icon-dss-caution:before {
+	content: "\e03d";
+}
+.icon-dss-recycle:before {
+	content: "\e03e";
+}
+.icon-dss-anchor:before {
+	content: "\e03f";
+}
+.icon-dss-profile-male:before {
+	content: "\e040";
+}
+.icon-dss-profile-female:before {
+	content: "\e041";
+}
+.icon-dss-wine:before {
+	content: "\e043";
+}
+.icon-dss-hotairballoon:before {
+	content: "\e044";
+}
+.icon-dss-globe:before {
+	content: "\e045";
+}
+.icon-dss-genius:before {
+	content: "\e046";
+}
+.icon-dss-map-pin:before {
+	content: "\e047";
+}
+.icon-dss-dial:before {
+	content: "\e048";
+}
+.icon-dss-chat:before {
+	content: "\e049";
+}
+.icon-dss-heart:before {
+	content: "\e04a";
+}
+.icon-dss-cloud:before {
+	content: "\e04b";
+}
+.icon-dss-upload:before {
+	content: "\e04c";
+}
+.icon-dss-download:before {
+	content: "\e04d";
+}
+.icon-dss-target:before {
+	content: "\e04e";
+}
+.icon-dss-hazardous:before {
+	content: "\e04f";
+}
+.icon-dss-piechart:before {
+	content: "\e050";
+}
+.icon-dss-speedometer:before {
+	content: "\e051";
+}
+.icon-dss-global:before {
+	content: "\e052";
+}
+.icon-dss-compass:before {
+	content: "\e053";
+}
+.icon-dss-lifesaver:before {
+	content: "\e054";
+}
+.icon-dss-clock:before {
+	content: "\e055";
+}
+.icon-dss-aperture:before {
+	content: "\e056";
+}
+.icon-dss-quote:before {
+	content: "\e057";
+}
+.icon-dss-scope:before {
+	content: "\e058";
+}
+.icon-dss-alarmclock:before {
+	content: "\e059";
+}
+.icon-dss-refresh:before {
+	content: "\e05a";
+}
+.icon-dss-happy:before {
+	content: "\e05b";
+}
+.icon-dss-sad:before {
+	content: "\e05c";
+}
+.icon-dss-facebook:before {
+	content: "\e05d";
+}
+.icon-dss-twitter:before {
+	content: "\e05e";
+}
+.icon-dss-googleplus:before {
+	content: "\e05f";
+}
+.icon-dss-rss:before {
+	content: "\e060";
+}
+.icon-dss-tumblr:before {
+	content: "\e061";
+}
+.icon-dss-linkedin:before {
+	content: "\e062";
+}
+.icon-dss-dribbble:before {
+	content: "\e063";
+}
+.icon-dss-gear:before {
+	content: "\e042";
+}
+.icon-dss-views:before {
+	content: "\e064";
+}
+.icon-dss-rate:before {
+	content: "\e065";
+}
+.icon-dss-lists:before {
+	content: "\e066";
+}
+.icon-dss-msm:before {
+	content: "\e067";
+}
+.icon-dss-house:before {
+	content: "\e068";
+}
+.icon-dss-reports:before {
+	content: "\e069";
+}
+.icon-dss-docx:before {
+	content: "\e06a";
+}
+.icon-uniE06B:before {
+	content: "\e06b";
+}
+.icon-dss-tables:before {
+	content: "\e06c";
+}

@@ -1,0 +1,108 @@
+body {
+    background: #e4e7ea;
+    font-family: 'LatoRegular', 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, sans-serif !important;
+    line-height: 21px;
+    color: #636e7b;
+    overflow: hidden;
+}
+input,select,textarea {
+    font-family: 'LatoRegular', 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, sans-serif !important;
+    color: #636e7b;
+}
+a:focus, a:active { outline: none; }
+h1,h2,h3,h4,h5 {
+    font-family: 'LatoRegular', 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, sans-serif;
+}
+strong {
+    font-family: 'LatoBold';
+    font-weight: normal;
+}
+.notfoundpanel {
+    text-align: center;
+    margin-top: 10%;
+    width: 680px;
+    margin: 10% auto 0 auto;
+}
+.notfoundpanel h1 {
+    font-size: 130px;
+    font-family: 'LatoBold', arial, sans-serif;
+    color: #333;
+    margin: 0;
+    line-height: 130px;
+}
+.animation-pulse {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -ms-animation-name: pulse;
+    -o-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    -o-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+.notfoundpanel h3 {
+    color: #333;
+    margin: 0;
+}
+.notfound h4 {
+    font-size: 14px;
+}
+.notfoundpanel form {
+    width: 350px;
+    margin: 20px auto 0 auto;
+}
+.notfoundpanel .form-control {
+    width: 250px;
+    float: left;
+}
+.transparent-btn {
+	background-color: transparent;
+	color: black;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+        opacity: .7;
+        color: #f35353;
+    }
+
+    50% {
+        transform: scale(1);
+        color: #000;
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0.9);
+        color: #f35353;
+        opacity: .7;
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(0.95);
+        color: #f35353;
+        opacity: .7;
+    }
+
+    50% {
+        -webkit-transform: scale(1);
+        color: #000;
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(0.95);
+        color: #f35353;
+        opacity: .7;
+    }
+}
