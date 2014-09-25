@@ -1,0 +1,892 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Affiliate Search</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="新框架DEMO" />
+    <!-- Main CSS -->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet">
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Content/animate.css" rel="stylesheet" />
+    <link href="../Content/nprogress.css" rel="stylesheet" />
+    <link href="../Content/main.css" rel="stylesheet" />
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../Scripts/html5shiv.js"></script>
+    <script src="../Scripts/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="animated fadeIn">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-header visible-xs-block">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-xs">
+            </a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse" id="topnav">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href='dashboard.html'><i class="fa fa-dashboard"></i>&nbsp;Dashboard</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-circle-o"></i>&nbsp;Exterior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='#'>Landscaping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Stripping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Sweeping</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-dot-circle-o"></i>&nbsp;Interior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='floorcare-list.html'>Floorcare</a>
+                        </li>
+                        <li>
+                            <a href='#'>Windows</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-wrench"></i>&nbsp;Facilities</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='facilities-wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='facilities-wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='facilities-dispatch-list.html'>Dispatch Center</a>
+                        </li>
+                        <li>
+                            <a href='facilities-location-list.html'>Location Management</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                        <li>
+                            <a href='#'>WO Archives</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-headphones"></i>&nbsp;Call Center</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='callcenter-list.html'>All Calls</a>
+                        </li>
+                        <li>
+                            <a href='#'>Incoming Open Call</a>
+                        </li>
+                        <li>
+                            <a href='#'>In Progress</a>
+                        </li>
+                        <li>
+                            <a href='#'>ETA Pending</a>
+                        </li>
+                        <li>
+                            <a href='#'>Completed</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-ticket"></i>&nbsp;Invoice</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='invoice-list.html'>All Batch Invoice</a>
+                        </li>
+                        <li>
+                            <a href='invoice-ap-list.html'>AN AP</a>
+                        </li>
+                        <li>
+                            <a href='invoice-recurring-batch.html'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href='#'><i class="fa fa-users"></i>&nbsp;Affiliate</a>
+                    <ul class="submenu">
+                        <li class="active"><a href="affiliate-list.html">Affiliate Management</a></li>
+                        <li><a href="affiliate-contract-list.html">Contract</a></li>
+                        <li><a href="affiliate-contract-request-list.html">Contract Request</a></li>
+                        <li><a href="affiliate-claim-list.html">Claim</a></li>
+                        <li><a href="affiliate-contract-template-list.html">Contract Template</a></li>
+                        <li><a href="affiliate-paperwork-template-list.html">Paperwork Template</a></li>
+                        <li><a href="affiliate-sourcing-list.html">Sourcing</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-bar-chart-o"></i>&nbsp;Report</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-user"></i>&nbsp;Client</a>
+                    <ul class="submenu">
+                        <li><a href="client-location-info.html">Location Info</a></li>
+                        <li><a href="client-client-info.html">Client Info</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-lg">
+                </li>
+            </ul>
+
+        </div>
+        <div class="nav-btn hidden-xs">
+            <form action="javascript:void(0);" method="get">
+                <fieldset>
+                    <ul class="toolbar clearfix">
+                        <li>
+                            <input type="search" id="search" placeholder="What are you looking for?">
+                        </li>
+                        <li>
+                            <button type="submit" id="btn-search"><span class="fa fa-search"></span></button>
+                        </li>
+                        <li><a href="usercontrol-list.html" class="fa fa-gear"></a></li>
+                        <li><a href="#" class="fa fa-lock"></a></li>
+                        <li><a href="#" class="fa fa-heart open-lauch"></a></li>
+                        <li><a href="#" class="fa fa-sign-out"></a></li>
+                    </ul>
+                </fieldset>
+
+            </form>
+        </div>
+
+    </div>
+    <div class="dashboard-wrapper" />
+    <!-- Main Container start -->
+        <div class="container-fluid">
+            <!-- Row start -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="list-content">
+                        <!-- Custom start -->
+                        <div class="row table-tools">
+                            <div class="pull-right">
+                                <form class="form-inline">
+                                    <button type="button" class="btn btn-primary btn-xs" onclick="javascript: window.location.href = '#';">
+                                        <i class="fa fa-map-marker"></i>&nbsp;Map View
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="search-form clearfix">
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control input-sm" placeholder="Legal Name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control input-sm" placeholder="Zip">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control input-sm" placeholder="Phone">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control input-sm" placeholder="City">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control input-sm" placeholder="Affiliate Code">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <select class="form-control input-sm search-select">
+                                            <option value="" selected="selected">Filter by Entity Type</option>
+                                            <option value="0">All</option>
+                                            <option value="1">LLC</option>
+                                            <option value="2">LLP</option>
+                                            <option value="3">Corporation</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <select class="form-control input-sm search-select">
+                                            <option value="" selected="selected">Filter by Status</option>
+                                            <option value="0">All</option>
+                                            <option value="1">Pendding</option>
+                                            <option value="2">Duplicate</option>
+                                            <option value="3">Converted</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <select class="form-control input-sm search-select">
+                                            <option value="" selected="selected">Filter by State</option>
+                                            <option value="0">All</option>
+                                            <option value="1">Alabama (AL)</option>
+                                            <option value="2">Alaska (AK)</option>
+                                            <option value="3">Converted</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <select class="form-control input-sm search-select">
+                                            <option value="" selected="selected">Filter by Compliance Associate</option>
+                                            <option value="0">All</option>
+                                            <option value="1">Brittany Hefelfinger</option>
+                                            <option value="2">Jianqing Zhao</option>
+                                            <option value="3">CM 6</option>
+                                            <option value="4">CM 7</option>
+                                            <option value="4">CM 4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <select class="form-control input-sm search-select">
+                                            <option value="" selected="selected">Filter by State Registered</option>
+                                            <option value="0">Yes</option>
+                                            <option value="1">No</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <button class="btn btn-info btn-xs transparent-btn search-all" type="button" id="def-search">Search</button>&nbsp;
+                                    <button class="btn btn-info btn-xs transparent-btn search-all" type="button" id="adv-search">Advanced Search</button>
+                                </div>
+                                <!--popover-->
+                                <div id="popover-content" class="hidden">
+                                    <form>
+                                        <h4 class="text-center margin-10">Service Type</h4>
+                                        <div class="panel-body has-tabcontent">
+                                            <ul class="nav nav-tabs" id="myTabs">
+                                                <li class="active">
+                                                    <a href="#tab-1" data-toggle="tab">Repair & Maintenance</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-2" data-toggle="tab">Recurring Internal</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-3" data-toggle="tab">Exterior</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-4" data-toggle="tab">Survey</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div class="tab-pane clearfix active" id="tab-1">
+                                                    <div class="row">
+                                                        <div class="col-xs-6">
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Refrigeration
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">HVAC
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Electrical
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Plumbing
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">General Maintenance
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Glass
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Doors
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Locks
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Roofing
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Gates/Grills
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Fencing
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Painting
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Signage
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Lighting
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Parking Lots
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Kitchen/Restaurant Equipment
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="tab-2">
+                                                    <div class="row">
+                                                        <div class="col-xs-6">
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">VCT Tile Floor Care
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Spin Jet Technology
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Windows
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Pressure Washing
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Carpet Extraction - Mobile
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Carpet Extraction - Truck Mounted
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="tab-3">
+                                                    <div class="row">
+                                                        <div class="col-xs-6">
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Landscaping
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Parking Lot Repairs
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Parking Lot Striping
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Parking Lot Sweeping
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Pressure Washing
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Snow Removal- Large Lots
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Snow Removal- Medium Lots
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Snow Removal- Small Lots
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Snow Removal- Stationary
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="tab-4">
+                                                    <div class="row">
+                                                        <div class="col-xs-6">
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Exterior
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            <div class="checkbox">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox">Interior
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row modal-footer">
+                                                <div class="col-xs-6">
+                                                    <button type="button" class="btn btn-default pull-left btn-block" data-dismiss="modal">Cancel</button>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <button type="button" class="btn btn-primary btn-block" onclick="javascript: window.location.href = 'affiliate-search-detail.html';">Search</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-striped table-condensed table-hover table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Affiliate Code</th>
+                                            <th>Legal Name</th>
+                                            <th>State</th>
+                                            <th>City</th>
+                                            <th>Phone</th>
+                                            <th>Zip</th>
+                                            <th>Main Contact</th>
+                                            <th>Status</th>
+                                            <th>Compliance Associate</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>0000091</td>
+                                            <td>
+                                                <a href="affiliate-search-detail.html">David Smith</a>
+                                            </td>
+                                            <td>AZ</td>
+                                            <td>New York</td>
+                                            <td>0731-84802110</td>
+                                            <td>12306</td>
+                                            <td>Contact</td>
+                                            <td>Prospect</td>
+                                            <td>Associate</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0000091</td>
+                                            <td>
+                                                <a href="affiliate-search-detail.html">David Smith</a>
+                                            </td>
+                                            <td>AZ</td>
+                                            <td>New York</td>
+                                            <td>0731-84802110</td>
+                                            <td>12306</td>
+                                            <td>Contact</td>
+                                            <td>Prospect</td>
+                                            <td>Associate</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0000091</td>
+                                            <td>
+                                                <a href="affiliate-search-detail.html">David Smith</a>
+                                            </td>
+                                            <td>AZ</td>
+                                            <td>New York</td>
+                                            <td>0731-84802110</td>
+                                            <td>12306</td>
+                                            <td>Contact</td>
+                                            <td>Prospect</td>
+                                            <td>Associate</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0000091</td>
+                                            <td>
+                                                <a href="affiliate-search-detail.html">David Smith</a>
+                                            </td>
+                                            <td>AZ</td>
+                                            <td>New York</td>
+                                            <td>0731-84802110</td>
+                                            <td>12306</td>
+                                            <td>Contact</td>
+                                            <td>Prospect</td>
+                                            <td>Associate</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0000091</td>
+                                            <td>
+                                                <a href="affiliate-search-detail.html">David Smith</a>
+                                            </td>
+                                            <td>AZ</td>
+                                            <td>New York</td>
+                                            <td>0731-84802110</td>
+                                            <td>12306</td>
+                                            <td>Contact</td>
+                                            <td>Prospect</td>
+                                            <td>Associate</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0000091</td>
+                                            <td>
+                                                <a href="affiliate-search-detail.html">David Smith</a>
+                                            </td>
+                                            <td>AZ</td>
+                                            <td>New York</td>
+                                            <td>0731-84802110</td>
+                                            <td>12306</td>
+                                            <td>Contact</td>
+                                            <td>Prospect</td>
+                                            <td>Associate</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0000091</td>
+                                            <td>
+                                                <a href="affiliate-search-detail.html">David Smith</a>
+                                            </td>
+                                            <td>AZ</td>
+                                            <td>New York</td>
+                                            <td>0731-84802110</td>
+                                            <td>12306</td>
+                                            <td>Contact</td>
+                                            <td>Prospect</td>
+                                            <td>Associate</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0000091</td>
+                                            <td>
+                                                <a href="affiliate-search-detail.html">David Smith</a>
+                                            </td>
+                                            <td>AZ</td>
+                                            <td>New York</td>
+                                            <td>0731-84802110</td>
+                                            <td>12306</td>
+                                            <td>Contact</td>
+                                            <td>Prospect</td>
+                                            <td>Associate</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0000091</td>
+                                            <td>
+                                                <a href="affiliate-search-detail.html">David Smith</a>
+                                            </td>
+                                            <td>AZ</td>
+                                            <td>New York</td>
+                                            <td>0731-84802110</td>
+                                            <td>12306</td>
+                                            <td>Contact</td>
+                                            <td>Prospect</td>
+                                            <td>Associate</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0000091</td>
+                                            <td>
+                                                <a href="affiliate-search-detail.html">David Smith</a>
+                                            </td>
+                                            <td>AZ</td>
+                                            <td>New York</td>
+                                            <td>0731-84802110</td>
+                                            <td>12306</td>
+                                            <td>Contact</td>
+                                            <td>Prospect</td>
+                                            <td>Associate</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0000091</td>
+                                            <td>
+                                                <a href="affiliate-search-detail.html">David Smith</a>
+                                            </td>
+                                            <td>AZ</td>
+                                            <td>New York</td>
+                                            <td>0731-84802110</td>
+                                            <td>12306</td>
+                                            <td>Contact</td>
+                                            <td>Prospect</td>
+                                            <td>Associate</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0000091</td>
+                                            <td>
+                                                <a href="affiliate-search-detail.html">David Smith</a>
+                                            </td>
+                                            <td>AZ</td>
+                                            <td>New York</td>
+                                            <td>0731-84802110</td>
+                                            <td>12306</td>
+                                            <td>Contact</td>
+                                            <td>Prospect</td>
+                                            <td>Associate</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0000091</td>
+                                            <td>
+                                                <a href="affiliate-search-detail.html">David Smith</a>
+                                            </td>
+                                            <td>AZ</td>
+                                            <td>New York</td>
+                                            <td>0731-84802110</td>
+                                            <td>12306</td>
+                                            <td>Contact</td>
+                                            <td>Prospect</td>
+                                            <td>Associate</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <p>Showing&nbsp;
+                                        <strong>1</strong>&nbsp;to&nbsp;
+                                        <strong>13</strong>&nbsp;of&nbsp;
+                                        <strong>50</strong>&nbsp;entries
+                                    </p>
+                                </div>
+                                <div class="col-xs-6">
+                                    <ul class="pagination pagination-sm pull-right">
+                                        <li class="disabled">
+                                            <a href="javascript:">&lt;&lt;</a>
+                                        </li>
+                                        <li class="active">
+                                            <a href="javascript:">1</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:">2</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:">3</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:">4</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:">5</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:">&gt;&gt;</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Custom end -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Row end -->
+            </div>
+        </div>
+        <div id="launchpad" class="hide">
+            <div class="icon">
+                <img src="../Content/img/mac/candy.png" title="Dashboard" />
+                <span></span>
+            </div>
+            <div class="icon">
+                <img src="../Content/img/mac/clock.png" title="safari" />
+                <span></span>
+            </div>
+            <div class="icon">
+                <img src="../Content/img/mac/tactics.png" title="Mail" />
+                <span></span>
+            </div>
+            <div class="icon">
+                <img src="../Content/img/mac/packman.png" title="Appstore" />
+                <span></span>
+            </div>
+            <div class="icon">
+                <img src="../Content/img/mac/map.png" title="Pages" />
+                <span></span>
+            </div>
+            <div class="icon">
+                <img src="../Content/img/mac/open-letter.png" title="Numbers" />
+                <span></span>
+            </div>
+            <div class="icon">
+                <img src="../Content/img/mac/chalkboard.png" title="Keynote" />
+                <span></span>
+            </div>
+            <div class="icon">
+                <img src="../Content/img/mac/car.png" title="Aperture" />
+                <span></span>
+            </div>
+            <div class="icon">
+                <img src="../Content/img/mac/label.png" title="AddressBook" />
+                <span></span>
+            </div>
+            <div class="icon">
+                <img src="../Content/img/mac/drop.png" title="iCalendar" />
+                <span></span>
+            </div>
+            <div class="icon">
+                <img src="../Content/img/mac/store.png" title="FaceTime" />
+                <span></span>
+            </div>
+            <div class="icon">
+                <img src="../Content/img/mac/map2.png" title="iPhoto" />
+                <span></span>
+            </div>
+            <div class="icon">
+                <img src="../Content/img/mac/cloud-down.png" title="iMovie" />
+                <span></span>
+            </div>
+            <div class="icon">
+                <img src="../Content/img/mac/train.png" title="GarageBand" />
+                <span></span>
+            </div>
+            <div class="icon">
+                <img src="../Content/img/mac/umbrella.png" title="Djay" />
+                <span></span>
+            </div>
+            <div class="icon">
+                <img src="../Content/img/mac/rocket.png" title="iTunes" />
+                <span></span>
+            </div>
+            <div class="icon">
+                <img src="../Content/img/mac/bookshelf.png" title="PhotoBooth" />
+                <span></span>
+            </div>
+            <div class="icon">
+                <img src="../Content/img/mac/glasses.png" title="Compartments" />
+                <span></span>
+            </div>
+            <div class="icon">
+                <img src="../Content/img/mac/paper-plane.png" title="Developer" />
+                <span></span>
+            </div>
+            <div class="icon">
+                <img src="../Content/img/mac/backpack-2.png" title="Pixelmator" />
+                <span></span>
+            </div>
+    </div>
+    <!-- Main Container end -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../Scripts/jquery-1.11.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <!-- nprogress JS -->
+    <script src="../Scripts/nprogress.js"></script>
+    <!-- Custom JS -->
+    <script src="../Scripts/custom.js"></script>
+    <script src="../Scripts/typeahead.jquery.min.js"></script>
+    <script>
+        $(function () {
+            var n = 0;
+            $("#adv-search").click(function () {
+                if ($("#def-search").click) {
+                    n += 1;
+                    for (var i = 0; i < n; i++) {
+                        if (n % 2 == 1) {
+                            $("#def-search").hide();
+                        } else {
+                            $("#def-search").show();
+                        }
+                    }
+                };
+            });
+            $('#adv-search').popover({
+                html: true,
+                placement: 'bottom',
+                content: function () {
+                    return $("#popover-content").html();
+                }
+            });
+            $(window).scroll(function () {
+                $('#adv-search').popover('hide');
+            });
+        });
+    </script>
+</body>
+</html>

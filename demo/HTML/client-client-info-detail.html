@@ -1,0 +1,534 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Location Info Detail</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="新框架DEMO" />
+    <!-- Main CSS -->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet">
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Content/animate.css" rel="stylesheet" />
+    <link href="../Content/nprogress.css" rel="stylesheet" />
+    <link href="../Content/main.css" rel="stylesheet" />
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../Scripts/html5shiv.js"></script>
+    <script src="../Scripts/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="animated fadeIn">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-header visible-xs-block">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-xs">
+            </a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse" id="topnav">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href='dashboard.html'><i class="fa fa-dashboard"></i>&nbsp;Dashboard</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-circle-o"></i>&nbsp;Exterior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='#'>Landscaping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Stripping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Sweeping</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-dot-circle-o"></i>&nbsp;Interior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='floorcare-list.html'>Floorcare</a>
+                        </li>
+                        <li>
+                            <a href='#'>Windows</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-wrench"></i>&nbsp;Facilities</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='facilities-wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='facilities-wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='facilities-dispatch-list.html'>Dispatch Center</a>
+                        </li>
+                        <li>
+                            <a href='facilities-location-list.html'>Location Management</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                        <li>
+                            <a href='#'>WO Archives</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-headphones"></i>&nbsp;Call Center</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='callcenter-list.html'>All Calls</a>
+                        </li>
+                        <li>
+                            <a href='#'>Incoming Open Call</a>
+                        </li>
+                        <li>
+                            <a href='#'>In Progress</a>
+                        </li>
+                        <li>
+                            <a href='#'>ETA Pending</a>
+                        </li>
+                        <li>
+                            <a href='#'>Completed</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-ticket"></i>&nbsp;Invoice</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='invoice-list.html'>All Batch Invoice</a>
+                        </li>
+                        <li>
+                            <a href='invoice-ap-list.html'>AN AP</a>
+                        </li>
+                        <li>
+                            <a href='invoice-recurring-batch.html'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-users"></i>&nbsp;Affiliate</a>
+                    <ul class="submenu">
+                        <li class="active"><a href="affiliate-list.html">Affiliate Management</a></li>
+                        <li><a href="affiliate-contract-list.html">Contract</a></li>
+                        <li><a href="affiliate-contract-request-list.html">Contract Request</a></li>
+                        <li><a href="affiliate-claim-list.html">Claim</a></li>
+                        <li><a href="affiliate-contract-template-list.html">Contract Template</a></li>
+                        <li><a href="affiliate-paperwork-template-list.html">Paperwork Template</a></li>
+                        <li><a href="affiliate-sourcing-list.html">Sourcing</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-bar-chart-o"></i>&nbsp;Report</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li class="active">
+                    <a href='#'><i class="fa fa-user"></i>&nbsp;Client</a>
+                    <ul class="submenu">
+                        <li><a href="client-location-info.html">Location Info</a></li>
+                        <li class="active"><a href="client-client-info.html">Client Info</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-lg">
+                </li>
+            </ul>
+
+        </div>
+        <div class="nav-btn hidden-xs">
+            <form action="javascript:void(0);" method="get">
+                <fieldset>
+                    <ul class="toolbar clearfix">
+                        <li>
+                            <input type="search" id="search" placeholder="What are you looking for?">
+                        </li>
+                        <li>
+                            <button type="submit" id="btn-search"><span class="fa fa-search"></span></button>
+                        </li>
+                        <li><a href="usercontrol-list.html" class="fa fa-gear"></a></li>
+                        <li><a href="#" class="fa fa-lock"></a></li>
+                        <li><a href="#" class="fa fa-heart open-lauch"></a></li>
+                        <li><a href="#" class="fa fa-sign-out"></a></li>
+                    </ul>
+                </fieldset>
+
+            </form>
+        </div>
+    </div>
+    <!-- Main Container start -->
+    <div class="dashboard-wrapper">
+
+        <div class="container-fluid">
+            <!-- Row start -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="details-content">
+                        <div class="panel-heading client-info-heading">
+                            <h3 class="panel-title">Edit Location</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <div class="panel-sub-title">
+                                        <h5 class="p">Main Information</h5>
+                                    </div>
+                                    <form class="clearfix">
+                                        <div class="form-group">
+                                            <label>Client Name</label><span class="required">*</span>
+                                            <input class="form-control input-sm" type="text" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Abbreviated Name</label><span class="required">*</span>
+                                            <input class="form-control input-sm" type="text" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>IsPublic</label>
+                                            <div class="form-group">
+                                                <label class="checkbox-inline">
+                                                    <input type="checkbox" name="chk" value="1" />
+                                                    Yes
+                                                </label>
+                                                <label class="checkbox-inline">
+                                                    <input type="checkbox" name="chk"  value="0" />
+                                                    No
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Logo</label>
+                                            <div class="form-group clearfix">
+                                                <img src="../Content/img/client-logo.png" class="pull-left hidden" id="img-pre" width="90" height="90"/>
+                                                <input type="file" class="pull-left btn-top-10" id="file" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Started On</label><span class="required">*</span>
+                                            <input class="form-control input-sm" type="text" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Note</label>
+                                            <textarea class="form-control" rows="4"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <div class="panel-sub-title">
+                                        <h5>H.Q.Address</h5>
+                                    </div>
+                                    <form class="clearfix">
+                                        <div class="form-group">
+                                            <label>Mall</label>
+                                            <input class="form-control input-sm" type="text" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Street Address</label>
+                                            <input class="form-control input-sm" type="text" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>City</label>
+                                            <input class="form-control input-sm" type="text" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>State</label>
+                                            <input class="form-control input-sm" type="text" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Zip Code</label>
+                                            <input class="form-control input-sm" type="text" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>District</label>
+                                            <input class="form-control input-sm" type="text" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Region</label>
+                                            <input class="form-control input-sm" type="text" />
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <div class="panel-sub-title">
+                                        <h5>H.Q.Contact Information</h5>
+                                    </div>
+                                    <form class="clearfix">
+                                        <div class="form-group">
+                                            <label>Manager First Name</label><span class="required">*</span>
+                                            <input class="form-control input-sm" type="text" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Manager Last Name</label><span class="required">*</span>
+                                            <input class="form-control input-sm" type="text" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Phone Number</label>
+                                            <input class="form-control input-sm" type="text" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Fax</label>
+                                            <input class="form-control input-sm" type="text" />
+                                        </div>
+                                        <div class="form-group margin-20">
+                                            <label>Email Address</label><span class="required">*</span>
+                                            <input class="form-control input-sm" type="text" />
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"/>
+                                                    <a data-toggle="modal" data-target="#myModal">Send the Activation Email</a>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center col-sm-12 col-xs-12 btn-top-10 margin-20">
+                            <button class="btn btn-default">Cancel</button>
+                            <button class="btn btn-danger" >Delete</button>
+                            <button class="btn btn-success">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Row end -->
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Edit Email Template</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="clearfix">
+                        <div class="row">
+                            <div class="col-xs-12" style="font-size: 14px;">
+                                <textarea class="form-control margin-20" rows="10" style="font-size: 14px;">
+Dear [Client User], 
+
+Welcome to SMS-Assist Management System! 
+
+We have created the Client account for you with the following login information, please click the “Set Password” link to activate your account and set your password. 
+
+Username: [Email Address] 
+Password: [Set Password] 
+                                </textarea>
+                                <p>
+*Please note that this is one-time link, for security purposes this link will expire automatically on 24 hours. 
+        If you have any questions regarding the activation.<br>
+                                    please contact us on <a href="mailto:smssurvey@sms-assist.com">smssurvey@sms-assist.com</a>&nbsp;for assistance.<br>
+                                    <br>
+                                    We hope you enjoy using our service.<br>
+                                    <br>
+                                    Thank you!<br>
+                                    <br>
+                                    Best regards,<br>
+                                    <br>
+                                    SMS-Assist Team
+        <br>
+                                    <a href="http://survey.sms-assist.com/account/login.html">www.sms-assist.com</a><br>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancle</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Save</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Main Container End -->
+    <div id="launchpad" class="hide">
+        <div class="icon">
+            <img src="../Content/img/mac/candy.png" title="Dashboard" />
+            <span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/clock.png" title="safari" />
+            <span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/tactics.png" title="Mail" />
+            <span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/packman.png" title="Appstore" />
+            <span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/map.png" title="Pages" />
+            <span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/open-letter.png" title="Numbers" />
+            <span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/chalkboard.png" title="Keynote" />
+            <span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/car.png" title="Aperture" />
+            <span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/label.png" title="AddressBook" />
+            <span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/drop.png" title="iCalendar" />
+            <span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/store.png" title="FaceTime" />
+            <span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/map2.png" title="iPhoto" />
+            <span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/cloud-down.png" title="iMovie" />
+            <span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/train.png" title="GarageBand" />
+            <span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/umbrella.png" title="Djay" />
+            <span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/rocket.png" title="iTunes" />
+            <span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/bookshelf.png" title="PhotoBooth" />
+            <span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/glasses.png" title="Compartments" />
+            <span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/paper-plane.png" title="Developer" />
+            <span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/backpack-2.png" title="Pixelmator" />
+            <span></span>
+        </div>
+    </div>
+    <!-- Main Container end -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../Scripts/jquery-1.11.0.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../Scripts/bootstrap.min.js"></script>
+
+    <!-- nprogress JS -->
+    <script src="../Scripts/nprogress.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../Scripts/custom.js"></script>
+    <script src="../Scripts/typeahead.jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("input[name='chk']").click(function () {
+                if ($("input[name='chk']").attr("checked", "checked")) {
+                    $(this).attr("checked", "checked");
+                    $("input[name='chk']").not(this).attr("checked", false);
+                };
+            });
+        });
+
+        $("#file").change(function () {
+            var objUrl = getObjectURL(this.files[0]);
+            console.log("objUrl = " + objUrl);
+            if (objUrl) {
+                $("#img-pre").attr("src", objUrl).removeClass("hidden");
+                $("#file").addClass("client-logo-upload");
+            }
+        });
+        function getObjectURL(file) {
+            var url = null;
+            if (window.createObjectURL != undefined) {
+                url = window.createObjectURL(file);
+            } else if (window.URL != undefined) {
+                url = window.URL.createObjectURL(file);
+            } else if (window.webkitURL != undefined) {
+                url = window.webkitURL.createObjectURL(file);
+            }
+            return url;
+        }
+    </script>
+</body>
+</html>

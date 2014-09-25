@@ -1,0 +1,814 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>[PM] Contract Request List</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="新框架DEMO" />
+    <!-- Main CSS -->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet">
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Content/animate.css" rel="stylesheet" />
+    <link href="../Content/nprogress.css" rel="stylesheet" />
+    <link href="../Content/bootstrap-multiselect.css" rel="stylesheet" />
+    <link href="../Content/dropzone.css" rel="stylesheet" />
+    <link href="../Content/main.css" rel="stylesheet" />
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../Scripts/html5shiv.js"></script>
+    <script src="../Scripts/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="animated fadeIn">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-header visible-xs-block">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-xs">
+            </a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse" id="topnav">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href='dashboard.html'><i class="fa fa-dashboard"></i>&nbsp;Dashboard</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-circle-o"></i>&nbsp;Exterior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='#'>Landscaping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Stripping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Sweeping</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-dot-circle-o"></i>&nbsp;Interior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='floorcare-list.html'>Floorcare</a>
+                        </li>
+                        <li>
+                            <a href='#'>Windows</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-wrench"></i>&nbsp;Facilities</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='facilities-wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='facilities-wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='facilities-dispatch-list.html'>Dispatch Center</a>
+                        </li>
+                        <li>
+                            <a href='facilities-location-list.html'>Location Management</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                        <li>
+                            <a href='#'>WO Archives</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-headphones"></i>&nbsp;Call Center</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='callcenter-list.html'>All Calls</a>
+                        </li>
+                        <li>
+                            <a href='#'>Incoming Open Call</a>
+                        </li>
+                        <li>
+                            <a href='#'>In Progress</a>
+                        </li>
+                        <li>
+                            <a href='#'>ETA Pending</a>
+                        </li>
+                        <li>
+                            <a href='#'>Completed</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-ticket"></i>&nbsp;Invoice</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='invoice-list.html'>All Batch Invoice</a>
+                        </li>
+                        <li>
+                            <a href='invoice-ap-list.html'>AN AP</a>
+                        </li>
+                        <li>
+                            <a href='invoice-recurring-batch.html'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href='#'><i class="fa fa-users"></i>&nbsp;Affiliate</a>
+                    <ul class="submenu">
+                        <li><a href="affiliate-list.html">Affiliate Management</a></li>
+                        <li><a href="affiliate-contract-list.html">Contract</a></li>
+                        <li class="active"><a href="affiliate-contract-request-list.html">Contract Request</a></li>
+                        <li><a href="affiliate-claim-list.html">Claim</a></li>
+                        <li><a href="affiliate-contract-template-list.html">Contract Template</a></li>
+                        <li><a href="affiliate-paperwork-template-list.html">Paperwork Template</a></li>
+                        <li><a href="affiliate-sourcing-list.html">Sourcing</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-bar-chart-o"></i>&nbsp;Report</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-user"></i>&nbsp;Client</a>
+                    <ul class="submenu">
+                        <li><a href="client-location-info.html">Location Info</a></li>
+                        <li><a href="client-client-info.html">Client Info</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-lg">
+                </li>
+            </ul>
+
+        </div>
+        <div class="nav-btn hidden-xs">
+            <form action="javascript:void(0);" method="get">
+                <fieldset>
+                    <ul class="toolbar clearfix">
+                        <li>
+                            <input type="search" id="search" placeholder="What are you looking for?">
+                        </li>
+                        <li>
+                            <button type="submit" id="btn-search"><span class="fa fa-search"></span></button>
+                        </li>
+                        <li><a href="usercontrol-list.html" class="fa fa-gear"></a></li>
+                        <li><a href="#" class="fa fa-lock"></a></li>
+                        <li><a href="#" class="fa fa-heart open-lauch"></a></li>
+                        <li><a href="#" class="fa fa-sign-out"></a></li>
+                    </ul>
+                </fieldset>
+
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Main Container start -->
+    <div class="dashboard-wrapper">
+
+        <div class="container-fluid">
+            <!-- Row start -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="list-content">
+                        <!-- Custom start -->
+                        <div class="row table-tools">
+                            <div class="pull-right">
+                                <form class="form-inline">
+                                    <button class="btn btn-primary btn-xs" type="button" data-toggle="modal" data-target="#myNewModal"><i class="fa fa-plus"></i>&nbsp;New Contract Request</button>
+                                </form>
+                            </div>
+                            <div class="search-form clearfix">
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control input-sm" placeholder="Legal Name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control input-sm" placeholder="Contract Name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control input-sm" placeholder="Affiliate Code">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <select class="form-control input-sm search-select">
+                                            <option value="" selected="selected">Filter by Status</option>
+                                            <option value="0">All</option>
+                                            <option value="1">Pending</option>
+                                            <option value="2">Completed</option>
+                                            <option value="4">Cancelled</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <select class="form-control input-sm search-select">
+                                            <option value="" selected="selected">Filter by Contract Type</option>
+                                            <option value="0">All</option>
+                                            <option value="1">Main Contract</option>
+                                            <option value="2">SOW</option>
+                                            <option value="4">Exhibit D Amedment</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <button class="btn btn-info btn-xs transparent-btn search-all" type="button">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- popover -->
+                        <div id="popover-content" class="hidden">
+                            <form class="clearfix">
+                                <div class="form-group">
+                                    <label class="w">Add Paperwork</label>
+                                    <select class="multiselect" id="paperwork" multiple="multiple">
+                                        <option value="0">Unscheduled</option>
+                                        <option value="1">Scheduled</option>
+                                        <option value="2">Missed</option>
+                                        <option value="3">Rescheduled</option>
+                                        <option value="4">In Progress</option>
+                                        <option value="5">Completed</option>
+                                        <option value="6">Billed</option>
+                                        <option value="7">Pay to Affiliate</option>
+                                        <option value="8">Expired</option>
+                                        <option value="9">Resolved Without Invoice</option>
+                                        <option value="10">Deferred</option>
+                                        <option value="11">Void</option>
+                                        <option value="12">Log Refusal</option>
+                                        <option value="13">Service Pool</option>
+                                    </select>
+                                </div>
+                                <div class="text-center">
+                                    <button class="btn btn-default btn-xs">Cancel</button>
+                                    <button class="btn btn-success btn-xs">Confirm</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-condensed table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Affiliate Code</th>
+                                        <th>Legal Name</th>
+                                        <th>Contact Request #</th>
+                                        <th>Contract Type</th>
+                                        <th>Contract Name</th>
+                                        <th>Created Date</th>
+                                        <th>Created By</th>
+                                        <th>Exhibit D</th>
+                                        <th>Status</th>
+                                        <th>Completed Date</th>
+                                        <th>Completed By</th>
+                                        <th>Compliance Associate</th>
+                                        <th>Comments</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>000005</td>
+                                        <td><a href="affiliate-detail.html#affContract">test0722</a></td>
+                                        <td>000003a</td>
+                                        <td class="text-danger">SOW</td>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>07/22/2014</td>
+                                        <td>PC 4</td>
+                                        <td><a href="#">dhuew236dbsh.xslx</a></td>
+                                        <td>Pending</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>CM 0</td>
+                                        <td class="width-auto"><div class="text-comments" data-toggle="tooltip" data-placement="top" title="Vohrewic filamuf zufgi ramebfi avdem bovrodrem bup ko kiz odi se vitpo eja vuvoduk epucowus kebpikta. Una anu hiz sef onaul le fidre poigome wojanaliz hiz lu ti pe ni in ohlefara gekcel. Hemeluka hubbakal cenofo vuedeem maunugu rucdemmos eljicgi me novomga te ke odgivgo.">Vohrewic filamuf zufgi ramebfi avdem bovrodrem bup ko kiz odi se vitpo eja vuvoduk epucowus kebpikta. Una anu hiz sef onaul le fidre poigome wojanaliz hiz lu ti pe ni in ohlefara gekcel. Hemeluka hubbakal cenofo vuedeem maunugu rucdemmos eljicgi me novomga te ke odgivgo.</div></td>
+                                        <td><button class="btn btn-danger btn-xs btn-block">Cancel</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>000005</td>
+                                        <td><a href="affiliate-detail.html#affContract">test0722</a></td>
+                                        <td>000003a</td>
+                                        <td class="text-danger">SOW</td>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>07/22/2014</td>
+                                        <td>PC 4</td>
+                                        <td><a href="#">dhuew236dbsh.xslx</a></td>
+                                        <td>Pending</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>CM 0</td>
+                                        <td class="width-auto"><div class="text-comments" data-toggle="tooltip" data-placement="top" title="Vohrewic filamuf zufgi ramebfi avdem bovrodrem bup ko kiz odi se vitpo eja vuvoduk epucowus kebpikta. Una anu hiz sef onaul le fidre poigome wojanaliz hiz lu ti pe ni in ohlefara gekcel. Hemeluka hubbakal cenofo vuedeem maunugu rucdemmos eljicgi me novomga te ke odgivgo.">Vohrewic filamuf zufgi ramebfi avdem bovrodrem bup ko kiz odi se vitpo eja vuvoduk epucowus kebpikta. Una anu hiz sef onaul le fidre poigome wojanaliz hiz lu ti pe ni in ohlefara gekcel. Hemeluka hubbakal cenofo vuedeem maunugu rucdemmos eljicgi me novomga te ke odgivgo.</div></td>
+                                        <td><button class="btn btn-danger btn-xs btn-block">Cancel</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>000005</td>
+                                        <td><a href="affiliate-detail.html#affContract">test0722</a></td>
+                                        <td>000003a</td>
+                                        <td class="text-danger">SOW</td>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>07/22/2014</td>
+                                        <td>PC 4</td>
+                                        <td><a href="#">dhuew236dbsh.xslx</a></td>
+                                        <td>Pending</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>CM 0</td>
+                                        <td class="width-auto"><div class="text-comments" data-toggle="tooltip" data-placement="top" title="Vohrewic filamuf zufgi ramebfi avdem bovrodrem bup ko kiz odi se vitpo eja vuvoduk epucowus kebpikta. Una anu hiz sef onaul le fidre poigome wojanaliz hiz lu ti pe ni in ohlefara gekcel. Hemeluka hubbakal cenofo vuedeem maunugu rucdemmos eljicgi me novomga te ke odgivgo.">Vohrewic filamuf zufgi ramebfi avdem bovrodrem bup ko kiz odi se vitpo eja vuvoduk epucowus kebpikta. Una anu hiz sef onaul le fidre poigome wojanaliz hiz lu ti pe ni in ohlefara gekcel. Hemeluka hubbakal cenofo vuedeem maunugu rucdemmos eljicgi me novomga te ke odgivgo.</div></td>
+                                        <td><button class="btn btn-danger btn-xs btn-block">Cancel</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>000005</td>
+                                        <td><a href="affiliate-detail.html#affContract">test0722</a></td>
+                                        <td>000003a</td>
+                                        <td class="text-danger">SOW</td>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>07/22/2014</td>
+                                        <td>PC 4</td>
+                                        <td><a href="#">dhuew236dbsh.xslx</a></td>
+                                        <td>Pending</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>CM 0</td>
+                                        <td class="width-auto"><div class="text-comments" data-toggle="tooltip" data-placement="top" title="Vohrewic filamuf zufgi ramebfi avdem bovrodrem bup ko kiz odi se vitpo eja vuvoduk epucowus kebpikta. Una anu hiz sef onaul le fidre poigome wojanaliz hiz lu ti pe ni in ohlefara gekcel. Hemeluka hubbakal cenofo vuedeem maunugu rucdemmos eljicgi me novomga te ke odgivgo.">Vohrewic filamuf zufgi ramebfi avdem bovrodrem bup ko kiz odi se vitpo eja vuvoduk epucowus kebpikta. Una anu hiz sef onaul le fidre poigome wojanaliz hiz lu ti pe ni in ohlefara gekcel. Hemeluka hubbakal cenofo vuedeem maunugu rucdemmos eljicgi me novomga te ke odgivgo.</div></td>
+                                        <td><button class="btn btn-danger btn-xs btn-block">Cancel</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>000005</td>
+                                        <td><a href="affiliate-detail.html#affContract">test0722</a></td>
+                                        <td>000003a</td>
+                                        <td class="text-danger">SOW</td>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>07/22/2014</td>
+                                        <td>PC 4</td>
+                                        <td><a href="#">dhuew236dbsh.xslx</a></td>
+                                        <td>Pending</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>CM 0</td>
+                                        <td class="width-auto"><div class="text-comments" data-toggle="tooltip" data-placement="top" title="Vohrewic filamuf zufgi ramebfi avdem bovrodrem bup ko kiz odi se vitpo eja vuvoduk epucowus kebpikta. Una anu hiz sef onaul le fidre poigome wojanaliz hiz lu ti pe ni in ohlefara gekcel. Hemeluka hubbakal cenofo vuedeem maunugu rucdemmos eljicgi me novomga te ke odgivgo.">Vohrewic filamuf zufgi ramebfi avdem bovrodrem bup ko kiz odi se vitpo eja vuvoduk epucowus kebpikta. Una anu hiz sef onaul le fidre poigome wojanaliz hiz lu ti pe ni in ohlefara gekcel. Hemeluka hubbakal cenofo vuedeem maunugu rucdemmos eljicgi me novomga te ke odgivgo.</div></td>
+                                        <td><button class="btn btn-danger btn-xs btn-block">Cancel</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>000005</td>
+                                        <td><a href="affiliate-detail.html#affContract">test0722</a></td>
+                                        <td>000003a</td>
+                                        <td class="text-danger">SOW</td>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>07/22/2014</td>
+                                        <td>PC 4</td>
+                                        <td><a href="#">dhuew236dbsh.xslx</a></td>
+                                        <td>Pending</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>CM 0</td>
+                                        <td class="width-auto"><div class="text-comments" data-toggle="tooltip" data-placement="top" title="Vohrewic filamuf zufgi ramebfi avdem bovrodrem bup ko kiz odi se vitpo eja vuvoduk epucowus kebpikta. Una anu hiz sef onaul le fidre poigome wojanaliz hiz lu ti pe ni in ohlefara gekcel. Hemeluka hubbakal cenofo vuedeem maunugu rucdemmos eljicgi me novomga te ke odgivgo.">Vohrewic filamuf zufgi ramebfi avdem bovrodrem bup ko kiz odi se vitpo eja vuvoduk epucowus kebpikta. Una anu hiz sef onaul le fidre poigome wojanaliz hiz lu ti pe ni in ohlefara gekcel. Hemeluka hubbakal cenofo vuedeem maunugu rucdemmos eljicgi me novomga te ke odgivgo.</div></td>
+                                        <td><button class="btn btn-danger btn-xs btn-block">Cancel</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>000005</td>
+                                        <td><a href="affiliate-detail.html#affContract">test0722</a></td>
+                                        <td>000003a</td>
+                                        <td class="text-danger">SOW</td>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>07/22/2014</td>
+                                        <td>PC 4</td>
+                                        <td><a href="#">dhuew236dbsh.xslx</a></td>
+                                        <td>Pending</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>CM 0</td>
+                                        <td class="width-auto"><div class="text-comments" data-toggle="tooltip" data-placement="top" title="Vohrewic filamuf zufgi ramebfi avdem bovrodrem bup ko kiz odi se vitpo eja vuvoduk epucowus kebpikta. Una anu hiz sef onaul le fidre poigome wojanaliz hiz lu ti pe ni in ohlefara gekcel. Hemeluka hubbakal cenofo vuedeem maunugu rucdemmos eljicgi me novomga te ke odgivgo.">Vohrewic filamuf zufgi ramebfi avdem bovrodrem bup ko kiz odi se vitpo eja vuvoduk epucowus kebpikta. Una anu hiz sef onaul le fidre poigome wojanaliz hiz lu ti pe ni in ohlefara gekcel. Hemeluka hubbakal cenofo vuedeem maunugu rucdemmos eljicgi me novomga te ke odgivgo.</div></td>
+                                        <td><button class="btn btn-danger btn-xs btn-block">Cancel</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>000005</td>
+                                        <td><a href="affiliate-detail.html#affContract">test0722</a></td>
+                                        <td>000003a</td>
+                                        <td class="text-danger">SOW</td>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>07/22/2014</td>
+                                        <td>PC 4</td>
+                                        <td><a href="#">dhuew236dbsh.xslx</a></td>
+                                        <td>Pending</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>CM 0</td>
+                                        <td class="width-auto"><div class="text-comments" data-toggle="tooltip" data-placement="top" title="Vohrewic filamuf zufgi ramebfi avdem bovrodrem bup ko kiz odi se vitpo eja vuvoduk epucowus kebpikta. Una anu hiz sef onaul le fidre poigome wojanaliz hiz lu ti pe ni in ohlefara gekcel. Hemeluka hubbakal cenofo vuedeem maunugu rucdemmos eljicgi me novomga te ke odgivgo.">Vohrewic filamuf zufgi ramebfi avdem bovrodrem bup ko kiz odi se vitpo eja vuvoduk epucowus kebpikta. Una anu hiz sef onaul le fidre poigome wojanaliz hiz lu ti pe ni in ohlefara gekcel. Hemeluka hubbakal cenofo vuedeem maunugu rucdemmos eljicgi me novomga te ke odgivgo.</div></td>
+                                        <td><button class="btn btn-danger btn-xs btn-block">Cancel</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>000005</td>
+                                        <td><a href="affiliate-detail.html#affContract">test0722</a></td>
+                                        <td>000003a</td>
+                                        <td class="text-danger">SOW</td>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>07/22/2014</td>
+                                        <td>PC 4</td>
+                                        <td><a href="#">dhuew236dbsh.xslx</a></td>
+                                        <td>Pending</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>CM 0</td>
+                                        <td class="width-auto"><div class="text-comments" data-toggle="tooltip" data-placement="top" title="Vohrewic filamuf zufgi ramebfi avdem bovrodrem bup ko kiz odi se vitpo eja vuvoduk epucowus kebpikta. Una anu hiz sef onaul le fidre poigome wojanaliz hiz lu ti pe ni in ohlefara gekcel. Hemeluka hubbakal cenofo vuedeem maunugu rucdemmos eljicgi me novomga te ke odgivgo.">Vohrewic filamuf zufgi ramebfi avdem bovrodrem bup ko kiz odi se vitpo eja vuvoduk epucowus kebpikta. Una anu hiz sef onaul le fidre poigome wojanaliz hiz lu ti pe ni in ohlefara gekcel. Hemeluka hubbakal cenofo vuedeem maunugu rucdemmos eljicgi me novomga te ke odgivgo.</div></td>
+                                        <td><button class="btn btn-danger btn-xs btn-block">Cancel</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>000005</td>
+                                        <td><a href="affiliate-detail.html#affContract">test0722</a></td>
+                                        <td>000003a</td>
+                                        <td class="text-danger">SOW</td>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>07/22/2014</td>
+                                        <td>PC 4</td>
+                                        <td><a href="#">dhuew236dbsh.xslx</a></td>
+                                        <td>Pending</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>CM 0</td>
+                                        <td class="width-auto"><div class="text-comments" data-toggle="tooltip" data-placement="top" title="Vohrewic filamuf zufgi ramebfi avdem bovrodrem bup ko kiz odi se vitpo eja vuvoduk epucowus kebpikta. Una anu hiz sef onaul le fidre poigome wojanaliz hiz lu ti pe ni in ohlefara gekcel. Hemeluka hubbakal cenofo vuedeem maunugu rucdemmos eljicgi me novomga te ke odgivgo.">Vohrewic filamuf zufgi ramebfi avdem bovrodrem bup ko kiz odi se vitpo eja vuvoduk epucowus kebpikta. Una anu hiz sef onaul le fidre poigome wojanaliz hiz lu ti pe ni in ohlefara gekcel. Hemeluka hubbakal cenofo vuedeem maunugu rucdemmos eljicgi me novomga te ke odgivgo.</div></td>
+                                        <td><button class="btn btn-danger btn-xs btn-block">Cancel</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>000005</td>
+                                        <td><a href="affiliate-detail.html#affContract">test0722</a></td>
+                                        <td>000003a</td>
+                                        <td class="text-danger">SOW</td>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>07/22/2014</td>
+                                        <td>PC 4</td>
+                                        <td><a href="#">dhuew236dbsh.xslx</a></td>
+                                        <td>Pending</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>CM 0</td>
+                                        <td class="width-auto"><div class="text-comments" data-toggle="tooltip" data-placement="top" title="Vohrewic filamuf zufgi ramebfi avdem bovrodrem bup ko kiz odi se vitpo eja vuvoduk epucowus kebpikta. Una anu hiz sef onaul le fidre poigome wojanaliz hiz lu ti pe ni in ohlefara gekcel. Hemeluka hubbakal cenofo vuedeem maunugu rucdemmos eljicgi me novomga te ke odgivgo.">Vohrewic filamuf zufgi ramebfi avdem bovrodrem bup ko kiz odi se vitpo eja vuvoduk epucowus kebpikta. Una anu hiz sef onaul le fidre poigome wojanaliz hiz lu ti pe ni in ohlefara gekcel. Hemeluka hubbakal cenofo vuedeem maunugu rucdemmos eljicgi me novomga te ke odgivgo.</div></td>
+                                        <td><button class="btn btn-danger btn-xs btn-block">Cancel</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>000005</td>
+                                        <td><a href="affiliate-detail.html#affContract">test0722</a></td>
+                                        <td>000003a</td>
+                                        <td class="text-danger">SOW</td>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>07/22/2014</td>
+                                        <td>PC 4</td>
+                                        <td><a href="#">dhuew236dbsh.xslx</a></td>
+                                        <td>Pending</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>CM 0</td>
+                                        <td class="width-auto"><div class="text-comments" data-toggle="tooltip" data-placement="top" title="Vohrewic filamuf zufgi ramebfi avdem bovrodrem bup ko kiz odi se vitpo eja vuvoduk epucowus kebpikta. Una anu hiz sef onaul le fidre poigome wojanaliz hiz lu ti pe ni in ohlefara gekcel. Hemeluka hubbakal cenofo vuedeem maunugu rucdemmos eljicgi me novomga te ke odgivgo.">Vohrewic filamuf zufgi ramebfi avdem bovrodrem bup ko kiz odi se vitpo eja vuvoduk epucowus kebpikta. Una anu hiz sef onaul le fidre poigome wojanaliz hiz lu ti pe ni in ohlefara gekcel. Hemeluka hubbakal cenofo vuedeem maunugu rucdemmos eljicgi me novomga te ke odgivgo.</div></td>
+                                        <td><button class="btn btn-danger btn-xs btn-block">Cancel</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <p>Showing&nbsp;<strong>1</strong>&nbsp;to&nbsp;<strong>20</strong>&nbsp;of&nbsp;<strong>29</strong>&nbsp;entries</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <ul class="pagination pagination-sm pull-right">
+                                    <li class="disabled"><a href="javascript:"><<</a></li>
+                                    <li class="active"><a href="javascript:">1</a></li>
+                                    <li><a href="javascript:">2</a></li>
+                                    <li><a href="javascript:">3</a></li>
+                                    <li><a href="javascript:">4</a></li>
+                                    <li><a href="javascript:">5</a></li>
+                                    <li><a href="javascript:">>></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Custom end -->
+                    </div>
+                </div>
+            </div>
+            <!-- Row end -->
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">New Affiliate</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="clearfix">
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <label>Legal Name</label><span class="required">*</span>
+                                <input class="form-control input-sm" id="autoComplete" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>Address</label><span class="required">*</span>
+                                <input class="form-control input-sm" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>State</label><span class="required">*</span>
+                                <select class="form-control input-sm">
+                                    <option value="" selected="selected">Please Select a State</option>
+                                    <option value="alabama">alabama</option>
+                                    <option value="alaska">alaska</option>
+                                    <option value="arizona">arizona</option>
+                                    <option value="arkansas">arkansas</option>
+                                    <option value="california">california</option>
+                                    <option value="colorado">colorado</option>
+                                    <option value="connecticut">connecticut</option>
+                                    <option value="delaware">delaware</option>
+                                    <option value="florida">florida</option>
+                                    <option value="hawaii">hawaii</option>
+                                    <option value="idaho">idaho</option>
+                                    <option value="lllinois">lllinois</option>
+                                    <option value="indiana">indiana</option>
+                                    <option value="lowa">lowa</option>
+                                    <option value="kansas">kansas</option>
+                                    <option value="kentucky">kentucky</option>
+                                    <option value="louisiana">louisiana</option>
+                                    <option value="maine">maine</option>
+                                    <option value="maryland">maryland</option>
+                                    <option value="massachusetts">massachusetts</option>
+                                    <option value="michigan">michigan</option>
+                                    <option value="minnesota">minnesota</option>
+                                    <option value="mississippi">mississippi</option>
+                                    <option value="missouri">missouri</option>
+                                    <option value="montana">montana</option>
+                                    <option value="nebraska">nebraska</option>
+                                    <option value="nevada">nevada</option>
+                                    <option value="new hampshire">new hampshire</option>
+                                    <option value="new jersey">new jersey</option>
+                                    <option value="new mexico">new mexico</option>
+                                    <option value="new york">new york</option>
+                                    <option value="north carolina">north carolina</option>
+                                    <option value="north dakota">north dakota</option>
+                                    <option value="ohio">ohio</option>
+                                    <option value="oklahoma">oklahoma</option>
+                                    <option value="oregon">oregon</option>
+                                    <option value="pennsylvania">pennsylvania</option>
+                                    <option value="rhode island">rhode island</option>
+                                    <option value="south carolina">south carolina</option>
+                                    <option value="south dakota">south dakota</option>
+                                    <option value="tennessee">tennessee</option>
+                                    <option value="texas">texas</option>
+                                    <option value="utah">utah</option>
+                                    <option value="vermont">vermont</option>
+                                    <option value="virginia">virginia</option>
+                                    <option value="washington">washington</option>
+                                    <option value="west virginia">west virginia</option>
+                                    <option value="wisconsin">wisconsin</option>
+                                    <option value="wyoming">wyoming</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone</label><span class="required">*</span>
+                                <input class="form-control input-sm" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>Fax</label>
+                                <input class="form-control input-sm" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>EIN</label>
+                                <input class="form-control input-sm" type="text" />
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <label>DBA Name</label><span class="required">*</span>
+                                <input class="form-control input-sm" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>City</label><span class="required">*</span>
+                                <input class="form-control input-sm" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>Zip/Postal</label><span class="required">*</span>
+                                <input class="form-control input-sm" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label><span class="required">*</span>
+                                <input class="form-control input-sm" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>SSN</label>
+                                <input class="form-control input-sm" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>Service States</label>
+                                <input class="form-control input-sm" type="text" />
+                                <p class="help-block">Enter states seperated by ","</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myNewModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Add Contract Request</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <form class="clearfix">
+                                <div class="form-group">
+                                    <label>Legal Name</label><span class="required">*</span>
+                                    <select class="form-control input-sm">
+                                        <option selected="selected" value="Select Contract Name">Select Legal Name</option>
+                                        <option value="alaska">SOW</option>
+                                        <option value="arizona">Main Contact</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Compliance Associate</label>
+                                    <input type="text" class="form-control input-sm" value="Paul B" readonly="readonly" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Contract Type</label><span class="required">*</span>
+                                    <select class="form-control input-sm">
+                                        <option selected="selected" value="Select Contract Name">Select Contract Type</option>
+                                        <option value="alaska">SOW</option>
+                                        <option value="arizona">Main Contact</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Contract Name</label><span class="required">*</span>
+                                    <select class="form-control input-sm">
+                                        <option selected="selected" value="Select Contract Name">Select Contract Name</option>
+                                        <option value="Family Dollar Floor Care">Family Dollar Floor Care</option>
+                                        <option value="Family Dollar Floor Care1">Family Dollar Floor Care1</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="w">Compliance Associate</label>
+                                    <button class="btn btn-primary btn-xs"><i class="fa fa-upload"></i>&nbsp;Upload</button>
+                                </div>
+                                <div class="form-group">
+                                    <label>Comments</label>
+                                    <textarea class="form-control no-resize"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default">Cancel</button>
+                    <button type="button" class="btn btn-success">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="launchpad" class="hide">
+        <div class="icon">
+            <img src="../Content/img/mac/candy.png" title="Dashboard" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/clock.png" title="safari" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/tactics.png" title="Mail" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/packman.png" title="Appstore" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/map.png" title="Pages" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/open-letter.png" title="Numbers" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/chalkboard.png" title="Keynote" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/car.png" title="Aperture" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/label.png" title="AddressBook" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/drop.png" title="iCalendar" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/store.png" title="FaceTime" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/map2.png" title="iPhoto" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/cloud-down.png" title="iMovie" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/train.png" title="GarageBand" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/umbrella.png" title="Djay" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/rocket.png" title="iTunes" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/bookshelf.png" title="PhotoBooth" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/glasses.png" title="Compartments" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/paper-plane.png" title="Developer" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/backpack-2.png" title="Pixelmator" /><span></span>
+        </div>
+    </div>
+    <!-- Main Container end -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../Scripts/jquery-1.11.0.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../Scripts/bootstrap.min.js"></script>
+
+    <!-- nprogress JS -->
+    <script src="../Scripts/nprogress.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../Scripts/custom.js"></script>
+    <script src="../Scripts/bootstrap-multiselect.js"></script>
+    <script src="../Scripts/dropzone.min.js"></script>
+    <script>
+        $("#dropzone").dropzone({ url: "http://www.torrentplease.com/dropzone.php" });
+        $(document).ready(function () {
+            $('#js-tmp').popover({
+                html: true,
+                placement: 'auto',
+                content: function () {
+                    return $("#popover-content").html();
+                }
+            });
+            $('#paperwork').multiselect({
+                enableFiltering: true,
+            });
+            $('.text-comments').tooltip();
+        });
+    </script>
+</body>
+</html>

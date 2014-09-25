@@ -1,0 +1,1182 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        WO Detail - DSS
+    </title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/icomoon.css">
+    <link rel="stylesheet" href="../styles/animate.css">
+    <link rel="stylesheet" href="../styles/ladda-themeless.min.css">
+    <link rel="stylesheet" href="../styles/jquery.fancybox.css">
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+    <div class="all-doc">
+
+        <!-- Navigation -->
+        <div class="navbar navbar-fixed-top scroll-hide">
+            <div class="top-bar">
+                <div class="pull-right">
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="settings hidden-xs">
+                            <a href="../../HTML/login.html">
+                                <span aria-hidden="true" class="icon-dss-presentation"></span>
+                                <div class="sr-only">
+                                    Old Version
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown messages hidden-xs">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <span aria-hidden="true" class="icon-dss-alarmclock"></span>
+                                <div class="sr-only">
+                                    Follow Up
+                                </div>
+                                <p class="counter">
+                                    3
+                                </p>
+                            </a>
+                            <ul class="dropdown-menu messages">
+                                <li>
+                                    <a href="#">02/05/2014 00:00 AM Affiliate #18180</a>
+                                </li>
+                                <li>
+                                    <a href="#">08/19/2014 03:44 PM Request #183297</a>
+                                </li>
+                                <li>
+                                    <a href="#">08/22/2014 10:45 PM Call Request #15133</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown user hidden-xs">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span aria-hidden="true" class="icon-dss-profile-male"></span>Franki Yu<b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-user"></i>User Management</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-gear"></i>Role Management</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-gear"></i>Resource Management</a>
+                                </li>
+                                <li>
+                                    <a href="signin.html">
+                                        <i class="icon-signout"></i>Sign Out</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <button class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button><a class="logo" href="index.html">Dynamic Service <span class="text-primary">System</span></a>
+            </div>
+            <div class="main-nav clearfix">
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li>
+                            <a href="index.html">
+                                <span aria-hidden="true" class="icon-dss-house"></span>Dashboard</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="current" data-toggle="dropdown" href="#">
+                                <span aria-hidden="true" class="icon-dss-search"></span>Exterior<b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="wo-list.html">WO Management</a>
+                                </li>
+                                <li>
+                                    <a href="wo-new.html">New WO</a>
+                                </li>
+                                <li>
+                                    <a href="#">Landscaping</a>
+                                </li>
+                                <li>
+                                    <a href="#">Stripping</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sweeping</a>
+                                </li>
+                                <li>
+                                    <a href="#">Invoice Management</a>
+                                </li>
+                                <li>
+                                    <a href="#">Plan</a>
+                                </li>
+                                <li>
+                                    <a href="#">Budget</a>
+                                </li>
+                                <li>
+                                    <a href="#">Report</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" href="#">
+                                <span aria-hidden="true" class="icon-dss-notebook"></span>Interior<b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="wo-list.html">WO Management</a>
+                                </li>
+                                <li>
+                                    <a href="wo-new.html">New WO</a>
+                                </li>
+                                <li>
+                                    <a href="#">Floor Care</a>
+                                </li>
+                                <li>
+                                    <a href="#">Windows</a>
+                                </li>
+                                <li>
+                                    <a href="#">Invoice Management</a>
+                                </li>
+                                <li>
+                                    <a href="#">Windows</a>
+                                </li>
+                                <li>
+                                    <a href="#">Plan</a>
+                                </li>
+                                <li>
+                                    <a href="#">Budget</a>
+                                </li>
+                                <li>
+                                    <a href="#">Report</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" href="#">
+                                <span aria-hidden="true" class="icon-dss-layers"></span>Facilities<b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">WO Management</a>
+                                </li>
+                                <li>
+                                    <a href="#">New WO</a>
+                                </li>
+                                <li>
+                                    <a href="#">Dispatch Center</a>
+                                </li>
+                                <li>
+                                    <a href="#">Location Management</a>
+                                </li>
+                                <li>
+                                    <a href="#">Invoice Management</a>
+                                </li>
+                                <li>
+                                    <a href="#">Report</a>
+                                </li>
+                                <li>
+                                    <a href="#">WO Archives</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" href="#">
+                                <span aria-hidden="true" class="icon-dss-flag"></span>Call Center<b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">All Calls</a>
+                                </li>
+                                <li>
+                                    <a href="#">Incoming Open Call</a>
+                                </li>
+                                <li>
+                                    <a href="#">In Progress</a>
+                                </li>
+                                <li>
+                                    <a href="#">ETA Pending</a>
+                                </li>
+                                <li>
+                                    <a href="#">Completed</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" href="#">
+                                <span aria-hidden="true" class="icon-dss-wallet"></span>Invoice<b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="invoice-list.html">All Batch Invoice</a>
+                                </li>
+                                <li>
+                                    <a href="invoice-ap-list.html">AP</a>
+                                </li>
+                                <li>
+                                    <a href="#">Report</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" href="#">
+                                <span aria-hidden="true" class="icon-dss-global"></span>Affiliate<b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Affiliate Management</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contract</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contract Request</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contract Template</a>
+                                </li>
+                                <li>
+                                    <a href="#">Paperwork Template</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sourcing</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span aria-hidden="true" class="icon-dss-bargraph"></span>Report</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Navigation -->
+
+        <!-- Main Content -->
+        <div class="main-content">
+
+            <!-- Page Title -->
+            <div class="page-title">
+                <h1>
+                    WO Management
+                </h1>
+            </div>
+            <!-- End Page Title -->
+
+            <!-- Detail Content -->
+            <div class="row">
+
+                <!-- Left Col -->
+                <div class="col-md-6 col-xs-12">
+
+                    <!-- Detail Card -->
+                    <div class="row">
+                        <div class="col-xs-12 z9999">
+                            <div class="widget-container" id="chatNeed">
+                                <div class="heading">
+                                    <i class="icon-dss-clipboard"></i>Request Detail
+                                    <div class="heading-control">
+                                        <ul class="nav navbar-nav">
+                                            <li class="dropdown">
+                                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                                    <span aria-hidden="true" class="icon-dss-alarmclock m0"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a href="#">02/05/2014 00:00 AM</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                                    <span aria-hidden="true" class="fa fa-ellipsis-h"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a href="#" id="detailEdit">Edit</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Check Out</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Convert</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-danger">Delete</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="widget-content clearfix">
+                                    <form>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label>Request #</label>
+                                                <input type="text" class="form-control input-sm red-color" value="735777" disabled="disabled">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Status</label>
+                                                <span class="required">*</span>
+                                                <input type="text" class="form-control input-sm red-color" value="In Progress" disabled="disabled">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>WO Type</label>
+                                                <select class="form-control input-sm">
+                                                    <option value="0">N/A</option>
+                                                    <option value="1">Recurrent Service</option>
+                                                    <option value="2" selected="selected">Generic WO</option>
+                                                    <option value="3">Other WO</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Schedule Time</label>
+                                                <input type="text" class="form-control input-sm" value="2/27/2014 2:00:00 PM" id="scheduleTime">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Service Time</label>
+                                                <input type="text" class="form-control input-sm" value="2/27/2014 6:33:15 PM" disabled="disabled">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Work Order #</label>
+                                                <input type="text" class="form-control input-sm">
+                                            </div>
+                                            <div class="checkbox">
+                                                <label class="checkbox">
+                                                    <input type="checkbox">
+                                                    <span>Page 1 Received</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Customer Price</label>
+                                                <input type="text" class="form-control input-sm" value="$129.74" disabled="disabled">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Special Instruction</label>
+                                                <textarea class="form-control" id="test"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label>Request Category</label>
+                                                <select class="form-control input-sm">
+                                                    <option value="0">Contracted Service</option>
+                                                    <option value="1">Reactive Service</option>
+                                                    <option value="2">Affiliate Credit Memo</option>
+                                                    <option value="3" selected="selected">Emergency Request</option>
+                                                    <option value="4">Customer Credit Memo</option>
+                                                    <option value="5">Pool Service</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Service Code</label>
+                                                <select class="form-control input-sm">
+                                                    <option value="282">5.2 Strip Service - (Floor Care)</option>
+                                                    <option value="279">Additional Strip - (Floor Care)</option>
+                                                    <option value="280">Additional Wax - (Floor Care)</option>
+                                                    <option value="60">Adjustment - (Floor Care)</option>
+                                                    <option value="38">Alternative Floors - (Floor Care)</option>
+                                                    <option value="70">BJ's Wholesale Strip and Wax - Night 1 - (Floor Care)</option>
+                                                    <option value="71">BJ's Wholesale Strip and Wax - Night 2 - (Floor Care)</option>
+                                                    <option value="73">BJ's Wholesale Time and Material Rate per hr - (Floor Care)</option>
+                                                    <option value="72">BTC - Trip Charge - (Floor Care)</option>
+                                                    <option value="108">Buff Complete - (Floor Care)</option>
+                                                    <option value="2349">Burnish Service - (Floor Care)</option>
+                                                    <option value="35">Carpet extraction - (Floor Care)</option>
+                                                    <option value="717">Carpet extraction N - (Floor Care)</option>
+                                                    <option value="62">Ceiling Tile Service - Night 1 - (Floor Care)</option>
+                                                    <option value="63">Ceiling Tile Service - Night 2 - (Floor Care)</option>
+                                                    <option value="74">Chemicals - (Floor Care)</option>
+                                                    <option value="54">Concrete service for New store billed to Construction - (Floor Care)</option>
+                                                    <option value="75">Deep Scrub and Recoat - (Floor Care)</option>
+                                                    <option value="83">Deep Scrub and Recoat (PO) - (Floor Care)</option>
+                                                    <option value="93">Detail Baseboards Expense Code: 294 - (Floor Care)</option>
+                                                    <option value="2350">Detail Clean and Disinfect Restroom - (Floor Care)</option>
+                                                    <option value="2336">Emergency Water Extractions - (Floor Care)</option>
+                                                    <option value="37">Extra Labor due to poor floor condition - (Floor Care)</option>
+                                                    <option value="284">Fastbreak Alt Service - (Floor Care)</option>
+                                                    <option value="55">Fastbreak Service - (Floor Care)</option>
+                                                    <option value="43">FD Supplied Strip and Wax - (Floor Care)</option>
+                                                    <option value="718">Floor Care Monthly - (Floor Care)</option>
+                                                    <option value="76">Front of Store Strip and Wax - (Floor Care)</option>
+                                                    <option value="84">Front of store Strip and Wax (PO) - (Floor Care)</option>
+                                                    <option value="64">Front Pressure Washing Service - Night 1 - (Floor Care)</option>
+                                                    <option value="65">Front Pressure Washing Service - Night 2 - (Floor Care)</option>
+                                                    <option value="44">Fuel Surcharge - (Floor Care)</option>
+                                                    <option value="78">Full Strip and Wax - (Floor Care)</option>
+                                                    <option value="85">Full Strip and Wax (PO) - (Floor Care)</option>
+                                                    <option value="715">Half Strip and Wax - (Floor Care)</option>
+                                                    <option value="82">Half Strip and Wax (PO) - (Floor Care)</option>
+                                                    <option value="66">High Dusting Service - Night 1 - (Floor Care)</option>
+                                                    <option value="67">High Dusting Service - Night 2 - (Floor Care)</option>
+                                                    <option value="2339">Janitorial and Floor Services (Regular) - (Floor Care)</option>
+                                                    <option value="2340">Janitorial and Floor Services (Regular) - (Floor Care)</option>
+                                                    <option value="2341">Janitorial and Floor Services (Regular) - (Floor Care)</option>
+                                                    <option value="2342">Janitorial and Floor Services (Regular) - (Floor Care)</option>
+                                                    <option value="2343">Janitorial and Floor Services (Winter) - (Floor Care)</option>
+                                                    <option value="2344">Janitorial and Floor Services (Winter) - (Floor Care)</option>
+                                                    <option value="2345">Janitorial and Floor Services (Winter) - (Floor Care)</option>
+                                                    <option value="2346">Janitorial and Floor Services (Winter) - (Floor Care)</option>
+                                                    <option value="2347">Janitorial and Floor Services (Winter) - (Floor Care)</option>
+                                                    <option value="58">Janitorial Service - (Floor Care)</option>
+                                                    <option value="281">Janitorial Service 2X - (Floor Care)</option>
+                                                    <option value="716">Janitorial Service Monthly - (Floor Care)</option>
+                                                    <option value="1907">Kitchen - (Floor Care)</option>
+                                                    <option value="68">Loading Dock Pressure Washing Service - Night 1 - (Floor Care)</option>
+                                                    <option value="69">Loading Dock Pressure Washing Service - Night 2 - (Floor Care)</option>
+                                                    <option value="109">New Store - (Floor Care)</option>
+                                                    <option value="57">New Store Scrub and Recoat - (Floor Care)</option>
+                                                    <option value="79">No Show - (Floor Care)</option>
+                                                    <option value="80">No Show Credit - (Floor Care)</option>
+                                                    <option value="81">NO Show Denied - (Floor Care)</option>
+                                                    <option value="278">Other - (Floor Care)</option>
+                                                    <option value="105">Porter Service - (Floor Care)</option>
+                                                    <option value="88">Power Washing (Floor Care) - (Floor Care)</option>
+                                                    <option value="87">Pre Scrape - (Floor Care)</option>
+                                                    <option value="86">Pre Scrape (PO) - (Floor Care)</option>
+                                                    <option value="2337">Project Daily - (Floor Care)</option>
+                                                    <option value="719">Refresh Service (Front SR and back SMB) - (Floor Care)</option>
+                                                    <option value="110">Relocation - (Floor Care)</option>
+                                                    <option value="2348">Restroom Cleaning (Annual) - (Floor Care)</option>
+                                                    <option value="89">Restroom fixture installs - (Floor Care)</option>
+                                                    <option value="50">Scrub and Recoat - (Floor Care)</option>
+                                                    <option value="34">Scrub And Recoat has exception - (Floor Care)</option>
+                                                    <option value="114">SCRUB AW - (Floor Care)</option>
+                                                    <option value="107">Scrub Complete - (Floor Care)</option>
+                                                    <option value="90">Spot strip (SPOT) - (Floor Care)</option>
+                                                    <option value="56">Spot Strip (SS) - (Floor Care)</option>
+                                                    <option value="59">Spray Wax and Buff - (Floor Care)</option>
+                                                    <option value="46">Store not prepared for service - (Floor Care)</option>
+                                                    <option value="49">Strip and Wax - (Floor Care)</option>
+                                                    <option value="61">Strip and Wax bill to Construction - (Floor Care)</option>
+                                                    <option value="52">Strip and Wax has exception - (Floor Care)</option>
+                                                    <option value="39">Strip and Wax OFF Service - (Floor Care)</option>
+                                                    <option value="45">Strip and Wax RR Service - (Floor Care)</option>
+                                                    <option value="115">STRIP CL - (Floor Care)</option>
+                                                    <option value="106" selected="selected">Strip Complete - (Floor Care)</option>
+                                                    <option value="117">Strip Complete Exec - (Floor Care)</option>
+                                                    <option value="118">Strip Complete Exec20 - (Floor Care)</option>
+                                                    <option value="112">STRIP DS - (Floor Care)</option>
+                                                    <option value="111">STRIP EX - (Floor Care)</option>
+                                                    <option value="113">STRIP RM - (Floor Care)</option>
+                                                    <option value="2338">Super Clean - (Floor Care)</option>
+                                                    <option value="116">Supplies - (Floor Care)</option>
+                                                    <option value="41">Sweep Mop and Buff - (Floor Care)</option>
+                                                    <option value="99">Sweep Mop and Buff bill to Construction - (Floor Care)</option>
+                                                    <option value="32">Sweep Mop and Buff has exception - (Floor Care)</option>
+                                                    <option value="47">TR - Trip Charge - (Floor Care)</option>
+                                                    <option value="91">Vent Cleaning by service - (Floor Care)</option>
+                                                    <option value="92">White Board Cleaning - (Floor Care)</option>
+                                                    <option value="2351">Window Monthly - (Floor Care)</option>
+                                                    <option value="94">Wood Cleaning Service - (Floor Care)</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Create Month</label>
+                                                <input type="text" class="form-control input-sm" value="February, 2014" disabled="disabled">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Complete Time</label>
+                                                <input type="text" class="form-control input-sm" disabled="disabled">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="w">Job Report</label>
+                                                <div class="fileupload fileupload-new" data-provides="fileupload">
+                                                    <span class="btn btn-primary-outline btn-sm btn-file">
+                                                        <span class="fileupload-new">Upload</span>
+                                                        <span class="fileupload-exists">Reupload</span>
+                                                        <input type="file">
+                                                    </span>
+                                                    <span class="fileupload-preview"></span>
+                                                    <button class="close fileupload-exists" data-dismiss="fileupload" style="float:none" type="button">&times;</button>
+                                                </div>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label class="checkbox">
+                                                    <input type="checkbox" checked="checked">
+                                                    <span>Page 1 Received</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Affiliate Cost</label>
+                                                <input type="text" class="form-control input-sm" value="$83.03" disabled="disabled">
+                                            </div>
+
+                                            <div class="radio">
+
+                                                <label class="radio-inline">
+                                                    <input name="optionsRadios2" type="radio" value="option1">
+                                                    <span>Option 1</span>
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input checked="" name="optionsRadios2" type="radio" value="option2">
+                                                    <span>Option 2</span>
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input name="optionsRadios2" type="radio" value="option3">
+                                                    <span>Option 3</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Detail Card -->
+
+                    <!-- Detail Card -->
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="widget-container">
+                                <div class="heading">
+                                    <i class="icon-dss-scope"></i>Location
+                                </div>
+                                <div class="widget-content clearfix">
+                                    <form class="form-horizontal">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Location ID</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">FD10105</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Address</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">449 N Main Avenue</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">City</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">Scranton</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">State</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">PA</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Zipcode</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">18504</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Phone</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">5703471517</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">District</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">362</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Region</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">9</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Division</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">40</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Floor Type</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">VCT</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">TTSQFT</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">7303</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Frequency</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">11SMB</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label"># of Restrooms</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">1</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Store Type</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">TWRR13</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Responsible Entity</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">SMS Responsible</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Survey</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only"><a href="#"><i class="fa fa-picture-o"></i></a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Truck Day</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only"></p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Project Manager</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">Gillian Ramos</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Detail Card -->
+
+                    <!-- Detail Card -->
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="widget-container">
+                                <div class="heading">
+                                    <i class="icon-dss-global"></i>IVR Detail
+                                </div>
+                                <div class="widget-content clearfix">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-center table-hover">
+                                            <caption>Check in Status:
+                                                <strong class="text-primary">Scheduled</strong>
+                                            </caption>
+
+                                            <tbody>
+                                                <tr>
+                                                    <td>Check In</td>
+                                                    <td>1073</td>
+                                                    <td>7/22/2014 9:53:14 AM</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Check In</td>
+                                                    <td>1073</td>
+                                                    <td>7/22/2014 9:53:14 AM</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Check In</td>
+                                                    <td>1073</td>
+                                                    <td>7/22/2014 9:53:14 AM</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Check In</td>
+                                                    <td>1073</td>
+                                                    <td>7/22/2014 9:53:14 AM</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Detail Card -->
+
+                </div>
+                <!-- End Left Col -->
+
+                <!-- Right Col -->
+                <div class="col-md-6 col-xs-12">
+
+                    <!-- Detail Card -->
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="widget-container scrollable chat">
+                                <div class="heading">
+                                    <i class="icon-dss-chat"></i>Communication
+                                    <div id="rate" class="custom-rate"></div>
+                                    <a class="pull-right" href="#communicationModal" id="communicationModalBtn"><i class="fa fa-plus">
+                                    </i></a>
+                                </div>
+                                <div class="chat-refresh">
+                                    <button class="btn btn-block btn-sm ladda-button" data-style="expand-left">
+                                        <span class="ladda-label">15 September 2014</span>
+                                    </button>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <div class="bubble">
+                                                <a class="user-name" href="#">John Carry</a> to <a class="user-name" href="#">Somebody</a>
+                                                <p class="message">Hi man!</p>
+                                                <p class="time">8:56:14 AM</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bubble">
+                                                <a class="user-name" href="#">Lisa Peterson</a> to Me
+                                                <p class="message">Duis aute irure dolor in reprehenderit in oluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                                <p class="time">13:22:56 PM</p>
+                                            </div>
+                                        </li>
+                                        <li class="current-user">
+                                            <div class="bubble">
+                                                Me to <a class="user-name" href="#">Lisa Peterson</a>
+                                                <p class="message">Really?! Can’t believe that, man! Really?! Can’t believe that, man!</p>
+                                                <p class="time">13:34:40 AM</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="post-message">
+                                    <a data-toggle="dropdown" class="dropdown-toggle post-attachment" href="#">
+                                        <span aria-hidden="true" class="icon-dss-compass m0"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#">Lisa Peterson</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">PM</a>
+                                        </li>
+                                    </ul>
+                                    <input class="form-control" type="text" placeholder="To: Jack">
+                                    <div class="post-file-wrap">
+                                        <i class="fa fa-paperclip fa-2x"></i>
+                                        <input class="post-file" type="file">
+                                    </div>
+                                    <input type="submit" value="Send">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="widget-container scrollable chat">
+                                <div class="heading">
+                                    <i class="icon-dss-chat"></i>SMS Notes
+                                </div>
+                                <div class="chat-refresh">
+                                    <button class="btn btn-block btn-sm ladda-button" data-style="expand-left">
+                                        <span class="ladda-label">15 September 2014</span>
+                                    </button>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <div class="bubble">
+                                                <a class="user-name" href="#">John Carry</a> to <a class="user-name" href="#">Somebody</a>
+                                                <p class="message">Hi man!</p>
+                                                <p class="time">8:56:14 AM</p>
+                                            </div>
+                                        </li>
+                                        <li class="current-user">
+                                            <div class="bubble">
+                                                Me to <a class="user-name" href="#">John Carry</a>
+                                                <p class="message">Hello World...</p>
+                                                <p class="time">8:57:10 AM</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bubble">
+                                                <a class="user-name" href="#">Lisa Peterson</a> to Me
+                                                <p class="message">Duis aute irure dolor in reprehenderit in oluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                                <p class="time">13:22:56 PM</p>
+                                            </div>
+                                        </li>
+                                        <li class="current-user">
+                                            <div class="bubble">
+                                                Me to <a class="user-name" href="#">Lisa Peterson</a>
+                                                <p class="message">Really?! Can’t believe that, man! Really?! Can’t believe that, man!</p>
+                                                <p class="time">13:34:40 AM</p>
+                                            </div>
+                                        </li>
+                                        <li class="current-user">
+                                            <div class="bubble">
+                                                Me to <a class="user-name" href="#">Lisa Peterson</a>
+                                                <p class="message">
+                                                    <a id="chatImg" href="../Sources/images/signin-bg.jpg">
+                                                        <img src="../Sources/images/signin-bg.jpg" alt="" />
+                                                    </a>
+                                                </p>
+                                                <p class="time">13:35:29 AM</p>
+                                            </div>
+                                        </li>
+                                        <li class="current-user">
+                                            <div class="bubble">
+                                                Me to <a class="user-name" href="#">Lisa Peterson</a>
+                                                <div class="row">
+
+                                                    <div class="col-xs-3">
+                                                        <i class="icon-dss-paperclip fa-3x"></i>
+
+                                                    </div>
+                                                    <div class="col-xs-9">
+                                                        <p class="file-name"><a href="">201403COIAttachment.pdf</a>
+                                                        </p>
+                                                        <p class="file-size">2.68 Mb</p>
+                                                    </div>
+                                                </div>
+                                                <p class="time">13:35:29 AM</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="post-message">
+                                    <a data-toggle="dropdown" class="dropdown-toggle post-attachment" href="#">
+                                        <span aria-hidden="true" class="icon-dss-compass m0"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#">Lisa Peterson</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Add a Attachment</a>
+                                        </li>
+                                    </ul>
+                                    <input class="form-control" type="text" placeholder="To: Jack">
+                                    <div class="post-file-wrap">
+                                        <i class="fa fa-paperclip fa-2x"></i>
+                                        <input class="post-file" type="file">
+                                    </div>
+                                    <input type="submit" value="Send">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Detail Card -->
+
+                    <!-- Detail Card -->
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="widget-container">
+                                <div class="heading">
+                                    <i class="icon-dss-global"></i>Affiliate
+                                </div>
+                                <div class="widget-content clearfix">
+                                    <form class="form-horizontal">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Affiliate Code</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">54590</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Affiliate Name</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">ABR Maintenance, LLC (IL)</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Phone</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">(847)331-7871</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Email</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only"><a href="mailto:rrothman@abrmaintenance.com">rrothman@abrmaintenance.com</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Address</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">2965 Roslyn Lane</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">City</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">Buffalo Grove</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">State</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">Illinois</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Zipcode</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">60089</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Detail Card -->
+
+                    <!-- Detail Card -->
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="widget-container">
+                                <div class="heading">
+                                    <i class="icon-dss-pictures"></i>Affiliate - SMS - Customer
+                                </div>
+                                <div class="widget-content clearfix">
+                                    <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm9.staticflickr.com/8507/8454547519_f8116520e1_b.jpg">
+                                        <img src="http://farm9.staticflickr.com/8507/8454547519_f8116520e1_m.jpg" alt="" />
+                                    </a>
+                                    <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm8.staticflickr.com/7152/6394238505_c94fdd1d89_b.jpg">
+                                        <img src="http://farm8.staticflickr.com/7152/6394238505_c94fdd1d89_m.jpg" alt="" />
+                                    </a>
+                                    <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm9.staticflickr.com/8481/8215602321_69d9939b8b_b.jpg">
+                                        <img src="http://farm9.staticflickr.com/8481/8215602321_69d9939b8b_m.jpg" alt="" />
+                                    </a>
+                                    <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm9.staticflickr.com/8200/8220393833_e52cabfe80_b.jpg">
+                                        <img src="http://farm9.staticflickr.com/8200/8220393833_e52cabfe80_m.jpg" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Detail Card -->
+
+                </div>
+                <!-- End Right Col -->
+
+            </div>
+            <!-- End Detail Content -->
+
+        </div>
+        <!-- End Main Content -->
+
+    </div>
+
+    <!-- Extend Html -->
+    <div id="advanceSearchContent" class="hidden">
+        <form class="search-form">
+            <input type="text" class="form-control input-sm" placeholder="Request #">
+            <input type="text" class="form-control input-sm" placeholder="Affiliate Code">
+            <select class="form-control input-sm search-select m0">
+                <option value="" selected="selected">Filter by WO Status</option>
+                <option value="0">All</option>
+                <option value="1">Unscheduled</option>
+                <option value="2">Scheduled</option>
+                <option value="4">Missed</option>
+                <option value="5">Rescheduled</option>
+                <option value="3">In Progress</option>
+                <option value="7">Completed</option>
+                <option value="25">Billed</option>
+                <option value="6">Pay to Affiliate</option>
+                <option value="8">Expired</option>
+                <option value="9">Resolved Without Invoice</option>
+                <option value="10">Deferred</option>
+                <option value="11">Void</option>
+            </select>
+            <button class="btn btn-sm btn-block btn-primary-outline" data-style="expand-right" data-size="xs">Search</button>
+        </form>
+        <div id="PopoverBackdrop"></div>
+    </div>
+
+    <div id="communicationModal" style="display:none">
+
+        <div class="widget-container">
+            <div class="heading">
+                <i class="icon-dss-clipboard"></i>Confirmation Status
+            </div>
+            <div class="widget-content clearfix">
+
+                <form class="clearfix">
+                    <div class="col-xs-12">
+                        <div class="form-group">
+                            <label>Store confirmation status</label>
+                            <select class="form-control input-sm">
+                                <option value="0" selected="selected">Pending</option>
+                                <option value="1">Confirmed</option>
+                                <option value="2">Do not Invoice</option>
+                                <option value="3">Further Confirm</option>
+                                <option value="4">Research Confirm</option>
+                                <option value="5">Auto-confirm</option>
+                                <option value="6">Email Confirmation Satisfied</option>
+                                <option value="7">Email Dispute</option>
+                                <option value="8">Email Confirmation not Satisfied</option>
+                                <option value="9">Online Confirmed</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Standard Notes</label>
+                            <select class="form-control input-sm">
+                                <option value="" selected="selected">Please Select a Standard Note</option>
+                                <option value="Service was warranted and completed to satisfaction.">Service was warranted and completed to satisfaction.</option>
+                                <option value="Service was warranted however not completed to satisfaction.">Service was warranted however not completed to satisfaction.</option>
+                                <option value="Service was not warranted.">Service was not warranted.</option>
+                                <option value="Service was warranted and completed to satisfaction. Store Manager will respond to email. Per SM">Service was warranted and completed to satisfaction. Store Manager will respond to email. Per SM</option>
+                                <option value="Service was warranted however not completed to satisfaction. Store Manager will respond to email. Per SM">Service was warranted however not completed to satisfaction. Store Manager will respond to email. Per SM</option>
+                                <option value="Service was not warranted. Store Manager will respond to email. Per SM">Service was not warranted. Store Manager will respond to email. Per SM</option>
+                                <option value="Confirmed with signed and stamped job report.">Confirmed with signed and stamped job report</option>
+                                <option value="SM was unable to confirm service.">SM was unable to confirm service</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Notes</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Customer Satisfaction</label>
+                            <div id="star"></div>
+                            <div id="hint" class="text-danger"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End Extend Html -->
+
+    <script type="text/javascript" src="../Scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../Scripts/bootstrap-fileupload.js"></script>
+    <script type="text/javascript" src="../Scripts/spin.min.js"></script>
+    <script type="text/javascript" src="../Scripts/ladda.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.raty.min.js"></script>
+    <script type="text/javascript" src="../Scripts/main.js"></script>
+    <script type="text/javascript">
+        $(function () {
+        //popover
+        $('#advanceSearch').popover({
+            html: true,
+            placement: 'bottom',
+            content: function() {
+                return $("#advanceSearchContent").html();
+            }
+        });
+        $(document).on('click', '#PopoverBackdrop', function() {
+            $('#advanceSearch').popover('hide');
+        });
+        //rate
+        $('#star').raty({
+            path: '../Sources/images',
+            cancel: true,
+            cancelPlace: 'right',
+            target: '#hint',
+            targetFormat: 'Rating: {score}',
+            targetText: 'Please give your rating.',
+            targetKeep: true
+        });
+        $('#rate').raty({
+            path: '../Sources/images',
+            readOnly: true,
+            score: 3
+        });
+        // chat loading progress
+        Ladda.bind('.ladda-button', {
+            callback: function(instance) {
+                var progress = 0;
+                var interval = setInterval(function() {
+                    progress = Math.min(progress + Math.random() * 0.1, 1);
+                    instance.setProgress(progress);
+
+                    if (progress === 1) {
+                        instance.stop();
+                        clearInterval(interval);
+                    }
+                }, 100);
+            }
+        });
+        //modal
+        $("#chatImg").fancybox({
+            openEffect: 'elastic',
+            padding: 1,
+            autoSize: true,
+            closeClick: true,
+            closeBtn: false,
+            closeEffect: 'elastic',
+            helpers: {
+                title: null
+            }
+        });
+        $("#communicationModalBtn").fancybox({
+            fitToView: false,
+            autoCenter: true,
+            autoSize: true,
+            wrapCSS: 'fancybox-modal',
+            closeClick: false,
+            scrolling: 'no',
+            closeBtn: true,
+            openEffect: 'elastic',
+            closeEffect: 'elastic',
+            helpers: {
+                overlay: {
+                    closeClick: false
+                }
+            }
+        });
+        $(".fancybox-thumb").fancybox({
+            prevEffect: 'elastic',
+            padding: 1,
+            autoSize: true,
+            closeClick: true,
+            nextEffect: 'elastic',
+            wrapCSS: 'fancybox-gallery',
+            openEffect: 'elastic',
+            closeEffect: 'elastic',
+            helpers: {
+                overlay: {
+                    closeClick: true, // if true, fancyBox will be closed when user clicks on the overlay
+                    speedOut: 200, // duration of fadeOut animation
+                    showEarly: true, // indicates if should be opened immediately or wait until the content is ready
+                    css: {}, // custom CSS properties
+                    locked: true // if true, the content will be locked into overlay
+                },
+                title: {
+                    type: null
+                },
+                thumbs: {
+                    width: 50,
+                    height: 50
+                }
+            }
+        });
+        //edit statu
+        //Follow code just for demo, PLEASE DO NOT USE IN LIVE!
+        $('#detailEdit').on('click', function() {
+            $(this).text("Save").attr("id", "detailSave").parent().after('<li><a href="#" id="detailCancel">Cancel</a></li>');
+            $('body').append('<div class="edit-backdrop"></div>');
+        });
+        $(document).on('click', '#detailCancel', function() {
+            $('.edit-backdrop').remove();
+            $(this).remove();
+            $('#detailSave').text("Edit");
+        });
+    });
+    </script>
+</body>
+
+</html>

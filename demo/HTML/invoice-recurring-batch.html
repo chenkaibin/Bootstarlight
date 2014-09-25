@@ -1,0 +1,598 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Recurring Invoice Batch</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="新框架DEMO" />
+    <!-- Main CSS -->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet">
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Content/animate.css" rel="stylesheet" />
+    <link href="../Content/nprogress.css" rel="stylesheet" />
+    <link href="../Content/main.css" rel="stylesheet" />
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+	<script src="../Scripts/html5shiv.js"></script>
+	<script src="../Scripts/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body class="animated fadeIn">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-header visible-xs-block">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-xs"></a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse" id="topnav">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href='dashboard.html'><i class="fa fa-dashboard"></i>&nbsp;Dashboard</a>
+                    <ul class="submenu">
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-circle-o"></i>&nbsp;Exterior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='#'>Landscaping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Stripping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Sweeping</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-dot-circle-o"></i>&nbsp;Interior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='floorcare-list.html'>Floorcare</a>
+                        </li>
+                        <li>
+                            <a href='#'>Windows</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-wrench"></i>&nbsp;Facilities</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='facilities-wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='facilities-wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='facilities-dispatch-list.html'>Dispatch Center</a>
+                        </li>
+                        <li>
+                            <a href='facilities-location-list.html'>Location Management</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                        <li>
+                            <a href='#'>WO Archives</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-headphones"></i>&nbsp;Call Center</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='callcenter-list.html'>All Calls</a>
+                        </li>
+                        <li>
+                            <a href='#'>Incoming Open Call</a>
+                        </li>
+                        <li>
+                            <a href='#'>In Progress</a>
+                        </li>
+                        <li>
+                            <a href='#'>ETA Pending</a>
+                        </li>
+                        <li>
+                            <a href='#'>Completed</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href='#'><i class="fa fa-ticket"></i>&nbsp;Invoice</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='invoice-list.html'>All Batch Invoice</a>
+                        </li>
+                        <li>
+                            <a href='invoice-ap-list.html'>AN AP</a>
+                        </li>
+                        <li class="active">
+                            <a href='invoice-recurring-batch.html'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-users"></i>&nbsp;Affiliate</a>
+                    <ul class="submenu">
+                        <li><a href="affiliate-list.html">Affiliate Management</a></li>
+                        <li><a href="affiliate-contract-list.html">Contract</a></li>
+                        <li><a href="affiliate-contract-request-list.html">Contract Request</a></li>
+                        <li><a href="affiliate-claim-list.html">Claim</a></li>
+                        <li><a href="affiliate-contract-template-list.html">Contract Template</a></li>
+                        <li><a href="affiliate-paperwork-template-list.html">Paperwork Template</a></li>
+                        <li><a href="affiliate-sourcing-list.html">Sourcing</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-bar-chart-o"></i>&nbsp;Report</a>
+                    <ul class="submenu">
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-user"></i>&nbsp;Client</a>
+                    <ul class="submenu">
+                        <li><a href="client-location-info.html">Location Info</a></li>
+                        <li><a href="client-client-info.html">Client Info</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-lg">
+                </li>
+            </ul>
+
+        </div>
+        <div class="nav-btn hidden-xs">
+            <form action="javascript:void(0);" method="get">
+                <fieldset>
+                    <ul class="toolbar clearfix">
+                        <li>
+                            <input type="search" id="search" placeholder="What are you looking for?"></li>
+                        <li>
+                            <button type="submit" id="btn-search"><span class="fa fa-search"></span></button>
+                        </li>
+                        <li><a href="usercontrol-list.html" class="fa fa-gear"></a></li>
+                        <li><a href="#" class="fa fa-lock"></a></li>
+                        <li><a href="#" class="fa fa-heart open-lauch"></a></li>
+                        <li><a href="#" class="fa fa-sign-out"></a></li>
+                    </ul>
+                </fieldset>
+
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Main Container start -->
+    <div class="dashboard-wrapper">
+        <div class="container-fluid">
+            <!-- Row start -->
+            <div class="row">
+                <div class="col-xs-12 invoice-batch">
+                    <div class="details-content">
+                        <h3 class="text-center">Batch Invoice #:&nbsp;<strong>FM WT 3.4.2014</strong></h3>
+                        <div class="col-xs-12">
+                            <div class="table-responsive well">
+                                <table class="table table-condensed table-hover table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Service Type</th>
+                                            <th>Service Type Description</th>
+                                            <th>Invoice Totals</th>
+                                            <th>Unit Cost</th>
+                                            <th>Sub-Total</th>
+                                            <th>Tax</th>
+                                            <th>Total</th>
+                                            <th>Profit</th>
+                                            <th>Margin</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>FS</td>
+                                            <td>Fertilization Service</td>
+                                            <td>6</td>
+                                            <td>$853.00</td>
+                                            <td>$1,105.00</td>
+                                            <td>$26.74</td>
+                                            <td>$1,131.74</td>
+                                            <td>$252.00</td>
+                                            <td>23%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ISU</td>
+                                            <td>Irrigation Start Up</td>
+                                            <td>2</td>
+                                            <td>$209.00</td>
+                                            <td>$290.00</td>
+                                            <td>$0.00</td>
+                                            <td>$290.00</td>
+                                            <td>$81.00</td>
+                                            <td>28%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>LTDR</td>
+                                            <td>Light debris removal</td>
+                                            <td>1</td>
+                                            <td>$250.00</td>
+                                            <td>$315.00</td>
+                                            <td>$0.00</td>
+                                            <td>$315.00</td>
+                                            <td>$65.00</td>
+                                            <td>21%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>RLM</td>
+                                            <td>Recurring Landscape Maintenance</td>
+                                            <td>344</td>
+                                            <td>$29,548.88</td>
+                                            <td>$42,742.00</td>
+                                            <td>$781.94</td>
+                                            <td>$43,523.94</td>
+                                            <td>$13,192.12</td>
+                                            <td>31%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>RTA</td>
+                                            <td>Rough Turf Areas/Field Service</td>
+                                            <td>1</td>
+                                            <td>$700.00</td>
+                                            <td>$875.00</td>
+                                            <td>$0.00</td>
+                                            <td>$875.00</td>
+                                            <td>$175.00</td>
+                                            <td>20%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SC</td>
+                                            <td>Spring Cleanup</td>
+                                            <td>13</td>
+                                            <td>$1,785.00</td>
+                                            <td>$1,997.00</td>
+                                            <td>$31.71</td>
+                                            <td>$2,028.71</td>
+                                            <td>$212.00</td>
+                                            <td>11%</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="2" class="text-right text-gplus">
+                                                <h3>Report Total</h3>
+                                            </td>
+                                            <td class="text-gplus">
+                                                <h3 class="fonts-arial">367</h3>
+                                            </td>
+                                            <td class="text-gplus">
+                                                <h3 class="fonts-arial">$33,346.88</h3>
+                                            </td>
+                                            <td class="text-gplus">
+                                                <h3 class="fonts-arial">$47,324.00</h3>
+                                            </td>
+                                            <td class="text-gplus">
+                                                <h3 class="fonts-arial">$840.39</h3>
+                                            </td>
+                                            <td class="text-gplus">
+                                                <h3 class="fonts-arial">$48,164.39</h3>
+                                            </td>
+                                            <td class="text-gplus">
+                                                <h3 class="fonts-arial">$13,977.12</h3>
+                                            </td>
+                                            <td class="text-gplus">
+                                                <h3 class="fonts-arial">30%</h3>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Row end -->
+            <!-- Row start -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <!--NOTES:db-*为3等份，三分之一宽度使用.db-1，三分之二宽度使用.db-2，100%宽度使用.db-3-->
+                    <div class="sortable">
+                        <div class="db-2">
+                            <div class="well">
+                                <div class="echarts-content" id="echartsBar">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="db-1">
+                            <div class="well">
+                                <div class="echarts-content" id="echartsPie1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="db-1">
+                            <div class="well">
+                                <div class="echarts-content" id="echartsPie2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="db-1">
+                            <div class="well">
+                                <div class="echarts-content" id="echartsPie3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="db-1">
+                            <div class="well">
+                                <div class="echarts-content" id="echartsPie4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Row end -->
+        </div>
+    </div>
+    <div id="launchpad" class="hide">
+        <div class="icon">
+            <img src="../Content/img/mac/candy.png" title="Dashboard" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/clock.png" title="safari" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/tactics.png" title="Mail" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/packman.png" title="Appstore" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/map.png" title="Pages" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/open-letter.png" title="Numbers" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/chalkboard.png" title="Keynote" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/car.png" title="Aperture" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/label.png" title="AddressBook" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/drop.png" title="iCalendar" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/store.png" title="FaceTime" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/map2.png" title="iPhoto" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/cloud-down.png" title="iMovie" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/train.png" title="GarageBand" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/umbrella.png" title="Djay" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/rocket.png" title="iTunes" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/bookshelf.png" title="PhotoBooth" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/glasses.png" title="Compartments" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/paper-plane.png" title="Developer" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/backpack-2.png" title="Pixelmator" /><span></span>
+        </div>
+    </div>
+    <!-- Main Container end -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../Scripts/jquery-1.11.0.min.js"></script>
+    <script src="../Scripts/jquery-ui-v1.10.3.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../Scripts/bootstrap.min.js"></script>
+
+    <!-- nprogress JS -->
+    <script src="../Scripts/nprogress.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../Scripts/echarts-2.0.0/doc/asset/js/esl/esl.js"></script>
+
+    <script src="../Scripts/custom.js"></script>
+    <script>
+        require.config({
+            paths: {
+                'echarts': '../Scripts/echarts-2.0.0/build/echarts',
+                'echarts/chart/bar': '../Scripts/echarts-2.0.0/build/echarts',
+                'echarts/chart/pie': '../Scripts/echarts-2.0.0/build/echarts',
+                'theme/default': '../Scripts/echarts-2.0.0/src/theme/default'
+            }
+        });
+        require(
+            [
+                'echarts',
+                'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+                'echarts/chart/pie',
+                'theme/default'
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myBarChart = ec.init(document.getElementById('echartsBar')).showLoading({ effect: 'whirling' });
+                var barOption = {
+                    title: {
+                        text: 'Bar',
+                        x: 'left'
+                    },
+                    tooltip: {
+                        trigger: 'axis'
+                    },
+                    legend: {
+                        data: ['A', 'B']
+                    },
+                    calculable: true,
+                    xAxis: [
+                        {
+                            type: 'category',
+                            data: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
+                        }
+                    ],
+                    yAxis: [
+                        {
+                            type: 'value',
+                            splitArea: { show: true }
+                        }
+                    ],
+                    series: [
+                        {
+                            name: 'A',
+                            type: 'bar',
+                            data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3],
+                            markPoint: {
+                                data: [
+                                    { type: 'max', name: 'Max' },
+                                    { type: 'min', name: 'Min' }
+                                ]
+                            },
+                            markLine: {
+                                data: [
+                                    { type: 'average', name: 'Avg' }
+                                ]
+                            }
+                        },
+                        {
+                            name: '降水量',
+                            type: 'bar',
+                            data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3],
+                            markPoint: {
+                                data: [
+                                    { name: '年最高', value: 182.2, xAxis: 7, yAxis: 183, symbolSize: 18 },
+                                    { name: '年最低', value: 2.3, xAxis: 11, yAxis: 3 }
+                                ]
+                            },
+                            markLine: {
+                                data: [
+                                    { type: 'average', name: 'Avg' }
+                                ]
+                            }
+                        }
+                    ]
+                };
+                myBarChart.setOption(barOption).hideLoading();
+                require(['theme/default'], function (tarTheme) {
+                    myBarChart.setTheme(tarTheme);
+                });
+                var myPieChart1 = ec.init(document.getElementById('echartsPie1')).showLoading({ effect: 'whirling' });
+                var myPieChart2 = ec.init(document.getElementById('echartsPie2')).showLoading({ effect: 'whirling' });
+                var myPieChart3 = ec.init(document.getElementById('echartsPie3')).showLoading({ effect: 'whirling' });
+                var myPieChart4 = ec.init(document.getElementById('echartsPie4')).showLoading({ effect: 'whirling' });
+                var pieOption = {
+                    title: {
+                        text: 'Pie',
+                        subtext: 'from global web index',
+                        x: 'center'
+                    },
+                    tooltip: {
+                        trigger: 'item',
+                        formatter: "{a} <br/>{b} : {c} ({d}%)"
+                    },
+                    legend: {
+                        orient: 'vertical',
+                        x: 'left',
+                        data: ['A', 'B', 'C', 'D', 'E']
+                    },
+                    calculable: true,
+                    series: [
+                        {
+                            name: 'DATA',
+                            type: 'pie',
+                            radius: '55%',
+                            center: ['50%', 225],
+                            data: [
+                                { value: 335, name: 'A' },
+                                { value: 310, name: 'B' },
+                                { value: 234, name: 'C' },
+                                { value: 135, name: 'D' },
+                                { value: 1548, name: 'E' }
+                            ]
+                        }
+                    ]
+                };
+                myPieChart1.setOption(pieOption).hideLoading();
+                myPieChart2.setOption(pieOption).hideLoading();
+                myPieChart3.setOption(pieOption).hideLoading();
+                myPieChart4.setOption(pieOption).hideLoading();
+                require(['theme/default'], function (tarTheme) {
+                    myPieChart1.setTheme(tarTheme);
+                    myPieChart2.setTheme(tarTheme);
+                    myPieChart3.setTheme(tarTheme);
+                    myPieChart4.setTheme(tarTheme);
+                });
+                window.onresize = function () {
+                    myPieChart1.resize();
+                    myPieChart2.resize();
+                    myPieChart3.resize();
+                    myPieChart4.resize();
+                };
+            }
+
+        );
+    </script>
+</body>
+</html>

@@ -1,0 +1,1170 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Facilities Location Detail</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="新框架DEMO" />
+    <!-- Main CSS -->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet">
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Content/animate.css" rel="stylesheet" />
+    <link href="../Content/nprogress.css" rel="stylesheet" />
+    <link href="../Content/dropzone.css" rel="stylesheet" />
+    <link href="../Content/main.css" rel="stylesheet" />
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../Scripts/html5shiv.js"></script>
+    <script src="../Scripts/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="animated fadeIn">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-header visible-xs-block">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-xs">
+            </a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse" id="topnav">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href='dashboard.html'><i class="fa fa-dashboard"></i>&nbsp;Dashboard</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-circle-o"></i>&nbsp;Exterior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='#'>Landscaping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Stripping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Sweeping</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-dot-circle-o"></i>&nbsp;Interior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='floorcare-list.html'>Floorcare</a>
+                        </li>
+                        <li>
+                            <a href='#'>Windows</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href='#'><i class="fa fa-wrench"></i>&nbsp;Facilities</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='facilities-wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='facilities-wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='facilities-dispatch-list.html'>Dispatch Center</a>
+                        </li>
+                        <li class="active">
+                            <a href='facilities-location-list.html'>Location Management</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                        <li>
+                            <a href='#'>WO Archives</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-headphones"></i>&nbsp;Call Center</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='callcenter-list.html'>All Calls</a>
+                        </li>
+                        <li>
+                            <a href='#'>Incoming Open Call</a>
+                        </li>
+                        <li>
+                            <a href='#'>In Progress</a>
+                        </li>
+                        <li>
+                            <a href='#'>ETA Pending</a>
+                        </li>
+                        <li>
+                            <a href='#'>Completed</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-ticket"></i>&nbsp;Invoice</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='invoice-list.html'>All Batch Invoice</a>
+                        </li>
+                        <li>
+                            <a href='invoice-ap-list.html'>AN AP</a>
+                        </li>
+                        <li>
+                            <a href='invoice-recurring-batch.html'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-users"></i>&nbsp;Affiliate</a>
+                    <ul class="submenu">
+                        <li><a href="affiliate-list.html">Affiliate Management</a></li>
+                        <li><a href="affiliate-contract-list.html">Contract</a></li>
+                        <li><a href="affiliate-contract-request-list.html">Contract Request</a></li>
+                        <li><a href="affiliate-claim-list.html">Claim</a></li>
+                        <li><a href="affiliate-contract-template-list.html">Contract Template</a></li>
+                        <li><a href="affiliate-paperwork-template-list.html">Paperwork Template</a></li>
+                        <li><a href="affiliate-sourcing-list.html">Sourcing</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-bar-chart-o"></i>&nbsp;Report</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-user"></i>&nbsp;Client</a>
+                    <ul class="submenu">
+                        <li><a href="client-location-info.html">Location Info</a></li>
+                        <li><a href="client-client-info.html">Client Info</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-lg">
+                </li>
+            </ul>
+
+        </div>
+        <div class="nav-btn hidden-xs">
+            <form action="javascript:void(0);" method="get">
+                <fieldset>
+                    <ul class="toolbar clearfix">
+                        <li>
+                            <input type="search" id="search" placeholder="What are you looking for?">
+                        </li>
+                        <li>
+                            <button type="submit" id="btn-search"><span class="fa fa-search"></span></button>
+                        </li>
+                        <li><a href="usercontrol-list.html" class="fa fa-gear"></a></li>
+                        <li><a href="#" class="fa fa-lock"></a></li>
+                        <li><a href="#" class="fa fa-heart open-lauch"></a></li>
+                        <li><a href="#" class="fa fa-sign-out"></a></li>
+                    </ul>
+                </fieldset>
+
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Main Container start -->
+    <div class="dashboard-wrapper">
+
+        <div class="container-fluid">
+            <!-- Row start -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="details-content">
+                        <!-- Custom start -->
+                        <div class="col-xs-12">
+                            <div class="panel">
+                                <div class="panel-heading clearfix">
+                                    <h3 class="panel-title">CAH110197-1 - Detail</h3>
+                                </div>
+                                <div class="panel-body has-tabcontent">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a href="#locationDetail" data-toggle="tab">Detail</a></li>
+                                        <li><a href="#assignedAffiliate" data-toggle="tab">Assigned Affiliate</a></li>
+                                        <li><a href="#storeWarranty" data-toggle="tab">Store Warranty</a></li>
+                                        <li><a href="#locationLandlord" data-toggle="tab">Landlord</a></li>
+                                        <li><a href="#responsibleEntity" data-toggle="tab">Responsible Entity</a></li>
+                                        <li><a href="#surveyorFiles" data-toggle="tab">Surveyor Files</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="locationDetail">
+                                            <form class="clearfix">
+                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                                    <div class="form-group">
+                                                        <label>Store Number</label>
+                                                        <input type="text" class="form-control input-sm" value="110197-1">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>St/Pv</label>
+                                                        <input type="text" class="form-control input-sm" value="GA">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>DM</label>
+                                                        <input type="text" class="form-control input-sm" value="DUNN, MICHAEL">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>VP</label>
+                                                        <input type="text" class="form-control input-sm" value="VICKERS III, MIKE">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Retailer</label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control input-sm" disabled="disabled" value="550">
+                                                            <span class="input-group-btn">
+                                                                <button class="btn btn-default btn-xs" type="button" disabled="disabled">Choose a Retailer</button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                                    <div class="form-group">
+                                                        <label>Location ID</label>
+                                                        <input type="text" class="form-control input-sm" value="CAH110197-1">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Zip/Post</label>
+                                                        <input type="text" class="form-control input-sm" value="30038">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Region</label>
+                                                        <input type="text" class="form-control input-sm" value="CAH-ATL (SC)">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Active</label>
+                                                        <div class="form-control no-all no-padding" id="_AffiliateRankPartial">
+                                                            <label class="radio-inline">
+                                                                <input type="radio" name="name" />
+                                                                <span>Yes</span>
+                                                            </label>
+                                                            <label class="radio-inline">
+                                                                <input type="radio" name="name" />
+                                                                <span>No</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Comments</label>
+                                                        <textarea class="form-control no-resize">Year Built: 2001; Beds: 3; Bath: 2; Pool: No; Unit Status: Occupied No Notice</textarea>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                                    <div class="form-group">
+                                                        <label>Address</label>
+                                                        <input type="text" class="form-control input-sm" value="6934 Red Bone Way">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Phone</label>
+                                                        <input type="text" class="form-control input-sm" value="7067314116">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>RVP</label>
+                                                        <input type="text" class="form-control input-sm" value="WRIGHT, WEN">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Area Manager / Contact</label>
+                                                        <input type="text" class="form-control input-sm red-color" value="Muriel King" readonly="readonly">
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                                    <div class="form-group">
+                                                        <label>City</label>
+                                                        <input type="text" class="form-control input-sm" value="Lithonia">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>District</label>
+                                                        <input type="text" class="form-control input-sm" value="127">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Group</label>
+                                                        <input type="text" class="form-control input-sm" value="40">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Store Name</label>
+                                                        <input type="text" class="form-control input-sm" value="" readonly="readonly">
+                                                    </div>
+                                                </div>
+
+                                                <div class="text-center details-btn">
+                                                    <button class="btn btn-default">Reset</button>
+                                                    <button class="btn btn-success">Submit</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane" id="assignedAffiliate">
+                                            <div class="row table-tools">
+                                                <div class="search-form clearfix">
+                                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                                        <div class="input-group">
+                                                            <select class="form-control input-sm">
+                                                                <option value="" selected="selected">Service Category</option>
+                                                                <option value="59">Air Conditioning / Heating - Cages</option>
+                                                                <option value="58">Air Conditioning / Heating - EMS</option>
+                                                                <option value="53">Air Conditioning / Heating - Making noise</option>
+                                                                <option value="52">Air Conditioning / Heating - No airflow</option>
+                                                                <option value="50">Air Conditioning / Heating - Not cooling</option>
+                                                                <option value="51">Air Conditioning / Heating - Not heating</option>
+                                                                <option value="56">Air Conditioning / Heating - Other</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                                        <button class="btn btn-info btn-xs transparent-btn search-all" type="button">Search All</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- popover -->
+                                            <div id="popover-content" class="hidden">
+                                                <form class="clearfix">
+                                                    <div class="form-group">
+                                                        <label>Move to</label>
+                                                        <div class="form-control no-all">
+                                                            <label class="radio-inline">
+                                                                <input checked="checked" type="radio" name="via">
+                                                                Primary
+                                                            </label>
+                                                            <label class="radio-inline">
+                                                                <input type="radio" name="via">
+                                                                Secondary
+                                                            </label>
+                                                            <label class="radio-inline">
+                                                                <input type="radio" name="via">
+                                                                Tertiary
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <button class="btn btn-default btn-xs">Cancel</button>
+                                                        <button class="btn btn-success btn-xs">Confirm</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <table class="table table-striped table-condensed table-hover table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Service Category</th>
+                                                            <th class="sorting-desc">Service Type</th>
+                                                            <th class="sorting">Primary</th>
+                                                            <th class="sorting">Secondary</th>
+                                                            <th class="sorting">Tertiary</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td><a href="#" id="js-tmp">Building Air Services, Inc. (FL)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">NG&amp;G Facility Services International, Inc. (RI)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">Advanced Retail Solutions, Inc. (GA)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td><a href="#">Building Air Services, Inc. (FL)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">NG&amp;G Facility Services International, Inc. (RI)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">Advanced Retail Solutions, Inc. (GA)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td><a href="#">Building Air Services, Inc. (FL)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">NG&amp;G Facility Services International, Inc. (RI)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">Advanced Retail Solutions, Inc. (GA)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td><a href="#">Building Air Services, Inc. (FL)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">NG&amp;G Facility Services International, Inc. (RI)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">Advanced Retail Solutions, Inc. (GA)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td><a href="#">Building Air Services, Inc. (FL)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">NG&amp;G Facility Services International, Inc. (RI)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">Advanced Retail Solutions, Inc. (GA)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td><a href="#">Building Air Services, Inc. (FL)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">NG&amp;G Facility Services International, Inc. (RI)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">Advanced Retail Solutions, Inc. (GA)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td><a href="#">Building Air Services, Inc. (FL)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">NG&amp;G Facility Services International, Inc. (RI)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">Advanced Retail Solutions, Inc. (GA)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td><a href="#">Building Air Services, Inc. (FL)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">NG&amp;G Facility Services International, Inc. (RI)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">Advanced Retail Solutions, Inc. (GA)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td><a href="#">Building Air Services, Inc. (FL)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">NG&amp;G Facility Services International, Inc. (RI)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">Advanced Retail Solutions, Inc. (GA)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td><a href="#">Building Air Services, Inc. (FL)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">NG&amp;G Facility Services International, Inc. (RI)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">Advanced Retail Solutions, Inc. (GA)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td><a href="#">Building Air Services, Inc. (FL)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">NG&amp;G Facility Services International, Inc. (RI)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">Advanced Retail Solutions, Inc. (GA)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td><a href="#">Building Air Services, Inc. (FL)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">NG&amp;G Facility Services International, Inc. (RI)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">Advanced Retail Solutions, Inc. (GA)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td><a href="#">Building Air Services, Inc. (FL)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">NG&amp;G Facility Services International, Inc. (RI)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">Advanced Retail Solutions, Inc. (GA)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td><a href="#">Building Air Services, Inc. (FL)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">NG&amp;G Facility Services International, Inc. (RI)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">Advanced Retail Solutions, Inc. (GA)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td><a href="#">Building Air Services, Inc. (FL)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">NG&amp;G Facility Services International, Inc. (RI)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">Advanced Retail Solutions, Inc. (GA)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td><a href="#">Building Air Services, Inc. (FL)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">NG&amp;G Facility Services International, Inc. (RI)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">Advanced Retail Solutions, Inc. (GA)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td><a href="#">Building Air Services, Inc. (FL)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">NG&amp;G Facility Services International, Inc. (RI)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">Advanced Retail Solutions, Inc. (GA)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td><a href="#">Building Air Services, Inc. (FL)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">NG&amp;G Facility Services International, Inc. (RI)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">Advanced Retail Solutions, Inc. (GA)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td><a href="#">Building Air Services, Inc. (FL)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">NG&amp;G Facility Services International, Inc. (RI)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">Advanced Retail Solutions, Inc. (GA)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td><a href="#">Building Air Services, Inc. (FL)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">NG&amp;G Facility Services International, Inc. (RI)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                            <td><a href="#">Advanced Retail Solutions, Inc. (GA)</a><div class="pull-right"><i class="fa fa-gear text-info cursor-point" data-toggle="modal" data-target="#myModal"></i>&nbsp;&nbsp;<i class="fa fa-trash-o text-danger cursor-point"></i></div></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <p>Showing&nbsp;<strong>1</strong>&nbsp;to&nbsp;<strong>5</strong>&nbsp;of&nbsp;<strong>29</strong>&nbsp;entries</p>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <ul class="pagination pagination-sm pull-right">
+                                                        <li class="disabled"><a href="javascript:"><<</a></li>
+                                                        <li class="active"><a href="javascript:">1</a></li>
+                                                        <li><a href="javascript:">2</a></li>
+                                                        <li><a href="javascript:">3</a></li>
+                                                        <li><a href="javascript:">4</a></li>
+                                                        <li><a href="javascript:">5</a></li>
+                                                        <li><a href="javascript:">>></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="storeWarranty">
+                                            <form class="clearfix">
+                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                                    <div class="form-group">
+                                                        <label>Warranty Coverage</label>
+                                                        <input type="text" class="form-control input-sm" value="This store is under warranty until 7-12-2013.">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                                    <div class="form-group">
+                                                        <label>Warranty Effective Dates</label>
+                                                        <input type="text" class="form-control input-sm" value="7/12/2013">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                                    <div class="form-group">
+                                                        <label>Supporting Photos Where Applicable</label>
+                                                        <input type="text" class="form-control input-sm" readonly="readonly">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                                    <div class="form-group">
+                                                        <label>Attach Warranty</label>
+                                                        <input type="text" class="form-control input-sm" readonly="readonly">
+                                                    </div>
+                                                </div>
+
+                                                <div class="text-center details-btn">
+                                                    <button class="btn btn-default">Reset</button>
+                                                    <button class="btn btn-success">Submit</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane" id="locationLandlord">
+                                            <form class="clearfix">
+                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                                    <div class="form-group">
+                                                        <label>Name</label>
+                                                        <input type="text" class="form-control input-sm" value="Highyon Shopping Center Investment Funds No. 102 LP">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>State</label>
+                                                        <input type="text" class="form-control input-sm" value="FL">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Fax</label>
+                                                        <input type="text" class="form-control input-sm" value="954-889-2489">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                                    <div class="form-group">
+                                                        <label>Address 1</label>
+                                                        <input type="text" class="form-control input-sm" value="1000 N Hiatus Rd, # 197">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Zip</label>
+                                                        <input type="text" class="form-control input-sm" value="33026">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Comment</label>
+                                                        <textarea class="form-control no-resize">Contact Hayley Chiu-954-416-3691 from email 4/24/13 lc New owner by Assign dtd 9/12 lc</textarea>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                                    <div class="form-group">
+                                                        <label>Address 2</label>
+                                                        <input type="text" class="form-control input-sm" value="321 N Hiatus Rd, # 297">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Phone</label>
+                                                        <input type="text" class="form-control input-sm" value="954-889-2488">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                                    <div class="form-group">
+                                                        <label>City</label>
+                                                        <input type="text" class="form-control input-sm" value="Pembroke Pines">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Email</label>
+                                                        <input type="text" class="form-control input-sm">
+                                                    </div>
+                                                </div>
+
+                                                <div class="text-center details-btn">
+                                                    <button class="btn btn-default">Reset</button>
+                                                    <button class="btn btn-success">Submit</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane" id="responsibleEntity">
+                                            <div class="panel-sub-title">
+                                                <h5>Notice Requirements</h5>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <table class="table table-striped table-condensed table-hover table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Date</th>
+                                                            <th class="sorting">Name</th>
+                                                            <th class="sorting-asc">Content</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>12/13/2014 13:33:12 PM</td>
+                                                            <td>Family Dollar</td>
+                                                            <td>FDS responsible for repair and replacement of HVAC except for single repairs costing in excess of $300 then LL responsible.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="panel-sub-title">
+                                                <h5>Compliance with Laws<small class="text-danger fonts-arial">&nbsp;Yes(ComplianceOnly)</small></h5>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <table class="table table-striped table-condensed table-hover table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Date</th>
+                                                            <th class="sorting">Name</th>
+                                                            <th class="sorting-asc">Content</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>12/13/2014 13:33:12 PM</td>
+                                                            <td>Family Dollar</td>
+                                                            <td>FDS responsible for repair and replacement of HVAC except for single repairs costing in excess of $300 then LL responsible.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="panel-sub-title">
+                                                <h5>Property Insurance<small class="text-danger fonts-arial">&nbsp;Landlord</small></h5>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <table class="table table-striped table-condensed table-hover table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Date</th>
+                                                            <th class="sorting">Name</th>
+                                                            <th class="sorting-asc">Content</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>12/13/2014 13:33:12 PM</td>
+                                                            <td>Family Dollar</td>
+                                                            <td>FDS responsible for repair and replacement of HVAC except for single repairs costing in excess of $300 then LL responsible.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="panel-sub-title">
+                                                <h5>Responsible Entity</h5>
+                                            </div>
+                                            <div class="row table-tools">
+                                                <div class="search-form clearfix">
+                                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                                        <div class="input-group">
+                                                            <select class="form-control input-sm">
+                                                                <option value="" selected="selected">Service Category</option>
+                                                                <option value="59">Air Conditioning / Heating - Cages</option>
+                                                                <option value="58">Air Conditioning / Heating - EMS</option>
+                                                                <option value="53">Air Conditioning / Heating - Making noise</option>
+                                                                <option value="52">Air Conditioning / Heating - No airflow</option>
+                                                                <option value="50">Air Conditioning / Heating - Not cooling</option>
+                                                                <option value="51">Air Conditioning / Heating - Not heating</option>
+                                                                <option value="56">Air Conditioning / Heating - Other</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                                        <button class="btn btn-info btn-xs transparent-btn search-all" type="button">Search All</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <table class="table table-striped table-condensed table-hover table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Service Category</th>
+                                                            <th>Service Type</th>
+                                                            <th>Maintenance Responsible Entity</th>
+                                                            <th>Repair Responsible Entity</th>
+                                                            <th>Replace Responsible Entity</th>
+                                                            <th>Description</th>
+                                                            <th>Responsibility Clarifications</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td>Family Dollar</td>
+                                                            <td>Family Dollar</td>
+                                                            <td>Both</td>
+                                                            <td>Document Name; Lease Agreement - 9/19/2011; Page: 9; Para: 12a; Both/ FDS not required to repl major components during last 2 yrs of lease term</td>
+                                                            <td>Document Name</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td>Family Dollar</td>
+                                                            <td>Family Dollar</td>
+                                                            <td>Both</td>
+                                                            <td>Document Name; Lease Agreement - 9/19/2011; Page: 9; Para: 12a; Both/ FDS not required to repl major components during last 2 yrs of lease term</td>
+                                                            <td>Document Name</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td>Family Dollar</td>
+                                                            <td>Family Dollar</td>
+                                                            <td>Both</td>
+                                                            <td>Document Name; Lease Agreement - 9/19/2011; Page: 9; Para: 12a; Both/ FDS not required to repl major components during last 2 yrs of lease term</td>
+                                                            <td>Document Name</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td>Family Dollar</td>
+                                                            <td>Family Dollar</td>
+                                                            <td>Both</td>
+                                                            <td>Document Name; Lease Agreement - 9/19/2011; Page: 9; Para: 12a; Both/ FDS not required to repl major components during last 2 yrs of lease term</td>
+                                                            <td>Document Name</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td>Family Dollar</td>
+                                                            <td>Family Dollar</td>
+                                                            <td>Both</td>
+                                                            <td>Document Name; Lease Agreement - 9/19/2011; Page: 9; Para: 12a; Both/ FDS not required to repl major components during last 2 yrs of lease term</td>
+                                                            <td>Document Name</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td>Family Dollar</td>
+                                                            <td>Family Dollar</td>
+                                                            <td>Both</td>
+                                                            <td>Document Name; Lease Agreement - 9/19/2011; Page: 9; Para: 12a; Both/ FDS not required to repl major components during last 2 yrs of lease term</td>
+                                                            <td>Document Name</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td>Family Dollar</td>
+                                                            <td>Family Dollar</td>
+                                                            <td>Both</td>
+                                                            <td>Document Name; Lease Agreement - 9/19/2011; Page: 9; Para: 12a; Both/ FDS not required to repl major components during last 2 yrs of lease term</td>
+                                                            <td>Document Name</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td>Family Dollar</td>
+                                                            <td>Family Dollar</td>
+                                                            <td>Both</td>
+                                                            <td>Document Name; Lease Agreement - 9/19/2011; Page: 9; Para: 12a; Both/ FDS not required to repl major components during last 2 yrs of lease term</td>
+                                                            <td>Document Name</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td>Family Dollar</td>
+                                                            <td>Family Dollar</td>
+                                                            <td>Both</td>
+                                                            <td>Document Name; Lease Agreement - 9/19/2011; Page: 9; Para: 12a; Both/ FDS not required to repl major components during last 2 yrs of lease term</td>
+                                                            <td>Document Name</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air Conditioning / Heating</td>
+                                                            <td>Making noise</td>
+                                                            <td>Family Dollar</td>
+                                                            <td>Family Dollar</td>
+                                                            <td>Both</td>
+                                                            <td>Document Name; Lease Agreement - 9/19/2011; Page: 9; Para: 12a; Both/ FDS not required to repl major components during last 2 yrs of lease term</td>
+                                                            <td>Document Name</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <p>Showing&nbsp;<strong>1</strong>&nbsp;to&nbsp;<strong>5</strong>&nbsp;of&nbsp;<strong>29</strong>&nbsp;entries</p>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <ul class="pagination pagination-sm pull-right">
+                                                        <li class="disabled"><a href="javascript:"><<</a></li>
+                                                        <li class="active"><a href="javascript:">1</a></li>
+                                                        <li><a href="javascript:">2</a></li>
+                                                        <li><a href="javascript:">3</a></li>
+                                                        <li><a href="javascript:">4</a></li>
+                                                        <li><a href="javascript:">5</a></li>
+                                                        <li><a href="javascript:">>></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="surveyorFiles">
+                                            <ul class="thumbnails clearfix">
+                                                <li>
+                                                    <a href="img/bg1.jpg" data-rel="colorbox" class="cboxElement">
+                                                        <img src="../Content/img/bg1.jpg">
+                                                    </a>
+                                                    <div class="tools">
+                                                        <a href="#">
+                                                            <i class="fa fa-times"></i>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="img/bg2.jpg" data-rel="colorbox" class="cboxElement">
+                                                        <img src="../Content/img/bg2.jpg">
+                                                    </a>
+                                                    <div class="tools">
+                                                        <a href="#">
+                                                            <i class="fa fa-times"></i>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="img/bg3.jpg" data-rel="colorbox" class="cboxElement">
+                                                        <img src="../Content/img/bg3.jpg">
+                                                    </a>
+                                                    <div class="tools">
+                                                        <a href="#">
+                                                            <i class="fa fa-times"></i>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="table-responsive">
+                                                <table class="table table-condensed table-hover">
+                                                    <tr>
+                                                        <td><a href="#">iso23763629.pdf</a></td>
+                                                        <td>6.0 Mb</td>
+                                                        <td><a href="#" class="text-danger"><i class="fa fa-times fa-rotate"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#">201412105dsanhedu.xls</a></td>
+                                                        <td>6.0 Mb</td>
+                                                        <td><a href="#" class="text-danger"><i class="fa fa-times fa-rotate"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#">word7u387 dhj 3u9i.docx</a></td>
+                                                        <td>6.0 Mb</td>
+                                                        <td><a href="#" class="text-danger"><i class="fa fa-times fa-rotate"></i></a></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Custom end -->
+                    </div>
+                </div>
+
+            </div>
+            <!-- Row end -->
+        </div>
+
+    </div>
+    <div id="launchpad" class="hide">
+        <div class="icon">
+            <img src="../Content/img/mac/candy.png" title="Dashboard" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/clock.png" title="safari" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/tactics.png" title="Mail" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/packman.png" title="Appstore" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/map.png" title="Pages" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/open-letter.png" title="Numbers" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/chalkboard.png" title="Keynote" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/car.png" title="Aperture" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/label.png" title="AddressBook" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/drop.png" title="iCalendar" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/store.png" title="FaceTime" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/map2.png" title="iPhoto" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/cloud-down.png" title="iMovie" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/train.png" title="GarageBand" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/umbrella.png" title="Djay" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/rocket.png" title="iTunes" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/bookshelf.png" title="PhotoBooth" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/glasses.png" title="Compartments" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/paper-plane.png" title="Developer" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/backpack-2.png" title="Pixelmator" /><span></span>
+        </div>
+    </div>
+    <!-- Main Container end -->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Choose a Affiliate</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="search-form clearfix">
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                            <div class="input-group">
+                                <input type="text" class="form-control input-sm" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                            <div class="input-group">
+                                <input type="text" class="form-control input-sm" placeholder="Status">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                            <button class="btn btn-info btn-xs transparent-btn search-all" type="button">Search</button>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-condensed table-hover table-striped">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Name</th>
+                                    <th>Service States</th>
+                                    <th>Comment</th>
+                                    <th>City</th>
+                                    <th>State</th>
+                                    <th>Zip</th>
+                                    <th>Phone</th>
+                                    <th>Email</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="radio" data-dismiss="modal" aria-hidden="true" /></td>
+                                    <td>A-1 Services, Inc.</td>
+                                    <td>FL</td>
+                                    <td>Updated email per request to: ACS.Service4U@gmail.com</td>
+                                    <td>Manteno</td>
+                                    <td>OH</td>
+                                    <td>45801</td>
+                                    <td>567-204-9582</td>
+                                    <td>wwedna@yahoo.com</td>
+                                    <td>Active</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" data-dismiss="modal" aria-hidden="true" /></td>
+                                    <td>A-1 Services, Inc.</td>
+                                    <td>FL</td>
+                                    <td>Updated email per request to: ACS.Service4U@gmail.com</td>
+                                    <td>Manteno</td>
+                                    <td>OH</td>
+                                    <td>45801</td>
+                                    <td>567-204-9582</td>
+                                    <td>wwedna@yahoo.com</td>
+                                    <td>Active</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" data-dismiss="modal" aria-hidden="true" /></td>
+                                    <td>A-1 Services, Inc.</td>
+                                    <td>FL</td>
+                                    <td>Updated email per request to: ACS.Service4U@gmail.com</td>
+                                    <td>Manteno</td>
+                                    <td>OH</td>
+                                    <td>45801</td>
+                                    <td>567-204-9582</td>
+                                    <td>wwedna@yahoo.com</td>
+                                    <td>Active</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" data-dismiss="modal" aria-hidden="true" /></td>
+                                    <td>A-1 Services, Inc.</td>
+                                    <td>FL</td>
+                                    <td>Updated email per request to: ACS.Service4U@gmail.com</td>
+                                    <td>Manteno</td>
+                                    <td>OH</td>
+                                    <td>45801</td>
+                                    <td>567-204-9582</td>
+                                    <td>wwedna@yahoo.com</td>
+                                    <td>Active</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" data-dismiss="modal" aria-hidden="true" /></td>
+                                    <td>A-1 Services, Inc.</td>
+                                    <td>FL</td>
+                                    <td>Updated email per request to: ACS.Service4U@gmail.com</td>
+                                    <td>Manteno</td>
+                                    <td>OH</td>
+                                    <td>45801</td>
+                                    <td>567-204-9582</td>
+                                    <td>wwedna@yahoo.com</td>
+                                    <td>Active</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <p>Showing&nbsp;<strong>1</strong>&nbsp;to&nbsp;<strong>5</strong>&nbsp;of&nbsp;<strong>29</strong>&nbsp;entries</p>
+                        </div>
+                        <div class="col-xs-6">
+                            <ul class="pagination pagination-sm pull-right">
+                                <li class="disabled"><a href="javascript:"><<</a></li>
+                                <li class="active"><a href="javascript:">1</a></li>
+                                <li><a href="javascript:">2</a></li>
+                                <li><a href="javascript:">3</a></li>
+                                <li><a href="javascript:">4</a></li>
+                                <li><a href="javascript:">5</a></li>
+                                <li><a href="javascript:">>></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../Scripts/jquery-1.11.0.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../Scripts/bootstrap.min.js"></script>
+
+    <!-- nprogress JS -->
+    <script src="../Scripts/nprogress.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../Scripts/custom.js"></script>
+    <script src="../Scripts/dropzone.min.js"></script>
+    <script type="text/javascript">
+        $('#js-tmp').popover({
+            html: true,
+            placement: 'auto',
+            content: function () {
+                return $("#popover-content").html();
+            }
+        });
+        $("#dropzone").dropzone({ url: "http://www.torrentplease.com/dropzone.php" });
+        function initialize() {
+            var mapOptions = {
+                zoom: 8,
+                center: new google.maps.LatLng(-34.397, 150.644)
+            };
+
+            var map = new google.maps.Map(document.getElementById('mapcanvas'), mapOptions);
+        }
+
+        function loadScript() {
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
+                'callback=initialize';
+            document.body.appendChild(script);
+        }
+
+        window.onload = loadScript;
+    </script>
+</body>
+</html>

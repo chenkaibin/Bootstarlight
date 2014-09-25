@@ -1,0 +1,972 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Dispatch Request</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="新框架DEMO" />
+    <!-- Main CSS -->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet">
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Content/colorbox.css" rel="stylesheet" />
+    <link href="../Content/animate.css" rel="stylesheet" />
+    <link href="../Content/nprogress.css" rel="stylesheet" />
+    <link href="../Content/dropzone.css" rel="stylesheet" />
+    <link href="../Content/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <link href="../Content/main.css" rel="stylesheet" />
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../Scripts/html5shiv.js"></script>
+    <script src="../Scripts/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="animated fadeIn">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-header visible-xs-block">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-xs">
+            </a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse" id="topnav">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href='dashboard.html'><i class="fa fa-dashboard"></i>&nbsp;Dashboard</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-circle-o"></i>&nbsp;Exterior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='#'>Landscaping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Stripping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Sweeping</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-dot-circle-o"></i>&nbsp;Interior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='floorcare-list.html'>Floorcare</a>
+                        </li>
+                        <li>
+                            <a href='#'>Windows</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href='#'><i class="fa fa-wrench"></i>&nbsp;Facilities</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='facilities-wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='facilities-wo-new.html'>New WO</a>
+                        </li>
+                        <li class="active">
+                            <a href='facilities-dispatch-list.html'>Dispatch Center</a>
+                        </li>
+                        <li>
+                            <a href='facilities-location-list.html'>Location Management</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                        <li>
+                            <a href='#'>WO Archives</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-headphones"></i>&nbsp;Call Center</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='callcenter-list.html'>All Calls</a>
+                        </li>
+                        <li>
+                            <a href='#'>Incoming Open Call</a>
+                        </li>
+                        <li>
+                            <a href='#'>In Progress</a>
+                        </li>
+                        <li>
+                            <a href='#'>ETA Pending</a>
+                        </li>
+                        <li>
+                            <a href='#'>Completed</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-ticket"></i>&nbsp;Invoice</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='invoice-list.html'>All Batch Invoice</a>
+                        </li>
+                        <li>
+                            <a href='invoice-ap-list.html'>AN AP</a>
+                        </li>
+                        <li>
+                            <a href='invoice-recurring-batch.html'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-users"></i>&nbsp;Affiliate</a>
+                    <ul class="submenu">
+                        <li><a href="affiliate-list.html">Affiliate Management</a></li>
+                        <li><a href="affiliate-contract-list.html">Contract</a></li>
+                        <li><a href="affiliate-contract-request-list.html">Contract Request</a></li>
+                        <li><a href="affiliate-claim-list.html">Claim</a></li>
+                        <li><a href="affiliate-contract-template-list.html">Contract Template</a></li>
+                        <li><a href="affiliate-paperwork-template-list.html">Paperwork Template</a></li>
+                        <li><a href="affiliate-sourcing-list.html">Sourcing</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-bar-chart-o"></i>&nbsp;Report</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-user"></i>&nbsp;Client</a>
+                    <ul class="submenu">
+                        <li><a href="client-location-info.html">Location Info</a></li>
+                        <li><a href="client-client-info.html">Client Info</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-lg">
+                </li>
+            </ul>
+
+        </div>
+        <div class="nav-btn hidden-xs">
+            <form action="javascript:void(0);" method="get">
+                <fieldset>
+                    <ul class="toolbar clearfix">
+                        <li>
+                            <input type="search" id="search" placeholder="What are you looking for?">
+                        </li>
+                        <li>
+                            <button type="submit" id="btn-search"><span class="fa fa-search"></span></button>
+                        </li>
+                        <li><a href="usercontrol-list.html" class="fa fa-gear"></a></li>
+                        <li><a href="#" class="fa fa-lock"></a></li>
+                        <li><a href="#" class="fa fa-heart open-lauch"></a></li>
+                        <li><a href="#" class="fa fa-sign-out"></a></li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Main Container start -->
+    <div class="dashboard-wrapper">
+
+        <div class="container-fluid">
+            <!-- Row start -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="details-content">
+                        <!-- Custom start -->
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                            <div class="panel">
+                                <div class="panel-heading clearfix">
+                                    <h3 class="panel-title pull-left">Dispatch Request<small>&nbsp;&nbsp;<span class="label label-danger label-block fonts-arial">2 Hour</span></small></h3>
+                                    <div class="pull-right btn-group btn-group-xs">
+                                        <button type="button" class="btn btn-warning btn-sm"><i class="fa fa-check-square-o"></i>&nbsp;Resolved</button>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="panel-sub-title">
+                                        <h5 class="pull-left">Location</h5>
+                                    </div>
+                                    <form class="clearfix form-horizontal">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Location ID</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only"><a href="#">CAH113143-1</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Location Name</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only"></p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Address</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">449 N Main Avenue</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">City, State Zip</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">Scranton, GA 30034</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Phone</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">5703471517</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Store Manager</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">Joey Beverly</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">District</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">237</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Region</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">CAH-ATL (SC)</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Store Opened</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">1971-12-02</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <hr />
+                                    <form class="clearfix form-horizontal">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Total Invoice</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">$388.35</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Total Customer NTE</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">$3,000.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <hr />
+                                    <form class="clearfix form-horizontal">
+                                        <div class="col-xs-12">
+                                            <div class="form-group text-center">
+                                                <label class="control-label col-xs-7">Total Invoice and Custorm NTE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                                <p class="text-only col-xs-5 text-left"><a href="#">$3,388.35</a></p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="panel-sub-title">
+                                        <h5>Surveyor File</h5>
+                                    </div>
+                                    <ul class="thumbnails clearfix">
+                                        <li>
+                                            <a href="../Content/img/bg1.jpg" data-rel="colorbox" class="cboxElement">
+                                                <img src="../Content/img/bg1.jpg">
+                                            </a>
+                                            <div class="tools">
+                                                <a href="#">
+                                                    <i class="fa fa-times"></i>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="../Content/img/bg2.jpg" data-rel="colorbox" class="cboxElement">
+                                                <img src="../Content/img/bg2.jpg">
+                                            </a>
+                                            <div class="tools">
+                                                <a href="#">
+                                                    <i class="fa fa-times"></i>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="../Content/img/bg3.jpg" data-rel="colorbox" class="cboxElement">
+                                                <img src="../Content/img/bg3.jpg">
+                                            </a>
+                                            <div class="tools">
+                                                <a href="#">
+                                                    <i class="fa fa-times"></i>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="table-responsive">
+                                        <table class="table table-condensed table-hover">
+                                            <tr>
+                                                <td><a href="#">iso23763629.pdf</a></td>
+                                                <td>6.0 Mb</td>
+                                                <td><a href="#" class="text-danger"><i class="fa fa-times fa-rotate"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">201412105dsanhedu.xls</a></td>
+                                                <td>6.0 Mb</td>
+                                                <td><a href="#" class="text-danger"><i class="fa fa-times fa-rotate"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">word7u387 dhj 3u9i.docx</a></td>
+                                                <td>6.0 Mb</td>
+                                                <td><a href="#" class="text-danger"><i class="fa fa-times fa-rotate"></i></a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="panel-sub-title">
+                                        <h5 class="pull-left">Request Detail</h5>
+                                        <div class="pull-right btn-group btn-group-xs">
+                                            <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil"></i>&nbsp;Edit</button>
+                                        </div>
+                                    </div>
+                                    <form class="clearfix form-horizontal">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">WO #</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">WO135844</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Response Window</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only"><strong class="text-danger">Immediate Service - 2 hour response</strong></p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Service Type</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">Making noise</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Customer NTE</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">$750.00</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Caller Name</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">Joey Beverly</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Created By</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">Buffalo Grove</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Problem Description</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">Air Conditioning / Heating -> Making noise -> Sales</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Call Date & Time</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">6/29/2014 3:58:14 PM</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">WO Type</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">Inspection</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Problem Code</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">Sales</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Vendor NTE</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">$550.00</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Position</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">Store Manager</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Additional Detail</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only"></p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Responsibility Entity</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only"><strong class="text-danger">Family Dollar</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <hr />
+                                            <div class="table-responsive">
+                                                <table class="table table-condensed table-striped table-hover table-bordered">
+                                                    <caption class="text-left"><h4>Troubleshooting</h4></caption>
+                                                    <tr>
+                                                        <td>What are present temperature readings at unit 1?</td>
+                                                        <td><strong>&lt;64</strong></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Is problem intermittent?</td>
+                                                        <td><strong>Yes</strong></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Do you smell gas?</td>
+                                                        <td><strong>Yes</strong></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Are units on roof, ground, or do not know?</td>
+                                                        <td><strong>Roof</strong></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Has local inspector been involved?</td>
+                                                        <td><strong>Yes</strong></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Name of inspector, phone number, and due date</td>
+                                                        <td><strong>10/23/2014 10:34:21 AM</strong></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <hr />
+                                            <div class="table-responsive">
+                                                <table class="table table-condensed table-striped table-hover table-bordered">
+                                                    <caption class="text-left"><h4>Key Questions</h4></caption>
+                                                    <tr>
+                                                        <td>Has this maintenance issue caused the store to close?</td>
+                                                        <td><strong>No</strong></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Has an inspector instructed you to stop selling food?</td>
+                                                        <td><strong>Yes</strong></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Custom end -->
+                        <!-- Custom start -->
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <div class="panel-sub-title">
+                                        <h5 class="pull-left">Landlord</h5>
+                                    </div>
+                                    <form class="clearfix form-horizontal">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Name</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">Henry C. Hopkins, III</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Phone</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">706-466-2352 cell</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">Email</label>
+                                                <div class="col-sm-7">
+                                                    <p class="text-only">JoeyBeverly@smida.com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="panel-sub-title">
+                                        <h5>Store Warranty</h5>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-condensed table-striped table-hover table-bordered">
+                                            <tr>
+                                                <td>Warranty Coverage</td>
+                                                <td>This Store is not under warranty.EMS Actual Install Week 4/5/<br />FASTBREAK RENOVATIONS COMPLETED 10/22/2011</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Warranty Effective Dates</td>
+                                                <td>12/21/2014 10:11:23 AM</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="panel-sub-title">
+                                        <h5>Vendor</h5>
+                                    </div>
+                                    <form class="clearfix">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label>Vendor Name</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control input-sm" disabled="disabled" value="Henry C. Hopkins, III">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-success btn-xs" type="button" data-toggle="modal" data-target="#myAffiliateModal">Choose a Affiliate</button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Vendor Phone</label>
+                                                <input type="text" class="form-control input-sm" value="706-466-2352 cell">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label>Vendor Email</label>
+                                                <input type="text" class="form-control input-sm">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Accepted by</label>
+                                                <input type="text" class="form-control input-sm">
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox">
+                                                    Accepted by Phone
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label>Schedule Start</label>
+                                                <input type="text" class="form-control input-sm" value="2/27/2014 2:00:00 PM">
+                                                <p class="help-block text-danger">Immediate Service - 2 hour response</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+                                            <div class="form-group">
+                                                <label>Service End</label>
+                                                <input type="text" class="form-control input-sm" value="2/27/2014 6:33:15 PM">
+                                            </div>
+                                        </div>
+                                        <div class="text-center details-btn">
+                                            <button class="btn btn-default">Reset</button>
+                                            <button class="btn btn-success">Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Custom end -->
+                    </div>
+                </div>
+
+            </div>
+            <!-- Row end -->
+        </div>
+
+    </div>
+    <div class="modal fade in" id="myAffiliateModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-list">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel">Choose a Affiliate</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div id="SurveyCompany_table">
+
+                        <div class="table-responsive">
+                            <table class="table table-striped table-condensed table-hover table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Service States</th>
+                                        <th>Comment</th>
+                                        <th>City</th>
+                                        <th>State</th>
+                                        <th>Zip</th>
+                                        <th>Phone</th>
+                                        <th>Email</th>
+                                        <th>Status</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Michael Herndon (NC)</td>
+                                        <td>NC, SC, VA, TN</td>
+                                        <td></td>
+                                        <td>Hudson</td>
+                                        <td>NC</td>
+                                        <td>28638</td>
+                                        <td>(828) 728-9758</td>
+                                        <td>mherndon@pipeworksplumbinganddrain.com</td>
+                                        <td>Active</td>
+                                        <td>
+                                            <input type="radio" name="Listradio" onclick="fuzhi('Michael Herndon (NC)','mherndon@pipeworksplumbinganddrain.com' ,'(828) 728-9758','17470' )" data-dismiss="modal" aria-hidden="true">
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Climate Solutions, Inc. (NC)</td>
+                                        <td>NC</td>
+                                        <td></td>
+                                        <td>Huntersville</td>
+                                        <td>NC</td>
+                                        <td>28070</td>
+                                        <td>704-655-2575</td>
+                                        <td>service@climatesolutionsinc.com</td>
+                                        <td>Active</td>
+                                        <td>
+                                            <input type="radio" name="Listradio" onclick="fuzhi('Climate Solutions, Inc. (NC)','service@climatesolutionsinc.com' ,'704-655-2575','8148' )" data-dismiss="modal" aria-hidden="true">
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>C. E. Holt Refrigeration, Incorporated (NC)</td>
+                                        <td>NC, SC,</td>
+                                        <td></td>
+                                        <td>Charlotte</td>
+                                        <td>NC</td>
+                                        <td>28269</td>
+                                        <td>(704) 333-8489</td>
+                                        <td>workorders@ceholt.com</td>
+                                        <td>Active</td>
+                                        <td>
+                                            <input type="radio" name="Listradio" onclick="fuzhi('C. E. Holt Refrigeration, Incorporated (NC)','workorders@ceholt.com' ,'(704) 333-8489','8133' )" data-dismiss="modal" aria-hidden="true">
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <p>
+                                    Showing
+                                    <strong>
+                                        1
+                                    </strong>
+                                    to
+                                    <strong>
+                                        3
+                                    </strong>
+                                    of
+                                    <strong>
+                                        3
+                                    </strong>
+                                    entries
+                                </p>
+                            </div>
+                            <div class="col-xs-6"><ul class="pull-right pagination-sm pagination"><li class="active"><a>1</a></li></ul></div>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Edit Request</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="clearfix">
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <label>Response Window</label>
+                                <select class="form-control input-sm">
+                                    <option value="1" selected="selected">Immediate Service - 2 hour response</option>
+                                    <option value="2">Emergency Service - 4 hour response</option>
+                                    <option value="3">Next Day Service - 24 hour response</option>
+                                    <option value="4">Normal Service - 48 hour response</option>
+                                    <option value="5">Non-Critical - 7 day response</option>
+                                    <option value="6">Non-Critical - 14 day response</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>WO Type</label>
+                                <select class="form-control input-sm">
+                                    <option value="1">Capital - Lease Hold Improvement</option>
+                                    <option value="2">Capital-Owned</option>
+                                    <option value="4">Closed Store - Inspection</option>
+                                    <option value="5">Closed Store - Landlord</option>
+                                    <option value="3">Closed Store - Maintenance</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Custorm NTE</label>
+                                <input type="text" class="form-control input-sm" value="750">
+                            </div>
+                            <div class="form-group">
+                                <label>Vendor NTE</label>
+                                <input type="text" class="form-control input-sm" value="550">
+                            </div>
+                            <div class="form-group">
+                                <label>Caller Name</label>
+                                <input type="text" class="form-control input-sm" value="Joey Beverly">
+                            </div>
+                            <div class="form-group">
+                                <label>Position</label>
+                                <select class="form-control input-sm">
+                                    <option value="0">Please select an item</option>
+                                    <option value="1" selected="selected">Store Manager</option>
+                                    <option value="2">Assistant</option>
+                                    <option value="3">CSR</option>
+                                    <option value="4">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Additional Detail</label>
+                                <textarea class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="launchpad" class="hide">
+        <div class="icon">
+            <img src="../Content/img/mac/candy.png" title="Dashboard" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/clock.png" title="safari" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/tactics.png" title="Mail" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/packman.png" title="Appstore" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/map.png" title="Pages" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/open-letter.png" title="Numbers" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/chalkboard.png" title="Keynote" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/car.png" title="Aperture" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/label.png" title="AddressBook" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/drop.png" title="iCalendar" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/store.png" title="FaceTime" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/map2.png" title="iPhoto" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/cloud-down.png" title="iMovie" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/train.png" title="GarageBand" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/umbrella.png" title="Djay" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/rocket.png" title="iTunes" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/bookshelf.png" title="PhotoBooth" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/glasses.png" title="Compartments" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/paper-plane.png" title="Developer" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/backpack-2.png" title="Pixelmator" /><span></span>
+        </div>
+    </div>
+    <!-- Main Container end -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../Scripts/jquery-1.11.0.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../Scripts/bootstrap.min.js"></script>
+
+    <!-- nprogress JS -->
+    <script src="../Scripts/nprogress.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../Scripts/custom.js"></script>
+    <script src="../Scripts/jquery.colorbox-min.js"></script>
+    <script src="../Scripts/dropzone.min.js"></script>
+    <script src="../Scripts/bootstrap-datetimepicker.min.js"></script>
+    <script src="../Scripts/jquery.raty.min.js"></script>
+    <script src="../Scripts/jquery.jrumble.1.3.min.js"></script>
+    <script>
+        $('#followUp').popover({
+            html: true,
+            placement: 'bottom',
+            content: function () {
+                return $("#popover-content").html();
+            }
+        }, function () {
+            $("#followTime").datetimepicker({
+                format: 'mm/dd/yyyy h:ii P',
+                autoclose: 1
+            });
+        });
+        $('#shake').jrumble({
+            x: 2,
+            y: 2,
+            rotation: 4
+        });
+        $('#shake').trigger('startRumble');
+        $('#shake').click(function () {
+            $(this).trigger('stopRumble').removeAttr('style');
+        });
+        $('#shake').hover(function () {
+            $(this).trigger('stopRumble').removeAttr('style');
+        });
+        $('#star').raty({
+            path: '../content/img/star',
+            cancel: true,
+            cancelPlace: 'right',
+            target: '#hint',
+            targetFormat: 'Rating: {score}',
+            targetText: 'Please give your rating.',
+            targetKeep: true
+        });
+        $('#rate').raty({
+            path: '../content/img/star',
+            readOnly: true,
+            score: 3
+        });
+        $("#dropzone").dropzone({ url: "http://www.torrentplease.com/dropzone.php" });
+        $('#loading-example-btn').click(function () {
+            var btn = $(this);
+            btn.button('loading');
+            setTimeout(function () {
+                btn.button('reset');
+            }, 3000);
+        });
+        jQuery(function ($) {
+            $(document).ready(function () {
+                $("#scheduleTime").datetimepicker({
+                    format: 'mm/dd/yyyy h:ii P',
+                    autoclose: 1
+                });
+            });
+            var colorbox_params = {
+                reposition: true,
+                scalePhotos: true,
+                scrolling: false,
+                previous: '<i class="fa fa-arrow-left"></i>',
+                next: '<i class="fa fa-arrow-right"></i>',
+                close: '&times;',
+                current: '{current} of {total}',
+                maxWidth: '100%',
+                maxHeight: '100%',
+                onOpen: function () {
+                    document.body.style.overflow = 'hidden';
+                },
+                onClosed: function () {
+                    document.body.style.overflow = 'auto';
+                },
+                onComplete: function () {
+                    $.colorbox.resize();
+                }
+            };
+            $('.thumbnails [data-rel="colorbox"]').colorbox(colorbox_params);
+            $("#cboxLoadingGraphic").append("<i class='fa fa-spinner'></i>");
+        });
+    </script>
+</body>
+</html>

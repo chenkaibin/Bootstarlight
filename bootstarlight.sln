@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "bootstarlight", "..\bootstarlight", "{71D366A9-3901-4487-890C-431255B6A4D7}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Bootstarlight", "..\Bootstarlight", "{71D366A9-3901-4487-890C-431255B6A4D7}"
 	ProjectSection(WebsiteProperties) = preProject
 		SccProjectName = "SAK"
 		SccAuxPath = "SAK"
@@ -22,14 +22,14 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "bootstarlight", "..\bootsta
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "53958"
+		VWDPort = "9548"
 	EndProjectSection
 EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
 		SccNumberOfProjects = 2
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = http://tfssvr:8080/tfs/starlight
+		SccTeamFoundationServer = http://starlightcs.oicp.net:8080/tfs/starlight
 		SccLocalPath0 = .
 		SccWebProject1 = true
 		SccProjectUniqueName1 = .

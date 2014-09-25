@@ -1,0 +1,1023 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Contract Template</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="新框架DEMO" />
+    <!-- Main CSS -->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet">
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Content/animate.css" rel="stylesheet" />
+    <link href="../Content/nprogress.css" rel="stylesheet" />
+    <link href="../Content/main.css" rel="stylesheet" />
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../Scripts/html5shiv.js"></script>
+    <script src="../Scripts/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="animated fadeIn">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-header visible-xs-block">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-xs">
+            </a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse" id="topnav">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href='dashboard.html'><i class="fa fa-dashboard"></i>&nbsp;Dashboard</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-circle-o"></i>&nbsp;Exterior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='#'>Landscaping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Stripping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Sweeping</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-dot-circle-o"></i>&nbsp;Interior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='floorcare-list.html'>Floorcare</a>
+                        </li>
+                        <li>
+                            <a href='#'>Windows</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-wrench"></i>&nbsp;Facilities</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='facilities-wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='facilities-wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='facilities-dispatch-list.html'>Dispatch Center</a>
+                        </li>
+                        <li>
+                            <a href='facilities-location-list.html'>Location Management</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                        <li>
+                            <a href='#'>WO Archives</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-headphones"></i>&nbsp;Call Center</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='callcenter-list.html'>All Calls</a>
+                        </li>
+                        <li>
+                            <a href='#'>Incoming Open Call</a>
+                        </li>
+                        <li>
+                            <a href='#'>In Progress</a>
+                        </li>
+                        <li>
+                            <a href='#'>ETA Pending</a>
+                        </li>
+                        <li>
+                            <a href='#'>Completed</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-ticket"></i>&nbsp;Invoice</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='invoice-list.html'>All Batch Invoice</a>
+                        </li>
+                        <li>
+                            <a href='invoice-ap-list.html'>AN AP</a>
+                        </li>
+                        <li>
+                            <a href='invoice-recurring-batch.html'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href='#'><i class="fa fa-users"></i>&nbsp;Affiliate</a>
+                    <ul class="submenu">
+                        <li><a href="affiliate-list.html">Affiliate Management</a></li>
+                        <li><a href="affiliate-contract-list.html">Contract</a></li>
+                        <li><a href="affiliate-contract-request-list.html">Contract Request</a></li>
+                        <li><a href="affiliate-claim-list.html">Claim</a></li>
+                        <li class="active"><a href="affiliate-contract-template-list.html">Contract Template</a></li>
+                        <li><a href="affiliate-paperwork-template-list.html">Paperwork Template</a></li>
+                        <li><a href="affiliate-sourcing-list.html">Sourcing</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-bar-chart-o"></i>&nbsp;Report</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-user"></i>&nbsp;Client</a>
+                    <ul class="submenu">
+                        <li><a href="client-location-info.html">Location Info</a></li>
+                        <li><a href="client-client-info.html">Client Info</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-lg">
+                </li>
+            </ul>
+
+        </div>
+        <div class="nav-btn hidden-xs">
+            <form action="javascript:void(0);" method="get">
+                <fieldset>
+                    <ul class="toolbar clearfix">
+                        <li>
+                            <input type="search" id="search" placeholder="What are you looking for?">
+                        </li>
+                        <li>
+                            <button type="submit" id="btn-search"><span class="fa fa-search"></span></button>
+                        </li>
+                        <li><a href="usercontrol-list.html" class="fa fa-gear"></a></li>
+                        <li><a href="#" class="fa fa-lock"></a></li>
+                        <li><a href="#" class="fa fa-heart open-lauch"></a></li>
+                        <li><a href="#" class="fa fa-sign-out"></a></li>
+                    </ul>
+                </fieldset>
+
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Main Container start -->
+    <div class="dashboard-wrapper">
+
+        <div class="container-fluid">
+            <!-- Row start -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="list-content">
+                        <!-- Custom start -->
+                        <div class="row table-tools">
+                            <div class="pull-right">
+                                <form class="form-inline">
+                                    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myNewModal"><i class="fa fa-plus"></i>&nbsp;New Contract</button>
+                                </form>
+                            </div>
+                            <div class="search-form clearfix">
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control input-sm" placeholder="Contract Name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control input-sm" placeholder="Contract Type">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control input-sm" placeholder="Service Category">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <button class="btn btn-info btn-xs transparent-btn search-all" type="button">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-condensed table-hover table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th class="sorting">Contract Name</th>
+                                        <th>Contract Type</th>
+                                        <th>Service Category</th>
+                                        <th>Customer Name</th>
+                                        <th>Service Type</th>
+                                        <th>Created Date</th>
+                                        <th>Created By</th>
+                                        <th>Status</th>
+                                        <th colspan="2"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>Exhibit D Amendment</td>
+                                        <td>Recurring</td>
+                                        <td>Family Dollar</td>
+                                        <td>Floor Care</td>
+                                        <td>07/14/2014</td>
+                                        <td>CMO</td>
+                                        <td>Active</td>
+                                        <td class="width-80"><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myViewModal">View</button></td>
+                                        <td class="width-80"><button class="btn btn-warning btn-xs btn-block" data-toggle="modal" data-target="#myModal">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>Exhibit D Amendment</td>
+                                        <td>Recurring</td>
+                                        <td>Family Dollar</td>
+                                        <td>Floor Care</td>
+                                        <td>07/14/2014</td>
+                                        <td>CMO</td>
+                                        <td>Active</td>
+                                        <td class="width-80"><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myViewModal">View</button></td>
+                                        <td class="width-80"><button class="btn btn-warning btn-xs btn-block" data-toggle="modal" data-target="#myModal">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>Exhibit D Amendment</td>
+                                        <td>Recurring</td>
+                                        <td>Family Dollar</td>
+                                        <td>Floor Care</td>
+                                        <td>07/14/2014</td>
+                                        <td>CMO</td>
+                                        <td>Active</td>
+                                        <td class="width-80"><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myViewModal">View</button></td>
+                                        <td class="width-80"><button class="btn btn-warning btn-xs btn-block" data-toggle="modal" data-target="#myModal">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>Exhibit D Amendment</td>
+                                        <td>Recurring</td>
+                                        <td>Family Dollar</td>
+                                        <td>Floor Care</td>
+                                        <td>07/14/2014</td>
+                                        <td>CMO</td>
+                                        <td>Active</td>
+                                        <td class="width-80"><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myViewModal">View</button></td>
+                                        <td class="width-80"><button class="btn btn-warning btn-xs btn-block" data-toggle="modal" data-target="#myModal">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>Exhibit D Amendment</td>
+                                        <td>Recurring</td>
+                                        <td>Family Dollar</td>
+                                        <td>Floor Care</td>
+                                        <td>07/14/2014</td>
+                                        <td>CMO</td>
+                                        <td>Active</td>
+                                        <td class="width-80"><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myViewModal">View</button></td>
+                                        <td class="width-80"><button class="btn btn-warning btn-xs btn-block" data-toggle="modal" data-target="#myModal">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>Exhibit D Amendment</td>
+                                        <td>Recurring</td>
+                                        <td>Family Dollar</td>
+                                        <td>Floor Care</td>
+                                        <td>07/14/2014</td>
+                                        <td>CMO</td>
+                                        <td>Active</td>
+                                        <td class="width-80"><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myViewModal">View</button></td>
+                                        <td class="width-80"><button class="btn btn-warning btn-xs btn-block" data-toggle="modal" data-target="#myModal">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>Exhibit D Amendment</td>
+                                        <td>Recurring</td>
+                                        <td>Family Dollar</td>
+                                        <td>Floor Care</td>
+                                        <td>07/14/2014</td>
+                                        <td>CMO</td>
+                                        <td>Active</td>
+                                        <td class="width-80"><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myViewModal">View</button></td>
+                                        <td class="width-80"><button class="btn btn-warning btn-xs btn-block" data-toggle="modal" data-target="#myModal">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>Exhibit D Amendment</td>
+                                        <td>Recurring</td>
+                                        <td>Family Dollar</td>
+                                        <td>Floor Care</td>
+                                        <td>07/14/2014</td>
+                                        <td>CMO</td>
+                                        <td>Active</td>
+                                        <td class="width-80"><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myViewModal">View</button></td>
+                                        <td class="width-80"><button class="btn btn-warning btn-xs btn-block" data-toggle="modal" data-target="#myModal">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>Exhibit D Amendment</td>
+                                        <td>Recurring</td>
+                                        <td>Family Dollar</td>
+                                        <td>Floor Care</td>
+                                        <td>07/14/2014</td>
+                                        <td>CMO</td>
+                                        <td>Active</td>
+                                        <td class="width-80"><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myViewModal">View</button></td>
+                                        <td class="width-80"><button class="btn btn-warning btn-xs btn-block" data-toggle="modal" data-target="#myModal">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>Exhibit D Amendment</td>
+                                        <td>Recurring</td>
+                                        <td>Family Dollar</td>
+                                        <td>Floor Care</td>
+                                        <td>07/14/2014</td>
+                                        <td>CMO</td>
+                                        <td>Active</td>
+                                        <td class="width-80"><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myViewModal">View</button></td>
+                                        <td class="width-80"><button class="btn btn-warning btn-xs btn-block" data-toggle="modal" data-target="#myModal">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>Exhibit D Amendment</td>
+                                        <td>Recurring</td>
+                                        <td>Family Dollar</td>
+                                        <td>Floor Care</td>
+                                        <td>07/14/2014</td>
+                                        <td>CMO</td>
+                                        <td>Active</td>
+                                        <td class="width-80"><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myViewModal">View</button></td>
+                                        <td class="width-80"><button class="btn btn-warning btn-xs btn-block" data-toggle="modal" data-target="#myModal">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>Exhibit D Amendment</td>
+                                        <td>Recurring</td>
+                                        <td>Family Dollar</td>
+                                        <td>Floor Care</td>
+                                        <td>07/14/2014</td>
+                                        <td>CMO</td>
+                                        <td>Active</td>
+                                        <td class="width-80"><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myViewModal">View</button></td>
+                                        <td class="width-80"><button class="btn btn-warning btn-xs btn-block" data-toggle="modal" data-target="#myModal">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>Exhibit D Amendment</td>
+                                        <td>Recurring</td>
+                                        <td>Family Dollar</td>
+                                        <td>Floor Care</td>
+                                        <td>07/14/2014</td>
+                                        <td>CMO</td>
+                                        <td>Active</td>
+                                        <td class="width-80"><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myViewModal">View</button></td>
+                                        <td class="width-80"><button class="btn btn-warning btn-xs btn-block" data-toggle="modal" data-target="#myModal">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>Exhibit D Amendment</td>
+                                        <td>Recurring</td>
+                                        <td>Family Dollar</td>
+                                        <td>Floor Care</td>
+                                        <td>07/14/2014</td>
+                                        <td>CMO</td>
+                                        <td>Active</td>
+                                        <td class="width-80"><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myViewModal">View</button></td>
+                                        <td class="width-80"><button class="btn btn-warning btn-xs btn-block" data-toggle="modal" data-target="#myModal">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>Exhibit D Amendment</td>
+                                        <td>Recurring</td>
+                                        <td>Family Dollar</td>
+                                        <td>Floor Care</td>
+                                        <td>07/14/2014</td>
+                                        <td>CMO</td>
+                                        <td>Active</td>
+                                        <td class="width-80"><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myViewModal">View</button></td>
+                                        <td class="width-80"><button class="btn btn-warning btn-xs btn-block" data-toggle="modal" data-target="#myModal">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>Exhibit D Amendment</td>
+                                        <td>Recurring</td>
+                                        <td>Family Dollar</td>
+                                        <td>Floor Care</td>
+                                        <td>07/14/2014</td>
+                                        <td>CMO</td>
+                                        <td>Active</td>
+                                        <td class="width-80"><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myViewModal">View</button></td>
+                                        <td class="width-80"><button class="btn btn-warning btn-xs btn-block" data-toggle="modal" data-target="#myModal">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>Exhibit D Amendment</td>
+                                        <td>Recurring</td>
+                                        <td>Family Dollar</td>
+                                        <td>Floor Care</td>
+                                        <td>07/14/2014</td>
+                                        <td>CMO</td>
+                                        <td>Active</td>
+                                        <td class="width-80"><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myViewModal">View</button></td>
+                                        <td class="width-80"><button class="btn btn-warning btn-xs btn-block" data-toggle="modal" data-target="#myModal">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>Exhibit D Amendment</td>
+                                        <td>Recurring</td>
+                                        <td>Family Dollar</td>
+                                        <td>Floor Care</td>
+                                        <td>07/14/2014</td>
+                                        <td>CMO</td>
+                                        <td>Active</td>
+                                        <td class="width-80"><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myViewModal">View</button></td>
+                                        <td class="width-80"><button class="btn btn-warning btn-xs btn-block" data-toggle="modal" data-target="#myModal">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Family Dollar Floor Care</td>
+                                        <td>Exhibit D Amendment</td>
+                                        <td>Recurring</td>
+                                        <td>Family Dollar</td>
+                                        <td>Floor Care</td>
+                                        <td>07/14/2014</td>
+                                        <td>CMO</td>
+                                        <td>Active</td>
+                                        <td class="width-80"><button class="btn btn-info btn-xs btn-block" data-toggle="modal" data-target="#myViewModal">View</button></td>
+                                        <td class="width-80"><button class="btn btn-warning btn-xs btn-block" data-toggle="modal" data-target="#myModal">Edit</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <p>Showing&nbsp;<strong>1</strong>&nbsp;to&nbsp;<strong>20</strong>&nbsp;of&nbsp;<strong>29</strong>&nbsp;entries</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <ul class="pagination pagination-sm pull-right">
+                                    <li class="disabled"><a href="javascript:"><<</a></li>
+                                    <li class="active"><a href="javascript:">1</a></li>
+                                    <li><a href="javascript:">2</a></li>
+                                    <li><a href="javascript:">3</a></li>
+                                    <li><a href="javascript:">4</a></li>
+                                    <li><a href="javascript:">5</a></li>
+                                    <li><a href="javascript:">>></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Custom end -->
+                    </div>
+                </div>
+            </div>
+            <!-- Row end -->
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Edit Contracts</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="panel-sub-title no-mt">
+                                <h5>Contracts Information</h5>
+                            </div>
+                            <form class="clearfix">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <label>Contract Type</label><span class="required">*</span>
+                                        <input type="text" class="form-control input-sm" value="Exhibit D Amendment" readonly="readonly">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Contract Name</label>
+                                        <select class="form-control input-sm">
+                                            <option selected="selected" value="Select Contract Name">Select Contract Name</option>
+                                            <option value="alaska">alaska</option>
+                                            <option value="arizona">arizona</option>
+                                            <option value="arkansas">arkansas</option>
+                                            <option value="california">california</option>
+                                            <option value="colorado">colorado</option>
+                                            <option value="connecticut">connecticut</option>
+                                            <option value="delaware">delaware</option>
+                                            <option value="florida">florida</option>
+                                            <option value="hawaii">hawaii</option>
+                                            <option value="idaho">idaho</option>
+                                            <option value="lllinois">lllinois</option>
+                                            <option value="indiana">indiana</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Customer Name</label>
+                                        <input type="text" class="form-control input-sm" value="Family Dollar" readonly="readonly">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Service Type</label>
+                                        <input type="text" class="form-control input-sm" value="Floor Care" readonly="readonly">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Description</label>
+                                        <textarea class="form-control no-resize"></textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xs-6">
+                            <div class="panel-sub-title no-mt">
+                                <h5>Select Paperwork Template</h5>
+                            </div>
+                            <form class="clearfix">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <label>Cover Letter</label>
+                                        <select class="form-control input-sm">
+                                            <option selected="selected" value="cl exhibit d amendment">cl exhibit d amendment</option>
+                                            <option value="alaska">alaska</option>
+                                            <option value="arizona">arizona</option>
+                                            <option value="arkansas">arkansas</option>
+                                            <option value="california">california</option>
+                                            <option value="colorado">colorado</option>
+                                            <option value="connecticut">connecticut</option>
+                                            <option value="delaware">delaware</option>
+                                            <option value="florida">florida</option>
+                                            <option value="hawaii">hawaii</option>
+                                            <option value="idaho">idaho</option>
+                                            <option value="lllinois">lllinois</option>
+                                            <option value="indiana">indiana</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Exhibit D Amendment</label>
+                                        <select class="form-control input-sm">
+                                            <option selected="selected" value="fd floorcare exhibit d amendment">fd floorcare exhibit d amendment</option>
+                                            <option value="alaska">alaska</option>
+                                            <option value="arizona">arizona</option>
+                                            <option value="arkansas">arkansas</option>
+                                            <option value="california">california</option>
+                                            <option value="colorado">colorado</option>
+                                            <option value="connecticut">connecticut</option>
+                                            <option value="delaware">delaware</option>
+                                            <option value="florida">florida</option>
+                                            <option value="hawaii">hawaii</option>
+                                            <option value="idaho">idaho</option>
+                                            <option value="lllinois">lllinois</option>
+                                            <option value="indiana">indiana</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Created Date</label>
+                                        <input type="text" class="form-control input-sm" value="07/14/2014" readonly="readonly">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Created By</label>
+                                        <input type="text" class="form-control input-sm" value="CM0" readonly="readonly">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default">Cancel</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                    <button type="button" class="btn btn-success">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myNewModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Add Contracts</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="panel-sub-title no-mt">
+                                <h5>Contracts Information</h5>
+                            </div>
+                            <form class="clearfix">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <label>Contract Type</label><span class="required">*</span>
+                                        <select class="form-control input-sm">
+                                            <option selected="selected" value="Select Contract Name">Select Contract Type</option>
+                                            <option value="alaska">SOW</option>
+                                            <option value="arizona">Main Contact</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Service Category</label>
+                                        <select class="form-control input-sm">
+                                            <option selected="selected" value="Select Contract Name">Select Service Category</option>
+                                            <option value="alaska">alaska</option>
+                                            <option value="arizona">arizona</option>
+                                            <option value="arkansas">arkansas</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Customer Name</label>
+                                        <select class="form-control input-sm">
+                                            <option selected="selected" value="Select Contract Name">Select Customer Name</option>
+                                            <option value="alaska">alaska</option>
+                                            <option value="arizona">arizona</option>
+                                            <option value="arkansas">arkansas</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Contract Name</label>
+                                        <input type="text" class="form-control input-sm" value="Family Dollar Floor Care" readonly="readonly">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>COI Requirement</label>
+                                        <div class="form-control no-all">
+                                            <label class="checkbox-inline">
+                                                <input checked="checked" type="checkbox">
+                                                General Liability
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input checked="checked" type="checkbox">
+                                                Auto Liability
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input checked="checked" type="checkbox">
+                                                Workers Compensation
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input checked="checked" type="checkbox">
+                                                Bond
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input checked="checked" type="checkbox">
+                                                Personal Property Insurance
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input checked="checked" type="checkbox">
+                                                Umbrella Liability
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xs-6">
+                            <div class="panel-sub-title no-mt">
+                                <h5>Select Paperwork Template</h5>
+                            </div>
+                            <form class="clearfix">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <label>Cover Letter</label>
+                                        <select class="form-control input-sm">
+                                            <option selected="selected" value="cl exhibit d amendment">cl exhibit d amendment</option>
+                                            <option value="alaska">alaska</option>
+                                            <option value="arizona">arizona</option>
+                                            <option value="arkansas">arkansas</option>
+                                            <option value="indiana">indiana</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Exhibit A</label>
+                                        <select class="form-control input-sm">
+                                            <option selected="selected" value="fd floorcare exhibit d amendment">fd floorcare exhibit d amendment</option>
+                                            <option value="alaska">alaska</option>
+                                            <option value="arizona">arizona</option>
+                                            <option value="arkansas">arkansas</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Exhibit B</label>
+                                        <select class="form-control input-sm">
+                                            <option selected="selected" value="fd floorcare exhibit d amendment">fd floorcare exhibit d amendment</option>
+                                            <option value="alaska">alaska</option>
+                                            <option value="arizona">arizona</option>
+                                            <option value="arkansas">arkansas</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Exhibit D</label>
+                                        <select class="form-control input-sm">
+                                            <option selected="selected" value="fd floorcare exhibit d amendment">fd floorcare exhibit d amendment</option>
+                                            <option value="alaska">alaska</option>
+                                            <option value="arizona">arizona</option>
+                                            <option value="arkansas">arkansas</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group no-margin">
+                                        <label>Status</label>
+                                        <div class="form-control no-all">
+                                            <label class="radio-inline">
+                                                <input checked="checked" type="radio" name="status">
+                                                Active
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input checked="checked" type="radio" name="status">
+                                                Expired
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default">Cancel</button>
+                    <button type="button" class="btn btn-success">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myViewModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Family Dollar Floor Care</h4>
+                </div>
+                <div class="modal-body">
+                    <!-- Custom start -->
+                    <ul class="filter-nav">
+                        <li class="current">
+                            <a href="#">ALL</a>
+                        </li>
+                        <li>
+                            <a href="#">Processing</a>
+                        </li>
+                        <li>
+                            <a href="#">Rejected</a>
+                        </li>
+                        <li>
+                            <a href="#">Compliant</a>
+                        </li>
+                        <li>
+                            <a href="#">Active Non-Compliant</a>
+                        </li>
+                        <li>
+                            <a href="#">Active</a>
+                        </li>
+                        <li>
+                            <a href="#">Resigned</a>
+                        </li>
+                        <li>
+                            <a href="#">Terminated</a>
+                        </li>
+                        <li>
+                            <a href="#">Exception</a>
+                        </li>
+                        <li>
+                            <a href="#">Expired</a>
+                        </li>
+                    </ul>
+                    <div class="row table-tools">
+                        <div class="search-form clearfix">
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                <div class="input-group">
+                                    <input type="text" class="form-control input-sm" placeholder="Affiliate Code">
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                <div class="input-group">
+                                    <input type="text" class="form-control input-sm" placeholder="Legal Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                <div class="input-group">
+                                    <input type="text" class="form-control input-sm" placeholder="Contract Status">
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                <div class="input-group">
+                                    <input type="text" class="form-control input-sm" placeholder="Created Date">
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                <button class="btn btn-info btn-xs transparent-btn search-all" type="button">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-condensed table-hover table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="sorting">Affiliate Code</th>
+                                    <th>Legal Name</th>
+                                    <th>Contract Status</th>
+                                    <th>Created Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>000003</td>
+                                    <td><a href="#">SMS Survey Team</a></td>
+                                    <td>Processing</td>
+                                    <td>01/01/2014</td>
+                                </tr>
+                                <tr>
+                                    <td>000003</td>
+                                    <td><a href="#">SMS Survey Team</a></td>
+                                    <td>Processing</td>
+                                    <td>01/01/2014</td>
+                                </tr>
+                                <tr>
+                                    <td>000003</td>
+                                    <td><a href="#">SMS Survey Team</a></td>
+                                    <td>Processing</td>
+                                    <td>01/01/2014</td>
+                                </tr>
+                                <tr>
+                                    <td>000003</td>
+                                    <td><a href="#">SMS Survey Team</a></td>
+                                    <td>Processing</td>
+                                    <td>01/01/2014</td>
+                                </tr>
+                                <tr>
+                                    <td>000003</td>
+                                    <td><a href="#">SMS Survey Team</a></td>
+                                    <td>Processing</td>
+                                    <td>01/01/2014</td>
+                                </tr>
+                                <tr>
+                                    <td>000003</td>
+                                    <td><a href="#">SMS Survey Team</a></td>
+                                    <td>Processing</td>
+                                    <td>01/01/2014</td>
+                                </tr>
+                                <tr>
+                                    <td>000003</td>
+                                    <td><a href="#">SMS Survey Team</a></td>
+                                    <td>Processing</td>
+                                    <td>01/01/2014</td>
+                                </tr>
+                                <tr>
+                                    <td>000003</td>
+                                    <td><a href="#">SMS Survey Team</a></td>
+                                    <td>Processing</td>
+                                    <td>01/01/2014</td>
+                                </tr>
+                                <tr>
+                                    <td>000003</td>
+                                    <td><a href="#">SMS Survey Team</a></td>
+                                    <td>Processing</td>
+                                    <td>01/01/2014</td>
+                                </tr>
+                                <tr>
+                                    <td>000003</td>
+                                    <td><a href="#">SMS Survey Team</a></td>
+                                    <td>Processing</td>
+                                    <td>01/01/2014</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <p>Showing&nbsp;<strong>1</strong>&nbsp;to&nbsp;<strong>10</strong>&nbsp;of&nbsp;<strong>29</strong>&nbsp;entries</p>
+                        </div>
+                        <div class="col-xs-6">
+                            <ul class="pagination pagination-sm pull-right">
+                                <li class="disabled"><a href="javascript:"><<</a></li>
+                                <li class="active"><a href="javascript:">1</a></li>
+                                <li><a href="javascript:">2</a></li>
+                                <li><a href="javascript:">3</a></li>
+                                <li><a href="javascript:">4</a></li>
+                                <li><a href="javascript:">5</a></li>
+                                <li><a href="javascript:">>></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Custom end -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="launchpad" class="hide">
+        <div class="icon">
+            <img src="../Content/img/mac/candy.png" title="Dashboard" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/clock.png" title="safari" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/tactics.png" title="Mail" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/packman.png" title="Appstore" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/map.png" title="Pages" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/open-letter.png" title="Numbers" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/chalkboard.png" title="Keynote" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/car.png" title="Aperture" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/label.png" title="AddressBook" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/drop.png" title="iCalendar" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/store.png" title="FaceTime" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/map2.png" title="iPhoto" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/cloud-down.png" title="iMovie" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/train.png" title="GarageBand" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/umbrella.png" title="Djay" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/rocket.png" title="iTunes" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/bookshelf.png" title="PhotoBooth" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/glasses.png" title="Compartments" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/paper-plane.png" title="Developer" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/backpack-2.png" title="Pixelmator" /><span></span>
+        </div>
+    </div>
+    <!-- Main Container end -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../Scripts/jquery-1.11.0.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../Scripts/bootstrap.min.js"></script>
+
+    <!-- nprogress JS -->
+    <script src="../Scripts/nprogress.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../Scripts/custom.js"></script>
+</body>
+</html>

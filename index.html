@@ -12,29 +12,32 @@
       <script src="../bower_components/respond/dest/respond.min.js"></script>
     <![endif]-->
     <style>
-        body {
-            position: relative;
-            min-height: 100%;
-            min-width: 100%;
-            overflow: hidden;
-            background-color: #0a1855;
-            background-image: -webkit-gradient(linear,left bottom,right top,color-stop(0%,#0a1855),color-stop(100%,#da0024));
-            background-image: -webkit-linear-gradient(45deg,#0a1855 0,#da0024 100%);
-            background-image: -moz-linear-gradient(45deg,#0a1855 0,#da0024 100%);
-            background-image: -ms-linear-gradient(45deg,#0a1855 0,#da0024 100%);
-            background-image: -o-linear-gradient(45deg,#0a1855 0,#da0024 100%);
-            background-image: linear-gradient(45deg,#0a1855 0,#da0024 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a1855', endColorstr='#da0024', GradientType=1);
-        }
-        .navbar-collapse.in{
-            background-color: #0a1855;
-            background-image: -webkit-gradient(linear,left bottom,right top,color-stop(0%,#0a1855),color-stop(100%,#da0024));
-            background-image: -webkit-linear-gradient(45deg,#0a1855 0,#da0024 100%);
-            background-image: -moz-linear-gradient(45deg,#0a1855 0,#da0024 100%);
-            background-image: -ms-linear-gradient(45deg,#0a1855 0,#da0024 100%);
-            background-image: -o-linear-gradient(45deg,#0a1855 0,#da0024 100%);
-            background-image: linear-gradient(45deg,#0a1855 0,#da0024 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a1855', endColorstr='#da0024', GradientType=1);
+         body {
+             position: fixed;
+             top: 0;
+             left: 0;
+             right: 0;
+             bottom: 0;
+             overflow: hidden;
+             background: #3f77a4; /* Old browsers */
+             background: -webkit-linear-gradient(top, #01a177, #1779a1, #6e80b8 100%, #26447c);
+             background: -moz-linear-gradient(top, #01a177, #1779a1, #6e80b8 100%, #26447c);
+             background: -o-linear-gradient(top, #01a177, #1779a1, #6e80b8 100%, #26447c);
+             background: -ms-linear-gradient(top, #01a177, #1779a1, #6e80b8 100%, #26447c);
+             background: linear-gradient(top, #01a177, #1779a1, #6e80b8 100%, #26447c);
+             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#01a177', endColorstr='#1779a1', GradientType=1);
+             background-size: cover;
+             background-attachment: fixed;
+			-webkit-animation: hue 30s infinite linear;
+         }
+        .navbar-collapse.in {
+            background: #3f77a4; /* Old browsers */
+            background: -webkit-linear-gradient(top, #01a177, #1779a1, #6e80b8 100%, #26447c);
+            background: -moz-linear-gradient(top, #01a177, #1779a1, #6e80b8 100%, #26447c);
+            background: -o-linear-gradient(top, #01a177, #1779a1, #6e80b8 100%, #26447c);
+            background: -ms-linear-gradient(top, #01a177, #1779a1, #6e80b8 100%, #26447c);
+            background: linear-gradient(top, #01a177, #1779a1, #6e80b8 100%, #26447c);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#01a177', endColorstr='#1779a1', GradientType=1);
         }
         .navbar {
             border-bottom: 1px solid rgba(255,255,255,.1);
@@ -86,11 +89,17 @@
             left: 50%;
             margin-left: -150px;
         }
-
+		.btns a{
+			color: #fff;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			box-shadow: 0 0 50px rgba(255,255,255,.3);
+			-webkit-animation: hue 30s infinite linear;
+		}
         .banner .btn:hover {
             background-color: #fff;
             -webkit-box-shadow: 0 0 50px rgba(255,255,255,.3);
-            box-shadow: 0 0 50px rgba(255,255,255,.3);
+            box-shadow: 0 0 100px rgba(255,255,255,.3);
         }
 
         .version {
@@ -121,6 +130,15 @@
         .navbar-toggle .icon-bar{
             background:#fff;
         }
+		        @-webkit-keyframes hue {
+		  from {
+		    -webkit-filter: hue-rotate(0deg);
+		  }
+
+		  to {
+		    -webkit-filter: hue-rotate(-360deg);
+		  }
+		}
     </style>
 </head>
 <body>
@@ -162,7 +180,7 @@
                         <a href="w3c/index.html">编码规范</a>
                     </li>
                     <li>
-                        <a href="demo/login.html">新框架</a>
+                        <a href="demo/IceMountain/Pages/signin.html">新框架v3<img src="assets/css/new.gif" style="position: absolute;top: 0;left: 60px;"/></a>
                     </li>
                     <li>
                         <a href="log.html">更新说明</a>
@@ -170,14 +188,10 @@
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:" id="js">JavaScript <span class="caret"></span></a>
                         <ul class="dropdown-menu" aria-labelledby="js">
-                            <li><a href="javascript/ChosenforBootstrapVer3.1.1/index.html">Chosen</a></li>
+                            <li><a href="javascript/ChosenforBootstrapVer3.2.0/index.html">Chosen</a></li>
                             <li><a href="javascript/DatePicker/index.html">DatePicker</a></li>
                             <li><a href="javascript/dropzoneforBootstrap/index.html">Dropzone</a></li>
-                            <li><a href="bootstrap-magic/app/index.html">Bootstrap Magic</a></li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="2/default/index.html">Bootstrap2.3.2</a>
                     </li>
                 </ul>
 
@@ -192,25 +206,25 @@
 
     <div class="container">
         <div class="banner">
-            <p class="intro">This is a UI kit for StarLight base on bootstrap.</p>
+            <p class="intro">Get immersed, natural and effortless.</p>
             <div class="btns">
-                <a href="changelog/Bootstarlight_Ver2.1.1.zip" class="btn btn-primary">Download Bootstarlight</a>
+                <a href="changelog/Bootstarlight_Ver3.0.0.zip" class="btn btn-primary">Download Bootstarlight</a>
             </div>
-            <p class="version">Currently v2.1.1</p>
+            <p class="version">Currently v3.0.0</p>
         </div>
     </div>
     <div class="docs-footer">
-        <p>StarLight UI Team · 诚意出品</p>
+        <p>Franki Yu · 诚意出品</p>
         <p class="docs-footer-text">Code licensed under the <a href="javascript:">MIT License</a> and the new DSS uikit are licensed under <a href="javascript:">CC BY 3.0</a>.</p>
 
         <ul class="docs-footer-links">
-            <li>Currently v2.1.1</li>
+            <li>Currently v3.0.0</li>
             <li>·</li>
-            <li><a href="javascript:">Issues</a></li>
+            <li><a href="https://github.com/MooseFrankenstein/Bootstarlight/issues">Issues</a></li>
             <li>·</li>
             <li><a href="log.html">Releases</a></li>
             <li>·</li>
-            <li><a href="javascript:alert('不好意思，这个版本暂未托管哦！');">Github</a></li>
+            <li><a href="https://github.com/MooseFrankenstein/Bootstarlight">Github</a></li>
         </ul>
     </div>
 
@@ -225,10 +239,12 @@
                 </div>
                 <div class="modal-body">
                     <p>
-                        Bootstarlight 新框架是由 <a href="http://126.am/franki" target="_blank">Franki Yu</a> 抽取整合 <a href="http://getbootstrap.com">Bootstrap</a> 常用组件，在此基础上设计了多款样式，收集了目前常用的JavaScript组件并对跟Bootstrap的兼容性做了修改。
+                        Bootstarlight 新框架是由 <a href="http://moosefrankenstein.github.io/yujie2013/" target="_blank">Franki Yu</a> 抽取整合 <a href="http://getbootstrap.com">Bootstrap</a> 常用组件，在此基础上设计了多款样式，收集了目前常用的JavaScript组件并对跟Bootstrap的兼容性做了修改。
+
                     </p>
                     <p>
-                        如果你发现本框架中有任何错误，敬请指正。通过下方的反馈按钮或访问 <a href="javascript:" target="_blank">Open an issue on GitHub</a> 为本框架添加或贡献内容。
+                        如果你发现本框架中有任何错误，敬请指正。通过下方的反馈按钮或访问 <a href="https://github.com/MooseFrankenstein/Bootstarlight/issues" target="_blank">Open an issue on GitHub</a> 为本框架添加或贡献内容。
+
                     </p>
                 </div>
                 <div class="modal-footer">
@@ -243,5 +259,12 @@
     <!-- /.modal -->
     <script src="assets/js/jquery-1.11.0.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src='assets/js/jquery.particleground.min.js'></script>
+    <script>
+    $('html').particleground({
+    	dotColor: '#5cbdaa',
+    	lineColor: '#5cbdaa'
+    });
+    </script>
 </body>
 </html>

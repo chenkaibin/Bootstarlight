@@ -1,0 +1,1547 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Plan Detail</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="新框架DEMO" />
+    <!-- Main CSS -->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet">
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Content/animate.css" rel="stylesheet" />
+    <link href="../Content/nprogress.css" rel="stylesheet" />
+    <link href="../Content/dropzone.css" rel="stylesheet" />
+    <link href="../Content/main.css" rel="stylesheet" />
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../Scripts/html5shiv.js"></script>
+    <script src="../Scripts/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="animated fadeIn">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-header visible-xs-block">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-xs">
+            </a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse" id="topnav">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href='dashboard.html'><i class="fa fa-dashboard"></i>&nbsp;Dashboard</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li class="active">
+                    <a href='#'><i class="fa fa-circle-o"></i>&nbsp;Exterior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='#'>Landscaping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Stripping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Sweeping</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li class="active">
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-dot-circle-o"></i>&nbsp;Interior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='floorcare-list.html'>Floorcare</a>
+                        </li>
+                        <li>
+                            <a href='#'>Windows</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-wrench"></i>&nbsp;Facilities</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='facilities-wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='facilities-wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='facilities-dispatch-list.html'>Dispatch Center</a>
+                        </li>
+                        <li>
+                            <a href='facilities-location-list.html'>Location Management</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                        <li>
+                            <a href='#'>WO Archives</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-headphones"></i>&nbsp;Call Center</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='callcenter-list.html'>All Calls</a>
+                        </li>
+                        <li>
+                            <a href='#'>Incoming Open Call</a>
+                        </li>
+                        <li>
+                            <a href='#'>In Progress</a>
+                        </li>
+                        <li>
+                            <a href='#'>ETA Pending</a>
+                        </li>
+                        <li>
+                            <a href='#'>Completed</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-ticket"></i>&nbsp;Invoice</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='invoice-list.html'>All Batch Invoice</a>
+                        </li>
+                        <li>
+                            <a href='invoice-ap-list.html'>AN AP</a>
+                        </li>
+                        <li>
+                            <a href='invoice-recurring-batch.html'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-users"></i>&nbsp;Affiliate</a>
+                    <ul class="submenu">
+                        <li><a href="affiliate-list.html">Affiliate Management</a></li>
+                        <li><a href="affiliate-contract-list.html">Contract</a></li>
+                        <li><a href="affiliate-contract-request-list.html">Contract Request</a></li>
+                        <li><a href="affiliate-claim-list.html">Claim</a></li>
+                        <li><a href="affiliate-contract-template-list.html">Contract Template</a></li>
+                        <li><a href="affiliate-paperwork-template-list.html">Paperwork Template</a></li>
+                        <li><a href="affiliate-sourcing-list.html">Sourcing</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-bar-chart-o"></i>&nbsp;Report</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-user"></i>&nbsp;Client</a>
+                    <ul class="submenu">
+                        <li><a href="client-location-info.html">Location Info</a></li>
+                        <li><a href="client-client-info.html">Client Info</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-lg">
+                </li>
+            </ul>
+
+        </div>
+        <div class="nav-btn hidden-xs">
+            <form action="javascript:void(0);" method="get">
+                <fieldset>
+                    <ul class="toolbar clearfix">
+                        <li>
+                            <input type="search" id="search" placeholder="What are you looking for?">
+                        </li>
+                        <li>
+                            <button type="submit" id="btn-search"><span class="fa fa-search"></span></button>
+                        </li>
+                        <li><a href="usercontrol-list.html" class="fa fa-gear"></a></li>
+                        <li><a href="#" class="fa fa-lock"></a></li>
+                        <li><a href="#" class="fa fa-heart open-lauch"></a></li>
+                        <li><a href="#" class="fa fa-sign-out"></a></li>
+                    </ul>
+                </fieldset>
+
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Main Container start -->
+    <div class="dashboard-wrapper">
+
+        <div class="container-fluid">
+            <!-- Row start -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="list-content">
+                        <!-- Custom start -->
+                        <div class="row table-tools">
+                            <div class="pull-right">
+                                <form class="form-inline">
+                                    <a href="#">budget232sa23.xls</a>
+                                    <button type="button" class="btn btn-default btn-xs"><i class="fa fa-folder-open-o"></i>&nbsp;Import Budget</button>
+                                    <button type="button" class="btn btn-info btn-xs" onclick="javascript:location.href = 'budget-location-list.html';"><i class="fa fa-user"></i>&nbsp;Location</button>
+                                    <button type="button" class="btn btn-warning btn-xs" id="switchServiceCode"><i class="fa fa-code"></i>&nbsp;Service Code</button>
+                                    <button type="button" class="btn btn-warning btn-xs hidden" id="switchMonthly"><i class="fa fa-calendar"></i>&nbsp;Monthly</button>
+                                    <button type="button" class="btn btn-danger btn-xs"><i class="fa fa-exclamation-triangle"></i>&nbsp;DELETE</button>
+                                </form>
+                            </div>
+                                <div class="search-form clearfix">
+                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                        <div class="input-group">
+                                            
+                                            <input type="text" class="form-control input-sm" placeholder="Location ID">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                        <div class="input-group">
+                                            
+                                            <input type="text" class="form-control input-sm" placeholder="Month">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                        <button class="btn btn-info btn-xs transparent-btn search-all" type="button">Search All</button>
+                                    </div>
+                                </div>
+                        </div>
+                        <div id="popover-content" class="hidden">
+                            <form class="clearfix">
+                                <div class="form-group">
+                                    <label>Frequency</label>
+                                    <input type="text" value="3" class="form-control input-sm" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Modify Reason</label>
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                            </form>
+                            <div class="table-popover">
+                                <table class="table table-striped table-condensed table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Modify Value</th>
+                                            <th>Modify Reason</th>
+                                            <th>Modify Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>5 to 9</td>
+                                            <td>I'm look around.</td>
+                                            <td>10/12/2012</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5 to 9</td>
+                                            <td>I'm look around.</td>
+                                            <td>10/12/2012</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5 to 9</td>
+                                            <td>I'm look around.</td>
+                                            <td>10/12/2012</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5 to 9</td>
+                                            <td>I'm look around.</td>
+                                            <td>10/12/2012</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5 to 9</td>
+                                            <td>I'm look around.</td>
+                                            <td>10/12/2012</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="table-zip" id="serviceCodeView">
+                            <div class="table-left">
+                                <table class="table table-striped table-condensed no-collapse">
+                                    <thead>
+                                        <tr>
+                                            <th>Location ID</th>
+                                            <th>Month</th>
+                                            <th>Amount $</th>
+                                            <th>Proposed Amount $</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>FD1</td>
+                                            <td>2014.3</td>
+                                            <td>10,000</td>
+                                            <td>12,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>FD1</td>
+                                            <td>2014.3</td>
+                                            <td>10,000</td>
+                                            <td>12,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>FD1</td>
+                                            <td>2014.3</td>
+                                            <td>10,000</td>
+                                            <td>12,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>FD1</td>
+                                            <td>2014.3</td>
+                                            <td>10,000</td>
+                                            <td>12,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>FD1</td>
+                                            <td>2014.3</td>
+                                            <td>10,000</td>
+                                            <td>12,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>FD1</td>
+                                            <td>2014.3</td>
+                                            <td>10,000</td>
+                                            <td>12,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>FD1</td>
+                                            <td>2014.3</td>
+                                            <td>10,000</td>
+                                            <td>12,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>FD1</td>
+                                            <td>2014.3</td>
+                                            <td>10,000</td>
+                                            <td>12,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>FD1</td>
+                                            <td>2014.3</td>
+                                            <td>10,000</td>
+                                            <td>12,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>FD1</td>
+                                            <td>2014.3</td>
+                                            <td>10,000</td>
+                                            <td>12,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="table-right">
+                                <table class="table table-striped table-condensed no-margin no-border no-collapse">
+                                    <thead>
+                                        <tr>
+                                            <th><div class="text-overflow" title="Service Code1 Service Code1 Code1">Service Code1 Service Code1 Code1</div></th>
+                                            <th><div class="text-overflow" title="Service Code2">Service Code2</div></th>
+                                            <th><div class="text-overflow" title="Service Code3">Service Code3</div></th>
+                                            <th><div class="text-overflow" title="Service Code4">Service Code4</div></th>
+                                            <th><div class="text-overflow" title="Service Code5">Service Code5</div></th>
+                                            <th><div class="text-overflow" title="Service Code6">Service Code6</div></th>
+                                            <th><div class="text-overflow" title="Service Code7">Service Code7</div></th>
+                                            <th><div class="text-overflow" title="Service Code8">Service Code8</div></th>
+                                            <th><div class="text-overflow" title="Service Code9">Service Code9</div></th>
+                                            <th><div class="text-overflow" title="Service Code10">Service Code10</div></th>
+                                            <th><div class="text-overflow" title="Service Code11">Service Code11</div></th>
+                                            <th><div class="text-overflow" title="Service Code12">Service Code12</div></th>
+                                            <th><div class="text-overflow" title="Service Code13">Service Code13</div></th>
+                                            <th><div class="text-overflow" title="Service Code14">Service Code14</div></th>
+                                            <th><div class="text-overflow" title="Service Code15">Service Code15</div></th>
+                                            <th><div class="text-overflow" title="Service Code16">Service Code16</div></th>
+                                            <th><div class="text-overflow" title="Service Code17">Service Code17</div></th>
+                                            <th><div class="text-overflow" title="Service Code18">Service Code18</div></th>
+                                            <th><div class="text-overflow" title="Service Code19">Service Code19</div></th>
+                                            <th><div class="text-overflow" title="Service Code20">Service Code20</div></th>
+                                            <th><div class="text-overflow" title="Service Code21">Service Code21</div></th>
+                                            <th><div class="text-overflow" title="Service Code22">Service Code22</div></th>
+                                            <th><div class="text-overflow" title="Service Code23">Service Code23</div></th>
+                                            <th><div class="text-overflow" title="Service Code24">Service Code24</div></th>
+                                            <th><div class="text-overflow" title="Service Code25">Service Code25</div></th>
+                                            <th><div class="text-overflow" title="Service Code26">Service Code26</div></th>
+                                            <th><div class="text-overflow" title="Service Code27">Service Code27</div></th>
+                                            <th><div class="text-overflow" title="Service Code28">Service Code28</div></th>
+                                            <th><div class="text-overflow" title="Service Code29">Service Code29</div></th>
+                                            <th><div class="text-overflow" title="Service Code30">Service Code30</div></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">5/</span></td>
+                                            <td class="proposed-box has-history"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">301/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">27/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box has-history"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">1/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">39/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">5/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="proposed-box has-history"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">9/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box has-history"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">45/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+                                            <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">25/</span></td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="table-responsive hidden" id="monthView">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" id="myTab">
+                                <li class="active"><a href="#code1">Service Code 1</a></li>
+                                <li><a href="#code2">Service Code 2</a></li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content has-tabcontent">
+                                <div class="tab-pane active" id="code1">
+                                    <table class="table table-striped table-condensed table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Location ID</th>
+                                                <th>Price $</th>
+                                                <th>Amount $</th>
+                                                <th>Proposed Amount $</th>
+                                                <th>2014.1</th>
+                                                <th>2014.2</th>
+                                                <th>2014.3</th>
+                                                <th>2014.4</th>
+                                                <th>2014.5</th>
+                                                <th>2014.6</th>
+                                                <th>2014.7</th>
+                                                <th>2014.8</th>
+                                                <th>2014.9</th>
+                                                <th>2014.10</th>
+                                                <th>2014.11</th>
+                                                <th>2014.12</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>FD2341</td>
+                                                <td>10,000</td>
+                                                <td>10,000</td>
+                                                <td>12,000</td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>FD5462</td>
+                                                <td>10,000</td>
+                                                <td>10,000</td>
+                                                <td>12,000</td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>FD1324</td>
+                                                <td>10,000</td>
+                                                <td>10,000</td>
+                                                <td>12,000</td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>FD4546</td>
+                                                <td>10,000</td>
+                                                <td>10,000</td>
+                                                <td>12,000</td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>FD1234</td>
+                                                <td>10,000</td>
+                                                <td>10,000</td>
+                                                <td>12,000</td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>FD7853</td>
+                                                <td>10,000</td>
+                                                <td>10,000</td>
+                                                <td>12,000</td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>FD2161</td>
+                                                <td>10,000</td>
+                                                <td>10,000</td>
+                                                <td>12,000</td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>FD8532</td>
+                                                <td>10,000</td>
+                                                <td>10,000</td>
+                                                <td>12,000</td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>FD3478</td>
+                                                <td>10,000</td>
+                                                <td>10,000</td>
+                                                <td>12,000</td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>FD1346</td>
+                                                <td>10,000</td>
+                                                <td>10,000</td>
+                                                <td>12,000</td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tab-pane fade" id="code2">
+                                    <table class="table table-striped table-condensed table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Location ID</th>
+                                                <th>Price $</th>
+                                                <th>Amount $</th>
+                                                <th>Proposed Amount $</th>
+                                                <th>2014.1</th>
+                                                <th>2014.2</th>
+                                                <th>2014.3</th>
+                                                <th>2014.4</th>
+                                                <th>2014.5</th>
+                                                <th>2014.6</th>
+                                                <th>2014.7</th>
+                                                <th>2014.8</th>
+                                                <th>2014.9</th>
+                                                <th>2014.10</th>
+                                                <th>2014.11</th>
+                                                <th>2014.12</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>FD2141</td>
+                                                <td>10,000</td>
+                                                <td>10,000</td>
+                                                <td>12,000</td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>FD1441</td>
+                                                <td>10,000</td>
+                                                <td>10,000</td>
+                                                <td>12,000</td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>FD9871</td>
+                                                <td>10,000</td>
+                                                <td>10,000</td>
+                                                <td>12,000</td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>FD5641</td>
+                                                <td>10,000</td>
+                                                <td>10,000</td>
+                                                <td>12,000</td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>FD4500</td>
+                                                <td>10,000</td>
+                                                <td>10,000</td>
+                                                <td>12,000</td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>FD3645</td>
+                                                <td>10,000</td>
+                                                <td>10,000</td>
+                                                <td>12,000</td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>FD1234</td>
+                                                <td>10,000</td>
+                                                <td>10,000</td>
+                                                <td>12,000</td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>FD1877</td>
+                                                <td>10,000</td>
+                                                <td>10,000</td>
+                                                <td>12,000</td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box has-history"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>FD2021</td>
+                                                <td>10,000</td>
+                                                <td>10,000</td>
+                                                <td>12,000</td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>FD2374</td>
+                                                <td>10,000</td>
+                                                <td>10,000</td>
+                                                <td>12,000</td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+                                                <td class="proposed-box"><input type="text" class="form-control input-sm hover-input" value="3"><span class="proposed-value">4/</span></td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <p>Showing&nbsp;<strong>1</strong>&nbsp;to&nbsp;<strong>5</strong>&nbsp;of&nbsp;<strong>29</strong>&nbsp;entries</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <ul class="pagination pagination-sm pull-right">
+                                    <li class="disabled"><a href="javascript:"><<</a></li>
+                                    <li class="active"><a href="javascript:">1</a></li>
+                                    <li><a href="javascript:">2</a></li>
+                                    <li><a href="javascript:">3</a></li>
+                                    <li><a href="javascript:">4</a></li>
+                                    <li><a href="javascript:">5</a></li>
+                                    <li><a href="javascript:">>></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Custom end -->
+                    </div>
+                </div>
+            </div>
+            <!-- Row end -->
+        </div>
+    </div>
+    <div id="launchpad" class="hide">
+        <div class="icon">
+            <img src="../Content/img/mac/candy.png" title="Dashboard" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/clock.png" title="safari" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/tactics.png" title="Mail" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/packman.png" title="Appstore" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/map.png" title="Pages" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/open-letter.png" title="Numbers" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/chalkboard.png" title="Keynote" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/car.png" title="Aperture" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/label.png" title="AddressBook" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/drop.png" title="iCalendar" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/store.png" title="FaceTime" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/map2.png" title="iPhoto" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/cloud-down.png" title="iMovie" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/train.png" title="GarageBand" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/umbrella.png" title="Djay" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/rocket.png" title="iTunes" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/bookshelf.png" title="PhotoBooth" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/glasses.png" title="Compartments" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/paper-plane.png" title="Developer" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/backpack-2.png" title="Pixelmator" /><span></span>
+        </div>
+    </div>
+    <!-- Main Container end -->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Location</h4>
+                </div>
+                <div class="modal-body has-tabcontent">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#add" data-toggle="tab">Add</a></li>
+                        <li><a href="#import" data-toggle="tab">Import</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="add">
+                            <div class="row table-tools">
+                                <div class="search-form clearfix">
+                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                        <div class="input-group">
+                                            
+                                            <input type="text" class="form-control input-sm" placeholder="Store #">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                        <div class="input-group">
+                                            
+                                            <input type="text" class="form-control input-sm" placeholder="City">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                        <div class="input-group">
+                                            
+                                            <input type="text" class="form-control input-sm" placeholder="State">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                        <button class="btn btn-info btn-xs transparent-btn search-all" type="button">Search All</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-condensed table-hover table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Store #</th>
+                                            <th>Address</th>
+                                            <th>City</th>
+                                            <th>State</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            
+                                            <td>00003</td>
+                                            <td>421 9TH Ave Se</td>
+                                            <td>Mason</td>
+                                            <td>OH</td>
+                                        </tr>
+                                        <tr>
+                                            
+                                            <td>00003</td>
+                                            <td>421 9TH Ave Se</td>
+                                            <td>Mason</td>
+                                            <td>OH</td>
+                                        </tr>
+                                        <tr>
+                                            
+                                            <td>00003</td>
+                                            <td>421 9TH Ave Se</td>
+                                            <td>Mason</td>
+                                            <td>OH</td>
+                                        </tr>
+                                        <tr>
+                                            
+                                            <td>00003</td>
+                                            <td>421 9TH Ave Se</td>
+                                            <td>Mason</td>
+                                            <td>OH</td>
+                                        </tr>
+                                        <tr>
+                                            
+                                            <td>00003</td>
+                                            <td>421 9TH Ave Se</td>
+                                            <td>Mason</td>
+                                            <td>OH</td>
+                                        </tr>
+                                        <tr>
+                                            
+                                            <td>00003</td>
+                                            <td>421 9TH Ave Se</td>
+                                            <td>Mason</td>
+                                            <td>OH</td>
+                                        </tr>
+                                        <tr>
+                                            
+                                            <td>00003</td>
+                                            <td>421 9TH Ave Se</td>
+                                            <td>Mason</td>
+                                            <td>OH</td>
+                                        </tr>
+                                        <tr>
+                                            
+                                            <td>00003</td>
+                                            <td>421 9TH Ave Se</td>
+                                            <td>Mason</td>
+                                            <td>OH</td>
+                                        </tr>
+                                        <tr>
+                                            
+                                            <td>00003</td>
+                                            <td>421 9TH Ave Se</td>
+                                            <td>Mason</td>
+                                            <td>OH</td>
+                                        </tr>
+                                        <tr>
+                                            
+                                            <td>00003</td>
+                                            <td>421 9TH Ave Se</td>
+                                            <td>Mason</td>
+                                            <td>OH</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <p>Showing&nbsp;<strong>1</strong>&nbsp;to&nbsp;<strong>5</strong>&nbsp;of&nbsp;<strong>29</strong>&nbsp;entries</p>
+                                </div>
+                                <div class="col-xs-6">
+                                    <ul class="pagination pagination-sm pull-right">
+                                        <li class="disabled"><a href="javascript:"><<</a></li>
+                                        <li class="active"><a href="javascript:">1</a></li>
+                                        <li><a href="javascript:">2</a></li>
+                                        <li><a href="javascript:">3</a></li>
+                                        <li><a href="javascript:">4</a></li>
+                                        <li><a href="javascript:">5</a></li>
+                                        <li><a href="javascript:">>></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="import">
+                            <div id="dropzone">
+                                <form action="http://www.torrentplease.com/dropzone.php" class="dropzone" id="demo-upload">
+                                    <div class="dz-default dz-message">
+                                        <span>Drop files here to upload</span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default">Cancel</button>
+                    <button type="button" class="btn btn-success">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../Scripts/jquery-1.11.0.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../Scripts/bootstrap.min.js"></script>
+
+    <!-- nprogress JS -->
+    <script src="../Scripts/nprogress.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../Scripts/custom.js"></script>
+    <script src="../Scripts/dropzone.min.js"></script>
+    <script>
+        $(document).bind('contextmenu', function () { return false; });
+        $(document).bind('selectstart', function () { return false; });
+        $(document).bind('keydown', function () {
+            $('.proposed-box input').css("ime-mode", "disabled");
+            if (event.keyCode !== 0) {
+                event.returnValue = false;
+                return false;
+            };
+            return false;
+        });
+        $("#dropzone").dropzone({ url: "http://www.torrentplease.com/dropzone.php" });
+        $('#switchServiceCode').click(function () {
+            $(this).addClass('hidden');
+            $('#switchMonthly').removeClass('hidden');
+            $('#serviceCodeView').hide();
+            $('#monthView').removeClass('hidden').show();
+            resizeBox("#monthView");
+        });
+        $('#switchMonthly').click(function () {
+            $(this).addClass('hidden');
+            $('#switchServiceCode').removeClass('hidden');
+            $('#monthView').hide();
+            $('#serviceCodeView').removeClass('hidden').show();
+            resizeBox("#serviceCodeView");
+        });
+        var maxWidth = $('.list-content').width() - 600;
+        $('#scrollMaxWidth').css('max-width', maxWidth);
+        window.onresize = function () {
+            maxWidth = $('.list-content').width() - 600;
+            $('#scrollMaxWidth').css('max-width', maxWidth);
+        };
+        $('table input').bind('focus blur mouseover mouseout', function (event) {
+            switch (event.type) {
+            case 'focus': $(this).removeClass('hover-input');
+                break;
+            case 'blur': $(this).addClass('hover-input');
+                break;
+            case 'mouseover': $(this).removeClass('hover-input');
+                break;
+            case 'mouseout': $(this).addClass('hover-input');
+                break;
+            default: $(this).removeClass('hover-input');
+            }
+        });
+
+        function resizeBox(elementId) {
+            elementId = elementId || "#serviceCodeView";
+            $.each($('.proposed-box', elementId), function () {
+                var proposedWidth = $(this).find('.proposed-value').width() + 3;
+                $(this).find('input').css('padding-left', proposedWidth);
+            });
+        };
+
+        $(function () {
+            resizeBox();
+        });
+
+        $('#myTab a').click(function (e) {
+            var flag = $(this).attr('href');
+            e.preventDefault();
+            $(this).tab('show');
+            resizeBox(flag);
+        });
+
+        var lastInput;
+        $('.proposed-box input')
+            .click(function () {
+                if (lastInput) {
+                    lastInput.popover('destroy');
+                }
+                lastInput = $(this);
+                $(this).popover({
+                    html: true,
+                    placement: 'auto',
+                    content: function () {
+                        return $("#popover-content").html();
+                    }
+                });
+                $(this).popover('show');
+
+                //    .focusout(function () {
+                //    $(this).popover('hide');
+                //})
+                //.popover({
+                //html: true,
+                //placement:'auto',
+                //title: function () {
+                //    return $("#popover-head").html();
+                //},
+                //content: function () {
+                //    return $("#popover-content").html();
+                //}
+            });
+    </script>
+</body>
+</html>

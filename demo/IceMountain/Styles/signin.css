@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url('../Sources/fonts/HelveticaNeue-Light.eot');
+  src: url('../Sources/fonts/HelveticaNeue-Light.eot?#iefix') format('embedded-opentype'), url('../Sources/fonts/HelveticaNeue-Light.svg#Helvetica Neue Light') format('svg'), url('../Sources/fonts/HelveticaNeue-Light.woff') format('woff'), url('../Sources/fonts/HelveticaNeue-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+head {
+  margin: 82px auto 88px;
+  position: relative;
+  text-align: center;
+}
+body {
+  font-family: "Helvetica";
+  padding: 0;
+  background: url(../Sources/images/signin-blur-bg.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.signin-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.signin-window {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 40px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  padding: 55px 30px 30px 30px;
+  width: 380px;
+  height: 380px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -190px 0 0 -190px;
+}
+.signin-window-form {
+  margin-top: 30px;
+}
+.signin-window.active {
+  opacity: 1;
+}
+.signin-window .form-group {
+  position: relative;
+  margin-bottom: 0;
+}
+.signin-window input.form-control {
+  height: 48px;
+  font-size: 15px;
+  box-shadow: none;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid #d6d6d6;
+  padding-left: 0;
+  padding-right: 0;
+  background: transparent;
+}
+.signin-window .form-options {
+  margin: 20px 0 30px;
+}
+.form-options a {
+  margin: 10px;
+}
+.signin-window .form-options .checkbox {
+  display: inline-block;
+}
+.signin-window input[type="submit"] {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  opacity: 0.5;
+  font-family: "FontAwesome";
+  background: transparent;
+  color: #888888;
+  border: 2px solid #888888;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding-left: 7px;
+  line-height: 24px;
+}
+.signin-window input[type="submit"]:hover {
+  opacity: 1;
+}
+.signin-window p.signup {
+  margin-bottom: 0;
+}

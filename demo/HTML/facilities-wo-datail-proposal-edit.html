@@ -1,0 +1,832 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>SMS Proposal Edit</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="新框架DEMO" />
+    <!-- Main CSS -->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet">
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Content/animate.css" rel="stylesheet" />
+    <link href="../Content/nprogress.css" rel="stylesheet" />
+    <link href="../Content/dropzone.css" rel="stylesheet" />
+    <link href="../Content/main.css" rel="stylesheet" />
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../Scripts/html5shiv.js"></script>
+    <script src="../Scripts/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="animated fadeIn">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-header visible-xs-block">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-xs">
+            </a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse" id="topnav">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href='dashboard.html'><i class="fa fa-dashboard"></i>&nbsp;Dashboard</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-circle-o"></i>&nbsp;Exterior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='#'>Landscaping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Stripping</a>
+                        </li>
+                        <li>
+                            <a href='#'>Sweeping</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-dot-circle-o"></i>&nbsp;Interior</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='floorcare-list.html'>Floorcare</a>
+                        </li>
+                        <li>
+                            <a href='#'>Windows</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='budget-list.html'>Budget</a>
+                        </li>
+                        <li>
+                            <a href='plan-list.html'>Plan</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href='#'><i class="fa fa-wrench"></i>&nbsp;Facilities</a>
+                    <ul class="submenu">
+                        <li class="active">
+                            <a href='facilities-wo-list.html'>WO Management</a>
+                        </li>
+                        <li>
+                            <a href='facilities-wo-new.html'>New WO</a>
+                        </li>
+                        <li>
+                            <a href='facilities-dispatch-list.html'>Dispatch Center</a>
+                        </li>
+                        <li>
+                            <a href='facilities-location-list.html'>Location Management</a>
+                        </li>
+                        <li>
+                            <a href='invoice-list.html'>Invoice Management</a>
+                        </li>
+                        <li>
+                            <a href='#'>Report</a>
+                        </li>
+                        <li>
+                            <a href='#'>WO Archives</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-headphones"></i>&nbsp;Call Center</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='callcenter-list.html'>All Calls</a>
+                        </li>
+                        <li>
+                            <a href='#'>Incoming Open Call</a>
+                        </li>
+                        <li>
+                            <a href='#'>In Progress</a>
+                        </li>
+                        <li>
+                            <a href='#'>ETA Pending</a>
+                        </li>
+                        <li>
+                            <a href='#'>Completed</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-ticket"></i>&nbsp;Invoice</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href='invoice-list.html'>All Batch Invoice</a>
+                        </li>
+                        <li>
+                            <a href='invoice-ap-list.html'>AN AP</a>
+                        </li>
+                        <li>
+                            <a href='invoice-recurring-batch.html'>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-users"></i>&nbsp;Affiliate</a>
+                    <ul class="submenu">
+                        <li><a href="affiliate-list.html">Affiliate Management</a></li>
+                        <li><a href="affiliate-contract-list.html">Contract</a></li>
+                        <li><a href="affiliate-contract-request-list.html">Contract Request</a></li>
+                        <li><a href="affiliate-claim-list.html">Claim</a></li>
+                        <li><a href="affiliate-contract-template-list.html">Contract Template</a></li>
+                        <li><a href="affiliate-paperwork-template-list.html">Paperwork Template</a></li>
+                        <li><a href="affiliate-sourcing-list.html">Sourcing</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-bar-chart-o"></i>&nbsp;Report</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li>
+                    <a href='#'><i class="fa fa-user"></i>&nbsp;Client</a>
+                    <ul class="submenu">
+                        <li><a href="client-location-info.html">Location Info</a></li>
+                        <li><a href="client-client-info.html">Client Info</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <img src="../Content/img/brand-logo.png" alt="SMS-Assist" class="visible-lg">
+                </li>
+            </ul>
+
+        </div>
+        <div class="nav-btn hidden-xs">
+            <form action="javascript:void(0);" method="get">
+                <fieldset>
+                    <ul class="toolbar clearfix">
+                        <li>
+                            <input type="search" id="search" placeholder="What are you looking for?">
+                        </li>
+                        <li>
+                            <button type="submit" id="btn-search"><span class="fa fa-search"></span></button>
+                        </li>
+                        <li><a href="usercontrol-list.html" class="fa fa-gear"></a></li>
+                        <li><a href="#" class="fa fa-lock"></a></li>
+                        <li><a href="#" class="fa fa-heart open-lauch"></a></li>
+                        <li><a href="#" class="fa fa-sign-out"></a></li>
+                    </ul>
+                </fieldset>
+
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Main Container start -->
+    <div class="dashboard-wrapper">
+
+        <div class="container-fluid">
+            <!-- Row start -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="details-content">
+                        <div class="alert alert-info comment-info">
+                            <p>
+                                REQUEST #:&nbsp;<strong>WO135764</strong>
+                                PROPOSAL #:&nbsp;<strong class="text-danger">WO135764</strong>
+                                DATE:&nbsp;<strong>07/07/2014</strong>
+                                Store #:&nbsp;<strong>CAH90897-1</strong>
+                                Address:&nbsp;<strong>300 Wynfield Dr Covington, GA 30016</strong>
+                            </p>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="pull-left">
+                                <h2 class="text-default">FROM</h2>
+                                <address>
+                                    <strong>SMS Assist LLC</strong><br>
+                                    875 N Michigan Ave #2800, Chicago<br>
+                                    IL 60611, United States<br>
+                                    <abbr title="Phone">P:</abbr>
+                                    312-698-7000
+                                </address>
+                            </div>
+                            <div class="pull-right">
+                                <h2 class="text-default">TO</h2>
+                                <address>
+                                    <strong>North Kansas City Electric Co., Inc.</strong><br>
+                                    200 E 15th Ave, Kansas City<br>
+                                    MO 64116, United States<br>
+                                    <abbr title="Phone">P:</abbr>
+                                    816-421-2352
+                                </address>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="panel-sub-title">
+                                <h5 class="pull-left">Attachment</h5>
+                                <div class="pull-right btn-group btn-group-xs">
+                                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myUploadModal"><i class="fa fa-upload"></i>&nbsp;Uploads</button>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-condensed table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>File Name</th>
+                                            <th>Description</th>
+                                            <th>Size</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="#">iso23763629.pdf</a></td>
+                                            <td>Invoice</td>
+                                            <td>6.0 Mb</td>
+                                            <td><a href="#" class="text-danger"><i class="fa fa-times fa-rotate"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">201412105dsanhedu.xls</a></td>
+                                            <td>Invoice</td>
+                                            <td>6.0 Mb</td>
+                                            <td><a href="#" class="text-danger"><i class="fa fa-times fa-rotate"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">word7u387 dhj 3u9i.docx</a></td>
+                                            <td>Invoice</td>
+                                            <td>6.0 Mb</td>
+                                            <td><a href="#" class="text-danger"><i class="fa fa-times fa-rotate"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">word7u387 dhj 3u9i.docx</a></td>
+                                            <td>Invoice</td>
+                                            <td>6.0 Mb</td>
+                                            <td><a href="#" class="text-danger"><i class="fa fa-times fa-rotate"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">201412105dsanhedu.xls</a></td>
+                                            <td>Invoice</td>
+                                            <td>6.0 Mb</td>
+                                            <td><a href="#" class="text-danger"><i class="fa fa-times fa-rotate"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">word7u387 dhj 3u9i.docx</a></td>
+                                            <td>Invoice</td>
+                                            <td>6.0 Mb</td>
+                                            <td><a href="#" class="text-danger"><i class="fa fa-times fa-rotate"></i></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="panel-sub-title">
+                                <h5>Description</h5>
+                            </div>
+                            <form class="clearfix">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="form-group">
+                                        <label>Description of Services</label>
+                                        <textarea class="form-control no-resize" readonly="readonly" rows="5">
+                                            PB - Plumbing -> Floor drains -> Overflow
+                                            The floor drains are backing up into the restaurant.  There is an odor, but we cannot pour half a gallon of water down the drain because no water will drain.  This is an emergency situation, please send someone out asap.
+                                        </textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Custorm NTE</label>
+                                        <input class="form-control input-sm" type="text" value="750" readonly="readonly" />
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="form-group">
+                                        <label>Problem Description</label>
+                                        <textarea class="form-control no-resize" rows="5" readonly="readonly">The floor drains are backing up into the restaurant.  There is an odor, but we cannot pour half a gallon of water down the drain because no water will drain.  This is an emergency situation, please send someone out asap.</textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="panel-sub-title">
+                                <h5>Incurred Costs Description<small class="fonts-arial"> (if applicable)</small></h5>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-10 col-md-8 col-sm-6 col-xs-12">
+                                    <table class="table table-condensed table-striped table-hover table-bordered no-margin">
+                                        <caption class="text-left"><h4>Labor</h4></caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Qty</th>
+                                                <th>Description</th>
+                                                <th>Unit Price</th>
+                                                <th>Sub total</th>
+                                                <th>Tax</th>
+                                                <th>Net Price</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><button class="btn btn-danger btn-xs width-block">Remove</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <button class="btn btn-primary btn-xs"><i class="fa fa-plus"></i>&nbsp;Breakdown</button>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <table class="table table-condensed table-striped table-hover table-bordered">
+                                        <caption class="text-left"><h4>Amount</h4></caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Labor Sub-Total ($)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input class="form-control input-sm" type="text" readonly="readonly" /></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="row">
+                                <div class="col-lg-10 col-md-8 col-sm-6 col-xs-12">
+                                    <table class="table table-condensed table-striped table-hover table-bordered no-margin">
+                                        <caption class="text-left"><h4>Materials</h4></caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Qty</th>
+                                                <th>Description</th>
+                                                <th>Unit Price</th>
+                                                <th>Sub total</th>
+                                                <th>Tax</th>
+                                                <th>Net Price</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><button class="btn btn-danger btn-xs width-block">Remove</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <button class="btn btn-primary btn-xs"><i class="fa fa-plus"></i>&nbsp;Breakdown</button>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <table class="table table-condensed table-striped table-hover table-bordered">
+                                        <caption class="text-left"><h4>Amount</h4></caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Labor Sub-Total ($)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input class="form-control input-sm" type="text" readonly="readonly" /></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <table class="table table-condensed table-striped table-hover table-bordered">
+                                        <caption class="text-left"><h4>Travel Charges</h4></caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Travel Sub-Total ($)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <table class="table table-condensed table-striped table-hover table-bordered">
+                                        <caption class="text-left"><h4>Freight Charges ($)</h4></caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Freight Sub-Total ($)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="row">
+                                <div class="col-lg-10 col-md-8 col-sm-6 col-xs-12">
+                                    <table class="table table-condensed table-striped table-hover table-bordered no-margin">
+                                        <caption class="text-left"><h4 class="inline-block">Other</h4><input class="form-control inline-block width-auto input-sm margin-15" type="text" /></caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Qty</th>
+                                                <th>Description</th>
+                                                <th>Unit Price</th>
+                                                <th>Sub total</th>
+                                                <th>Tax</th>
+                                                <th>Net Price</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><button class="btn btn-danger btn-xs width-block">Remove</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <button class="btn btn-primary btn-xs"><i class="fa fa-plus"></i>&nbsp;Breakdown</button>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <table class="table table-condensed table-striped table-hover table-bordered">
+                                        <caption class="text-left"><h4>Amount</h4></caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Other Sub-Total ($)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input class="form-control input-sm" type="text" readonly="readonly" /></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="panel-sub-title">
+                                <h5>Proposal Description</h5>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-10 col-md-8 col-sm-6 col-xs-12">
+                                    <table class="table table-condensed table-striped table-hover table-bordered no-margin">
+                                        <caption class="text-left"><h4>Labor</h4></caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Qty</th>
+                                                <th>Description</th>
+                                                <th>Unit Price</th>
+                                                <th>Sub total</th>
+                                                <th>Tax</th>
+                                                <th>Net Price</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><button class="btn btn-danger btn-xs width-block">Remove</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <button class="btn btn-primary btn-xs"><i class="fa fa-plus"></i>&nbsp;Breakdown</button>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <table class="table table-condensed table-striped table-hover table-bordered">
+                                        <caption class="text-left"><h4>Amount</h4></caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Labor Sub-Total ($)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input class="form-control input-sm" type="text" readonly="readonly" /></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="row">
+                                <div class="col-lg-10 col-md-8 col-sm-6 col-xs-12">
+                                    <table class="table table-condensed table-striped table-hover table-bordered no-margin">
+                                        <caption class="text-left"><h4>Materials</h4></caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Qty</th>
+                                                <th>Description</th>
+                                                <th>Unit Price</th>
+                                                <th>Sub total</th>
+                                                <th>Tax</th>
+                                                <th>Net Price</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><button class="btn btn-danger btn-xs width-block">Remove</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <button class="btn btn-primary btn-xs"><i class="fa fa-plus"></i>&nbsp;Breakdown</button>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <table class="table table-condensed table-striped table-hover table-bordered">
+                                        <caption class="text-left"><h4>Amount</h4></caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Labor Sub-Total ($)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input class="form-control input-sm" type="text" readonly="readonly" /></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <table class="table table-condensed table-striped table-hover table-bordered">
+                                        <caption class="text-left"><h4>Travel Charges</h4></caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Travel Sub-Total ($)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <table class="table table-condensed table-striped table-hover table-bordered">
+                                        <caption class="text-left"><h4>Freight Charges ($)</h4></caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Freight Sub-Total ($)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="row">
+                                <div class="col-lg-10 col-md-8 col-sm-6 col-xs-12">
+                                    <table class="table table-condensed table-striped table-hover table-bordered no-margin">
+                                        <caption class="text-left"><h4 class="inline-block">Other</h4><input class="form-control inline-block width-auto input-sm margin-15" type="text" /></caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Qty</th>
+                                                <th>Description</th>
+                                                <th>Unit Price</th>
+                                                <th>Sub total</th>
+                                                <th>Tax</th>
+                                                <th>Net Price</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><input class="form-control input-sm" type="text" /></td>
+                                                <td><button class="btn btn-danger btn-xs width-block">Remove</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <button class="btn btn-primary btn-xs"><i class="fa fa-plus"></i>&nbsp;Breakdown</button>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                    <table class="table table-condensed table-striped table-hover table-bordered">
+                                        <caption class="text-left"><h4>Amount</h4></caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Other Sub-Total ($)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input class="form-control input-sm" type="text" readonly="readonly" /></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <br /><br />
+                            <div class="well table-responsive">
+                                <table class="table table-bordered table-condensed">
+                                    <caption><h3>SUMMARY</h3></caption>
+                                    <thead>
+                                        <tr>
+                                            <th>Incurred Costs Subtotal</th>
+                                            <th>Proposal Subtotal</th>
+                                            <th>Applicable Tax</th>
+                                            <th>Sub Total</th>
+                                            <th>Service Fee</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-danger">0.00</td>
+                                            <td class="text-danger">0.00</td>
+                                            <td class="text-danger">0.00</td>
+                                            <td class="text-danger">0.00</td>
+                                            <td class="text-danger">0</td>
+                                            <td class="text-danger">0.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="text-center">
+                                    <button class="btn btn-success">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Row end -->
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myUploadModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Upload Attachment</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="dropzone">
+                        <form action="http://www.torrentplease.com/dropzone.php" class="dropzone" id="demo-upload">
+                            <div class="dz-default dz-message">
+                                <span>Drop files here to upload</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-xs-10">
+                        <textarea class="form-control" placeholder="Please input your description"></textarea>
+                    </div>
+                    <div class="col-xs-2">
+                        <button class="btn btn-success">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="launchpad" class="hide">
+        <div class="icon">
+            <img src="../Content/img/mac/candy.png" title="Dashboard" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/clock.png" title="safari" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/tactics.png" title="Mail" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/packman.png" title="Appstore" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/map.png" title="Pages" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/open-letter.png" title="Numbers" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/chalkboard.png" title="Keynote" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/car.png" title="Aperture" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/label.png" title="AddressBook" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/drop.png" title="iCalendar" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/store.png" title="FaceTime" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/map2.png" title="iPhoto" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/cloud-down.png" title="iMovie" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/train.png" title="GarageBand" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/umbrella.png" title="Djay" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/rocket.png" title="iTunes" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/bookshelf.png" title="PhotoBooth" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/glasses.png" title="Compartments" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/paper-plane.png" title="Developer" /><span></span>
+        </div>
+        <div class="icon">
+            <img src="../Content/img/mac/backpack-2.png" title="Pixelmator" /><span></span>
+        </div>
+    </div>
+    <!-- Main Container end -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../Scripts/jquery-1.11.0.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../Scripts/bootstrap.min.js"></script>
+
+    <!-- nprogress JS -->
+    <script src="../Scripts/nprogress.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../Scripts/custom.js"></script>
+    <script src="../Scripts/dropzone.min.js"></script>
+    <script type="text/javascript">
+        $("#dropzone").dropzone({ url: "http://www.torrentplease.com/dropzone.php" });
+    </script>
+</body>
+</html>
